@@ -1,0 +1,472 @@
+
+html,body{
+	min-width: 320px;
+	max-width: 640px;
+	margin:0 auto;
+}
+
+/* ------------------------top 开始---------------------------- */
+header{
+	height: 44px;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	background-color: #fff;
+}
+.left{
+	width: 104px;
+	height: 44px;
+	float: left;
+	overflow: hidden;
+}
+.logo,.zuobiao{
+	display: block;
+	float: left;
+	width: 50%;
+	height: 100%;
+	position: relative;
+
+}
+.zuobiao{
+	float: right;
+}
+.logo:before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 44px;
+	background: url(../images/header_logo.jpg) no-repeat center center;
+}
+.zuobiao:before{
+	content: '上海';
+	background: #fff;
+	text-align: center;
+	line-height: 44px;
+}
+.right{
+	width: 56px;
+	height: 44px;
+	float: right;
+	position: relative;
+}
+.right:before{
+	content: '';
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY( -50%);
+	background: url(../images/wdxiaoxi.jpg) no-repeat;
+}
+.center{
+	height: 32px;
+	margin:6px 56px 6px 104px;
+	position: relative;
+
+	border-radius: 50%;
+}
+.center:before{
+	content: '';
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	background: url(../images/search.jpg) no-repeat left center;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.center:after{
+	content: '';
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	background: url(../images/erweima.jpg) no-repeat right center;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.center input[type=search]{
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 32px;
+	border: 1px solid #ccc;
+	
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	text-indent: 20px;
+}
+.center input::-webkit-input-placeholder{
+	color:#ccc;
+}
+/* ------------------------top 结束---------------------------- */
+
+/* -----------------------焦点图 开始 -------------------------------------- */
+.focus {
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.focus .hd {
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 13px;
+	text-align: center;
+}
+.focus .hd ul {
+	overflow: hidden;
+	text-align: center;
+}
+.focus .hd ul li {
+	width: 8px;
+	height: 8px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-right: 6px;
+	display: inline-block;
+	text-indent: -9999px;
+
+}
+.focus .hd ul .on {
+	background: rgba(255,0,0,.8);
+}
+.focus .bd {
+	position: relative;
+	z-index: 0;
+}
+.focus .bd li img {
+	width: 100%;
+}
+.focus .bd li a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* 取消链接高亮 */
+}
+
+/* -----------------------nav 开始 -------------------------------------- */
+
+.nav{
+	height: 150px;
+	overflow: hidden;
+	background-color: #fff;
+	border-bottom: #ccc solid 2px;
+}
+.navin{
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	position: relative;
+}
+.navin li{
+	position: relative;
+	padding-top: 10px;
+	width: 25%;
+	height: 75px;
+	float: left;
+	border-bottom: 1px solid #fff;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 75px;
+	text-align: center;
+	
+
+}
+.navin li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.navin li a img{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.huodong{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+}
+.navin li a .huodong img{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+
+}
+
+
+.cuxiao{
+	position: absolute;
+	top: -4px;
+	right: -20px;
+	color: #fff;
+	padding: 1px 4px;
+	height: 14px;
+	background: #ff6400;
+	border-radius:7px; 
+	font-size: .08em;
+	line-height: 14px;
+	text-align: center;
+}
+.nav-bt{
+	display: block;
+	font-size: 10px;
+    height: 20px;
+	line-height: 20px;
+    color: #666;
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+    -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	}    
+
+/* -----------------------今日抢购 开始 -------------------------------------- */
+
+.qianggou{
+	background: #fff;
+	min-height: 100px;
+	border-bottom:  1px solid #ccc;
+}
+.daojishi{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-top: 8px;
+	border-bottom: 1px solid #ccc;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.qiangleft{
+	width: 50%;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	color: red;
+	padding-left: 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-family: 微软雅黑;
+	font-weight: 600;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+.qiangright{
+	width: 50%;
+	height: 20px;
+	line-height: 20px;
+	float: right;
+	color: red;
+	padding-right: 10px;
+	text-align: right;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 18px;
+	
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+	font-family: 微软雅黑;
+}
+.shangpin{
+	width: 100%;
+	overflow: hidden;
+}
+.shangpin-lb{
+	width: 500%;
+	overflow: hidden;
+}
+.shangpin-lb li{
+	position: relative;
+	width: 140px;
+	height: 200px;
+	float: left;
+	
+	margin: 6px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.shangpin-lb li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 5px;
+	border: 1px solid #ccc;
+
+}
+.shangpin-lb li img{
+	width: 90%;
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+}
+.jieshao{
+	position:absolute;
+	top: 70%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	font-size: 0.1em;
+	line-height: 15px;
+	width:100%;
+	text-align: center;
+	color: #666;
+}
+
+.shoujia{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.jiaqian{
+	width: 20%;
+	height: 90%;
+	position: absolute;
+	left: 10px;
+	bottom: 0px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 18px;
+	font-family:宋体;
+	font-weight: bold;
+	color: #ff3c25;
+}
+
+.yuanjia{
+
+	width: 30%;
+	height: 90%;
+	position: absolute;
+	left: 40px;
+	bottom: 2px;
+
+}
+.yuanjia p{
+	font-size: 12px;
+	line-height: 12px;
+		color:#666;
+}
+.yuanjia i{
+	font-size: 12px;
+	text-decoration:line-through;
+	color:#666;
+
+}
+.gouwc{
+	width: 20%;
+	position: absolute;
+	right: 5px;
+	bottom: 3px;
+	height: 25px;
+	background: #333;
+	background: url(../images/gouwc.png) no-repeat top center;
+}
+
+
+
+/* -----------------------1号海购 开始 -------------------------------------- */
+.haigou{
+	background-color: #eee;
+	border-top: 2px solid #ccc;
+	border-bottom: 1px solid #666;
+	padding: 5px;
+	margin: 5px 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+
+}
+.haigou a{
+	display:block;
+	width: 33%;
+	float: left;
+	padding: 2px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+.haigou a img{
+
+}
+
+/* -----------------------1号海购 开始 -------------------------------------- */
+.diannaoban{
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: #333;
+	position: relative;
+}
+.diannaoban a{
+	display: block;
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	font-size: 14px;
+	color: #369;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.resou{
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: #333;
+
+	position: relative;
+}
+.resou a{
+	display: block;
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	font-size: 12px;
+	color: #666;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.copyright{
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	color: #333;
+	font-size: 12px;
+	position: relative;
+}
+.resou p{
+	display: block;
+
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	font-size: 12px;
+	color: #666;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}

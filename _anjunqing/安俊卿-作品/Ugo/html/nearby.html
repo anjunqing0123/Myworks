@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <link rel="stylesheet" type="text/css" href="../css/base4.css">
+        <link rel="stylesheet" type="text/css" href="../css/nearby.css">
+        <script type="text/javascript">
+        	var oHtml = document.documentElement;
+        	getSize();
+	
+        	window.onresize = function(){
+        		getSize();
+        	}
+        	function getSize(){
+	
+        		var screenWidth = oHtml.clientWidth;
+        		
+        		if(screenWidth < 320){
+        			// 如果说屏幕宽度小于320的话 就让根目录的font-size停留在320的这个范围内
+        			oHtml.style.fontSize = '17.06666px';
+        		} else if(screenWidth > 640){
+        			// 如果说屏幕宽度大于750的话 就让根目录的font-size停留在7500的这个范围内
+        			oHtml.style.fontSize = '34.1333px';
+        		}else{
+        			// 在这个区间之间，就让根目录的font-size自己去适配
+        			oHtml.style.fontSize = screenWidth/(750/40) + 'px';
+        		}
+        	}
+        </script>
+    </head>
+    <body>
+    	<div class="top"></div>
+    	<!-- 头部开始 -->
+    	<header>
+    		<span onclink="goback()"></span>
+    		<h2>附近</h2>
+    	</header>
+    	<!-- 头部结束 -->
+    	<!-- 导航开始 -->
+    	<nav>
+    		<ul class="clearfix">
+    			<li><a href="javascript:void(0);">全部分类</a></li>
+    			<li><a href="javascript:void(0);">3km</a></li>
+    			<li><a href="javascript:void(0);">智能排序</a></li>
+    			<li><a href="javascript:void(0);">筛选</a></li>
+    		</ul>
+    	</nav>
+    	<div class="adress">
+    		<a href="javascript:void(0);">
+    			当前位置：上海市闵行区浦江镇江月路附近
+    		</a>
+    	</div>
+    	<!-- 导航结束 -->
+    	<!-- 商场商圈开始 -->
+    	<div class="market">
+    		<div class="hd clearfix">
+    			<h2>商场商圈</h2>
+    			<span class="more">更多</span>
+    		</div>
+    		<ul class="m-figure clearfix">
+    			<li>
+    				<a href="javascript:void(0);">
+    					<img src="../images/img/n-img1.png" alt="">
+    					<div class="n-text">
+    						<i>OMALL华侨城…</i>
+    						<i>西餐9折起</i>
+    						<i>最近商场</i>
+    					</div>
+    				</a>
+    			</li>
+    			<li>
+    				<a href="javascript:void(0);">
+    					<img src="../images/img/n-img1.png" alt="">
+    					<div class="n-text">
+    						<i>上海浦江绿地乐…</i>
+    						<i>运动健身1折起</i>
+    						<i>最近商场</i>
+    					</div>
+    				</a>
+    			</li>
+    			<li>
+    				<a href="javascript:void(0);">
+    					<img src="../images/img/n-img1.png" alt="">
+    					<div class="n-text">
+    						<i>浦江镇</i>
+    						<i>西餐2折起</i>
+    						<i>最近商场</i>
+    					</div>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    	<!-- 商场商圈结束 -->
+    	<!-- n-wrap开始 -->
+    	<div class="n-wrap">
+    		<ul>
+    			<li>
+    				<h3>桂林米粉</h3>
+    				<div class="n-eva">
+    					<span>暂无评价  ￥15/人</span>
+    					<span>浦江镇433m</span>
+    				</div>
+    				<a href="javascript:void(0);" class="n-pay">
+    					<i>到店付</i>
+    					<p>每满10减1元，周一至周日10：00-21:00可用</p>
+    				</a>
+    			</li>
+    			<li>
+    				<h3>黄焖鸡米饭菜饭骨头汤</h3>
+    				<div class="n-eva">
+    					<span>暂无评价  ￥13/人</span>
+    					<span>浦江镇401m</span>
+    				</div>
+    				<a href="javascript:void(0);" class="n-pay">
+    					<i>到店付</i>
+    					<p>每满20减1元，周一至周日11：00-21:00可用</p>
+    				</a>
+    			</li>
+    			<li>
+    				<h3>特色家常小炒</h3>
+    				<div class="n-eva">
+    					<span>暂无评价  ￥18/人</span>
+    					<span>浦江镇433m</span>
+    				</div>
+    				<a href="javascript:void(0);" class="n-pay">
+    					<i>到店付</i>
+    					<p>每满50减6元，周一至周日11：00-21:00可用</p>
+    				</a>
+    			</li>
+    			<li>
+    				<h3>沙县小吃</h3>
+    				<div class="n-eva">
+    					<span>暂无评价  ￥18/人</span>
+    					<span>浦江镇321m</span>
+    				</div>
+    				<a href="javascript:void(0);" class="n-pay">
+    					<i>到店付</i>
+    					<p>每满30减5元，周一至周日10：00-21:00可用</p>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    	<!-- n-wrap结束 -->
+        <footer class="clearfix footer">
+        <ul class="clearfix">
+            <li><a href="index.html"><span></span>首页</a></li>
+            <li><a href="nearby.html"><span></span>附近</a></li>
+            <li><a href="shangjiaye.html"><span></span>商家</a></li>
+            <li><a href="shangmen.html"><span></span>上门</a></li>
+            <li><a href="gerenzhongxin.html"><span></span>我的</a></li>
+        </ul>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/base2.css">
+        <link rel="stylesheet" href="../css/shangmen.css">
+        <link rel="stylesheet" href="../css/swiper.min.css">
+        <script type="text/javascript" src="../js/index.js"></script>
+        <script type="text/javascript" src="../js/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="../js/base.js"></script>
+       
+    </head>
+    <body>
+    	<div class="top"></div>
+    	<header>
+    		<div class="left" onclick="goback()"></div>
+    		<div class="right" onclick="reload()"></div>
+    		<div class="center">上门服务</div>
+    	</header>
+        <div class="banner">
+    	<!-- Swiper -->
+	    <div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><a href="javascript:;"><img src="../images/banner02.png" alt=""></a></div>
+	            <div class="swiper-slide"><a href="javascript:;"><img src="../images/banner02.png" alt=""></a></div>
+	            <div class="swiper-slide"><a href="javascript:;"><img src="../images/banner02.png" alt=""></a></div>
+	            <div class="swiper-slide"><a href="javascript:;"><img src="../images/banner02.png" alt=""></a></div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	       <!--  <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div> -->
+	    </div>
+
+	    <!-- Swiper JS -->
+	    <script src="../js/swiper.min.js"></script>
+
+	    <!-- Initialize Swiper -->
+	    <script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        slidesPerView: 1,
+	        paginationClickable: true,
+	        spaceBetween: 0,
+	        loop: true
+	    });
+	    </script>
+	</div>
+	<div class="main">
+		<h2>全部频道</h2>
+		<div class="con">
+			<ul>
+				<li><a href="javascript:;"><img src="../images/sm01.png" alt=""></a></li>
+				<li><a href="javascript:;"><img src="../images/sm02.png" alt=""></a></li>
+				<li><a href="javascript:;"><img src="../images/sm03.png" alt=""></a></li>
+				<li><a href="javascript:;"><img src="../images/sm04.png" alt=""></a></li>
+				<li><a href="javascript:;"><img src="../images/sm05.png" alt=""></a></li>
+				<li><a href="javascript:;"><img src="../images/sm06.png" alt=""></a></li>
+				<li><a href="javascript:;"><img src="../images/sm07.png" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<footer class="clearfix footer">
+    	<ul class="clearfix">
+    		<li><a href="index.html"><span></span>首页</a></li>
+    		<li><a href="nearby.html"><span></span>附近</a></li>
+    		<li><a href="shangjiaye.html"><span></span>商家</a></li>
+    		<li><a href="shangmen.html"><span></span>上门</a></li>
+    		<li><a href="gerenzhongxin.html"><span></span>我的</a></li>
+    	</ul>
+    </footer>
+    </body>
+</html>
