@@ -1,0 +1,105 @@
+html,body{
+	max-width:720px;
+	min-width:320px;
+	margin:0 auto; 
+}
+body{
+	padding-top: 2.222rem;
+	position: relative;
+}
+
+header{
+	max-width:720px;
+	min-width:320px;
+	height:  2.222rem;
+	width: 100%;
+	padding: .556rem .833rem .389rem;
+	margin:0 auto; 
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
+	z-index: 9999;
+	background-color: rgba(255,255,255,.8);
+	
+
+}
+.left,.right{
+	width: 1.11rem;
+	height: 1.11rem;
+	float: right;
+}
+.left{
+	float: left;
+}
+.left a,.right a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.left a{
+	background: url(../images/fanhui.png) center center no-repeat;
+	/* -webkit-background-size:50%;
+	background-size: 50%; */
+}
+.right a{
+	background: url(../images/sousuo.png) center center no-repeat;
+	/* -webkit-background-size:60%;
+	background-size: 60%; */
+}
+
+.center{
+	text-align: center;
+	line-height: 1.222rem;
+	font-size: .778rem;
+	color: #fe6600;
+}
+
+/* banner 插件 */
+.focus {
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.focus .hd {
+	width: 100%;
+	height: 0.278rem;
+	position: absolute;
+	z-index: 1;
+	bottom: 20%;
+	text-align: center;
+}
+.focus .hd ul {
+	overflow: hidden;
+	text-align: center;
+}
+.focus .hd ul li {
+	width: 0.44rem;
+	height: 0.46rem;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-right: .278rem;
+	display: inline-block;
+	text-indent: -9999px;
+}
+.focus .hd ul .on {
+	background: #a9a2a2;
+}
+.focus .bd {
+	position: relative;
+	z-index: 0;
+}
+.focus .bd li img {
+	width: 100%;
+	height: auto;
+}
+.focus .bd li a {
+	display: block;
+	
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* 取消链接高亮 */
+}
+/* 插件结束 */

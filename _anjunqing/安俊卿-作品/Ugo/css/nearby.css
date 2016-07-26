@@ -1,0 +1,254 @@
+/* 头部开始 */
+.top{
+	width: 100%;
+	height: 1rem;
+	background-color: #fe6600;
+}
+/* 头部开始 */
+
+header{
+	height: 2rem;
+	padding: 0 0.25rem;
+	background-color: #fe6600;
+	overflow: hidden;
+	position: relative;
+
+}
+header span{
+	width: 0.9rem;
+	height: 0.8rem;
+	float: left;
+	background: url(../images/icon/n-str.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	left:10px;
+	top:50%;
+	-weblit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+header h2{
+	text-align: center;
+	font-size: 0.85rem;
+	color: #fff;
+	line-height: 2rem;
+	position: relative;
+}
+header h2:after{
+	content: '';
+	width: 1rem;
+	height: 1rem;
+	background: url(../images/icon/ktv-search.png) no-repeat;
+	position: absolute;
+	right: 0;
+	top:50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	--webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/* 头部结束 */
+/* 导航开始 */
+nav{
+	padding:0.25rem;
+	background-color: #fff;
+}
+nav ul li{
+	float: left;
+	width: 20%;
+	height: 2rem;
+	position: relative;
+}
+
+nav ul li a{
+	display: block;
+	width: 100%;
+	height: 1.5rem;
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 0.75rem;
+	border-right: 1px solid #ccc;
+
+}
+nav ul li a:after{
+	content:'';
+	width: 0.525rem;
+	height: 0.525rem;
+	background: url(../images/icon/ktv-sanjiao.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	right:0.5rem;
+	bottom:0.8rem;
+}
+nav ul li:nth-child(1),nav ul li:nth-child(3){
+	width: 28%;
+}
+nav ul li:last-child a{
+	border:0;
+}
+/* 当前地址 */
+.adress{
+	width: 100%;
+	height: 1.75rem;
+	background-color: #ddd;
+}
+.adress a{
+	padding:0 0.25rem;
+	line-height: 1.75rem;
+	position: relative;
+	display: block;
+	font-size: 0.65rem;
+}
+.adress a:after{
+	content:'';
+	width: 1.15rem;
+	height: .975rem;
+	background: url(../images/icon/ktv-news.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	right:0.25rem;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+/* 导航结束 */
+
+/* 商场商圈开始 */
+
+
+.market .hd{
+	padding: 0 0.25rem;
+	height: 1.95rem;
+	font-size: 0.85rem;
+	line-height: 1.95rem;
+}
+.hd h2{
+	font-weight: normal;
+	float: left;
+}
+.hd .more{
+	float: right;
+	padding-right: 1.5rem;
+	position: relative;
+	font-size: 0.7rem;
+	color: #999;
+}
+.hd .more:after{
+	content: '';
+	width: 0.9rem;
+	height: 0.8rem;
+	background: url(../images/icon/right.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	right: 0.25rem;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.m-figure{
+	padding: 0 0.5rem;
+	border-bottom: 1px solid #ccc;
+}
+.m-figure li{
+	width: 33.3333%;
+	float: left;
+}
+.m-figure li a{
+	width: 100%;
+	height: 7.25rem;
+	display: block;
+	margin: 0 auto;
+}
+.m-figure li img{
+	width: 5.375rem;
+	height: 4.1rem;
+}
+.n-text i{
+	display: block;
+	line-height: 0.5rem;
+	margin-top: 0.25rem;
+	font-size: 0.65rem;
+}
+.n-text i:nth-child(1){
+	font-size: 0.7rem;
+	color:#333;
+}
+/* .n-text i:nth-child(2){
+	font-size: 0.65rem;
+} */
+.n-text i:nth-child(3){
+	color: #fe6600;
+	padding-left: 0.75rem;
+	position: relative;
+}
+.n-text i:nth-child(3):before{
+	content: '';
+	width: 0.525rem;
+	height: 0.5rem;
+	background: url(../images/icon/n-like.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	left:0;
+	top:0;
+}
+/* 商场商圈结束 */
+/* n-wrap 开始 */
+.n-wrap{}
+.n-wrap li{
+	border-bottom: 1px solid #ccc;
+	padding: 0 0.25rem 0.25rem;
+	background-color: #fff;
+	margin-bottom: 0.5rem;
+}
+.n-wrap li h3{
+	font-size: 0.85rem;
+	padding-top: 0.5rem;
+}
+.n-eva{
+	font-size: 0.65rem;
+	line-height: 1.5rem;
+}
+.n-eva span:nth-child(1){
+	float: left;
+}
+.n-eva span:nth-child(1){
+	float: right;
+}
+.n-wrap li a.n-pay{
+	display: block;
+	position: relative;
+	font-size: 0.65rem;
+}
+.n-pay i{
+	background-color: #fe6600;
+	color: #fff;
+	text-align: center;
+	width: 2.5rem;
+	height: 1rem;
+	display: inline-block;
+	line-height: 1rem;
+	border-radius: 4px;
+}
+.n-pay p{
+	display: inline-block;
+	color: #808080;
+}
+.n-pay:after{
+	content: '';
+	width: 0.85rem;
+	height: 0.8rem;
+	background: url(../images/icon/right.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+	top:0;
+}
+/* n-wrap结束 */
+footer li:nth-child(2) span{background-position: -0.75rem 0rem;}
+footer li:nth-child(2) a{color: #fe6600;}

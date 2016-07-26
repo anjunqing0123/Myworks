@@ -1,0 +1,96 @@
+body,html{
+	min-width: 320px;
+	max-width: 750px;
+	/* height: 100%; */
+	background: #fff;
+}
+ header{
+	/* width: 100%; */
+	/* height: 120px; */
+	
+} 
+/* 状态栏开始 */
+.statusBar{
+	background: #000;
+	height: 1rem;
+}
+/* 头部开始 */
+.top{
+	background: #fe6600;
+	position: relative;
+}
+.top span{
+	display: block;
+	width: 0.85rem;
+	height: 0.8rem;
+	background: url(../images/return.png) no-repeat;
+	-webkit-background-size: 0.85rem 0.8rem;
+	background-size: 0.85rem 0.8rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.4rem;
+	left: 0.75rem;
+}
+.top p{
+	line-height: 2rem;
+	color: #fff;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+/* 头部标题开始 */
+.title{
+	height: 1.5rem;
+	/* width: 100%; */
+	border-bottom: 1px solid #dddddd;
+}
+.title li{
+	float: left;
+	width: 33.333%;
+	line-height: 1.5rem;
+	text-align: center;
+	font-size: 0.7rem;
+	border-bottom: 2px solid transparent;
+}
+.title li:hover{
+	color: #fe6600;
+	border-bottom: 2px solid #fe6600;
+}
+/* 优惠券部分开始 */
+.ticketList{
+	height: 3.75rem;
+	margin:0.25rem 0 0.25rem 0.75rem;
+	
+
+}
+.ticketList li{
+	overflow: hidden;
+	padding-bottom: 0.25rem;
+	border-bottom: 1px solid #dddddd;
+	margin-top: 0.25rem;
+}
+.ticketList h5{
+	float: left;
+	height: 3.75rem;
+	width: 5rem;
+	background: #fe6600;
+	text-align: center;
+	line-height: 3.75rem;
+	color: #fff;
+	font-size: 1.3rem;
+}
+.ticketList .ticket{
+	float: left;
+	margin-left: 0.5rem;
+}
+
+.ticketList .ticket h4{
+	font-size: 0.9rem;
+	line-height: 1.25rem;
+}
+.ticketList .ticket p{
+	font-size: 0.7rem;
+
+}
+
+

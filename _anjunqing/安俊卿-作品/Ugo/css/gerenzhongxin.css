@@ -1,0 +1,400 @@
+body,html{
+	min-width: 320px;
+	max-width: 750px;
+	/* height: 100%; */
+	background: #fff;
+}
+/*  header{
+	width: 100%;
+	height: 120px;
+	
+}  */
+/* 状态栏开始 */
+.statusBar{
+	background: #000;
+	height: 1rem;
+}
+/* 头部开始 */
+.top{
+	background: #fe6600;
+	height: 8.5rem;
+	position: relative;
+}
+.icon{
+	height: 2rem;
+	position: relative;
+	/* background: yellow; */
+}
+.icon i{
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	background: url(../images/set.png) no-repeat;
+	-webkit-background-size: 1rem 1rem;
+	background-size: 1rem 1rem;
+	top: 50%;
+	margin-top: -0.5rem;
+	right: 2.1rem;
+}
+.icon span{
+	width: 1.125rem;
+	height: 0.8rem;
+	background: url(../images/email.png) no-repeat;
+	-webkit-background-size: 1.125rem 0.8rem;
+	background-size: 1.125rem 0.8rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.4rem;
+	right: 0.75rem;
+}
+.picture{
+	height: 4.5rem;
+	margin-left: 0.75rem;
+}
+.picture img{
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 3.5rem;
+	float: left;
+}
+.picture p{
+	float:left;
+	line-height: 3.75rem;
+	margin-left: 0.75rem;
+	font-size: 0.85rem;
+	color: #fff;
+	padding-right: 1rem;
+	background: url(../images/v.png) right center no-repeat;
+	-webkit-background-size: 0.8rem 0.8rem;
+	background-size: 0.8rem 0.8rem;
+
+}
+.picture a{
+	width: 0.6rem;
+	height: 1.2rem;
+	float: right;
+	background:url(../images/white.png) no-repeat;
+	margin-right: 0.75rem;
+	margin-top: 1.5rem;
+	-webkit-background-size: 0.6rem 1.2rem;
+	background-size: 0.6rem 1.2rem;
+
+}
+.topInfo{
+	/* height: 2rem; */
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+}
+.topInfo ul{
+	height: 1.8rem; 
+	width: 100%;
+	padding:0.2rem 0; 
+
+}
+.topInfo ul li{
+	float: left;
+	width: 33.333%;
+	text-align: center;
+	color: #fff;
+	font-size: 0.7rem;
+
+}
+.topInfo a{
+	color: #fff;
+	font-family: "微软雅黑";
+}
+.topInfo ul li:nth-child(1),.topInfo ul li:nth-child(2){
+	border-right: 1px solid #fff;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* 我的订单开始 */
+.order{
+	margin:0.4rem 0;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+.myOrder{
+	height: 2rem;
+	margin:0 0.75rem;
+	font-size:0.75rem;
+	border-bottom: 1px solid #dddddd;
+}
+.myOrder p{
+	float: left;
+	padding-left: 1.5rem;
+	line-height: 2rem;
+	position: relative;
+}
+.myOrder p:before{
+	content: '';
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(../images/order.png) left center no-repeat;
+	background-size: 1.2rem 1.2rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.6rem;
+	left: 0;
+
+}
+.myOrder span{
+	float: right;
+	line-height: 2rem;
+	padding-right: 1rem;
+	position: relative;
+}
+.myOrder span:before{
+	content: '';
+	position: absolute;
+	width: 0.85rem;
+	height: 0.8rem;
+	background: url(../images/right.png) no-repeat;
+	-webkit-background-size: 0.85rem 0.8rem;
+	background-size: 0.85rem 0.8rem;
+	top: 50%;
+	right: 0;
+	margin-top: -0.4rem;
+}
+.orderList{
+	height: 2.875rem;
+}
+.orderList li{
+	width: 20%;
+	text-align: center;
+	float: left;
+	
+}
+.orderList li a{
+	display: block;
+
+}
+.orderList li a p{
+	position: relative;
+	line-height: 1.375rem;
+	padding-top: 1.5rem;
+	position: relative;
+	font-size: 0.7rem;
+	color: #3e403f;
+}
+.orderList li:nth-child(1) a p:before{
+	content: '';
+	width: 1.025rem;
+	height: 0.8rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	margin-left: -0.5125rem;
+	background: url(../images/icon1.png) no-repeat;
+	-webkit-background-size: 1.025rem 0.8rem;
+	background-size: 1.025rem 0.8rem;
+}
+.orderList li:nth-child(2) a p:before{
+	content: '';
+	width: 0.825rem;
+	height: 0.775rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	margin-left: -0.4125rem;
+	background: url(../images/icon2.png) no-repeat;
+	-webkit-background-size: 0.825rem 0.775rem;
+	background-size: 0.825rem 0.775rem;
+}
+.orderList li:nth-child(3) a p:before{
+	content: '';
+	width: 1.075rem;
+	height: 0.9rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	margin-left: -0.5375rem;
+	background: url(../images/icon3.png) no-repeat;
+	-webkit-background-size: 1.075rem 0.9rem;
+	background-size: 1.075rem 0.9rem;
+}
+.orderList li:nth-child(4) a p:before{
+	content: '';
+	width: 0.85rem;
+	height: 0.75rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	margin-left: -0.425rem;
+	background: url(../images/icon4.png) no-repeat;
+	-webkit-background-size: 0.85rem 0.75rem;
+	background-size: 0.85rem 0.75rem;
+}
+.orderList li:nth-child(5) a p:before{
+	content: '';
+	width: 0.875rem;
+	height: 0.75rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	margin-left: -0.4375rem;
+	background: url(../images/icon5.png) no-repeat;
+	-webkit-background-size: 0.875rem 0.75rem;
+	background-size: 0.875rem 0.75rem;
+}
+/* 钱包及地址版块开始 */
+.myAddress{
+	margin:0.4rem 0;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+.myList{
+	overflow: hidden;
+	margin:0 0.75rem;
+	font-size:0.75rem;
+	/* border-bottom: 1px solid #dddddd; */
+}
+.myList li{
+	height: 2rem;
+	border-bottom: 1px solid #dddddd;
+}
+.myList li:nth-child(4){
+	border-bottom: none;
+}
+.myList p{
+	float: left;
+	padding-left: 1.5rem;
+	line-height: 2rem;
+	position: relative;
+}
+.myList li p:before{
+	content: '';
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(../images/icon6.png) left center no-repeat;
+	background-size: 1.2rem 1.2rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.6rem;
+	left: 0;
+
+}
+.myList span{
+	float: right;
+	line-height: 2rem;
+	padding-right: 1rem;
+	position: relative;
+}
+.myList span:before{
+	content: '';
+	position: absolute;
+	width: 0.85rem;
+	height: 0.8rem;
+	background: url(../images/right.png) no-repeat;
+	-webkit-background-size: 0.85rem 0.8rem;
+	background-size: 0.85rem 0.8rem;
+	top: 50%;
+	right: 0;
+	margin-top: -0.4rem;
+}
+.myList li:nth-child(2) p:before{
+	content: '';
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(../images/icon7.png) left center no-repeat;
+	background-size: 1.2rem 1.2rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.6rem;
+	left: 0;
+
+}
+.myList li:nth-child(3) p:before{
+	content: '';
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(../images/icon8.png) left center no-repeat;
+	background-size: 1.2rem 1.2rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.6rem;
+	left: 0;
+
+}
+.myList li:nth-child(4) p:before{
+	content: '';
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(../images/icon9.png) left center no-repeat;
+	background-size: 1.2rem 1.2rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.6rem;
+	left: 0;
+
+}
+/* 帮助版块开始 */
+.helpList li:nth-child(1) p:before{
+	content: '';
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(../images/icon10.png) left center no-repeat;
+	background-size: 1.2rem 1.2rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.6rem;
+	left: 0;
+
+}
+.helpList li:nth-child(2) p:before{
+	content: '';
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(../images/icon11.png) left center no-repeat;
+	background-size: 1.2rem 1.2rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.6rem;
+	left: 0;
+
+}
+.helpList li:nth-child(2){
+	border-bottom: none;
+}
+/* 底部开始 */
+footer{
+	width: 100%;
+	min-width: 320px;
+	max-width: 750px;
+	height: 2.25rem;
+	background: #fff ;
+	border-top: 1px solid #ccc;
+	position: fixed;
+	bottom: 0;
+	z-index: 11;
+}
+footer ul{}
+footer li{
+	text-align: center;
+	width: 20%;
+	float: left;
+}
+footer li a{
+	font-size: 0.6rem;
+}
+footer li span{
+	display: block;
+	width: 0.75rem;
+	height:0.75rem;
+	/* background: red; */
+	margin: 0.25rem auto;
+	background: url(../images/sprite.png) 0 0 no-repeat;
+	-webkit-background-size:3.75rem 2rem;
+	background-size:3.75rem 2rem;
+}
+footer li:nth-child(1) span{
+	background-position: 0 -1rem;
+}
+footer li:nth-child(2) span{background-position: -0.75rem -1rem;}
+footer li:nth-child(3) span{background-position: -1.5rem -1rem;}
+footer li:nth-child(4) span{background-position: -2.25rem -1rem;}
+footer li:nth-child(5) span{background-position: -3.05rem 0;}
+footer li:nth-child(5) a{color: #fe6600;}

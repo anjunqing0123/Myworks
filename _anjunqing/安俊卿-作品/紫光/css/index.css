@@ -1,0 +1,432 @@
+@charset "utf-8";
+/* CSS Document */
+/*banner样式开始*/
+.banner{
+	width:100%;
+	height:410px;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:20px;}
+.bannerin{
+	position:relative;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	}
+.bannerin .imgList{
+	width:500%;
+	position:absolute;
+	top:0;
+	left:0;
+	overflow:hidden;}
+.bannerin .imgList li{
+	height: 410px;
+	float:left;
+	position:relative;
+	width:20%;
+	overflow:hidden;
+background: url(../images/banner01.jpg) no-repeat center center;
+}
+.imgList a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.bannerin .imgList li:nth-child(2){
+	background: url(../images/banner02.jpg) no-repeat center center;
+}
+.bannerin .imgList li:nth-child(3){
+	background: url(../images/banner03.jpg) no-repeat center center;
+}
+.bannerin .leftbtn,.bannerin .rightbtn{
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	left: 80px;
+	width: 41px;
+	height: 69px;
+	background:rgba(0,0,0,.5) url(../images/icon-slides.png) no-repeat;
+	cursor: pointer;
+	display: none;
+}
+.bannerin .rightbtn{
+	left: auto;
+	right: 80px;
+	background:rgba(0,0,0,.5) url(../images/icon-slides.png) no-repeat -42px 0;
+}
+.banner:hover .leftbtn,.banner:hover .rightbtn{
+	display: block;
+} 
+.bannerin ol{
+	position:absolute;
+	left:50%;
+	margin-left:-34px;
+	bottom:35px;
+	}
+.bannerin ol li{
+	float:left;
+	margin:3px;
+	width:9px;
+	height:9px;
+	border:#953FA2 2px solid;
+	border-radius:50%;
+	cursor:pointer;
+	}
+.btnList .current{
+	width:13px;
+	height:13px;
+	background:#fff;
+	margin:2px;
+	}	
+
+
+/*banner样式结束*/
+
+
+
+/*解决方案样式开始*/
+.project{
+	width:100%;
+	height:355px;
+	border-bottom:solid #CCC 1px;}
+.project ul{
+	width:1100px;
+	height:355px;
+	margin:0 auto;}
+.project ul li{
+	width: 25%;
+	float:left;
+	padding:15px 0;
+	cursor:pointer;
+overflow: hidden;}
+.project li a {
+    display: block;
+    width: 215px;
+    margin: 0 auto;
+    padding-top: 265px;
+    background: url(../images/sub.png) no-repeat;
+}
+.project li.sub_1 a {
+    background: url(../images/sub.png) no-repeat -2px 0;
+}
+.project li.sub_2 a {
+    background: url(../images/sub.png) no-repeat -246px 0;
+}
+.project li.sub_3 a {
+    background: url(../images/sub.png) no-repeat -478px 0;
+}
+.project li.sub_4 a {
+    background: url(../images/sub.png) no-repeat -710px 0;
+}
+.project .sub_1 a:hover{
+	 background: url(../images/sub.png) no-repeat -2px -306px;
+}
+.project .sub_2 a:hover{
+	 background: url(../images/sub.png) no-repeat -246px -306px;
+}
+.project .sub_3 a:hover{
+	 background: url(../images/sub.png) no-repeat -478px -306px;
+}
+.project .sub_4 a:hover{
+	 background: url(../images/sub.png) no-repeat -710px -306px;
+}
+.project ul li a span{
+	background: url(../images/tit_bg.png) no-repeat -81px -145px;
+    line-height: 27px;
+    display: block;
+    width: 79px;
+    height: 27px;
+    color: #333;
+    text-align: center;
+    margin-left: 50px;
+}
+.project ul li a:hover span{
+	color: #fff;
+	background: url(../images/tit_bg.png) no-repeat 0 -145px;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+}
+}
+
+/*解决方案样式结束*/
+
+
+/*企业介绍样式开始*/
+
+.warp{
+	width:100%;
+	height:205px;
+	border-bottom:#ccc solid 1px;
+	border-top:#FFF solid 1px;}
+.introducein{
+	width:1100px;
+	padding:15px 15px;
+	margin:0 auto;
+	}
+.warp h3{
+	display:block;
+	text-align:center;
+	height:40px;
+	font-family:Arial;
+	font-size:26px;
+	line-height:40px;
+	margin-bottom:15px;}
+.warp h3 a{
+	color:#333;}
+.warp h3 a:hover{
+	color:#333;}
+.warp h3 span{
+	color:#609;}
+
+.introducein p{
+	font-size:16px;
+	color:#666;
+	line-height:30px;}
+	
+	
+/*企业介绍样式结束*/
+
+/*方案列表样式开始*/
+.csheme{
+	background:#E8E8E8;
+	width:100%;
+	height:210px;
+	position:relative;}
+.cshemein{
+	width:1100px;
+	height:210px;
+	margin:0 auto;
+	position:relative;}
+.cshemein-bg{
+	width:1040px;
+	height:210px;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;}
+.cshemein-ul{
+	width:9999px;
+	margin-left:12px;
+	position:absolute;
+	top:0;
+	left:0;}
+.cshemein-ul li{
+	width: 130px;
+    font-size: 14px;
+    float: left;}
+
+.cshemein-ul li a{
+	display:block;
+	width:100px;
+	color:#333;
+	float:left;
+	padding-top:105px;
+	text-align:center;
+	background:url(../images/solution.gif) no-repeat 0 0;}
+.cshemein-ul .CS1 a{
+	}
+.cshemein-ul .CS2 a{
+	background-position:-100px 0;
+	}
+.cshemein-ul .CS3 a{
+	background-position:-200px 0;
+	}
+.cshemein-ul .CS4 a{
+	background-position:-300px 0;
+	}
+.cshemein-ul .CS5 a{
+	background-position:-400px 0;
+	}
+.cshemein-ul .CS6 a{
+	background-position:-500px 0;
+	}
+.cshemein-ul .CS7 a{
+	background-position:-600px 0;
+	}
+.cshemein-ul .CS8 a{
+	background-position:-700px 0;
+	}
+.cshemein-ul .CS9 a{
+	background-position:-800px 0;
+	}
+.cshemein-ul .CS10 a{
+	background-position:-900px 0;
+	}
+.cshemein-ul .CS11 a{
+	background-position:-1000px 0;
+	}
+.cshemein-ul .CS12 a{
+	background-position:-1100px 0;
+	}
+.cshemein-ul .CS13 a{
+	background-position:-1200px 0;
+	}
+.cshemein-ul .CS14 a{
+	background-position:-1300px 0;
+	}
+.cshemein-ul .CS15 a{
+	background-position:-1400px 0;
+	}
+.cshemein-ul .CS16 a{
+	background-position:-1500px 0;
+	}
+.cshemein-ul a:hover{background:url(../images/solution.gif) no-repeat 0 0;}
+.CS1 a:hover{
+	background-position: 0 -125px;
+	color:#609;}
+.CS2 a:hover{
+	background-position: -100px -125px;
+	color:#609;}	
+.CS3 a:hover{
+	background-position:-200px -125px;
+	color:#609;}	
+
+.CS4 a:hover{
+	background-position:-300px -125px;
+	color:#609;}	
+
+.CS5 a:hover{
+	background-position:-400px -125px;
+	color:#609;}	
+
+.CS6 a:hover{
+	background-position:-500px -125px;
+	color:#609;}	
+
+.CS7 a:hover{
+	background-position:-600px -125px;
+	color:#609;}	
+
+.CS8 a:hover{
+	background-position:-700px -125px;
+	color:#609;}	
+
+.CS9 a:hover{
+	background-position:-800px -125px;
+	color:#609;}	
+
+.CS10 a:hover{
+	background-position:-900px -125px;
+	color:#609;}	
+
+.CS11 a:hover{
+	background-position:-1000px -125px;
+	color:#609;}	
+
+.CS12 a:hover{
+	background-position:-1100px -125px;
+	color:#609;}	
+
+.CS13 a:hover{
+	background-position:-1200px -125px;
+	color:#609;}	
+
+.CS14 a:hover{
+	background-position:-1300px -125px;
+	color:#609;}	
+
+.CS15 a:hover{
+	background-position: -1400px -125px;
+	color:#609;}	
+
+.CS16 a:hover{
+	background-position:-1500px -125px;
+	color:#609;}	
+
+.cshemein i{
+	cursor:pointer;
+	width:23px;
+	height:45px;
+	position:absolute;
+	top:85px;}
+.l	{left:0; background:url(../images/scr.png) no-repeat;}
+.r{ right:0;
+	background:url(../images/scr.png) no-repeat -23px -1px;}
+
+/*方案列表样式结束*/
+
+
+
+/*底部样式开始*/
+.footer{
+	width:100%;
+	background:#444444;
+	border-top:#FFF solid 1px;}
+.footein{
+	width:1100px;
+	height:400px;
+	margin:15px auto 0;}
+.footer-l{
+	width:870px;
+	height:390px;
+	float:left;
+	
+	padding:5px 15px;}
+.footer-l h3{
+	line-height:30px;
+	font-size:18px;
+	color:#fff;
+	margin-bottom:15px;}
+.footer-l p{
+	line-height:24px;
+	font-size:15px;
+	color:#FFF;
+	font-weight:bold;}
+.footer-l ul{
+	overflow:hidden;
+	margin-top:20px;}
+.footer-l li{
+	float:left;
+	width:340px;
+	margin-right:50px;}
+.footer-l li p{
+	line-height:30px;}		
+
+.footer-r{
+	width:200px;
+	height:300px;
+	float:right;
+	}
+.footer-r h3{
+	line-height:30px;
+	font-size:18px;
+	color:#fff;
+	text-align:center;}
+.rwm{
+	width:170px;
+	height:100px;
+	padding:15px 15px;
+	border-bottom:#333 2px solid;}
+.rwm img{
+	background:url(../images/wx.gif) no-repeat;
+	float:left;
+	margin-right:15px;}
+.rwm p{
+	font-size:16px;
+	line-height:30px;
+	color:#999;}
+.footer-img{
+	margin:0 auto;
+	padding-top:15px;}
+/*底部样式结束*/
+/*版权样式开始*/
+.copyright{
+	width:100%;
+	height:60px;
+	background:#783F7C;
+	}
+.copyrightIn{
+	width:1100px;
+	height:60px;
+	margin:0 auto;
+	text-align:center;
+	color:#FFF;
+	line-height:60px;
+	font-size:15px;
+	font-family:Arial;
+	font-weight:bold;}
+.copyrightIn p{
+	}
+/*版权样式结束*/

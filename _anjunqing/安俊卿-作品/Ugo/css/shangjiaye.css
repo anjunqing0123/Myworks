@@ -1,0 +1,211 @@
+header{
+	max-width: 720px;
+	min-width:320px;
+	height:  2.222rem;
+	width: 100%;
+	padding: .556rem .833rem .389rem;
+	margin:0 auto; 
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
+	z-index: 9999;
+	background-color: rgba(255,255,255,.8);
+	background-color:  #fe6600;
+}
+.left a{
+	background: url(../images/shangjia-l.png) center center no-repeat;
+	/* -webkit-background-size:50%;
+	background-size: 50%; */
+}
+.right a{
+	background: url(../images/sousuo-sj.png) center center no-repeat;
+	/* -webkit-background-size:60%;*/
+}
+.center{
+	text-align: center;
+	line-height: 1.222rem;
+	font-size: .778rem;
+	color: #fff;
+}
+
+.center a{
+	display: inline-block;
+	width: 3.33rem;
+	height: 1.22rem;
+	border-radius:0 .278rem .278rem 0;
+	color: #fe6600;
+	border: 1px solid #fff;
+	background-color: #fff;
+
+}
+.center a.current{
+	background-color: #fe6600;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: .278rem 0 0 .278rem;
+}
+
+
+
+
+.navin{
+	width: 100%;
+	height: 2.222rem;
+	background: #ccc;
+}
+.filter-sort-head{
+	position: relative;
+    top: 0;
+    width: 100%;
+    line-height: 2.222rem;
+    height: 2.222rem;
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: .722rem;
+    color: #666;
+    z-index: 12;
+}
+.head-tab {
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tab4 {
+    width: 25%;
+}
+.head-tab:after {
+    content: '';
+    display: inline-block;
+    margin-left: 7px;
+    margin-bottom: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    border-bottom: 1px solid #666;
+    border-left: 1px solid #666;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* nav  结束 */
+
+/* 定位 开始 */
+.dingwei{
+	width: 100%;
+	height: 1.8rem;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	padding: 5px 10px;
+	-weblit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #f0f0f0;
+}
+.dingwei p{
+	line-height: 1rem;
+	width: 80%;
+	float: left;
+	font-size: 14px;
+}
+.dingwei a{
+	display: block;
+	width: 1rem;
+	height: 1.11rem;
+	float: right;
+	margin-right: 10px;
+	background: url(../images/shuaxin.png) 0 0 no-repeat;
+}
+/* 定位 结束 */
+
+/* 附近商家列表 */
+
+.fujinsj{
+	width: 100%;
+	padding: 5px 10px;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.sjzp{
+	width: 35%;
+	float: left;
+
+}
+.sjzp img{
+	width: 100%;
+}
+.sjxx{
+	width: 65%;
+	float: right;
+	padding-left: 10px;
+	color: #ccc;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.dianming p{
+	font-size: 20px;
+	line-height: 22px;
+	display: inline-block;
+	padding: 5px;
+	color: #333;
+}
+.dianming a{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-left: 5px;
+	background: url(../images/tuangou.png) no-repeat;
+}
+.pingjia{
+	margin-top: 0.556rem;
+	width: 100%;
+	overflow: hidden;
+}
+.pingjiain{
+	float: left;
+	width: 52%;
+
+}
+.pingjiain a{
+	display: inline-block;
+}
+.renjun{
+	float: right;
+	width: 48%;
+	height: 22px;
+	overflow: hidden;
+}
+.renjun span{
+	float: left;
+}
+.renjun p{
+	float: right;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+}
+.qita{
+	margin-top: 0.278rem;
+	width: 100%;
+	height: 22px;
+	overflow: hidden;
+}
+.qita p{
+	float: left;
+	display: inline-block;
+}
+.qita span{
+	float: right;
+}
+
+footer li:nth-child(3) span{background-position: -1.5rem 0rem;}
+footer li:nth-child(3) a{color: #fe6600;}

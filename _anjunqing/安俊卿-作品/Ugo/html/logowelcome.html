@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <link rel="stylesheet" type="text/css" href="../css/logowelcome.css">
+        <script type="text/javascript">
+            var oHtml = document.documentElement;
+            getSize();
+    
+            window.onresize = function(){
+                getSize();
+            }
+            function getSize(){
+    
+                var screenWidth = oHtml.clientWidth;
+                
+                if(screenWidth < 320){
+                    // 如果说屏幕宽度小于320的话 就让根目录的font-size停留在320的这个范围内
+                    oHtml.style.fontSize = '17.06666px';
+                } else if(screenWidth > 640){
+                    // 如果说屏幕宽度大于750的话 就让根目录的font-size停留在7500的这个范围内
+                    oHtml.style.fontSize = '34.1333px';
+                }else{
+                    // 在这个区间之间，就让根目录的font-size自己去适配
+                    oHtml.style.fontSize = screenWidth/(750/40) + 'px';
+                }
+            }
+        </script>
+    </head>
+    <body>
+    <div class="welcome">
+    	<div class="logo"></div>
+        <div class="btn">
+            <a href="javascript:void(0);">马上注册</a>
+            <a href="login.html">立即登录</a>
+        </div>
+    </div>
+    </body>
+</html>

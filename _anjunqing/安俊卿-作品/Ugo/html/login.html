@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <link rel="stylesheet" type="text/css" href="../css/login.css">
+    </head>
+    <body>
+    	<!-- 头部开始 -->
+    	<header>
+    		<div class="head"></div>
+    		<div class="login">
+    			<span onclink="goback()"></span>
+    			<a href="javascript:void(0);">登录</a>
+    		</div>
+    		<div class="registered"><a href="javascript:void(0);">注册</a></div>
+    	</header>
+    	<!-- 头部结束 -->
+
+    	<!-- teatArea开始 -->
+    	<div class="textArea">
+    		<div class="tel">
+    			<input type="text" placeholder="请输入手机号">
+    			<span></span>
+    		</div>
+    		<div class="password">
+    			<input type="password" placeholder="请输入密码">
+    			<span></span>
+    		</div>
+    	</div>
+		<!-- teatArea结束 -->
+
+		<!-- 立即登录开始 -->
+		<div class="lgbg">
+			<div class="logingo">
+				<a href="index.html">立即登录</a>
+			</div>
+			<div class="lo_bd clearfix">
+				<a href="javascript:void(0);" class="disremen">忘记密码？</a>
+				<a href="javascript:void(0);" class="messege">短信验证码登录</a>
+			</div>
+		</div>
+		<!-- 立即登录结束 -->
+
+		<!-- 第三方登录开始 -->
+		<div class="thLogin">
+			<div class="title">
+				<p>使用第三方账号登录</p>		
+			</div>
+			<div class="lgicon clearfix">
+				<div class="qq">
+					<a href="javascript:void(0);">
+						<img src="../images/icon/QQ.png">
+						<span>QQ登录</span>
+					</a>
+				</div>
+				<div class="weixin">
+					<a href="javascript:void(0);">
+						<img src="../images/icon/weixin.png">
+						<span>微信登录</span>
+					</a>
+				</div>
+				<div class="sina">
+					<a href="javascript:void(0);">
+						<img src="../images/icon/sina.png">
+						<span>微博登录</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 第三方登录开始 -->
+    </body>
+</html>
+<script type="text/javascript">
+	function goback(){
+		window.history.back();
+	}
+</script>

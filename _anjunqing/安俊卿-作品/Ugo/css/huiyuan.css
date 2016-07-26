@@ -1,0 +1,202 @@
+body,html{
+	min-width: 320px;
+	max-width: 750px;
+	/* height: 100%; */
+	background: #fff;
+}
+ header{
+	width: 100%;
+	height: 9.5rem;
+	background: #ff5641;
+	
+}  
+/* 状态栏开始 */
+.statusBar{
+	background: #000;
+	height: 1rem;
+}
+/* 头部开始 */
+h3{
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.85rem;
+	font-weight: normal;
+	position: relative;
+	margin-left: 0.75rem;
+}
+h3:before{
+	content: '';
+	width: 0.85rem;
+	height: 0.85rem;
+	background: url(../images/return.png) no-repeat;
+	-webkit-background-size: 0.85rem 0.85rem;
+	background-size: 0.85rem 0.85rem;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -0.425rem;
+}
+.headerImg{
+	position: relative;
+}
+.headerImg img{
+	display: block;
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 3.6rem;
+	margin:0 auto;
+	
+}
+.headerImg span{
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url(../images/V.png) no-repeat;
+	-webkit-background-size: 0.8rem 0.8rem;
+	background-size: 0.8rem 0.8rem;
+	position: absolute;
+	bottom: 0;
+	left: 52%;
+}
+.loginName{
+	text-align: center;
+	color: #fff;
+}
+.loginName p{
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+}
+.loginName span{
+	font-size: 0.6rem;
+}
+.memberInfo{
+	margin:0 auto;
+	background: #fff;
+}
+.member{
+	height: 2rem;
+	padding:0 0.75rem;
+	border-bottom: 1px solid #dddddd;
+}
+.member p{
+	float: left;
+	line-height: 2rem;
+	position: relative;
+	font-size: 0.7rem;
+}
+.member span{
+	float: right;
+	line-height: 2rem;
+	padding-right: 1rem;
+	position: relative;
+	font-size: 0.6rem;
+}
+.member span:before{
+	content: '';
+	position: absolute;
+	width: 0.85rem;
+	height: 0.8rem;
+	background: url(../images/right.png) no-repeat;
+	-webkit-background-size: 0.85rem 0.8rem;
+	background-size: 0.85rem 0.8rem;
+	top: 50%;
+	right: 0;
+	margin-top: -0.4rem;
+}
+.memberImg{
+	padding:0.75rem;
+}
+.memberInfo img{
+	display: block;
+	
+}
+
+/* 我的特权开始 */
+.myRight{
+	margin-top: 0.75rem;
+}
+.rightList{
+	height: 4.75rem;
+}
+.rightList li{
+	width: 20%;
+	text-align: center;
+	float: left;
+	
+}
+.rightList li a{
+	display: block;
+
+}
+.rightList li a p{
+	position: relative;
+	padding-top: 3.2rem;
+	/* padding-top: 0.75rem; */
+	position: relative;
+	font-size: 0.6rem;
+	color: #3e403f;
+
+}
+.rightList li a p:before{
+	content: '';
+	width: 2.25rem;
+	height: 2.25rem;
+	position: absolute;
+	top: 0.75rem;
+	left: 50%;
+	margin-left: -1.125rem;
+	background: url(../images/one.png) no-repeat;
+	-webkit-background-size: 2.25rem 2.25rem;
+	background-size: 2.25rem 2.25rem;
+}
+.rightList li:nth-child(2) a p:before{
+	background: url(../images/two.png) no-repeat;
+	-webkit-background-size: 2.25rem 2.25rem;
+	background-size: 2.25rem 2.25rem;
+}
+.rightList li:nth-child(3) a p:before{
+	background: url(../images/three.png) no-repeat;
+	-webkit-background-size: 2.25rem 2.25rem;
+	background-size: 2.25rem 2.25rem;
+}
+.rightList li:nth-child(4) a p:before{
+	background: url(../images/four.png) no-repeat;
+	-webkit-background-size: 2.25rem 2.25rem;
+	background-size: 2.25rem 2.25rem;
+}
+.rightList li:nth-child(5) a p:before{
+	background: url(../images/five.png) no-repeat;
+	-webkit-background-size: 2.25rem 2.25rem;
+	background-size: 2.25rem 2.25rem;
+}
+/* 成长任务开始 */
+.growMission{
+
+}
+.missionList{
+
+}
+.missionList li{
+	height: 2.5rem;
+	padding:0 0.75rem;
+	font-size: 0.6rem;
+	border-top: 1px solid #ddd;
+}
+.missionList li:nth-child(1){
+	border-top: none;
+}
+.leftMission{
+	float: left;
+	line-height: 1.25rem;
+}
+.rightMission{
+	float: right;
+	line-height: 2.5rem;
+}
+.rightMission a{
+	color: #ff5641;
+	padding:0.2rem;
+	border:1px solid #ff5641;
+	border-radius: 0.15rem;
+}

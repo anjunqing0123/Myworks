@@ -1,0 +1,38 @@
+
+footer{
+	width: 100%;
+	min-width: 320px;
+	max-width: 750px;
+	height: 2.25rem;
+	background: #fff ;
+	border-top: 1px solid #ccc;
+	position: fixed;
+	bottom: 0;
+	z-index: 11;
+}
+footer ul{}
+footer li{
+	text-align: center;
+	width: 20%;
+	float: left;
+}
+footer li a{
+	font-size: 0.6rem;
+	color: #000;
+}
+footer li span{
+	display: block;
+	width: 0.75rem;
+	height:0.75rem;
+	/* background: red; */
+	margin: 0.25rem auto;
+	background: url(../images/sprite.png) 0 -1rem no-repeat;
+	-webkit-background-size:3.75rem 2rem;
+	background-size:3.75rem 2rem;
+}
+footer li:nth-child(1) span{background-position: 0px -1rem;}
+footer li:nth-child(2) span{background-position: -0.75rem -1rem;}
+footer li:nth-child(3) span{background-position: -1.5rem -1rem;}
+footer li:nth-child(4) span{background-position: -2.25rem -1rem;}
+footer li:nth-child(5) span{background-position: -3rem -1rem;}
+/* footer li:nth-child(4) a{color: #fe6600;} */
