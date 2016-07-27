@@ -1,0 +1,23 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.box{
+    background: yellowgreen;
+    border: 1px solid #000000;
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+}
+.box .box1{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    margin: 100px auto;
+    text-align: center;
+    line-height: 100px;
+}
