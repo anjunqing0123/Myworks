@@ -1,0 +1,99 @@
+
+v-junqingan@ITA-1405-0214 MINGW64 /e/Ajqproject/Myworks (master)
+$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg> --save` afterwards to install a package and
+save it as a dependency in the package.json file.
+Press ^C at any time to quit.
+name: (Myworks) twat
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository: (https://github.com/anjunqing0123/Myworks.git)
+keywords:
+author:
+license: (ISC)
+About to write to E:\Ajqproject\Myworks\package.json:
+
+{
+  "name": "twat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjunqing0123/Myworks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anjunqing0123/Myworks/issues"
+  },
+  "homepage": "https://github.com/anjunqing0123/Myworks#readme"
+}
+
+
+Is this ok? (yes) yes
+
+
+v-junqingan@ITA-1405-0214 MINGW64 /e/Ajqproject/Myworks (master)
+$ npm i gulp  --save
+npm WARN package.json twat@1.0.0 No description
+npm WARN package.json twat@1.0.0 No README data
+npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher                                                                                                                                                                                                to avoid a RegExp DoS issue
+npm WARN deprecated minimatch@0.2.14: Please update to minimatch 3.0.2 or higher                                                                                                                                                                                                to avoid a RegExp DoS issue
+npm WARN deprecated lodash@1.0.2: lodash@<3.0.0 is no longer maintained. Upgrade                                                                                                                                                                                                to lodash@^4.0.0.
+npm WARN deprecated graceful-fs@1.2.3: graceful-fs v3.0.0 and before will fail o                                                                                                                                                                                               n node releases >= v7.0. Please update to graceful-fs@^4.0.0 as soon as possible                                                                                                                                                                                               . Use 'npm ls graceful-fs' to find it in the tree.
+gulp@3.9.1 node_modules\gulp
+├── interpret@1.0.1
+├── pretty-hrtime@1.0.2
+├── deprecated@0.0.1
+├── archy@1.0.0
+├── minimist@1.2.0
+├── tildify@1.2.0 (os-homedir@1.0.1)
+├── semver@4.3.6
+├── v8flags@2.0.11 (user-home@1.1.1)
+├── chalk@1.1.3 (escape-string-regexp@1.0.5, ansi-styles@2.2.1, supports-color@2                                                                                                                                                                                               .0.0, has-ansi@2.0.0, strip-ansi@3.0.1)
+├── orchestrator@0.3.7 (stream-consume@0.1.0, sequencify@0.0.7, end-of-stream@0.                                                                                                                                                                                               1.5)
+├── vinyl-fs@0.3.14 (strip-bom@1.0.0, defaults@1.0.3, vinyl@0.4.6, mkdirp@0.5.1,                                                                                                                                                                                                through2@0.6.5, graceful-fs@3.0.9, glob-stream@3.1.18, glob-watcher@0.0.6)
+├── gulp-util@3.0.7 (array-differ@1.0.0, beeper@1.1.0, array-uniq@1.0.3, lodash.                                                                                                                                                                                               _reescape@3.0.0, lodash._reevaluate@3.0.0, lodash._reinterpolate@3.0.0, object-a                                                                                                                                                                                               ssign@3.0.0, replace-ext@0.0.1, has-gulplog@0.1.0, fancy-log@1.2.0, vinyl@0.5.3,                                                                                                                                                                                                gulplog@1.0.0, lodash.template@3.6.2, through2@2.0.1, multipipe@0.1.2, dateform                                                                                                                                                                                               at@1.0.12)
+└── liftoff@2.3.0 (lodash.isstring@4.0.1, lodash.isplainobject@4.0.6, lodash.map                                                                                                                                                                                               values@4.6.0, rechoir@0.6.2, extend@3.0.0, flagged-respawn@0.3.2, resolve@1.1.7,                                                                                                                                                                                                fined@1.0.1, findup-sync@0.4.2)
+
+v-junqingan@ITA-1405-0214 MINGW64 /e/Ajqproject/Myworks (master)
+$ npm i gulp-less http-server gulp-concat --save
+npm WARN package.json twat@1.0.0 No description
+npm WARN package.json twat@1.0.0 No README data
+npm WARN prefer global http-server@0.9.0 should be installed with -g
+http-server@0.9.0 node_modules\http-server
+├── corser@2.0.1
+├── opener@1.4.1
+├── colors@1.0.3
+├── http-proxy@1.14.0 (eventemitter3@1.2.0, requires-port@1.0.0)
+├── optimist@0.6.1 (wordwrap@0.0.3, minimist@0.0.10)
+├── ecstatic@1.4.1 (url-join@1.1.0, mime@1.3.4, he@0.5.0, minimist@1.2.0)
+├── union@0.4.4 (qs@2.3.3)
+└── portfinder@0.4.0 (async@0.9.0, mkdirp@0.5.1)
+
+gulp-concat@2.6.0 node_modules\gulp-concat
+├── through2@0.6.5 (xtend@4.0.1, readable-stream@1.0.34)
+├── concat-with-sourcemaps@1.0.4 (source-map@0.5.6)
+└── gulp-util@3.0.7 (array-differ@1.0.0, lodash._reinterpolate@3.0.0, lodash._re                                                                                                                                                                                               escape@3.0.0, object-assign@3.0.0, lodash._reevaluate@3.0.0, beeper@1.1.0, array                                                                                                                                                                                               -uniq@1.0.3, replace-ext@0.0.1, minimist@1.2.0, has-gulplog@0.1.0, fancy-log@1.2                                                                                                                                                                                               .0, vinyl@0.5.3, gulplog@1.0.0, chalk@1.1.3, lodash.template@3.6.2, through2@2.0                                                                                                                                                                                               .1, multipipe@0.1.2, dateformat@1.0.12)
+
+gulp-less@3.1.0 node_modules\gulp-less
+├── object-assign@4.1.0
+├── through2@2.0.1 (xtend@4.0.1, readable-stream@2.0.6)
+├── vinyl-sourcemaps-apply@0.2.1 (source-map@0.5.6)
+├── gulp-util@3.0.7 (array-differ@1.0.0, lodash._reescape@3.0.0, lodash._reevalu                                                                                                                                                                                               ate@3.0.0, object-assign@3.0.0, array-uniq@1.0.3, beeper@1.1.0, lodash._reinterp                                                                                                                                                                                               olate@3.0.0, replace-ext@0.0.1, minimist@1.2.0, has-gulplog@0.1.0, fancy-log@1.2                                                                                                                                                                                               .0, vinyl@0.5.3, gulplog@1.0.0, chalk@1.1.3, lodash.template@3.6.2, multipipe@0.                                                                                                                                                                                               1.2, dateformat@1.0.12)
+├── less@2.7.1 (graceful-fs@4.1.6, mime@1.3.4, source-map@0.5.6, image-size@0.5.                                                                                                                                                                                               0, mkdirp@0.5.1, errno@0.1.4, promise@7.1.1)
+└── accord@0.23.0 (indx@0.2.3, semver@5.3.0, convert-source-map@1.3.0, fobject@0                                                                                                                                                                                               .0.4, when@3.7.7, glob@7.0.3, resolve@1.1.7, uglify-js@2.7.3, lodash@4.11.2)
+
+v-junqingan@ITA-1405-0214 MINGW64 /e/Ajqproject/Myworks (master)

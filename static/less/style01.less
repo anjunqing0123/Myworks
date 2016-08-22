@@ -1,0 +1,30 @@
+@color:yellow;
+@the-border: 1px;
+@red:        #ff6400;
+
+.box{
+	color:@color;
+	border: @the-border*2;
+	width: 300px;
+	height: 500px;
+	margin: 100px auto;
+	background: yellowgreen;
+	h3{
+		color: @red;
+		font-size: 24px;
+	}
+	p{
+		color: #333;
+		font-size: 18px;
+		font-weight: 600;
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			border-width: 1px;
+			color:@red;
+		}
+	}
+}
+
+
