@@ -1,0 +1,24 @@
+.box {
+  color: yellow;
+  border: 2px;
+  width: 300px;
+  height: 500px;
+  margin: 100px auto;
+  background: yellowgreen;
+}
+.box h3 {
+  color: #ff6400;
+  font-size: 24px;
+}
+.box p {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+.box a {
+  text-decoration: none;
+}
+.box a:hover {
+  border-width: 1px;
+  color: #ff6400;
+}
