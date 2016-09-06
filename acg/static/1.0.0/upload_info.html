@@ -2,55 +2,75 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>peropero##二次元//上传视频页</title>
-    <link rel="stylesheet" href="http://127.0.0.1:8081/acg/src/web/css/base.css">
-    <link rel="stylesheet" href="http://127.0.0.1:8081/acg/src/web/css/style.css">
+    <title>peropero//默认上传视频</title>
+    <link rel="stylesheet" href="../../src/web/css/base.css">
+    <link rel="stylesheet" href="../../src/web/css/style.css">
 </head>
 <body>
-<!-- PC个人中心，填写个人资料 -->
 <div class="wp-grid">
     <div class="grid main">
         <div class="main-top">
             <h3 class="logo">peropero</h3>
         </div>
-        <div class="main-btm">
-
-            <div class="btm-l">
-                <ul class="left-tab">
-                    <li>
-                        <a href="javascript:;">
-                            <em class="left-bg"></em>
-                            <i class="ico touxiang"></i>
-                            <span>我是头像</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <em class="left-bg"></em>
-                            <i class="ico tougao"></i>
-                            <span>视频投稿</span>
-                        </a>
-                    </li>
-                    <li class="cur">
-                        <a href="javascript:;">
-                            <em class="left-bg"></em>
-                            <i class="ico guanli"></i>
-                            <span>投稿管理</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="btm-r">
-
+        <div class="shadow">
+            <div class="main-info">
+                <div class="info-l">
+                    <ul class="left-tab">
+                        <li>
+                            <a href="javascript:;">
+                                <i class="ico touxiang"></i>
+                                <span>我是头像</span>
+                            </a>
+                        </li>
+                        <li class="cur">
+                            <a href="javascript:;">
+                                <i class="ico tougao"></i>
+                                <span>视频投稿</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="javascript:;">
+                                <i class="ico guanli"></i>
+                                <span>投稿管理</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-r">
+                    <!--上传= 未上传时-->
+                    <div class="info-tab">
+                        <div class="hd" style="">
+                            <!--当前选择 current-->
+                            <div class="hd-top-tab current">视频投稿</div>
+                        </div>
+                        <div class="bd clearfix">
+                            <div class="upload-mod">
+                                <div class="tgw-tougao">
+                                    <input type="submit" value="立即投稿" class="tgw-upload">
+                                    <i></i>
+                                </div>
+                                <p class="mod-dec">拖拽视频到此处也可上传</p>
+                                <input type="file" class="upfile-in">
+                            </div>
+                            <div class="vod-explain">
+                                <p class="wordwrap"><code class="num">1、</code>最多上传10个视频，多个视频统一编辑信息</p>
+                                <p class="wordwrap"><code class="num">2、</code>一次能上传多/单个视频,单个视频大小不超过10G</p>
+                                <p class="wordwrap"><code class="num">3、</code>支持wma; wmv; avi; wm; asf; rm; rmvb; mpeg; mpg; ts; mp4; mp3</p>
+                                <p class="wordwrap"><code class="num">4、</code>提供流畅（300k）;高清（900k）;超清（1800k）;蓝光（5000k）四种码率</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--左右侧定位-->
+        <!--右侧定位-->
         <i class="pp-t"></i>
         <i class="m-r"></i>
         <!--舌头-->
         <i class="pp-r"></i>
     </div>
 </div>
+
 </body>
 
 </html>

@@ -1,9 +1,15 @@
 import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
+import { connect,Provider } from 'react-redux'
 import Header from '../components/Header';
 import Content from '../components/Content';
 import * as Actions from '../actions';
+
+import { render } from 'react-dom'
+import bindAction from './bindAction'
+import configureStore from '../store/configureStore'
+
+import CommonUtils from '../utils/CommonUtils';
 
 class App extends Component{
     render(){
@@ -17,17 +23,12 @@ class App extends Component{
     }
 }
 
-function mapStateToProps(state){
-    return {
-        todos : state.todos
-    }
-}
-function mapDispatchToProps(dispatch){
-    return{
-        actions : bindActionCreators(Actions, dispatch)
-    }
-}
-module.exports = connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(App);
+const Page = bindAction.bind(App)
+const store = configureStore()
+
+render(
+  <Provider store={store}>
+    <Page />
+  </Provider>,
+  CommonUtils.getDom('app')
+)

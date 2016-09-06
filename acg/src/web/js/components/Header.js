@@ -9,13 +9,13 @@ export default class Header extends Component{
         };
     }
 
-    handelChange(e){
+    handelChange = (e) => {
         this.setState({
             text : e.target.value
         });
     }
 
-    handelClick(){
+	handelClick = (e) => {
         this.props.actions.addTodo(this.state.text);
         this.setState({
             text : ''
@@ -26,8 +26,8 @@ export default class Header extends Component{
         const {addTodo} = this.props;
         return (
             <div>
-                <input type="text" value={this.state.text} onChange={(e)=>this.handelChange(e)} />
-                <button onClick={this.handelClick.bind(this)}>add</button>
+                <input type="text" value={this.state.text} onChange={this.handelChange} />
+                <button onClick={this.handelClick}>add</button>
             </div>
         );
     }
