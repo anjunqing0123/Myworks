@@ -1,0 +1,1114 @@
+.wp-grid:before,
+.grid:before,
+.m:before,
+.wp-grid:after,
+.grid:after,
+.m:after {
+  content: " ";
+  display: table;
+}
+.wp-grid:after,
+.grid:after,
+.m:after {
+  clear: both;
+}
+.grid .m {
+  width: 100%;
+}
+.seprate-v {
+  width: 100%;
+  height: 20px;
+}
+.enroll_btn {
+  width: 16.6%;
+  height: auto;
+  position: fixed;
+  z-index: 200;
+  right: 20px;
+  bottom: 20px;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+  .enroll_btn{
+    right: 20px;
+    bottom: 40px;
+  }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) { 
+  .enroll_btn{
+    right: 20px;
+    bottom: 40px;
+  }
+}
+.rel{
+  position: relative;
+}
+.module-personal{
+  width: 100%;
+  overflow: hidden;
+}
+.module-video.module-singleupload{
+  background-size: 100% auto;
+  background: none;
+  width: 3.54rem;
+  margin: auto;
+  margin-top: 0.3rem;
+}
+.module-video.module-singleupload .video-l .item > div{
+  background: #ebebeb;
+}
+.enroll_btn:before,
+.enroll_btn:after {
+  content: " ";
+  display: table;
+}
+.enroll_btn:after {
+  clear: both;
+}
+.enroll_btn.w {
+  width: 8.3%;
+}
+.enroll_btn img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.module-personal {
+  height: 4.35rem;
+  font-size: 20px;
+  width: 100%;
+  background: url("../images/personal/p_bg_bule.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.module-personal.module-personal-bg {
+  background:#fff url("../images/personal/p_bg_bule.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.module-personal .status {
+  position: absolute;
+  z-index: 0;
+  height: 1.2rem;
+  width: 100%;
+  background: url("../images/personal/hxfail.png") no-repeat right center;
+  background-size: auto 100% ;
+  right: .25rem;
+  top: .35rem;
+  display: none;
+}
+.module-personal .status.hxfail {
+  display: block;
+}
+.module-personal .status.jsfail {
+  display: block;
+  background: url("../images/personal/jsfail.png") no-repeat right center;
+  background-size: auto 100% ;
+}
+.module-personal .status > span {
+  color: #ec3136;
+  font-size: .28rem;
+  display: none;
+  float: right;
+  line-height: .28rem;
+  background: url("../images/personal/live.png") no-repeat left center;
+  background-size: auto 100%;
+  padding-left: .33rem;
+}
+.module-personal .status.zhibo {
+  display: block;
+  background: none;
+}
+.module-personal .status.zhibo > span {
+  display: inline-block;
+}
+.module-personal.noblue {
+  background: url("../images/personal/p_bg.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.module-personal.module-personal-bg.noblue {
+  background:#fff url("../images/personal/p_bg.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.module-personal .detail_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.module-personal .detail_list {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.module-personal .detail_list > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.module-personal .detail_list > div > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.module-personal .detail_list .detail {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.module-personal .detail_list .detail_w {
+  /* 个人简介外部包裹 */
+  position: absolute;
+  top: .5rem;
+  bottom: 2%;
+  left: 8%;
+  right: 8%;
+  color: #fff;
+}
+.module-personal .detail_list .detail_w h1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "宋体";
+  display: inline-block;
+  height: .35rem;
+  font-size: .35rem;
+  width: 100%;
+}
+.module-personal .detail_list .detail_w p {
+  position: relative;
+  line-height: .45rem;
+  font-size: .3rem;
+  max-height: 2.25rem;
+  margin-top: .22rem;
+  margin-bottom: 3%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.module-personal  .detail_list  .desc {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.module-personal  .detail_list  .desc_w {
+  /* 个人信息外部包裹 */
+  position: absolute;
+  top: .5rem;
+  left: 8%;
+  right: 8%;
+  bottom: 5%;
+}
+.module-personal  .detail_list  .desc_w .p_pic {
+  height: 1.4rem;
+  width: 1.4rem;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 9999px;
+  -webkit-border-radius: 9999px;
+  overflow: hidden;
+}
+.module-personal  .detail_list  .desc_w .p_pic img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 9999px;
+  -webkit-border-radius: 9999px;
+  border: none;
+  overflow: hidden;
+}
+.module-personal  .detail_list  .v_fail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  line-height: 1.4rem;
+  color: #ec3136;
+  font-size: .28rem;
+  text-align: center;
+}
+.module-personal .detail_list .v_fail span {
+  line-height: 1.5rem;
+  position: absolute;
+  bottom: .3rem;
+  left: 0;
+  display: inline-block;
+  line-height: .2rem;
+  font-size: .2rem;
+  color: #646464;
+  width: 100%;
+}
+.module-personal .detail_list .username .v_fail span{
+  position: static;
+  width: auto;
+}
+.module-personal .detail_list .username {
+  height: .3rem;
+  margin-top: .16rem;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  line-height: .3rem;
+  overflow: visible;
+}
+.module-personal  .detail_list  .username:before,
+.module-personal  .detail_list  .username:after {
+  content: " ";
+  display: table;
+}
+.module-personal  .detail_list  .username:after {
+  clear: both;
+}
+.module-personal  .detail_list  .username span.name {
+  line-height: .3rem;
+  font-size: .28rem;
+  display: inline-block;
+  width: 4.63rem;
+}
+.module-personal  .detail_list  .man .personIcon{
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../images/personal/man.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: -0.31rem;
+  top: 0.03rem;
+}
+.module-personal  .detail_list  .woman .personIcon{
+  width: 0.24rem;
+  height: 0.24rem;
+  background: url("../images/personal/woman.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: -0.31rem;
+  top: 0.03rem;
+}
+.module-personal  .detail_list  .username span.name .fail-txt{
+  position: absolute;
+  margin-left: 0.14rem;
+  font-size: 0.24rem;
+  width: 2rem;
+  text-align: left;
+  left: auto;
+  bottom:auto;
+  vertical-align: bottom;
+  line-height: 0.34rem;
+  display: inline-block;
+}
+.module-personal  .detail_list .username span.name span.ids {
+  letter-spacing: .01rem;
+  font-size: .28rem;
+  line-height: .3rem;
+  height: .3rem;
+  color: #fff;
+  max-width: 2.2rem;
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: visible;
+  word-break: break-all;
+}
+.module-personal  .detail_list .username span.name span.ids{
+  font-size: .24rem;
+}
+.module-personal  .detail_list  .username span.ids b{
+  overflow: hidden;
+  display: inline-block;
+  letter-spacing: .01rem;
+  line-height: .3rem;
+  height: .3rem;
+  color: #fff;
+  max-width: 2.2rem;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+.module-personal .axiliary-infowrap{
+  position: absolute;
+  display: inline-block;
+  margin-left: 0.03rem;
+  text-align: left;
+  width: 50%;
+  overflow: hidden;
+}
+.module-personal  .detail_list span.name span {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: .14rem;
+  line-height: .3rem;
+  display: inline-block;
+  height: .3rem;
+  overflow: hidden;
+}
+.module-personal  .detail_list span.name span.groupName {
+  font-size: .2rem;
+  width: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+  color:rgba(255, 255, 255, 0.6);
+}
+.pad.module-personal  .detail_list span.name span.groupName {
+  font-size: .18rem;
+}
+.module-personal  .detail_list span.name span.age {
+  text-align: left;
+  font-size: .2rem;
+  display: inline-block;
+  width: auto;
+  line-height: .3rem;
+  height: .3rem;
+}
+.module-personal  .detail_list span.name span.addr {
+  padding-left: .10rem;
+  font-size: .2rem;
+  display: inline-block;
+  width: 1.7rem;
+  line-height: .2rem;
+  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  line-height: .3rem;
+}
+.module-personal .detail_list span.name .axiliary-infowrap span.seprate{
+  margin-left: .10rem;
+  margin-right:.07rem;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: .2rem;
+}
+.pad.module-personal .detail_list span.name .axiliary-infowrap span.seprate{
+  font-size: .18rem;
+}
+.module-personal .detail_list span.name.v_fail span{
+  height: 0.34rem;
+}
+.person-space-pad.module-personal .detail_list span.name.v_fail .edit{
+  font-size: .20rem;
+}
+.person-space-pad.module-personal .detail_list span.name.v_fail .fail-txt{
+  font-size: .18rem;
+}
+.module-personal  .detail_list span.name span.seprate {
+  padding-left: .14rem;
+  padding-right:.14rem;
+  font-size: .2rem;
+}
+.module-personal  .detail_list span.name.v_fail {
+  background: none;
+  padding-left: 0rem;
+  font-size: .28rem;
+  width: 100%;
+}
+.module-personal  .detail_list span.name.v_fail span.edit {
+  color: #ec3136;
+  font-size: .28rem;
+}
+.module-personal .detail_list .race_list {
+  position: relative;
+  height: 1rem;
+  margin: .24rem auto 0;
+}
+.module-personal  .detail_list  .race_list .race_w {
+  position: relative;
+  height: 100%;
+  width: 4rem;
+  margin: 0 auto;
+}
+.module-personal  .detail_list  .race_list .race_w.two {
+  width: 2.66666666rem;
+}
+.module-personal  .detail_list  .race_list .race_w.two .race_item {
+  width: 50%;
+}
+.module-personal  .detail_list  .race_list .race_w .race_item {
+  width: 33%;
+  text-align: center;
+  float: left;
+  color: #fff;
+  height: 1.1rem;
+  position: relative;
+}
+.module-personal  .detail_list  .race_list .race_w .race_item.line {
+  width: 100%;
+}
+.module-personal  .detail_list  .race_list .race_w .race_item span {
+  display: block;
+  line-height: 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: relative;
+}
+.module-personal  .detail_list  .race_list .race_w .race_item span.group {
+  background: #eb4d98;
+  padding: 1px .16rem;
+  line-height: .31rem;
+  border-radius: .16rem;
+  font-size: .22rem;
+  display: inline;
+  vertical-align: top;
+}
+.module-personal  .detail_list  .race_list .race_w .race_item span.group.dashu {
+  background: #a44500;
+}
+.module-personal  .detail_list  .race_list .race_w .race_item span.group.lama {
+  background: #ac145d;
+}
+.module-personal  .detail_list  .race_list .race_w .race_item span.group.guaika {
+  background: #6c17a3;
+}
+.module-personal  .detail_list  .race_list .race_w .race_item span.group.nanshen {
+  background: #1a67e4;
+}
+.module-personal  .detail_list  .race_list .race_w .race_item span.group.wenq {
+  background: #ff7200;
+}
+.module-personal  .detail_list  .race_list .race_w .race_item span.group.xuni {
+  background: #cdcdcd;
+}
+.module-personal  .detail_list  .race_list .race_w .race_item span.group.quanbu {
+  background: #ccc;
+}
+.module-personal .detail_list .race_list .race_w .race_item span.prize {
+  display: block;
+  color: #ef2e2e;
+  font-size: .22rem;
+  height: .24rem;
+  line-height: .24rem;
+  position: absolute;
+  width: 100%;
+  top: .44rem;
+  left: 0;
+}
+.module-personal  .detail_list  .race_list .race_w .race_item span.total {
+  font-size: .19rem;
+  font-family: "Helvetica Neue";
+  color: rgba(255, 255, 255, 0.5);
+  line-height: .19rem;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: .75rem;
+  left: 0;
+}
+.module-personal  .detail_list > div > div.desc .race_line_w {
+  position: absolute;
+  width: 100%;
+  height: .8rem;
+  top: 3.26rem;
+  left: 0;
+  overflow: hidden;
+}
+.module-personal  .detail_list > div > div.desc .race_line_w .bgline {
+  height: 50%;
+  width: 90%;
+  left: 10%;
+  top: 0;
+  position: absolute;
+  background: url("../images/personal/line.png") repeat-x left 0.2rem;
+}
+.module-personal  .detail_list > div > div.desc .race_line_w .race_line {
+  height: 100%;
+  width: 200%;
+  left: 5%;
+  top: 0;
+  position: absolute;
+}
+.module-personal  .detail_list > div > div.desc .race_line_w .race_line .race_item {
+  width: 1.71rem;
+  height: 100%;
+  position: relative;
+  float: left;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: .24rem;
+}
+.module-personal  .detail_list > div > div.desc .race_line_w .race_line .race_item.fail .fail {
+  display: block;
+}
+.module-personal  .detail_list > div > div.desc .race_line_w .race_line .race_item .fail {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  background: url("../images/personal/out.png") no-repeat right bottom;
+  background-size: 50% auto;
+}
+.module-personal  .detail_list > div > div.desc .race_line_w .race_line .race_item .race_step {
+  width: 1.2rem;
+  height: .4rem;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  color: #fff;
+  line-height: .4rem;
+  background: url("../images/personal/status_undone.png") no-repeat center center;
+  background-size: auto 100% ;
+  font-size: 10px;
+}
+.module-personal  .detail_list > div > div.desc .race_line_w .race_line .race_item .race_step.done {
+  background: url("../images/personal/status_done.png") no-repeat center center;
+  background-size: auto 100% ;
+}
+.module-personal  .detail_list > div > div.desc .race_line_w .race_line .race_item .race_step.over {
+  background: url("../images/personal/status_done.png") no-repeat center center;
+  background-size: auto 100% ;
+}
+.module-personal  .detail_ancher {
+  height: .1rem;
+  position: absolute;
+  width: 100%;
+  bottom: .2rem;
+}
+.module-personal  .detail_ancher .ancher_wrap {
+  width: .4rem;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+.module-personal  .detail_ancher .ancher_wrap .dot {
+  width: .1rem;
+  height: .1rem;
+  display: block;
+  border-radius: .05rem;
+  margin: 0 .05rem;
+  position: relative;
+  float: left;
+  background: #81848a;
+  transition: all .5s ease .1s;
+}
+.module-personal  .detail_ancher .ancher_wrap .dot.active {
+  background: #ef2e2e;
+}
+.module-personal.personal-line2 {
+  background: url("../images/personal/p_bg_2_bule.png") no-repeat center;
+  background-size: 100% 100%;
+  height: 5.35rem;
+}
+.module-personal.module-personal-bg.personal-line2 {
+   background:#fff url("../images/personal/p_bg_2_bule.png") no-repeat center;
+   background-size: 100% 100%;
+ }
+.pad.module-personal.personal-line2 {
+  background: url("../images/personal/p_bg_2_bule.png") no-repeat center;
+  background-size: 100% 100%;
+  height: 5.35rem;
+}
+.module-personal.personal-line2.noblue {
+  background: url("../images/personal/p_bg_2.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.module-personal.module-personal-bg.personal-line2.noblue {
+  background:#fff url("../images/personal/p_bg_2.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.pad.module-personal.personal-line2.noblue {
+  background: url("../images/personal/p_bg_2.png") no-repeat center;
+  background-size: 100% 100%;
+}
+@media (max-width: 350px) {
+  .module-personal .detail_wrap .detail_list > div > div.desc .desc_w {
+    /* 个人信息外部包裹 */
+  }
+  .module-personal.personal-line2 .detail_wrap .detail_list > div > div.desc .desc_w {
+    /* 个人信息外部包裹 */
+  }
+  .module-personal.personal-line2 .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.prize {
+    /* padding-top: 2px; */
+  }
+}
+.pad.w.module-personal {
+  height: 2.76rem;
+  font-size: 20px;
+  background: url("../images/personal/pad_pgblue.jpg") no-repeat center;
+  background-size: auto 3.3rem;
+}
+.pad.w.module-personal .status {
+  position: absolute;
+  z-index: 10;
+  height: .72rem;
+  width: 100%;
+  background: url("../images/personal/hxfail.png") no-repeat right center;
+  background-size: auto 100% ;
+  right: .25rem;
+  top: .35rem;
+  display: none;
+}
+.pad.w.module-personal .status.hxfail {
+  display: block;
+}
+.pad.w.module-personal .status.jsfail {
+  display: block;
+  background: url("../images/personal/jsfail.png") no-repeat right center;
+  background-size: auto 100% ;
+}
+.pad.w.module-personal .status > span {
+  display: none;
+  text-align: right;
+  float: right;
+  font-size: .168rem;
+  line-height: .168rem;
+  padding-left: .19rem;
+  position: relative;
+}
+.pad.w.module-personal .status.zhibo {
+  display: block;
+  background: none;
+}
+.pad.w.module-personal .status.zhibo > span {
+  display: inline-block;
+}
+.pad.w.module-personal.noblue {
+  background: url("../images/personal/padnewbg.jpg") no-repeat center;
+  background-size: auto 3.3rem;
+}
+.pad.w.module-personal .detail_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pad.w.module-personal .detail_wrap .detail_list {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.detail {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.detail .detail_w {
+  /* 个人简介外部包裹 */
+  position: absolute;
+  top: .3rem;
+  bottom: 2%;
+  left: 1.41rem;
+  right: 1.41rem;
+  color: #fff;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.detail .detail_w h1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "宋体";
+  display: inline-block;
+  height: .21rem;
+  font-size: .21rem;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.detail .detail_w p {
+  position: relative;
+  line-height: .27rem;
+  font-size: .18rem;
+  max-height: 1.35rem;
+  margin-top: .132rem;
+  margin-bottom: 3%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-align: left;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w {
+  /* 个人信息外部包裹 */
+  position: absolute;
+  top: .479rem;
+  left: 13%;
+  right: 13%;
+  bottom: 5%;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .p_pic {
+  height: .85rem;
+  width: .85rem;
+  position: relative;
+  margin: 0 auto;
+  border-radius: .425rem;
+  -webkit-border-radius: .425rem;
+  overflow: hidden;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .p_pic img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .p_pic .v_fail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  line-height: .84rem;
+  color: #ec3136;
+  font-size: .168rem;
+  text-align: center;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .p_pic .v_fail span {
+  line-height: .9rem;
+  display: none;
+  position: absolute;
+  bottom: .18rem;
+  left: 0;
+  display: inline-block;
+  line-height: .12rem;
+  font-size: .12rem;
+  color: #504f4e;
+  width: 100%;
+}
+.pad.w.module-personal .detail_wrap .detail_list {
+  height: .21rem;
+  margin-top: .09rem;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  line-height: .21rem;
+}
+.pad.w.module-personal .detail_wrap .detail_list before,
+.pad.w.module-personal .detail_wrap .detail_list after {
+  content: " ";
+  display: table;
+}
+.pad.w.module-personal .detail_wrap .detail_list after {
+  clear: both;
+}
+/*.pad.w.module-personal .detail_wrap .detail_list span.name {*/
+  /*transform: translateX(0.75rem);*/
+  /*-webkit-transform: translateX(0.75rem);*/
+  /*padding-left: .24rem;*/
+  /*line-height: .21rem;*/
+  /*font-size: .21px;*/
+  /*display: inline-block;*/
+/*}*/
+/*.pad.w.module-personal .detail_wrap .detail_list span.name span.ids {*/
+  /*background-position: left center;*/
+  /*text-indent: .2625rem;*/
+  /*background-size: auto .21rem;*/
+  /*font-size: .21rem;*/
+  /*color: #fff;*/
+  /*max-width: 2.2rem;*/
+  /*white-space: nowrap;*/
+  /*display: inline-block;*/
+  /*text-overflow: ellipsis;*/
+  /*overflow: hidden;*/
+/*}*/
+/*.pad.w.module-personal .detail_wrap .detail_list span.name span {*/
+  /*color: rgba(255, 255, 255, 0.5);*/
+  /*font-size: .15rem;*/
+/*}*/
+/*.pad.w.module-personal .detail_wrap .detail_list span.name span.age {*/
+  /*text-align: right;*/
+  /*padding-left: .06rem;*/
+/*}*/
+/*.pad.w.module-personal .detail_wrap .detail_list span.name span.addr {*/
+  /*padding-left: .06rem;*/
+/*}*/
+/*.pad.w.module-personal .detail_wrap .detail_list span.name span.seprate {*/
+  /*padding-left: .09rem;*/
+/*}*/
+/*.pad.w.module-personal .detail_wrap .detail_list span.name.v_fail {*/
+  /*background: none;*/
+  /*padding-left: 0rem;*/
+/*}*/
+/*.pad.w.module-personal .detail_wrap .detail_list span.name.v_fail span.edit {*/
+  /*color: #ec3136;*/
+  /*font-size: .18rem;*/
+/*}*/
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list {
+  position: relative;
+  height: .6rem;
+  margin: .10rem auto 0;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w {
+  position: relative;
+  height: 100%;
+  width: auto;
+  text-align: center;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item {
+  width: 15.5%;
+  text-align: center;
+  float: none;
+  display: inline-block;
+  color: #fff;
+  height: .90rem;
+}
+/*.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item.line {
+  width: 100%;
+}*/
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span {
+  display: block;
+  line-height: 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: relative;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.group {
+  background: #eb4d98;
+  padding: 1px .096rem;
+  line-height: .24rem;
+  border-radius: .16rem;
+  font-size: .132rem;
+  display: inline;
+  box-sizing:border-box;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.group.dashu {
+  background: #a44500;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.group.lama {
+  background: #ac145d;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.group.guaika {
+  background: #6c17a3;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.group.nanshen {
+  background: #1a67e4;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.group.wenq {
+  background: #ff7200;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.prize {
+  position: absolute;
+  top: .20rem;
+  padding-top: .14rem;
+  display: block;
+  color: #ef2e2e;
+  font-weight: 600;
+  font-size: .15rem;
+  height: .144rem;
+  line-height: .144rem;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.total {
+  position: absolute;
+  top: .4rem;
+  margin-top: .18rem;
+  font-size: .15rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: .114rem;
+  display: block;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .race_line_w {
+  position: absolute;
+  width: 100%;
+  height: .48rem;
+  top: 1.98rem;
+  left: 0;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .race_line_w .bgline {
+  height: 50%;
+  width: 90%;
+  left: 10%;
+  top: 0;
+  position: absolute;
+  background: url("../images/personal/line.png") repeat-x left 0.12rem;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .race_line_w .race_line {
+  height: 100%;
+  width: 95%;
+  left: 5%;
+  top: 0;
+  position: absolute;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .race_line_w .race_line .race_item {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  float: left;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: .144rem;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .race_line_w .race_line .race_item.fail .fail {
+  display: block;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .race_line_w .race_line .race_item .fail {
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  background: url("../images/personal/out.png") no-repeat right bottom;
+  background-size: 50% auto;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .race_line_w .race_line .race_item .race_step {
+  width: 1.2rem;
+  height: .24rem;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  color: #fff;
+  line-height: .24rem;
+  background: url("../images/personal/status_undone.png") no-repeat center center;
+  background-size: auto 100% ;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .race_line_w .race_line .race_item .race_step.done {
+  background: url("../images/personal/status_done.png") no-repeat center center;
+  background-size: auto 100% ;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .race_line_w .race_line .race_item .race_step.over {
+  background: url("../images/personal/status_fail.png") no-repeat center center;
+  background-size: auto 100% ;
+}
+.pad.w.module-personal .detail_wrap .detail_ancher {
+  height: .1rem;
+  position: absolute;
+  width: 100%;
+  bottom: .2rem;
+}
+.pad.w.module-personal .detail_wrap .detail_ancher .ancher_wrap {
+  width: .4rem;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+.pad.w.module-personal .detail_wrap .detail_ancher .ancher_wrap .dot {
+  width: .1rem;
+  height: .1rem;
+  display: block;
+  border-radius: .05rem;
+  margin: 0 .05rem;
+  position: relative;
+  float: left;
+  background: #81848a;
+  transition: all .5s ease .1s;
+}
+.pad.w.module-personal .detail_wrap .detail_ancher .ancher_wrap .dot.active {
+  background: #ef2e2e;
+}
+.pad.module-personal .detail_list > div > div.desc .race_line_w .race_line .race_item .race_step{
+  font-size: 10px;
+}
+.pad.module-personal .detail_list > div > div.desc .race_line_w .race_line .race_item span{
+  font-size: 10px;
+}
+.person-space-pad.pad.module-personal .detail_list > div > div.desc .race_line_w .race_line .race_item .race_step{
+  font-size: 12px;
+}
+.person-space-pad.module-personal .detail_list > div > div.desc .race_line_w .race_line .race_item span{
+  font-size: 12px;
+}
+.pad.module-video.module-2line-player .video-l .item{
+  margin-top: 0;
+  margin-bottom: .24rem;
+}
+.module-video.module-2line-player .video-l{
+  margin:0rem .07rem;
+}
+
+/* add rule by wangzhan*/
+.module-rule {
+  background: #fff;
+  overflow: hidden;
+}
+
+.module-rule a {
+  display: block;
+  padding: 0.1rem 0.2rem;
+  color: #323232;
+  font-size: 0.30rem;
+}
+.module-rule .arrow-right {
+  float: right;
+  display: inline-block;
+  height: 0.22rem;
+  width: 0.22rem;
+  margin-top: 0.08rem;
+  border-top: 2px solid #9b9b9b;
+  border-right: 2px solid #9b9b9b;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.module-rule{
+    width: 100%;
+    margin-top:-1px;
+    overflow: hidden;
+}
+.module-rule img{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.module-rule-cont{
+    width:100%;
+    background: #f0f0f0;
+    overflow : hidden;
+}
+.module-rule-cont ul{
+    padding-bottom: 20px;
+}
+.module-rule-cont li{
+    position: relative;
+    width: 93.333%;
+    background: #fff;
+    margin:1rem auto 0;
+    padding:0.6rem 3.5% 0.15rem;
+    clear: both;
+    font-size: 0.32rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.module-rule-cont li div span{
+    color: #ef2e2e;
+}
+.module-rule-cont li i{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: 50%;
+    top: -0.5rem;
+    margin-left: -0.5rem;
+    z-index: 2;
+    background:url(../images/personal/li01.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.module-rule-cont li i.li02{    background: url(../images/personal/li02.png) no-repeat;background-size: 100% 100%;}
+.module-rule-cont li i.li03{    background: url(../images/personal/li03.png) no-repeat;background-size: 100% 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+

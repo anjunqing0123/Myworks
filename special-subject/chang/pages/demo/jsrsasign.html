@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+    <script language="JavaScript" type="text/javascript"
+        src="http://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js">
+</script>
+</head>
+<body>
+
+
+<script type="text/javascript" src="../../js/app/config.js"></script>
+<script type="text/javascript">
+    seajs.use('util/kjur/jsrsasign', function(KJUR){
+        console.log('jsrsasign == ', KJUR);
+
+        var oHeader = {alg: "HS256"};
+        var sHeader = JSON.stringify(oHeader);
+        var sPayload = "aaa";
+        var sJWS = KJUR.jws.JWS.sign("HS256", sHeader, sPayload, "616161");
+
+        document.write(sJWS);
+
+        console.log('sJWS -- ', sJWS);
+
+
+        //var prvKey = KEYUTIL.getKey(sRSAPRV_PKCS8PEM, "password");
+        // var sJWS2 = KJUR.jws.JWS.sign("RS256", JSON.stringify({alg: "RS256"}),
+        //                      sPayload, prvKey);
+        // consoel.log('sJWS2 -- ', sJWS2);
+
+
+        // var sJWS3 = KJUR.jws.JWS.sign("PS256", JSON.stringify({alg: "PS256"}),
+        //                      sPayload, prvKey);
+
+        // consoel.log('sJWS3 -- ', sJWS3);
+
+        // var prvKey = KEYUTIL.getKey(sECCPRV_PKCS8PEM, "password");
+        // var sJWS = KJUR.jws.JWS.sign("ES256", JSON.stringify({alg: "ES256"}),
+        //                      sPayload, prvKey);
+
+    });
+</script>
+
+</body>
+</html>

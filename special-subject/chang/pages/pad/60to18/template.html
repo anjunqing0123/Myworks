@@ -1,0 +1,201 @@
+<?php
+$list = getGoldPkList(4);
+$activeIdxPK=null;
+$activeClassPK='active';
+$now = new DateTime();
+$scopes = array(1 => '大叔', 2 => '辣妈', 3 => '男神', 4 => '女神', 5 => '怪咖', 6 => '文青', 7 => '虚拟偶像',);
+
+$activeTabs = $ctx->getObjs2(1,'0cb14d1e94dcf406c5c97b5d5bcc33a3');
+foreach ($activeTabs as $key => $activeTab) {
+    $activeTabs[$activeTab->area] = $activeTab;
+}
+?>
+<!-- 60进18日历开始 -->
+<div class="grid">
+    <div class="module-myconcert swiper-container" data-date="<?php echo date('Y-m-d G:H:s',time());?>">
+        <div class="ul  myconcert-after cf swiper-wrapper">
+            <?php foreach($list as $key=>$item):?>
+                <?php
+                $status = '';
+
+		/**
+                 *	日历标签点亮逻辑修改，改为通过碎片下数据方式实现
+                if(date('Y-m-d',strtotime($item['liveinfo']['start'])) == $now->format('Y-m-d')) {
+                    $status = 'active';
+                    $activeIdxPK = $key;
+                }*/
+
+		if(isset($activeTabs[$key]) && $activeTabs[$key]->focus == 2){
+		    $status = 'active';
+                    $activeIdxPK = $key;
+		}
+
+                $title = '<i>'.getWeekDay($item['liveinfo']['start']).'</i><em>'.$scopes[$key].'</em>';
+
+                $tabs[strtotime($item['liveinfo']['start'])] = '<div scopeid="'.$key.'" data-date="'.date('Y-m-d',strtotime($item['liveinfo']['start'])).'" class="li swiper-slide '.$status.'">'.$title.'</div>';
+                endforeach;
+        ksort($tabs);
+        foreach($tabs as $item):echo $item;endforeach;
+            ?>
+        </div>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="module module-pk-notice js-gold-60 ipad">
+    </div>
+</div>
+<!-- 60进18日历结束 -->
+
+<script type="text/template" id="template">
+<% for (var i = 0; i < data.length; i++) {
+    var start = others.newDate(data[i].liveinfo.start);
+    indayClass = isIndayClass(start, i);
+    isGetRank = isGetRankFn(data[i].playerinfo);
+    getNextUpdate(start);
+    if (now < start) {
+%>
+<div start="<%= start %>" class="gold_60<%= indayClass %> ipad">
+    <div class="swiper-container vs-item active swiper-container-horizontal">
+        <div class="swiper-wrapper">
+            <%
+            	for (var j = 0; j < 10; j++) {
+            	if (!data[i].playerinfo[j]) {
+            		continue;
+            	}
+            %>
+            <div class="swiper-slide vs-block">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td width="50%">
+                            <span class="avartar" username="<%= data[i].playerinfo[j].player1_info.username %>">
+                                <img src="<%= data[i].playerinfo[j].player1_info.avatar %>" />
+                            </span>
+
+                            <div class="index"><%= data[i].playerinfo[j].player1_info.front_rank %></div>
+                        </td>
+                        <td class="vs_txt">VS</td>
+                        <td width="50%">
+                            <span class="avartar" username="<%= data[i].playerinfo[j].player2_info.username %>">
+                                <img src="<%= data[i].playerinfo[j].player2_info.avatar %>"/>
+                            </span>
+
+                            <div class="index"><%= data[i].playerinfo[j].player2_info.front_rank %></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name"><%= data[i].playerinfo[j].player1_info.real_name %></td>
+                        <td></td>
+                        <td class="name"><%= data[i].playerinfo[j].player2_info.real_name %></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="count"><%= data[i].playerinfo[j].player1_info.percent %></div>
+                        </td>
+                        <td></td>
+                        <td>
+                            <div class="count"><%= data[i].playerinfo[j].player2_info.percent %></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</div>
+
+
+<% } else if (now > start && !isGetRank) { %>
+<div start="<%= start %>" class="gold_60<%= indayClass %> rest60 ipad" link="<%= data[i].playerinfo[0].player1_info.link %>" applink="<%= data[i].playerinfo[0].player1_info.app_link %>">
+    <div class="module-tbtitle">
+        <div class="tbtitle_a">LIVE</div>
+        <div class="tbtitle_b">点击头像进入直播</div>
+    </div>
+    <div class="swiper-container vs-item active swiper-container-horizontal">
+        <div class="swiper-wrapper">
+            <%
+            	for (var j = 0; j < 10; j++) {
+            	if (!data[i].playerinfo[j]) {
+            		continue;
+            	}
+            %>
+            <div class="swiper-slide vs-block">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td width="50%">
+                            <span class="avartar" username="<%= data[i].playerinfo[j].player1_info.username %>">
+                                <img src="<%= data[i].playerinfo[j].player1_info.avatar %>" />
+                            </span>
+
+                            <div class="index"><%= data[i].playerinfo[j].player1_info.front_rank %></div>
+                        </td>
+                        <td class="vs_txt">VS</td>
+                        <td width="50%">
+                            <span class="avartar" username="<%= data[i].playerinfo[j].player2_info.username %>">
+                                <img src="<%= data[i].playerinfo[j].player2_info.avatar %>"/>
+                            </span>
+
+                            <div class="index"><%= data[i].playerinfo[j].player2_info.front_rank %></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name"><%= data[i].playerinfo[j].player1_info.real_name %></td>
+                        <td></td>
+                        <td class="name"><%= data[i].playerinfo[j].player2_info.real_name %></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</div>
+<% } else { %>
+<div start="<%= start %>" class="gold_60 gold_60_cen<%= indayClass %> ipad">
+    <div class="vs-item active">
+        <div class="module module-only3">
+            <div class="content renqi-item">
+            <%  
+                for( var j = 0; j < 10; j++) {
+                if (!data[i].playerinfo[j]) {
+                	continue;
+                }
+                    var playerinfo = data[i].playerinfo[j];
+                    if ((playerinfo.player1_info.g_status === '1' || playerinfo.player1_info.g_status === '4') && playerinfo.player1_info.g_stage === '4') {
+            %>
+                <div class="renqi-item">
+                    <div class="cont_w">
+                        <div class="picw" username="<%= playerinfo.player1_info.username %>">
+                            <img src="<%= playerinfo.player1_info.avatar %>">
+
+                            <div class="imgw"></div>
+                        </div>
+                        <div class="name"><%= playerinfo.player1_info.real_name %></div>
+                    </div>
+                </div>
+            <%
+                    }
+                    if ((playerinfo.player2_info.g_status === '1' || playerinfo.player2_info.g_status === '4') && playerinfo.player2_info.g_stage === '4') {
+            %>
+                <div class="renqi-item">
+                    <div class="cont_w">
+                        <div class="picw" username="<%= playerinfo.player2_info.username %>">
+                            <img src="<%= playerinfo.player2_info.avatar %>">
+
+                            <div class="imgw"></div>
+                        </div>
+                        <div class="name"><%= playerinfo.player2_info.real_name %></div>
+                    </div>
+                </div>
+            <%      }
+                }
+            %>
+            </div>
+        </div>
+    </div>
+</div>
+<% } }%>
+</script>

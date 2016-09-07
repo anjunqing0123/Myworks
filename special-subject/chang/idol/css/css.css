@@ -1,0 +1,76 @@
+html, body {
+    background: #011423;
+    height: 100%;
+    min-height:100%;
+    overflow-x: hidden;
+}
+body, input, button, select, textarea, th, td {
+    font-size:12px;
+    line-height:1.5;
+    font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+    color:#666;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin:0;
+    padding:0
+}
+dl, ul {
+    list-style:none
+}
+li {
+    vertical-align:middle;
+}
+img {
+    border:0px;-ms-interpolation-mode: bicubic;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size:14px;
+    font-weight:normal
+}
+em, i, u {
+    font-style:normal;
+    text-decoration:none
+}
+:focus {
+    outline:0
+}
+q:before, q:after {
+    content:''
+}
+a:link, a:visited {
+    color:#5678a0;
+    text-decoration:none
+}
+a:hover {
+    color:#f14382
+}
+.lkl a, a.lkl {
+    text-decoration:underline !important
+}
+.lkn a, a.lkn {
+    text-decoration:none !important
+}
+.bd {
+    border:1px solid #f00
+}
+.bg {
+    background:#f00
+}
+.lb li {
+    border:1px solid #f00
+}
+.c {
+    clear:both;
+    overflow:hidden
+}
+.clr {
+    zoom:1
+}
+.clr:after {
+    content:"\0020";
+    display:block;
+    height:0;
+    overflow:hidden;
+    clear:both
+}
+.hide{ display: none; }

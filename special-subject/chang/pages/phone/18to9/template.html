@@ -1,0 +1,204 @@
+<div class="grid js-gold-18" id="gold-18">
+</div>
+<script type="text/template" id="template">
+<%
+	if (stage === 'before') {
+		if (!liveStart && !isVoteEnd) { // 赛区投票中
+%>
+<div class="module module-gold-18">
+	<div class="gold-bg">
+		<!--content up-->
+		<div class="gold-cont">
+			<ul>
+				<%
+					for (var i = 0; i < 3; i++) {
+						if (!scopeList[i]) {
+							continue;
+						}
+				%>
+				<li>
+					<img src="<%= scopeList[i].app_image %>"/>
+					<div class="gold-vote">
+						<span class="gold-count"><%= scopeList[i].vote.counter %></span>
+						<button sid="<%= scopeList[i].voteid %>" class="gold-btn"><span class="txt">投票</span></button>
+					</div>
+				</li>
+				<%
+					}
+				%>
+			</ul>
+		</div>
+		<div class="gold-cont">
+			<ul>
+				<%
+					for (var i = 3; i < scopeList.length; i++) {
+						if (!scopeList[i]) {
+							continue;
+						}
+				%>
+				<li>
+					<img src="<%= scopeList[i].app_image %>"/>
+					<div class="gold-vote">
+						<span class="gold-count"><%= scopeList[i].vote.counter %></span>
+						<button sid="<%= scopeList[i].voteid %>" class="gold-btn"><span class="txt">投票</span></button>
+					</div>
+				</li>
+				<%
+					}
+				%>
+			</ul>
+		</div>
+	</div>
+</div>
+<%
+		} else if (!liveStart && isVoteEnd) { // 赛区投票后
+			console.log(scopeList);
+%>
+<div class="module module-gold-18 rest1">
+	<div class="gold-bg">
+		<!--content up-->
+		<div class="gold-cont">
+			<ul>
+				<%
+					for (var i = 0; i < 3; i++) {
+						if (!scopeList[i]) {
+							continue;
+						}
+				%>
+				<li>
+					<img src="<%= scopeList[i].app_image %>"/>
+					<div class="gold-vote">
+						<button class="gold-btn"><span class="txt"><%= i + 1 %></span></button>
+						<span class="gold-count"><%= scopeList[i].vote.counter %></span>
+					</div>
+				</li>
+				<%
+					}
+				%>
+			</ul>
+		</div>
+		<!-- vs -->
+		<div class="gold-vs">
+			<ul>
+				<li>VS</li>
+				<li>VS</li>
+				<li>VS</li>
+			</ul>
+		</div>
+		<!--content down -->
+		<div class="gold-cont">
+			<ul>
+				<%
+					for (var i = 5; i > 2; i--) {
+						if (!scopeList[i]) {
+							continue;
+						}
+				%>
+				<li>
+					<img src="<%= scopeList[i].app_image %>"/>
+					<div class="gold-vote">
+						<button class="gold-btn"><span class="txt"><%= i + 1 %></span></button>
+						<span class="gold-count"><%= scopeList[i].vote.counter %></span>
+					</div>
+				</li>
+				<%
+					}
+				%>
+			</ul>
+		</div>
+	</div>
+</div>
+<%
+		} else if (liveStart) { // 直播中
+%>
+<div class="module module-gold-18 rest1 rest2" applink="<%= liveInfo.app_link%>" link="<%= liveInfo.link %>">
+	<div class="gold-bg">
+		<!--LIVE title-->
+		<div class="module-tbtitle">
+			<div class="tbtitle_a">LIVE</div>
+			<div class="tbtitle_b">正在直播</div>
+		</div>
+		<!--content up-->
+		<div class="gold-cont">
+			<ul>
+				<%
+					for (var i = 0; i < 3; i++) {
+						if (!scopeList[i]) {
+							continue;
+						}
+				%>
+				<li>
+					<img src="<%= scopeList[i].app_image %>"/>
+					<div class="gold-vote">
+						<button class="gold-btn"><span class="txt"><%= i + 1 %></span></button>
+						<span class="gold-count"><%= scopeList[i].vote.counter %></span>
+					</div>
+				</li>
+				<%
+					}
+				%>
+			</ul>
+		</div>
+		<!-- vs -->
+		<div class="gold-vs">
+			<ul>
+				<li>VS</li>
+				<li>VS</li>
+				<li>VS</li>
+			</ul>
+		</div>
+		<!--content down -->
+		<div class="gold-cont">
+			<ul>
+				<%
+					for (var i = 5; i > 2; i--) {
+						if (!scopeList[i]) {
+							continue;
+						}
+				%>
+				<li>
+					<img src="<%= scopeList[i].app_image %>"/>
+					<div class="gold-vote">
+						<button class="gold-btn"><span class="txt"><%= i + 1 %></span></button>
+						<span class="gold-count"><%= scopeList[i].vote.counter %></span>
+					</div>
+				</li>
+				<%
+					}
+				%>
+			</ul>
+		</div>
+	</div>
+</div>
+<%
+		}
+	} else if (stage === 'after') { // 直播后投票
+%>
+<div class="module module-vtlist">
+    <div class="vtlist-bg">
+        <!--main-->
+        <div class="vtlist-cont">
+            <ul>
+            	<%
+            		for (var i = 0; i < playerList.length; i++) {
+            	%>
+            <li>
+                    <span class="bdr" username="<%= playerList[i].username %>">
+                        <img src="<%= playerList[i].avatar %>"/>
+                    </span>
+
+                    <p class="name"><%= playerList[i].group_name || playerList[i].real_name %></p>
+                    <button sid="<%= playerList[i].voteid %>" class="vlist-btn"><span class="txt">投票</span></button>
+                    <p class="vote"><%= playerList[i].votenum %></p>
+                </li>
+                <%
+                	}
+                %>
+            </ul>
+        </div>
+    </div>
+</div>
+<%
+	}
+%>
+</script>

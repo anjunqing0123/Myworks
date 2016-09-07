@@ -1,0 +1,317 @@
+.mr20 {
+  margin-right: 20px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-200deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes rotateIn {
+  0% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(-200deg);
+    opacity: 0;
+  }
+  100% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes rotateIn {
+  0% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(-200deg);
+    opacity: 0;
+  }
+  100% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(0);
+    opacity: 1;
+  }
+}
+@-ms-keyframes rotateIn {
+  0% {
+    -ms-transform-origin: center center;
+    -ms-transform: rotate(-200deg);
+    opacity: 0;
+  }
+  100% {
+    -ms-transform-origin: center center;
+    -ms-transform: rotate(0);
+    opacity: 1;
+  }
+}
+.module-animation180x100{
+  _width:980px;
+}
+.module-animation180x100 .itemwrap {
+  width: 110%;
+}
+.module-animation180x100 .item {
+  width: 180px;
+  display: block;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  _height: 144px;
+}
+.module-animation180x100 .item:hover {
+  background: #f6f6f6;
+  text-decoration: none;
+  cursor:pointer;
+}
+.module-animation180x100 .item:hover .v-bg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  filter: alpha(opacity=40);
+  opacity: 0.4;
+  z-index: 4;
+}
+.module-animation180x100 .item .vlh {
+  vertical-align: middle;
+}
+.module-animation180x100 .item .txt-inProgress {
+  width: 100%;
+  height: 25px;
+  position: absolute;
+  z-index: 5;
+  color: white;
+  text-align: right;
+  text-indent: 5px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.module-animation180x100 .item .b-inProgress {
+  background: #39f;
+}
+.module-animation180x100 .item .b-fail {
+  background: #dd5a5a;
+}
+.module-animation180x100 .item .v-inProgress {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  filter: alpha(opacity=40);
+  opacity: 0.4;
+  z-index: 4;
+}
+.module-animation180x100 .item:hover .v-show {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -25px 0 0 -25px;
+  background: url("http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video2.png");
+  _background: none;
+  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video2.png',sizingMethod='crop');
+  z-index: 4;
+  cursor: pointer;
+}
+.module-animation180x100 .item:hover .v-ico2 {
+  display: block;
+  width: 13px;
+  height: 18px;
+  margin: -9px 0 0 -5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: url("http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video3.png");
+  _background: none;
+  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video3.png',sizingMethod='crop');
+  z-index: 4;
+  -webkit-animation: fadeIn .6s .1s ease both;
+  -moz-animation: fadeIn .6s .1s ease both;
+  -ms-animation: fadeIn .6s .1s ease both;
+  -o-animation: fadeIn .6s .1s ease both;
+  animation: fadeIn .6s .1s ease both;
+}
+.module-animation180x100 .item-upload {
+  width: 180px;
+  height: 150px;
+  background: url(modules/pc/module-person-praise/personspace_sprite.png) no-repeat #a7a7a7;
+  _background: url(modules/pc/module-person-praise/personspace_sprite_ie6.png) no-repeat #a7a7a7;
+  background-position: 0px -1029px;
+}
+.module-animation180x100 .item-upload:hover {
+  background: url(modules/pc/module-person-praise/personspace_sprite.png) no-repeat #e9e9e9;
+  _background: url(modules/pc/module-person-praise/personspace_sprite_ie6.png) no-repeat #e9e9e9;
+  background-position: 0px -1214px;
+}
+.module-animation180x100 .ui-vote {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.module-animation180x100 .ui-vote .vote-up, .module-animation180x100 .ui-vote .vote-down {
+  width: 49%;
+  height: 20px;
+  overflow: hidden;
+  word-break: break-all;
+}
+.module-animation180x100 .ui-vote .vote-down {
+  margin-left: 1%;
+}
+.module-animation180x100 .ui-vote em {
+  color: #333;
+  font-size: 12px;
+  vertical-align: middle;
+  *margin-left: 5px;
+}
+.module-animation180x100 .wc50 {
+  width: 50%;
+}
+.module-animation180x100 .icon-up, .module-animation180x100 .icon-down {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.module-animation180x100 .icon-up {
+  background: url(modules/pc/module-person-praise/personspace_sprite.png) no-repeat;
+  _background: url(modules/pc/module-person-praise/personspace_sprite_ie6.png) no-repeat;
+  background-position: 0px -143px;
+}
+.module-animation180x100 .icon-down {
+  background: url(modules/pc/module-person-praise/personspace_sprite.png) no-repeat;
+  _background: url(modules/pc/module-person-praise/personspace_sprite_ie6.png) no-repeat;
+  background-position: 0px -198px;
+}
+.module-animation180x100 .icon-hover {
+  background: url(modules/pc/module-person-praise/personspace_sprite.png) no-repeat;
+  _background: url(modules/pc/module-person-praise/personspace_sprite_ie6.png) no-repeat;
+  background-position: 0px -88px;
+}
+.module-animation180x100 .ui-txt, .module-animation180x100 .ui-subtxt {
+  height: 22px;
+  line-height: 22px;
+  overflow: hidden;
+  word-break: break-all;
+  color: #333;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.module-animation180x100 .ui-subtxt {
+  color: #999999;
+  padding-top: 0px;
+  font-size: 13px;
+}
+.module-animation180x100 .ui-pic {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  word-break: break-all;
+}
+.module-animation180x100 .ui-pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.module-animation180x100 .msk-txt {
+  background: url(modules/pc/animation180x100/pic-bg.png) no-repeat;
+  _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/pic-bg.png',sizingMethod='crop'); 
+  height: 39px;
+  line-height: 60px;
+  position: absolute;
+  bottom: 0;
+  _bottom: -20px;
+  width: 95%;
+  padding-right: 5px;
+  right: 0;
+  z-index: 3;
+  color: white;
+  text-decoration: none;
+  text-align: right;
+}
+.module-animation180x100 .v-bg {
+  display: none;
+}
+.module-animation180x100 .v-show {
+  -webkit-animation: rotateIn .6s .2s ease both;
+  -moz-animation: rotateIn .6s .2s ease both;
+  -ms-animation: rotateIn .6s .2s ease both;
+  -o-animation: rotateIn .6s .2s ease both;
+  animation: rotateIn .6s .2s ease both;
+  display: none;
+}
+.module-animation180x100 .v-ico2 {
+  display: none;
+}
+
+.module-header-title {
+  font-size: 18px;
+  height: 22px;
+  line-height: 22px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d92137;
+}
+.module-header-title h1 {
+  font-size: 18px;
+}
+.module-header-title span {
+  color: #d92137;
+}
+.module-header-title em {
+  color: #333333;
+  font-weight: bold;
+}
+.module-header-title .pagination-wrap {
+  width: 48px;
+  height: 22px;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+}
+.module-header-title .js-next {
+  float: right;
+  height: 22px;
+  width: 22px;
+  line-height: 22px;
+  background: url(modules/pc/animation180x100/pagination_sprite.png) no-repeat right top;
+}
+.module-header-title .js-prev {
+  float: left;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  background: url(modules/pc/animation180x100/pagination_sprite.png) no-repeat left bottom;
+}
+.module-header-title .js-next-active {
+  background: url(modules/pc/animation180x100/pagination_sprite.png) no-repeat right bottom;
+  cursor: pointer;
+}
+.module-header-title .js-prev-active {
+  background: url(modules/pc/animation180x100/pagination_sprite.png) no-repeat left top;
+  cursor: pointer;
+}

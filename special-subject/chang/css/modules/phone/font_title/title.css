@@ -1,0 +1,54 @@
+.module-ftitle {
+  padding: 0 0.1rem;
+  height: .4rem;
+  line-height: .45rem;
+  white-space: normal;
+  overflow: hidden;
+  color: #fff;
+  font-size: .22rem; }
+  .module-ftitle .ftitle-lf {
+    display: inline-block;
+    float: left; }
+  .module-ftitle .ftitle-rg {
+    display: inline-block;
+    float: right;
+    color: #fff; }
+
+.module-tbtitle {
+  width: 100%;
+  height: auto;
+  line-height: 18px;
+  font-size: 14px;
+  z-index: 10;
+  color: #fff;
+  overflow: hidden; }
+  .module-tbtitle .tbtitle_a {
+    float: left;
+    background-color: #c7181a;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 6px 0 5px;
+    height: 18px; }
+  .module-tbtitle .tbtitle_b {
+    height: 18px;
+    float: left;
+    background-color: #ef2e2e;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 0 5px;
+    font-size: 12px; }
+    .module-tbtitle .tbtitle_b:after {
+      z-index: 2;
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: -5px;
+      width: 9px;
+      height: 18px;
+      background: #ef2e2e;
+      transform: skew(-18deg);
+      -webkit-transform: skew(-18deg); }
+
+/*# sourceMappingURL=title.css.map */

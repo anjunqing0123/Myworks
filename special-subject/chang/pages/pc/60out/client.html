@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>一唱成名--60强</title>
+<link rel="stylesheet" href="http://static9.pplive.cn/chang/css/modules/pc/client/client.css">
+<script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="module module-cheer">
+        <h2>为Ta喝彩</h2>
+        <p><span class="p-title">喝彩票数：</span><span class="ticket-num"><span class="js-vote" data-sid="85">123,123</span>票</span></p>
+        <p><span class="p-title">获得奖金：</span><span class="ticket-per"><span style="width:50%;">50%（50万/100万）</span></span></p>
+        <a href="javascript:;" class="cheerBtn" data-sid="85" data-prior="1">为Ta喝彩</a>
+    </div>
+</div>
+<div class="wrap">
+    <div class="module module-run">
+        <div class="run">
+            <p>当前速度<span><strong>5</strong>km/h</span></p>
+            <canvas id="speed" width="138" height="78"></canvas>
+            <a href="javascript:;" class="btn-add" data-prior="2">加速</a>
+            <a href="javascript:;" class="btn-min" data-prior="2">减速</a>
+            <span class="counttime">00:23:24</span>
+            <span class="pointer"></span>
+        </div>
+        <div class="explain">
+            <h3>规则说明</h3>
+            <p>1. 规则这是一些假字，给选手加速他就必须跑得更快来跟上节奏</p>
+            <p>1. 规则这是一些假字，给选手加速他就必须跑得更快来跟上节奏</p>
+        </div>
+    </div>
+</div>
+<div class="wrap js-songlist">
+    <div class="module module-songlist">
+        <h2>我的主打歌</h2>
+        <span class="list">飞得更高</span>
+        <span class="list">飞得更高</span>
+        <span class="list">飞得更高</span>
+        <span class="list">飞得更高</span>
+        <span class="list">飞得更高</span>
+    </div>
+</div>
+<script type="text/javascript" src="http://static9.pplive.cn/chang/js/app/config.js"></script>
+<script>
+    window.webcfg = {
+        player_id:171,
+        stage:3,
+        scope:6,
+        cid: 17534482
+    };
+</script>
+<script type="text/javascript">
+    seajs.use('app/pc/client/60out',function(){});
+</script>
+</body>
+</html>

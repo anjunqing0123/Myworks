@@ -1,0 +1,11 @@
+.module-cooperation{min-height:398px; height: auto !important; height: 398px; padding-bottom: 20px;}
+.module-cooperation .cooperation{width:980px;margin:0 auto;}
+.module-cooperation .hd{width:488px;height:138px;}
+.module-cooperation .hd h3{float:left;display:inline;line-height:138px;_margin:40px 0 0;font-size:40px;font-weight:800;color:#fff;}
+.module-cooperation .hd h3 span{font-style:normal;color:#d92137;}
+.module-cooperation .hd h3 i{display:inline-block;width:45px;height:60px;margin:0 10px 0 0;vertical-align:-19px;_vertical-align:-10px;background:url(../images/pc-index-hd.png) no-repeat 0 -61px;*display:inline;*zoom:1;}
+.module-cooperation .hd img{float:left;display:inline;width:80px;height:50px;margin:45px 0 0 20px;}
+
+.module-cooperation .bd ul{width:1000px;}
+.module-cooperation .bd li{float:left;display:inline;width:180px;height:60px;margin:20px 20px 0 0;}
+.module-cooperation .bd li img{display:block;width:180px;height:60px;}

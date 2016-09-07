@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>更具赛区获取视频列表</title>
+	<link rel="stylesheet" href="http://static9.pplive.cn/chang/css/v_20150611190516/pc.min.css" />
+	<script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<style>
+	.ml10{
+		margin-left: 10px;
+	}
+	.blCenter{
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+<body class="grid-1230 plt-web">
+	<!-- 报名接口说明开始 -->
+	<div class="cf blCenter" style="width:80%;">
+		<p>接口总说明地址：http://gitlab/webclient/sensation/blob/develop/doc/%E4%B8%80%E5%94%B1%E6%88%90%E5%90%8D%E6%8E%A5%E5%8F%A3.txt</p>
+		<p>更具赛区获取视频列表(不需要登录)</p>
+		<p>接口地址：http://api.chang.pptv.com/api/video_list_areaid?area_id=1 提交方式get,page可为空，num每页数量可为空</p>
+		<p>字段名称</p>
+		<p class="cf"><span class="fl">赛区id</span><span class="fl ml10">area_id</span></p>
+		<p class="cf"><span class="fl">第几页</span><span class="fl ml10">page</span></p>
+		<p class="cf"><span class="fl">每页数量</span><span class="fl ml10">num</span></p>
+		<p class="cf">返回值</p>
+		<p>成功</p>
+		<pre>
+			{"status":"1","info":{"0":{"playerinfo":{"id":"8","username":"zz703063545","real_name":"\u5f20\u91d1","gender":"1","avatar":"","is_group":"0","group_name":""},"dpinfo":{"title":"\u5a31\u4e50\u4e50\u7ffb\u59292011\u770b\u70b9-20111223-\u674e\u5b87\u6625\u610f\u5916\u83b7\u4f5c\u66f2\u63d0\u540d","views":"5117"},"votenum":{"like":"100","dislike":"100"}},"1":{"playerinfo":{"id":"9","username":"jinzhang","real_name":"\u5f20\u6d77\u4e3d","gender":"1","avatar":"","is_group":"0","group_name":""},"dpinfo":{"title":"\u97e9\u56fd\u7efc\u827a-XMAN(\u5168\u96c6)","views":"2912"},"votenum":{"like":"100","dislike":"100"}},"2":{"playerinfo":{"id":"12","username":"jinzhang11","real_name":"\u5f20\u91d1","gender":"1","avatar":"","is_group":"1","group_name":"\u52a8\u529b"},"dpinfo":{"title":"\u53e4\u60d1\u4ed4\u5168\u7cfb\u5217(\u8f6e\u64ad)","views":"2687"},"votenum":{"like":"100","dislike":"100"}},"3":{"playerinfo":{"id":"13","username":"jinzhang1","real_name":"\u5f20\u91d1","gender":"1","avatar":"","is_group":"1","group_name":"\u52a8\u529b"},"dpinfo":{"title":"\u60c5\u666f\u5267:\u708a\u4e8b\u73ed\u7684\u6545\u4e8bI","views":"2755"},"votenum":{"like":"100","dislike":"100"}},"4":{"playerinfo":{"id":"14","username":"admin","real_name":"\u5f20\u91d1","gender":"1","avatar":"","is_group":"1","group_name":"\u65b0\u52bf\u529b"},"dpinfo":{"title":"Q-MTV","views":"3025"},"votenum":{"like":"100","dislike":"100"}},"5":{"playerinfo":{"id":"15","username":"_44108316@qq","real_name":"\u8bb8\u6654\u70af","gender":"1","avatar":"","is_group":"1","group_name":"\u65b0\u52bf\u529b"},"dpinfo":{"title":"\u9f99\u73e0Z(\u8f6e\u64ad)","views":"2622"},"votenum":{"like":"100","dislike":"100"}}}}
+		</pre>
+		<p>
+			area_id值非法
+		</p>
+		<pre>
+			{"status":"-1"}
+		</pre>
+		<p>
+			page，num不能只传一个值
+		</p>
+		<pre>
+			{"status":"-2"}
+		</pre>
+		<p>
+			num非法值
+		</p>
+		<pre>
+			{"status":"-3"}
+		</pre>
+		<p>
+			num过大
+		</p>
+		<pre>
+			{"status":"-4"}
+		</pre>
+	</div>
+	<!-- 报名接口说明结束 -->
+	<div class="grid">
+		<form id="person-info" method='get' action="http://api.chang.pptv.com/api/video_list_areaid">
+		<!-- 报名信息模块开始 -->
+		<div class="module-userInfo-formwrap mt15">
+			<div class="form-item cf mt5">
+				<label for="area_id" class="fl">区域id</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="area_id" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="page" class="fl">第几页</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="page" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="num" class="fl">每页数量</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="num" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="address" class="fl"></label>
+				<div class="input-item">
+					<div class="input-submit rel">
+						提交
+						<input type="submit" class="input-submit-main"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		</form>
+	</div>
+</body>
+</html>

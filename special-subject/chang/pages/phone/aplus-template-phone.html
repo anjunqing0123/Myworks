@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aplus模板</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width,initial-scale=1.0">
+    <!-- 头部其他配置 -->
+
+    <!-- 注意，JS、CSS是同一个版本号 -->
+
+    <!-- CSS 版本号可以修改 -->
+    <link rel="stylesheet" href="http://static9.pplive.cn/chang/v_001/css/phone.min.css" />
+
+    <!-- 有幻灯的页面需要这个CSS -->
+    <link rel="stylesheet" type="text/css" href="http://static9.pplive.cn/chang/css/lib/v_01/swiper.min.css?289">
+
+
+    <script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+    <script>
+        (function(designW) { // 参数w是设计稿的宽度，可以在页面中使用rem，1rem = 100px;
+            var screenW = Math.min(screen.width, window.innerWidth);
+            document.documentElement.style.fontSize =  100 * screenW / designW + 'px';
+        })(750);
+    </script>
+
+</head>
+<body>
+
+
+<!-- 页面主体部分 -->
+<div>xxx</div>
+<!-- 页面主体部分 -->
+
+
+<!-- Javascript 版本号可以配置 -->
+
+<script type="text/javascript" src="http://static9.pplive.cn/oth/2012/10/jssdk/v_20150408155209/jsbridge.js"></script>
+<!-- <script type="text/javascript" src="../../js/app/config.js"></script> -->
+<script type="text/javascript">
+    var VERSION = window.StaticVersion || 'v_20150807';
+    seajs.importStyle=function importStyle(b){var a=document.createElement("style"),c=document;c.getElementsByTagName("head")[0].appendChild(a);if(a.styleSheet){a.styleSheet.cssText=b}else{a.appendChild(c.createTextNode(b))}};
+    (function(VERS){
+        var flag = true, path = '/js/', base = 'http://static9.pplive.cn/chang/' + VERS;
+        seajs.config({
+            base : base + path,
+            alias: {
+                jquery: "core/jquery/1.8.3/jquery",
+                zepto: "core/zepto/zepto",
+                underscore: "core/underscore/underscore",
+                backbone: "core/backbone/backbone",
+                client : "http://static9.pplive.cn/pc_client/v_20150810183011/clt.js"
+            }
+        });
+        if(!flag){ document.write('<script src="' + base + '/js/app/sea-config.js"><\/script>');}
+    })(VERSION);
+</script>
+
+
+<!-- 每个页面不同JS -->
+<script type="text/javascript">
+    //seajs.use('path/to/file');
+</script>
+
+
+<!-- footer -->
+<div>版权信息</div>
+<!-- /footer -->
+
+</body>
+</html>

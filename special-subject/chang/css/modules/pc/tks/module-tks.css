@@ -1,0 +1,6 @@
+.module-tks{padding:50px 0;border-top:1px solid #4f4f4f;background:#222222;}
+.tks{width:980px;margin:0 auto;text-align:center;}
+.module-tks span,
+.module-tks a{display:inline-block;*display:inline;*zoom:1;}
+.module-tks span{margin:0 15px 0 0;vertical-align:20px;font-size:28px;font-weight:800;color:#d92137;}
+.module-tks a img{display:block;width:158px;height:60px;margin:0 15px 0 0;}

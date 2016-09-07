@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="http://static9.pplive.cn/chang/css/modules/pc/client/client.css">
+<script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<body class="opt">
+    <div class="box">
+        <p class="share"><span>分享：</span><a href="javascript:;" class="ui-share qq"></a><a href="javascript:;" class="ui-share qzone"></a><a href="javascript:;" class="ui-share weibo"></a></p>
+    </div>
+    <script>
+    seajs.use(['util/share/share'], function(ShareBox){
+        new ShareBox({
+            box: '.share',
+            url: 'http://v.pptv.com/show/'+webcfg.playLink+'.html',
+            shareContent: '#'+webcfg.playername+'#报名了#pptv一唱成名#音乐选秀，快来投上一票吧【'+webcfg.videotitle+'】＃一唱成名＃（分享自@PPTV聚力）'
+        });
+    });
+    </script>
+</body>
+</html>

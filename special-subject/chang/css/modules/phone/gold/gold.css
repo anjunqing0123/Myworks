@@ -1,0 +1,80 @@
+.module-gold-18 {
+  width: 100%;
+  overflow: hidden;
+  background: url(../images/bg5.png) no-repeat;
+  background-size: cover; }
+  .module-gold-18 .gold-bg {
+    width: 100%;
+    margin-top: 14px;
+    padding: 0 0 .24rem;
+    overflow: hidden;
+    background: rgba(96, 92, 169, 0.5); }
+    .module-gold-18 .gold-bg .gold-cont {
+      width: 100%;
+      overflow: hidden; }
+      .module-gold-18 .gold-bg .gold-cont li {
+        float: left;
+        margin: 0.26rem 0 0 0.15rem;
+        width: 2.30rem;
+        overflow: hidden; }
+        .module-gold-18 .gold-bg .gold-cont li img {
+          display: block;
+          width: 100%;
+          height: 1.29rem; }
+      .module-gold-18 .gold-bg .gold-cont .gold-vote {
+        height: .7rem;
+        line-height: 0.7rem;
+        width: 100%;
+        overflow: hidden;
+        color: #fff;
+        text-align: center; }
+        .module-gold-18 .gold-bg .gold-cont .gold-vote .gold-count {
+          display: block;
+          float: left;
+          height: .7rem;
+          width: 1.36rem;
+          font-size: 0.22rem;
+          background: #2b2757; }
+        .module-gold-18 .gold-bg .gold-cont .gold-vote .gold-btn {
+          display: block;
+          float: left;
+          border: 0;
+          font-size: .28rem;
+          width: .94rem;
+          height: .7rem;
+          background: #ef2e2e;
+          color: #fff;
+          overflow: hidden; }
+        .module-gold-18 .gold-bg .gold-cont .gold-vote .gold-btn.btncur {
+          background: #333; }
+    .module-gold-18 .gold-bg .gold-vs {
+      width: 100%;
+      overflow: hidden;
+      height: .35rem;
+      margin-top: .24rem; }
+      .module-gold-18 .gold-bg .gold-vs li {
+        float: left;
+        margin-left: 0.15rem;
+        font-weight: bold;
+        font-size: .32rem;
+        width: 2.30rem;
+        height: .35rem;
+        line-height: .35rem;
+        text-align: center;
+        overflow: hidden;
+        color: #ef2e2e; }
+
+.module-gold-18.rest1 .gold-cont li .gold-vote {
+  height: .40rem;
+  line-height: .42rem; }
+  .module-gold-18.rest1 .gold-cont li .gold-vote .gold-btn {
+    width: .40rem;
+    height: .40rem;
+    font-weight: bold; }
+  .module-gold-18.rest1 .gold-cont li .gold-vote .gold-btn.black {
+    background: #000; }
+  .module-gold-18.rest1 .gold-cont li .gold-vote .gold-count {
+    width: 1.9rem;
+    height: .40rem; }
+
+/*# sourceMappingURL=gold.css.map */

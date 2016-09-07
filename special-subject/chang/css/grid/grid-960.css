@@ -1,0 +1,106 @@
+/**
+ * @author 	Erick Song
+ * @date 	2013-06-07
+ * @email	ahschl0322@gmail.com
+ * @info    grid system -
+ * 网站： 	960 = 700 + 240 + 20
+ * 首页：	加 1140 = 880 + 240 + 20
+ * 客户端： 960 = 700 + 250 + 10
+ */
+
+/**
+ * 框架中所用到的全局设置(body上)：
+ * plt-* 					-> 终端识别
+ * grid  					-> 框架本身标识
+ * grid-1140 			-> 1140宽度
+ * grid-response  -> 相应式设计
+ */
+
+/**
+ * 针对通栏背景的处理
+ * 如首页幻灯：
+ * <div class="wp-grid">
+ *   <div class="module-metro">
+ *  	xxx
+ *   </div>
+ * </div>
+ */
+ .wp-grid{ width:100%}
+
+
+/**
+ * 页面外层框架本身用grid表示引用了栅格系统，
+ * 用 grid 而不用 grid-960 的目的是因为考虑后续如果网站全站变更为980的时候，只要替换css文件即可
+ * 这个文件提供 grid-960 几种简单布局: 如左边700，右边250，中间10
+ * 首页：两种尺寸(960、1140 - 分界点 1360)
+ * 边距：clt - 上下左右 10px， 广告上下10px -> [130723 产品变更间距由5px -> 10px]
+ * 		 web - clt的一倍， 20px 和 10px
+ */
+
+.grid{ width:960px; margin:0 auto; zoom:1}
+.grid .m,.grid .s,.module{ position: relative; overflow:hidden; /*border-radius:4px;*/}
+.grid .m{ float:left; width:700px}
+.grid .s{ float:right; width:250px}
+
+/* 首页改版，适应960、1140尺寸，分界点为 1360 */
+.grid-1140 .grid{ width:1140px}
+.grid-1140 .grid .m{ width:880px}
+.grid-1140 .grid .s{ width:240px}
+
+/* 播放页改版，适应960、1280尺寸，分界点为 1360 */
+.grid-1280 .grid{ width:1280px}
+.grid-1280 .grid .m{width: 1020px}
+
+
+/**
+ * wp-main - 这一层设计是为了处理页面背景广告而做的，包含整个body内容
+ * 主体部分添加白色背景，避免背景广告投放难看
+*/
+.plt-web .wp-main{ background: url('http://static9.pplive.cn/pub/flagment/v_20131108161944/basic/images/sp-960.jpg') 50% 0 repeat-y;}
+.grid-1140 .wp-main{background: url('http://static9.pplive.cn/pub/flagment/v_20131108161944/basic/images/sp-1140.jpg') 50% 0 repeat-y;}
+
+
+/**
+ * 广告模块 - 默认所有的广告模块后加载
+ * 需求：要求广告模块的上下边距为5px
+ */
+.grid .sp{ position:relative; display: none; margin-top:10px; overflow: hidden;}
+/*.m .sp{width:700px;}
+.s .sp{ width:250px; }*/
+
+/**
+ * 广告兼容 - 自适应尺寸
+ * 要求 - 所有广告素材都以大的尺寸来做，主体内容为窄屏宽度，两边填充背景
+ * 如：960 - （1140-960）/2 两边填充90px背景融合
+ * grid-ad-c1 表示通栏广告
+ * update(2013-10-21) -> 普通广告加四个class [gad-normal | gad-img | gad-swf | gad-iframe]
+ * 普通广告由页面加边框1px solid #e5e5e5
+*/
+
+/* 广告兼容 */
+.plt-web .grid .m .sp{ height: 88px; border:1px solid #e5e5e5} /* 广告尺寸 */
+
+/* 首页规则 */
+.grid .m .sp { width:698px}
+.grid-1140 .grid .m .sp { width:878px}
+.grid-response .grid .grid-ad-c1{ width:960px;}
+.grid-1140 .grid .grid-ad-c1{ width: 1140px}
+
+/* 播放页规则 */
+.grid-response-play .m .sp{ width: 668px }
+.grid-1280 .grid .m .sp { width:768px}
+.grid-response-play .grid .grid-ad-c1{ width:670px;}
+.grid-1280 .grid .grid-ad-c1{ width: 770px}
+
+.grid-response .grid-ad-c1{ position: relative; overflow: hidden;}
+
+/* 窄屏 - 960px */
+.grid-response .grid .m .gad-normal, .grid-response .grid .grid-ad-c1 .gad-normal{margin-left:-90px;}
+.grid-response-play .grid .m .gad-normal, .grid-response-play .grid .grid-ad-c1 .gad-normal{margin-left:-50px;}
+.grid-1280 .grid .m .gad-normal, .grid-1280 .grid .grid-ad-c1 .gad-normal{margin-left:0;}
+/*.grid-response .grid .gad-iframe, .grid-response .grid .grid-ad-c1 .gad-iframe{ margin-left:0;}*/ /* iframe 广告窄屏 2013-10-22去除 */
+
+
+/* 宽屏 - 1140px */
+.grid-1140 .grid .grid-ad-c1 .gad-normal{ margin-left:0;} /* 宽屏 通栏 */
+.grid-1140 .grid .m .gad-normal{margin-left:0} /* 左侧广告 */

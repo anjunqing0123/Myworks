@@ -1,0 +1,106 @@
+.module-only3 {
+  background: rgba(96, 92, 169, 0.5);
+  position: relative;
+  margin: 0 6px;
+  text-align: center; }
+
+.module-only3 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  padding: 5px 0; }
+
+.module-only3 .content:before,
+.module-only3 .content:after {
+  content: " ";
+  display: table; }
+
+.module-only3 .content:after {
+  clear: both; }
+
+.module-only3 .content .cont_w {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0; }
+
+.module-only3 .content .renqi-item {
+  width: 73px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.module-only3 .content .renqi-item:before,
+.module-only3 .content .renqi-item:after {
+  content: " ";
+  display: table; }
+
+.module-only3 .content .renqi-item:after {
+  clear: both; }
+
+.module-only3 .content .renqi-item .picw {
+  width: 73px;
+  height: 73px;
+  position: relative;
+  top: 0;
+  margin: 0; }
+
+.module-only3 .content .renqi-item .picw img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 73px; }
+
+.module-only3 .content .renqi-item .picw .imgw {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  background: url("../images/topcircle.png") no-repeat center;
+  background-size: 100% auto;
+  z-index: 1;
+  left: 0;
+  top: 0; }
+
+.module-only3 .content .renqi-item .name {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.module-only3 .content .renqi-item .name a {
+  color: #323232; }
+
+.module-only3 .index {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -30px;
+  display: inline-block;
+  width: 60px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #fff;
+  z-index: 5;
+  text-align: center;
+  background: #ef2e2f; }
+
+/*# sourceMappingURL=only3.css.map */

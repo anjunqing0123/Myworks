@@ -1,0 +1,282 @@
+<?php
+
+use Synacast\HttpFoundation\JsonResponse;
+use Synacast\HttpFoundation\Request;
+
+// header('Content-Type: text/html; charset=utf-8');
+
+// Core
+if (!class_exists('Synacast\HttpFoundation\Request')) {
+    $ctx->renderSegment('9eb9e628ba985447a5b676d11edfba6c');
+}
+
+if (!class_exists('AppUri')) {
+    class AppUri
+    {
+        const ID_KEY = 'p>c~hf';
+        const KEY = 'pplive';
+        const OSKEY = 'kioe257ds';
+
+        private static function playLinkEncode($cid, $setId = 0, $catId = 0, $key = 0)
+        {
+            $str = pack('V', $cid) . pack('V', $setId) . pack(strlen($key) > 4 ? 'V' : 'v', $catId) . pack('C', $key);
+            return str_replace(array('i', '+', '/', '='), array('ia', 'ib', 'ic', ''),
+                base64_encode(static::ppliveEncrypt2($str, self::ID_KEY)));
+        }
+
+        private static function char2byte($char)
+        {
+            $temp = unpack('c', $char);
+            return (int) array_pop($temp);
+        }
+
+        private static function byte2char($byte)
+        {
+            return pack('c', $byte);
+        }
+
+        private static function ppliveEncrypt2($msg, $key)
+        {
+            if (!is_string($msg) || !$msg = strval($msg)) {
+                return false;
+            }
+
+            if (!is_string($key) || !$key = strval($key)) {
+                return false;
+            }
+
+            $keyLen = strlen($key);
+            $msgLen = strlen($msg);
+            $byte = array();
+            $result = $msg[0];
+
+            for ($i = 0; $i < $msgLen; $i++) {
+                $byte[$i] = self::char2byte($msg{$i});
+            }
+
+            for ($i = 1; $i < $msgLen; $i++) {
+                $byte[$i] = ($byte[$i] ^ $byte[$i - 1]) + self::char2byte($key{$i % $keyLen});
+                $result .= self::byte2char($byte[$i]);
+            }
+            return $result;
+        }
+
+        private static function ppliveDecrypt2($msg, $key)
+        {
+            if (!is_string($msg) || !$msg = strval($msg)) {
+                return false;
+            }
+
+            if (!is_string($key) || !$key = strval($key)) {
+                return false;
+            }
+
+            $keyLen = strlen($key);
+            $msgLen = strlen($msg);
+            $result = '';
+            $byte = array();
+
+            for ($i = 0; $i < $msgLen; $i++) {
+                $byte[$i] = self::char2byte($msg{$i});
+            }
+
+            for ($i = $msgLen - 1; $i > 0; $i--) {
+                $byte[$i] = ($byte[$i] - self::char2byte($key{$i % $keyLen})) ^ $byte[$i - 1];
+                $result = self::byte2char($byte[$i]) . $result;
+            }
+            $result = $msg[0] . $result;
+            return $result;
+        }
+
+        public static function play($id, $setid = 0, $catid = 0, $key = 0)
+        {
+            return 'http://chang.pptv.com/app/run_ring/' . self::playLinkEncode($id, $setid, $catid, $key) . '.html';
+        }
+
+        public static function nactivePlay($cid = '', $setid = '', $vt = '')
+        {
+            $videoStatus = 'ppvod';
+            if ($vt === 0 || $vt === 4) {
+                $videoStatus = 'pplive2';
+            }
+
+            if ($setid) {
+                return "pptv://player?cp=1&sid={$setid}&playmode=2&type={$videoStatus}&extra=" .
+                urlencode("activity=singtofame");
+            } else {
+                return "pptv://player?cp=1&vid={$cid}&playmode=2&type={$videoStatus}&extra=" .
+                urlencode("activity=singtofame");
+            }
+        }
+    }
+}
+
+$request = Request::createFromGlobals();
+
+$scope = $request->query->get('scope');
+$stage = $request->query->get('stage');
+
+$queryString = http_build_query(array(
+    'stage' => $stage,
+    'scope' => $scope,
+));
+
+$now = new DateTime();
+
+$ch = curl_init();
+$options = array(
+    CURLOPT_URL => "http://api.chang.pptv.com/api/sprint_players?" . $queryString,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_TIMEOUT => 3,
+);
+
+curl_setopt_array($ch, $options);
+$response = curl_exec($ch);
+$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+$curlInfo = curl_getinfo($ch);
+
+if ($httpCode != 200) {
+    $errorInfo = "Return code is {$httpCode}" . curl_error($ch);
+    printf("<script>console.log('%s');</script>", $errorInfo);
+} else {
+    $raw = json_decode($response);
+    if (isset($raw->playerinfo)) {
+        $players = $raw->playerinfo;
+        $aplusPlayers = $ctx->getObjs(1, '3995a433cd67258ca57e6aedd1733a58');
+
+        $trailers = array();
+        foreach ($aplusPlayers as $key => $aplusPlayer) {
+            $trailers[$aplusPlayer->username] = $aplusPlayer;
+        }
+
+        foreach ($players as $player) {
+            if (array_key_exists($player->username, $trailers)) {
+                $trailer = $trailers[$player->username];
+                $player->trailer = array(
+                    'link' => AppUri::play($trailer->epg_id, $trailer->set_id),
+                    'app_link' => AppUri::nactivePlay($trailer->epg_id, $trailer->set_id),
+                    'cover' => $trailer->trailer_cover,
+                );
+            }
+        }
+
+        $response = json_encode($raw);
+    }
+
+    if ($request->isXmlHttpRequest()) {
+        $jsonResponse = new JsonResponse();
+
+        $jsonResponse->setData(json_decode($response));
+        $jsonResponse->setCallback($request->query->get('cb'));
+        // $jsonResponse->setStatusCode(Response::HTTP_NOT_FOUND);
+        $jsonResponse->setPublic();
+
+        $ttl = 60;
+        $date = new DateTime();
+
+        $date->modify("+$ttl seconds");
+        $jsonResponse->setExpires($date);
+        $jsonResponse->setMaxAge($ttl);
+        $jsonResponse->send();
+        exit;
+    }
+}
+
+?>
+<style type="text/css">
+    .module-vtlist li {
+        float: none !important;
+        display: inline-block !important;
+        width: auto !important;
+        margin: 10px 10px 0 !important;
+        margin-top: 5px;
+    }
+    .module-vtlist {
+        padding: 0 !important;
+        text-align: center !important;
+    }
+    .vtlist-cont, .module-tbtitle {
+        text-align: center !important;
+        margin: 0 5px !important;
+        background: rgba(96, 92, 169, 0.5) !important;
+        width: auto !important;
+    }
+    .ipad.module-only3 .content .renqi-item {
+        height: 110px !important;
+        margin-top: 5px !important;
+    }
+</style>
+<div class="grid js-gold-3" id="gold-3">
+</div>
+<script type="text/template" id="template">
+<%
+    if (stage === 0) {
+%>
+    <div class="module module-last3">
+        <div class="last3-main">
+        <%
+            for (var i = 0; i < playerInfo.length; i++) {
+        %>
+            <div class="last3-item">
+                <img applink="<%= playerInfo[i].trailer.app_link %>" link="<%= playerInfo[i].trailer.link %>" src="<%= playerInfo[i].trailer.cover %>">
+                <p><%= playerInfo[i].group_name || playerInfo[i].real_name %></p>
+                <div class="head" username="<%= playerInfo[i].username %>">
+                    <img src="<%= playerInfo[i].avatar %>">
+                </div>
+            </div>
+        <%
+            }
+        %>
+        </div>
+    </div>
+<%
+    }
+    if (stage === 1) {
+%>
+    <div class="module module-vtlist module-gold10" applink="<%= playerInfo[0].app_link%>" link="<%= playerInfo[0].link %>">
+        <div class="module-tbtitle">
+            <div class="tbtitle_a">LIVE</div>
+            <div class="tbtitle_b">正在直播</div>
+        </div>
+        <div class="vtlist-cont">
+            <ul>
+            <%
+                for (var i = 0; i < playerInfo.length; i++) {
+            %>
+                <li>
+                    <span class="bdr" username="<%= playerInfo[i].username %>">
+                        <img src="<%= playerInfo[i].avatar %>"/>
+                    </span>
+                    <p class="name"><%= playerInfo[i].group_name || playerInfo[i].real_name %></p>
+                </li>
+            <%
+                }
+            %>
+            </ul>
+        </div>
+    </div>
+<%
+    }
+    if (stage === 2) {
+%>
+    <div class="module module-vacant gold-last">
+        <div class="vacant-list">
+        <%
+            for (var i = 0; i < playerInfo.length; i++) {
+        %>
+            <div username="<%= playerInfo[i].username %>" class="vacant-item <%= playerInfo[i].classIndex %>">
+                <div class="vacant-item-bg"></div>
+                <div class="vacant-avatar">
+                    <img src="<%= playerInfo[i].avatar %>" />
+                </div>
+                <div class="vacant-item-name"><%= playerInfo[i].group_name || playerInfo[i].real_name %></div>
+            </div>
+        <%
+            }
+        %>
+        </div>
+    </div>
+<%
+    }
+%>
+</script>

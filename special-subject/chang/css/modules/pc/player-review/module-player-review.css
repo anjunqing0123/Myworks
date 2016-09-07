@@ -1,0 +1,35 @@
+.module-player-review{padding:0 0 50px;background:#222222;}
+.module-player-review .player-review{width:980px;margin:0 auto;padding:20px 0 0;}
+.module-player-review .hd{width:980px;height:138px;}
+.module-player-review .hd h3{float:left;display:inline;line-height:138px;_margin:40px 0 0;font-size:40px;font-weight:800;color:#fff;}
+.module-player-review .hd h3 span{font-style:normal;color:#d92137;}
+.module-player-review .hd h3 i{display:inline-block;width:45px;height:60px;margin:0 10px 0 0;vertical-align:-19px;_vertical-align:-15px;background:url(../images/pc-index-hd.png) no-repeat 0 -61px;*display:inline;*zoom:1;}
+.module-player-review .tabs{width:982px;padding:0 0 10px;border-bottom:3px solid #d92137;}
+.module-player-review .tabs ul{width:990px;}
+.module-player-review .tabs li{float:left;display:inline;width:157px;margin:0 8px 0 0;}
+.module-player-review .tabs li a{display:block;width:157px;height:60px;line-height:60px;text-align:center;font-size:18px;font-weight:bold;color:#ccc;background:#333;}
+.module-player-review .tabs .now a{color:#dc2e3c;background:url(modules/pc/player-review/bg3.png) no-repeat;}
+/*.module-player-review .tabs .t1{background-position:0px -186px;}
+.module-player-review .tabs .t1cur{background-position:0 0;}
+.module-player-review .tabs .t2{background-position:-175px -186px;}
+.module-player-review .tabs .t2cur{background-position:-176px 0;}
+.module-player-review .tabs .t3{background-position:-359px -186px;}
+.module-player-review .tabs .t3cur{background-position:-357px 0;}
+.module-player-review .tabs .t4{background-position:-540px -186px;}
+.module-player-review .tabs .t4cur{background-position:-540px 0;}
+.module-player-review .tabs .t5{background-position:-723px -186px;}
+.module-player-review .tabs .t5cur{background-position:-722px 0;}
+.module-player-review .tabs .t6{background-position:-905px -186px;}
+.module-player-review .tabs .t6cur{background-position:-905px 0;}
+*/
+.module-player-review .plist{background:url(modules/pc/player-review/bg.png) no-repeat center;}
+.module-player-review .plist ul{width:648px;margin:60px auto 0;}
+.module-player-review .plist li{position:relative;float:left;display:inline;width:150px;height:150px;margin:0 33px;}
+.module-player-review .plist li img{display:block;width:142px;height:142px;border:4px solid #fff;}
+.module-player-review .plist li .name{position:absolute;width:142px;height:26px;line-height:26px;text-align:center;color:#fff;left:4px;bottom:4px;background:#000;opacity:0.8;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);}
+.module-player-review .plist li i{position:absolute;width:71px;height:42px;left:82px;top:-10px;}
+.module-player-review .plist li .i1{background:url(modules/pc/player-review/icon1.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20151102192137/css/modules/pc/player-review/icon1.png",sizingMethod='scale');}
+
+.module-player-review .module-inmatch .module-pic-layout-index{margin:20px 0 0;}
+.module-player-review .module-pic-layout-index .animation3-180x100 li dt a{color:#fff;}
+.module-player-review .module-pic-layout-index .animation3-180x100 li dd{height:18px;line-height:22px;padding:0 0 0 20px;background:url(modules/pc/player-review/icon3.png) no-repeat left center;}

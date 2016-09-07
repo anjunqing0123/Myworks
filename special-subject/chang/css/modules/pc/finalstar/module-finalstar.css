@@ -1,0 +1,14 @@
+.module-finalstar-wrap{padding:0 0 50px;background:#222222;}
+.module-finalstar{width:980px;margin:0 auto;}
+.module-finalstar .hd h3{float:left;display:inline;line-height:138px;_margin:40px 0 0;font-size:40px;font-weight:800;color:#fff;}
+.module-finalstar .hd h3 span{font-style:normal;color:#d92137;}
+.module-finalstar .hd h3 i{display:inline-block;width:22px;height:31px;margin:0 10px 0 0;vertical-align:-2px;display:inline-block;width:45px;height:60px;margin:0 10px 0 0;vertical-align:-19px;_vertical-align:-15px;background:url(../images/pc-index-hd.png) no-repeat 0 -61px;*display:inline;*zoom:1;}
+.module-finalstar .bd{width:990px;}
+.module-finalstar .bd dl{float:left;display:inline;width:320px;margin:0 10px 0 0;background:#fff;}
+.module-finalstar .bd dt,
+.module-finalstar .bd dd{float:left;display:inline;width:160px;}
+.module-finalstar .bd dt img{display:block;width:160px;height:210px;}
+.module-finalstar .bd dd{width:140px;padding:10px 10px 0;}
+.module-finalstar .bd dd p{margin:5px 0 0;}
+.module-finalstar .bd dd .txt{height:90px;line-height:18px;overflow:hidden;}
+.module-finalstar .bd dd p span{font-weight:bold;}

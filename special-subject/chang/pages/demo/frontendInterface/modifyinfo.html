@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改用户额外的extra字段信息</title>
+	<link rel="stylesheet" href="http://static9.pplive.cn/chang/css/v_20150611190516/pc.min.css" />
+</head>
+<body class="grid-1230 plt-web">
+	<style>
+	.ml10{
+		margin-left: 10px;
+	}
+	.blCenter{
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+	<div class="cf blCenter" style="width:80%;">
+		<p>接口总说明地址：http://gitlab/webclient/sensation/blob/develop/doc/%E4%B8%80%E5%94%B1%E6%88%90%E5%90%8D%E6%8E%A5%E5%8F%A3.txt</p>
+		<p>获取用户信息接口（需要用户登录）</p>
+		<p>接口地址：http://api.chang.pptv.com/api/modifyinfo 提交方式post</p>
+		<p>字段名称</p>
+		<p class="cf"><span class="fl">邮箱</span><span class="fl ml10">email</span></p>
+		<p class="cf"><span class="fl">qq号</span><span class="fl ml10">qq</span></p>
+		<p class="cf"><span class="fl">微信号</span><span class="fl ml10">wechat</span></p>
+		<p class="cf"><span class="fl">职业</span><span class="fl ml10">profession</span></p>
+		<p class="cf">返回值</p>
+		<p>用户未登录</p>
+		<pre>
+			{"status":"0"}
+		</pre>
+		<p>下面的情况都是基于用户已经登录的状态</p>
+		<p>
+			邮箱格式不对
+		</p>
+		<pre>
+			{"status":"-1"}
+		</pre>
+		<p>
+			qq号格式不对
+		</p>
+		<pre>
+			{"status":"-2"}
+		</pre>
+		<p>
+			微信格式不对
+		</p>
+		<pre>
+			{"status":"-3"}
+		</pre>
+		<p>
+			系统错误（需要判断用户的信息是否跟之前的一模一样，一模一样的话，数据库无法修改，也会返回-4）
+		</p>
+		<pre>
+			{"status":"-4"}
+		</pre>
+		<p>
+			成功
+		</p>
+		<pre>
+			{"status":"1"}
+		</pre>
+	</div>
+	<div class="grid">
+		<form id="person-info" method='post' action="http://api.chang.pptv.com/api/modifyinfo">
+		<!-- 报名信息模块开始 -->
+		<div class="module-userInfo-formwrap mt15">
+			<div class="form-item cf mt5">
+				<label for="email" class="fl">邮箱：</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="email" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="qq" class="fl">qq：</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="qq" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="wechat" class="fl">wechat：</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="wechat" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="profession" class="fl">profession：</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="profession" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="address" class="fl"></label>
+				<div class="input-item">
+					<div class="input-submit rel">
+						确认修改
+						<input type="submit" class="input-submit-main"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 报名信息模块结束 -->
+		</form>
+	</div>
+</body>
+</html>

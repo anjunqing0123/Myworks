@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机验证码是否正确的接口，只有移动端才能使用，需要用户登录</title>
+	<link rel="stylesheet" href="http://static9.pplive.cn/chang/css/v_20150611190516/pc.min.css" />
+</head>
+<style>
+	.ml10{
+		margin-left: 10px;
+	}
+	.blCenter{
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+<body class="grid-1230 plt-web">
+	<!-- 报名接口说明开始 -->
+	<div class="cf blCenter" style="width:80%;">
+		<p>接口总说明地址：http://gitlab/webclient/sensation/blob/develop/doc/%E4%B8%80%E5%94%B1%E6%88%90%E5%90%8D%E6%8E%A5%E5%8F%A3.txt</p>
+		<p>获取用户信息接口（不需要用户登录）</p>
+		<p>接口地址：http://api.chang.pptv.com/api/molibecheck/ 提交方式：固定url</p>
+		<p>此接口只能在手机端才能使用！</p>
+		<p>用户未登录</p>
+		<pre>
+			{"status":"0"}
+		</pre>
+		<p>
+			正确
+		</p>
+		<pre>
+			{"status":"1"}
+		</pre>
+		<p>
+			手机号不一致
+		</p>
+		<pre>
+			{"status":"-1"}
+		</pre>
+		<p>
+			验证码不正确
+		</p>
+		<pre>
+			{"status":"-2"}
+		</pre>
+	</div>
+	<div class="grid">
+		<form id="person-info" method='get' action="http://api.chang.pptv.com/api/personalSpace">
+		<!-- 报名信息模块开始 -->
+		<div class="module-userInfo-formwrap mt15">
+			<div class="form-item cf mt5">
+				<label for="mobile" class="fl">手机号：</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="mobile" class="input-text" id='mobile'/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="ctacode" class="fl">验证码：</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="ctacode" class="input-text" id='ctacode'/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="address" class="fl"></label>
+				<div class="input-item">
+					<div class="input-submit rel">
+						提交
+						<input type="submit" class="input-submit-main" id="submitBtn"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		</form>
+	</div>
+	<script>
+		var mobile=document.getElementById('mobile');
+		var ctacode=document.getElementById('ctacode');
+		var submitBtn=document.getElementById('submitBtn');
+		submitBtn.onclick=function(e){
+			e=e||window.event;
+			if(!!e.preventDefault){
+				e.preventDefault();
+			}else{
+				e.returnValue=false;
+			}
+			var result='http://api.chang.pptv.com/api/molibecheck/'+mobile.value+'/'+ctacode.value;
+			window.location=result;
+		}
+	</script>
+</body>
+</html>

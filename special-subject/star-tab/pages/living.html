@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>明星tab h5页面</title>
+		<link rel="stylesheet" href="http://static9.pplive.cn/special-subject/star-tab/css/style.merge.css">
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if (!clientWidth) return;
+						docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+					};
+
+				if (!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+
+	</head>
+
+	<body>
+		<script src="http://static9.pplive.cn/pub/seajs/v_20140508120050/sea.js"></script>
+		<!--<script src="http://cdn.ronghub.com/RongIMLib-2.2.0.min.js"></script>
+		<script src="http://cdn.ronghub.com/RongEmoji-2.1.3.min.js"></script>-->
+		<!--<script src="http://static9.pplive.cn/pptv/main/v_20160725151642/dist/ui/scroller/scroller.js"></script>-->
+		<script type="text/javascript">
+			window._mainVersion = 'v_20160425163212/dist';
+			window.sn520Version = "v_20160518212625";
+			var snConfig = {
+				snBase: 'http://static9.pplive.cn/special-subject/star-tab/' + sn520Version + '/js/dist/',
+			};
+			if (window.seajs) {
+				seajs.config({
+					base: "http://static9.pplive.cn/pub/",
+					modules: [
+						['seajs', 'v_20140508120050'],
+						['jquery', 'v_20130812110929'],
+					],
+					alias: {
+						md5: 'http://static9.pplive.cn/pptv/main/v_20160607155415/dist/util/md5.js',
+//						scroller: 'http://static9.pplive.cn/pptv/main/v_20160725151642/dist/ui/scroller/scroller.js',
+//						RongIMLib: 'http://cdn.ronghub.com/RongIMLib-2.2.0.min',
+//						RongIMEmoji : 'http://cdn.ronghub.com/RongEmoji-2.1.3.min'
+					}
+				});
+			}
+		</script>
+		<!--m_seajs.config end-->
+		<div class="mtop" id="playbox" data-clientpic="" style="width:7.5rem;height:3.8rem;">
+
+		</div>
+		<div class="living">
+			<div class="living-tag"><i></i>直播中</div>
+			<div class="living-btn">
+				<a href="#" class="cur flow">流畅</a>
+				<a href="#">超清</a>
+			</div>
+		</div>
+		<div class="living-default-star">
+			<div class="living-default-star-title">
+				<h3>李玟雨演唱会</h3>
+			</div>
+			<div class="chatlist">
+				<ul class="living-default-star-content"></ul>
+			</div>
+		</div>
+		<div class="discuss-wrap">
+			<input type="text" value="去客户端参与讨论" class="discuss">
+		</div>
+		<script src="http://static9.pplive.cn/special-subject/star-tab/v_44545/js/dist/starlive_m.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		document.getElementsByClassName('living-default-star')[0].style.display = 'block';
+			seajs.use('living', function(index) {
+				var $index = new index();
+				$index.initChat({
+					chatbox: 'chatlist'
+				});
+		
+				$index.initPlayer({
+					livebox: 'mtop',
+					cid: 300162			,
+					chatID: 'fans_14' 
+				});
+				
+				
+			});
+		</script>
+	</body>
+
+</html>

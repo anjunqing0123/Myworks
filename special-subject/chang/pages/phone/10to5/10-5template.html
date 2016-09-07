@@ -1,0 +1,244 @@
+<?php
+
+use Synacast\HttpFoundation\JsonResponse;
+use Synacast\HttpFoundation\Request;
+
+// header('Content-Type: text/html; charset=utf-8');
+
+// Core
+if (!class_exists('Synacast\HttpFoundation\Request')) {
+    $ctx->renderSegment('9eb9e628ba985447a5b676d11edfba6c');
+}
+
+$request = Request::createFromGlobals();
+
+$scope = $request->query->get('scope');
+$stage = $request->query->get('stage');
+
+$queryString = http_build_query(array(
+    'stage' => $stage,
+    'scope' => $scope,
+));
+
+$now = new DateTime();
+
+$ch = curl_init();
+$options = array(
+    CURLOPT_URL => "http://api.chang.pptv.com/api/sprint_players?" . $queryString,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_TIMEOUT => 3,
+);
+
+curl_setopt_array($ch, $options);
+$response = curl_exec($ch);
+$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+$curlInfo = curl_getinfo($ch);
+
+if ($httpCode != 200) {
+    $errorInfo = "Return code is {$httpCode}" . curl_error($ch);
+    printf("<script>console.log('%s');</script>", $errorInfo);
+
+} else {
+
+    if ($request->isXmlHttpRequest()) {
+        $jsonResponse = new JsonResponse();
+
+        $jsonResponse->setData(json_decode($response));
+        $jsonResponse->setCallback($request->query->get('cb'));
+        // $jsonResponse->setStatusCode(Response::HTTP_NOT_FOUND);
+        $jsonResponse->setPublic();
+
+        $ttl = 60;
+        $date = new DateTime();
+
+        $date->modify("+$ttl seconds");
+        $jsonResponse->setExpires($date);
+        $jsonResponse->setMaxAge($ttl);
+        $jsonResponse->send();
+        exit;
+    }
+}
+
+?>
+<div class="grid js-gold-10" id="gold-10">
+</div>
+<script type="text/template" id="template">
+
+
+<%
+    if (stage === 0) {
+%>
+    <div class="module module-vtlist gold-10">
+        <div class="vtlist-bg">
+            <div class="vtlist-cont">
+                <ul>
+                <%
+                    for (var i = 0; i < playerInfo.length; i++) {
+                %>
+                    <li>
+                        <span class="bdr" username="<%= playerInfo[i].username %>">
+                            <img src="<%= playerInfo[i].avatar %>"/>
+                        </span>
+                        <p class="name"><%= playerInfo[i].group_name || playerInfo[i].real_name %></p>
+                        <button class="vlist-btn" sid="<%= playerInfo[i].voteid %>"><span class="txt">投票</span></button>
+                        <p class="vote"><%= playerInfo[i].votenum %></p>
+                    </li>
+                <%
+                    }
+                %>
+                    <li class="vlist-cen">
+                        <span class="bdr" username="<%= idolInfo.username %>">
+                            <img src="<%= idolInfo.avatar %>"/>
+                        </span>
+                        <p class="name"><%= idolInfo.group_name || idolInfo.real_name %></p>
+                    </li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+<%
+    }
+%>
+<%
+    if (stage === 1) {
+%>
+    <div class="module module-vtlist module-gold10">
+        <div class="vtlist-bg">
+            <div class="vtlist-cont">
+                <ul>
+                <%
+                    for (var i = 0; i < playerInfo.length; i++) {
+                %>
+                    <li>
+                        <span class="bdr" username="<%= playerInfo[i].username %>">
+                            <img src="<%= playerInfo[i].avatar %>"/>
+                        </span>
+                        <p class="name"><%= playerInfo[i].group_name || playerInfo[i].real_name %></p>
+                        <p class="vote vote-bg"><%= playerInfo[i].votenum %></p>
+                    </li>
+                <%
+                    }
+                %>
+                    <li class="vlist-cen">
+                        <span class="bdr" username="<%= idolInfo.username %>">
+                            <img src="<%= idolInfo.avatar %>"/>
+                        </span>
+                        <p class="name"><%= idolInfo.group_name || idolInfo.real_name %></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<%
+    }
+%>
+<%  if (stage === 2) {
+%>
+
+    <div class="module module-top20 module-gold10" applink="<%= liveInfo.app_link%>" link="<%= liveInfo.link %>">
+        <div class="module-tbtitle">
+            <div class="tbtitle_a">LIVE</div>
+            <div class="tbtitle_b">正在直播</div>
+        </div>
+        <div class="content renqi swiper-container">
+            <div class="swiper-wrapper renqi-list">
+                <div class="swiper-slide  renqi-item">
+                    <div class="cont_w">
+                        <div class="picw">
+                            <img src="<%= idolInfo.avatar %>">
+                            <div class="imgw"></div>
+                        </div>
+                        <div class="name"><%= idolInfo.group_name || idolInfo.real_name %></div>
+                        <div class="score">
+                            <span>现在登场</span>
+                        </div>
+                    <%
+                        if (i < 3) {
+                            topClass = ' top';
+                        } else {
+                            topClass = '';
+                        }
+                    %>
+                    </div>
+                </div>
+            <%
+                for (var i = 0; i < playerInfo.length; i++) {
+            %>
+                <div class="swiper-slide  renqi-item">
+                    <div class="cont_w">
+                        <div class="picw">
+                            <img src="<%= playerInfo[i].avatar %>">
+                            <div class="imgw"></div>
+                        </div>
+                        <div class="name"><%= playerInfo[i].group_name || playerInfo[i].real_name %></div>
+                        <div class="score">
+                            <span><%= playerInfo[i].votenum %></span>
+                        </div>
+                    <%
+                        if (i < 3) {
+                            topClass = ' top';
+                        } else {
+                            topClass = '';
+                        }
+                    %>
+                        <span class="tag<%= topClass %>"><%= i + 1 %></span>
+                    </div>
+                </div>
+            <%
+                }
+            %>
+            </div>
+        </div>
+    </div>
+<%
+    }
+%>
+<%
+    if (stage === 3) {
+%>
+    <div class="module module-audition-top60 module-gold10">
+        <div class="list">
+            <%
+                if (idolInfo.promotion) {
+            %>
+            <div class="item">
+                <div class="i_avartar" username="<%= idolInfo.username %>">
+                    <img src="<%= idolInfo.avatar %>" alt="">
+                </div>
+                <div class="data">
+                    <div class="l1">
+                        <span><%= idolInfo.group_name || idolInfo.real_name %></span>
+                        <span class="count"><%= idolInfo.votenum %>票</span>
+                    </div>
+                    <div class="l2" style="width: <%= idolInfo.voteLen %>%;"></div>
+                </div>
+                <div class="btn"><span class="txt">投票</span></div>
+            </div>
+            <%
+                }
+            %>
+            <%
+                for (var i = 0; i < playerInfo.length; i++) {
+            %>
+            <div class="item">
+                <div class="i_avartar" username="<%= playerInfo[i].username %>">
+                    <img src="<%= playerInfo[i].avatar %>" alt="">
+                </div>
+                <div class="data">
+                    <div class="l1">
+                        <span><%= playerInfo[i].group_name || playerInfo[i].real_name %></span>
+                        <span class="count"><%= playerInfo[i].votenum %>票</span>
+                    </div>
+                    <div class="l2" style="width: <%= playerInfo[i].voteLen %>%;"></div>
+                </div>
+                <div class="btn"><span class="txt">投票</span></div>
+            </div>
+            <%
+                }
+            %>
+        </div>
+    </div>
+<%
+    }
+%>
+</script>

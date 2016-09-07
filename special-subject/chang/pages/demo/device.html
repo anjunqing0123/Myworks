@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page.</title>
+    <style type="text/css">
+        body{ line-height: 20px}
+        .agent{word-wrap: break-word;  word-break: break-all; }
+    </style>
+    <script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<body>
+
+
+<h1>${Device Info}</h1>
+
+<div id="sample"></div>
+
+<script type="text/javascript" src="../../js/app/config.js"></script>
+
+<script type="text/javascript">
+    var DomSample = document.querySelector('#sample'), str = '';
+    seajs.use('util/browser/browser', function(device){
+        for(var i in device){
+            if(device.hasOwnProperty(i)){
+                if(device[i] !== false && device[i] !== undefined){
+                    console.log(i);
+                }
+                if(device[i] === true){
+                    str += '<font color=red>' + i + " : " + device[i] + '</font><br />';
+                }else{
+                    str += i + " : " + device[i] + '<br />';
+                }
+            }
+        }
+        console.log(str);
+        DomSample.innerHTML = '<div class="matched"></div><p class="agent">' + navigator.userAgent + '</p>' + str;
+
+
+        var SPLITCHAT = {
+            'plt' : ['WEB', 'CLT', 'MUT'],
+            'platform' : ['IPAD', 'MOBILE', 'WEB', 'CLT'],
+            'device' : ['IE', 'MOZ', 'CHROME', 'SAFARI', 'OPERA', 'WEIXIN', 'IPHONE', 'IPAD', 'ANDROID', 'ITOUCH', 'WINPHONE']
+        };
+
+        var params = {
+            version : '1.0.1',
+            format : 'jsonp'
+        };
+
+        var map = {};
+        for(var key in SPLITCHAT){
+            for(var k = 0, lenk = SPLITCHAT[key].length; k < lenk; k++){
+                var mapKey = SPLITCHAT[key][k];
+                if(device[mapKey]){
+                    map[key] = mapKey.toLowerCase();
+                    break;
+                }
+            }
+        }
+
+        DomSample.querySelector('.matched').innerHTML = (function(){
+            var s = '';
+            for(var k in map){
+                s += '<strong>' + k + '</strong> = <font color=red>' + map[k] + '</font> ';
+            }
+            return s;
+        })();
+
+        console.log(map, 'map');
+
+
+    });
+</script>
+
+</body>
+</html>

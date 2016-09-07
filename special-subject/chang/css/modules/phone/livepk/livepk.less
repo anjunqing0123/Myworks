@@ -1,0 +1,137 @@
+.module-livepk {
+	font-size: 16px;
+	background: #ffffff;
+	.top img{
+		width:7.5rem;
+		height: 0.9rem;
+	}
+	.list {
+		text-align: center;
+	}
+
+	.role {
+		position: relative;
+		display: inline-block;
+		width: 1.45rem;
+		height: 2rem;
+		margin: 0.1rem 0.1rem;
+		&.un {
+			.roleimg {
+				border-color: transparent;
+			}
+			.rolename {
+				color: #bebebe;
+			}
+		}
+		&:before {
+			content: '';
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			width: 1.45rem;
+			height: 1.45rem;
+			background: url("../images/topcircle.png") no-repeat center;
+			background-size: contain;
+		}
+	}
+
+	.roleimg{
+		width: 1.45rem;
+		height: 1.45rem;
+		border: 1px solid #ffe63d;
+		border-radius: 50%;
+	}
+
+	.rolename{
+		font-size: 0.28rem;
+		display: block;
+		margin-top: 0.1rem;
+		text-decoration: none !important;
+		display: block;
+		width: 1.45rem;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	.vs {
+		width: 4rem;
+	}
+	.vs_txt {
+		display: inline-block;
+		color: #ef2e2e;
+		font-size: 18px;
+		font-weight: bold;
+		div {
+			position: relative;
+			top: -1.1rem;
+		}
+	}
+	.index {
+		font-size: 12px;
+		background: #000;
+		color: #fff;
+		text-align: center;
+		line-height: 18px;
+		width: 30px;
+		position: absolute;
+		top: 1.3rem;
+		left: 50%;
+		margin-left: -15px;
+		z-index: 10;
+	}
+	.a {
+		.swiper-slide {
+			width: 4rem;
+		}
+		.vs:first-child {
+			border-bottom: solid 1px #dee3eb;
+		}
+		.swiper-slide:first-child {
+			border-right: none;
+		}
+		.swiper-slide {
+			border-left: solid 1px #dee3eb;
+		}
+		.role {
+			margin: 0.2rem 0.05rem;
+		}
+	}
+	.container {
+		position: relative;
+	}
+	.tab {
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: #fff;
+		background-color: #ef2e2e;
+		line-height: 0.36rem;
+		font-size: 0.14rem;
+		z-index: 10;
+	}
+	.tab_a {
+		background-color: #c7181a;
+		font-weight: bold;
+		display: inline-block;
+		padding: 0 5px;
+		position: relative;
+		&:before {
+			@size: 0.36rem;
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: -@size / 2;
+			border: solid #c7181a;
+			border-width: 0 @size / 2 @size 0;
+			border-bottom-color: transparent;
+		}
+
+	}
+	.tab_b {
+		display: inline-block;
+	}
+}

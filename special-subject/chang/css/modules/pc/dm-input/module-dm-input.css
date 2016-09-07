@@ -1,0 +1,31 @@
+.module-dm-input{clear:both;height:35px;background:#222222;position: relative;}
+.module-dm-input .form .t{cursor:pointer;float:left;display:inline;width:20px;height:20px;margin:8px 0 0 10px;background:url(modules/pc/dm-input/t.png) no-repeat;}
+.module-dm-input .form input{float:left;display:inline;height:26px;margin:5px 0 0 10px;padding:0 10px;line-height:26px;color:#fff;border-radius:2px 0 0 2px;background:#444;}
+.module-dm-input .form .submit{float:right;display:inline;width:62px;height:26px;margin:5px 10px 0 0;line-height:26px;text-align:center;color:#fff;border-radius:0 2px 2px 0;background:#3399ff;}
+.module-dm-input .form .submit:hover{background: #2f7bc8; text-decoration: none;}
+.module-dm-input .form .submit.disable{background:#999;}
+.module-dm-input .dm-input-pop{position:absolute;top:-186px;width:170px;height:143px;padding:20px;/*background:url(modules/dm-input/bg.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/pub/flagment/modules/dm-input/bg.png",sizingMethod='scale');*/background:#222;z-index:100;}
+.module-dm-input .dm-input-pop dl{margin:0 0 20px;}
+.module-dm-input .dm-input-pop dt{margin:0 0 5px;font-size:14px;color:#fff;}
+.module-dm-input .dm-input-pop dd{overflow:hidden;}
+.module-dm-input .dm-input-pop dd span,
+.module-dm-input .dm-input-pop dd a{float:left;display:inline;}
+.module-dm-input .dm-input-pop dd span{margin:0 10px 0 0;color:#999;cursor:default;}
+.module-dm-input .dm-input-pop dd a{width:30px;height:20px;margin:0 1px 0 0;line-height:20px;text-align:center;color:#fff;background:#666;}
+.module-dm-input .dm-input-pop dd a:hover,
+.module-dm-input .dm-input-pop dd .now{text-decoration:none;background:#3399ff;}
+.module-dm-input .dm-input-pop .rgb{width:58px;height:20px;line-height:20px;margin:0 1px 0 0;text-align:center;color:#fff;background:#666;}
+.module-dm-input .dm-input-pop .color{width:20px;height:20px;}
+.module-dm-input .dm-input-pop .takecolor{margin:-10px 0 0;overflow:hidden;}
+.module-dm-input .dm-input-pop .takecolor a{float:left;display:inline;width:16px;height:16px;margin:0 1px 0 0;}
+/*.module-dm-input .arrow{position:absolute;left:12px;bottom:-9px;width:16px;height:9px;background:url(arrow.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/pub/flagment/modules/dm-input/arrow.png",sizingMethod='scale');}*/
+
+.module-dm-input{width:680px;}
+.module-dm-input .form input{width:548px;}
+
+.player-theatre .module-dm-input{width:980px;}
+.player-theatre .module-dm-input .form input{width:848px;}
+/*120x60 livepk 弹幕*/
+.module-playbox-page .livepksecond{width:980px;}
+.module-playbox-page .livepksecond .form input{width:848px;}
+

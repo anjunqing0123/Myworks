@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>明星tab h5页面</title>
+    <link rel="stylesheet" href="http://static9.pplive.cn/special-subject/star-tab/css/style.merge.css">
+    <script type="text/javascript">
+        (function(designW){var prevScreenW=null;function resize(){var screenW=window.innerWidth;if(prevScreenW==screenW){return}else{prevScreenW=screenW}document.documentElement.style.fontSize=100*screenW/designW+"px"}window.onresize=function(){resize()};resize();window.onload=function(){resize()}})(750);
+    </script>
+</head>
+<body>
+    <div class="mtop"></div>
+    <div class="mstatus"></div>
+    <div class="living-default-star">
+        <div class="living-default-star-title">
+            <h3>李玟雨演唱会</h3>
+        </div>
+        <div class = 'chatlist'><ul class="living-default-star-content">
+        </ul>
+        </div>
+
+    </div>
+    <div class="mstar "></div>
+    <div class="living-star">
+        <div class="living-star-title">
+            <i></i>
+            <h3>直播明星</h3>
+        </div>
+        <div class="swiper-container" id="slide-star">
+            <ul class="swiper-wrapper living-star-info"></ul>
+        </div>
+    </div>
+    <!--本场相关开始-->
+    <div class="relevant">
+        <div class="relevant-star-title">
+            <i></i>
+            <h3>本场相关</h3>
+        </div>
+        <div class="relevent-detail">
+            <div class="swiper-container" id="slide-revent">
+                <ul class="swiper-wrapper" >
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--本场相关结束-->
+    <!--公共的留言板开始-->
+    <div class="message">
+        <div class="message-title">
+            <i></i>
+            <h3>留言板</h3>
+        </div>
+        <div class="speak">
+            <input type="text" value="我来说几句...">
+            <i></i>
+        </div>
+    </div>
+    <!--公共的留言板结束-->
+    <!--弹窗公共的 开始-->
+    <div class="pop-box-wrap">
+        <div class="pop-box">
+            <h3>在客户端你可以</h3>
+            <p>查看更多直播相关信息<br/>
+                获得最流畅的观看体验<br/>
+                与观众一起聊直播<br/>
+                更多精彩功能等你发现
+            </p>
+            <div class="btns-wrap">
+                <a href="javascript:;" class="cancle">取消</a>
+                <a href="http://app.aplus.pptv.com/minisite/download" class="go-client">前往客户端</a>
+            </div>
+
+        </div>
+    </div>
+    <!--弹窗公共的结束-->
+    <!--评论开始-->
+    <div class="comment"><ul></ul></div>
+    <!--评论结束-->
+    <div class="fix-bottom"></div>
+    <script src="http://static9.pplive.cn/pub/seajs/v_20140508120050/sea.js"></script>
+    
+    <script type="text/javascript">
+        window._mainVersion = 'v_20160425163212/dist';
+        window.sn520Version = "v_20160518212625";
+        var snConfig = {
+            snBase: 'http://static9.pplive.cn/special-subject/star-tab/'+ sn520Version + '/js/src/',
+        };
+        if (window.seajs) {
+            seajs.config({
+                base: "http://static9.pplive.cn/pub/",
+                modules: [
+                    ['seajs', 'v_20140508120050'],
+                    ['jquery', 'v_20130812110929'],
+                ],
+                alias: {
+                     'md5':'http://static9.pplive.cn/pptv/main/v_20160607155415/dist/util/md5.js',
+                    'scroller':'http://static9.pplive.cn/pptv/main/v_20160725151642/dist/ui/scroller/scroller.js'
+                }
+            });
+        }
+    </script>
+    <script src="http://static9.pplive.cn/special-subject/star-tab/v_44545/js/dist/starlive_m.js" type="text/javascript" charset="utf-8"></script>		
+    <script>
+        seajs.use('star-index');
+    </script>
+    <script src="http://static9.pplive.cn/special-subject/star-tab/js/src/util/swiper.js"></script>
+</body>
+</html>

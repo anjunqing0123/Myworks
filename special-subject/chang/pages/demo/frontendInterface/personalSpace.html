@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人中心未登录调用接口</title>
+	<link rel="stylesheet" href="http://static9.pplive.cn/chang/css/v_20150611190516/pc.min.css" />
+	<script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<style>
+	.ml10{
+		margin-left: 10px;
+	}
+	.blCenter{
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+<body class="grid-1230 plt-web">
+	<!-- 报名接口说明开始 -->
+	<div class="cf blCenter" style="width:80%;">
+		<p>接口总说明地址：http://gitlab/webclient/sensation/blob/develop/doc/%E4%B8%80%E5%94%B1%E6%88%90%E5%90%8D%E6%8E%A5%E5%8F%A3.txt</p>
+		<p>获取用户信息接口（不需要用户登录）</p>
+		<p>接口地址：http://api.chang.pptv.com/api/personalSpace?username=_44108316@qq 提交方式get</p>
+		<p>字段名称</p>
+		<p class="cf"><span class="fl">用户名</span><span class="fl ml10">username</span></p>
+		<p class="cf">返回值</p>
+		<p>用户未报名</p>
+		<pre>
+			{
+			"baseinfo": {},
+			"rankinfo": {}
+			}
+		</pre>
+		<p>
+			用户已经报名
+		</p>
+		<pre>
+			{
+			"baseinfo": {
+			"id": "15",
+			"username": "_44108316@qq",
+			"real_name": "许晔炯",
+			"gender": "1",
+			"address": "上海市-浦东新区-张东路1387号",
+			"avatar": "",
+			"is_group": "1",
+			"group_name": "新势力",
+			"game_area": {
+			"0": ""
+			},
+			"promotion_area": "1",
+			"g_status": "1",
+			"status": "1",
+			"game_area_name": "全部"
+			}
+			}
+		</pre>
+	</div>
+	<!-- 报名接口说明结束 -->
+	<!-- 幻灯头图开始
+	<div class="wp-grid">
+		<img src="http://sr3.pplive.com/cms/77/50/77650afc2529dd28ac20f9566f16c44c.jpg" alt="" class="maxF100 dblc"/>
+	</div>
+	幻灯头图结束 -->
+	<div class="grid">
+		<form id="person-info" method='get' action="http://api.chang.pptv.com/api/personalSpace">
+		<!-- 报名信息模块开始 -->
+		<div class="module-userInfo-formwrap mt15">
+			<div class="form-item cf mt5">
+				<label for="username" class="fl">姓名：</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="username" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="address" class="fl"></label>
+				<div class="input-item">
+					<div class="input-submit rel">
+						提交
+						<input type="submit" class="input-submit-main"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		</form>
+	</div>
+</body>
+</html>

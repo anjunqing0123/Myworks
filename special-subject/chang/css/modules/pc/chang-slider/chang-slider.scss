@@ -1,0 +1,46 @@
+.module-chang-slider{
+	.icon-district-wrap{
+		height:50px;
+		width:100%;
+		position: absolute;
+		bottom:0px;
+		left:0;
+		.wrap-fake{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}
+	.icon-district-main{
+		text-align:justify;
+		text-align-last:justify;
+		line-height:0;
+		width:100%;
+	}
+	.icon-district-main:after{
+	     display:inline-block;
+	     overflow:hidden;
+	     width:100%;
+	     height:0;
+	     content:'';
+	     vertical-align:top;
+	}
+	.icon-district-main{
+		.item{
+	     	width:10%;
+	     	*width:10.5%;
+	     	display:inline-block;
+	     	height:50px;
+	     	line-height: 50px;
+	     	text-align: center;
+	     	color:white;
+	     	position: relative;
+	     	background: #333;
+	     	&:hover{
+	     		text-decoration: none;
+	     	}
+		}
+		.now{
+			background:#39f;
+		}
+	}
+}

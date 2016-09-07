@@ -1,0 +1,14 @@
+.module-concertnight{-webkit-box-sizing: border-box;background:#18102c url(modules/pad/concertnight/bg.jpg) no-repeat center top;background-size:cover;}
+.module-concertnight .main {position: relative;padding:20px 0; background-color: rgba(65, 36, 152, 0.2);}
+.module-concertnight .module-title {background-color: rgba(0,0,0,0);}
+.module-concertnight li{float:left;width:85px;text-align:center;margin:0 20px; background: url(../images/stranger2.png) no-repeat;background-size:contain;}
+.module-concertnight li img{display:block;width:85px;height:85px;border:2px solid #d3a937;border-radius:85px;}
+.module-concertnight li.noresult img {opacity: 0;}
+.module-concertnight li a i{display:block;height:23px;margin:12px 0 0;color:#fff;font-style:normal;font-size:14px;overflow: hidden;text-overflow:ellipsis;}
+.module-concertnight li.noresult a i {color: #b0b4cd;}
+.module-concertnight ul:nth-of-type(1){margin:0 0 0 160px;}
+.module-concertnight ul:nth-of-type(2){margin:10px 0 0 230px;}
+.module-concertnight .tips{position:absolute;top:0;right:0;height:25px;line-height:25px;padding:0 5px 0 0;color:#fff;font-size:14px;background:#ec3136;}
+.module-concertnight .tips em{display:inline-block;padding:0 10px 0 5px;margin:0 5px 0 0;background:#c51d22;font-weight:bold;}
+.module-concertnight .tips em:after{position:absolute;left:-9px;top:0;content:"";display:block;width:13px;height:25px;transform:skew(18deg);-webkit-transform:skew(18deg);background:#c51d22;}
+.pad.module-top20.module-myconcert-xijin{background-size: cover;}

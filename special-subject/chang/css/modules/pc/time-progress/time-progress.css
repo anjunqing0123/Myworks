@@ -1,0 +1,223 @@
+/* line 1, time-progress.scss */
+.ml20 {
+  margin-left: 20px;
+}
+
+/* line 4, time-progress.scss */
+.mr20 {
+  margin-right: 20px;
+}
+
+/* line 7, time-progress.scss */
+.rel {
+  position: relative;
+}
+
+/* line 10, time-progress.scss */
+.module-time-progress {
+  text-align: justify;
+  text-align-last: justify;
+  line-height: 0;
+  height: 130px;
+}
+/* line 15, time-progress.scss */
+.module-time-progress .item {
+  color: #cccccc;
+}
+/* line 17, time-progress.scss */
+.module-time-progress .item:hover {
+  text-decoration: none;
+}
+/* line 20, time-progress.scss */
+.module-time-progress .item .circle-info {
+  position: absolute;
+  top: -45px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+}
+/* line 27, time-progress.scss */
+.module-time-progress .item .info-pass {
+  color: #d92137;
+  font-weight: bold;
+}
+/* line 31, time-progress.scss */
+.module-time-progress .item p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  max-height: 40px;
+  overflow: hidden;
+}
+/* line 41, time-progress.scss */
+.module-time-progress .item h3 {
+  text-align: center;
+  font-size: 18px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+/* line 53, time-progress.scss */
+.module-time-progress .line-normal {
+  position: absolute;
+  top: 35px;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  font-size: 0;
+  background: url(modules/pc/module-person-praise/linebg.png) repeat-x;
+}
+/* line 62, time-progress.scss */
+.module-time-progress .line-mask-l {
+  position: absolute;
+  top: 25px;
+  height: 2px;
+  width: 6%;
+  left: 0;
+  background: white;
+}
+/* line 70, time-progress.scss */
+.module-time-progress .line-mask-r {
+  position: absolute;
+  top: 25px;
+  height: 2px;
+  width: 6%;
+  right: 0;
+  background: white;
+}
+/* line 78, time-progress.scss */
+.module-time-progress .item-circle {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+}
+/* line 87, time-progress.scss */
+.module-time-progress .circleshape {
+  width: 34px;
+  height: 34px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 34px;
+  font-size: 12px;
+  padding-top: 40px;
+  position: relative;
+}
+/* line 97, time-progress.scss */
+.module-time-progress .circle-pass {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -7px;
+  margin-left: -7px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -38px;
+  border-radius: 50%;
+  z-index: 2;
+}
+/* line 111, time-progress.scss */
+.module-time-progress .circle-next {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -7px;
+  margin-left: -7px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -87px;
+  border-radius: 50%;
+  z-index: 2;
+}
+/* line 125, time-progress.scss */
+.module-time-progress .circle-progress {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  background: url(modules/pc/module-person-praise/personspace_sprite.png) no-repeat;
+  _background: url(modules/pc/module-person-praise/personspace_sprite_ie6.png) no-repeat;
+  background-position: 0px -436px;
+  z-index: 2;
+}
+/* line 138, time-progress.scss */
+.module-time-progress .circle-win {
+  background: url(modules/pc/module-person-praise/personspace_sprite.png) no-repeat;
+  _background: url(modules/pc/module-person-praise/personspace_sprite_ie6.png) no-repeat;
+  background-position: 0px -900px;
+  width: 90px;
+  height: 94px;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+.module-time-progress .circle-replace{
+  background: url(modules/pc/time-progress/replace.png) no-repeat;
+  _background: url(modules/pc/time-progress/replace_ie6.png) no-repeat;
+  width: 90px;
+  height: 94px;
+  position: absolute;
+  bottom: -30px;
+  left: -4px;
+}
+.module-time-progress .circle-ret{
+  background: url(modules/pc/time-progress/ret.png) no-repeat;
+  _background: url(modules/pc/time-progress/ret_ie6.png) no-repeat;
+  width: 90px;
+  height: 94px;
+  position: absolute;
+  bottom: -28px;
+  left: -3px;
+}
+/* line 148, time-progress.scss */
+.module-time-progress .circle-lose {
+  background: url(modules/pc/module-person-praise/personspace_sprite.png) no-repeat;
+  _background: url(modules/pc/module-person-praise/personspace_sprite_ie6.png) no-repeat;
+  background-position: 0px -771px;
+  width: 90px;
+  height: 94px;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 160, time-progress.scss */
+  .module-time-progress {
+    font-size: 0;
+  }
+}
+/* line 164, time-progress.scss */
+.module-time-progress:after {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  content: '';
+  vertical-align: top;
+}
+
+/* line 172, time-progress.scss */
+.module-time-progress .item {
+  width: 12%;
+  display: inline-block;
+  height: 80px;
+  position: relative;
+}

@@ -1,0 +1,186 @@
+.module-audition-top60 {
+  background: #f0f0f0;
+}
+.module-audition-top60 .avartar {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: url(../images/stranger3.png) center center no-repeat;
+  background-size: cover;
+}
+.module-audition-top60 .avartar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+}
+.module-audition-top60 .name {
+  text-align: center;
+  font-size: 16px;
+}
+.module-audition-top60 .time {
+  opacity: 0;
+  background: #fff;
+  width: 1.4rem;
+  font-size: 0.28rem;
+  color: #ef2e2e;
+  text-align: center;
+  line-height: 0.4rem;
+  border-radius: 0.2rem;
+  margin: 0 auto;
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+}
+.module-audition-top60 .l3 {
+  text-align: center;
+  margin: 10px 0 20px 0;
+  font-size: 12px;
+  color: #646464;
+}
+.module-audition-top60 .list .item {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  background: #fff;
+  height: 60px;
+  margin: 10px 0;
+}
+.module-audition-top60 .list .i_avartar {
+  background: url(../images/stranger.png) center center no-repeat;
+  background-size: cover;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  top: 50%;
+  margin-top: -23px;
+  border-radius: 40px;
+  margin-left: 20px;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+}
+.module-audition-top60 .list .i_avartar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+.module-audition-top60 .list .data {
+  flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  min-width: 45%;
+  height: 40px;
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  margin-left: 10px;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+.module-audition-top60 .list .data .l1 {
+  font-size: 14px;
+  line-height: 25px;
+}
+.module-audition-top60 .list .data .count {
+  font-size: 16px;
+  color: #ef2e2e;
+  transform: translateY(2px);
+}
+.module-audition-top60 .list .data .name {
+  text-align: middle;
+  display: inline-block;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+.module-audition-top60 .list .data .l2 {
+  height: 5px;
+  width: 0;
+  background: #ef2e2e;
+  margin-top: 2px;
+}
+.module-audition-top60 .list .btn {
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  width: 90px;
+  height: 37px;
+  background: #ef2e2e;
+  line-height: 37px;
+  text-align: center;
+  color: #fff;
+  margin-right: 10px;
+  margin-top: -18px;
+  position: relative;
+  top: 50%;
+}
+.module-audition-top60 .list .btn.disable {
+  background: #fa6565;
+}
+
+.module-audition-top60 .tabs {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  margin: 0.5rem;
+}
+.module-audition-top60 .tab {
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  box-orient:vertical;
+  box-direction:normal;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  box-pack: end;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+
+  flex: none;
+  -webkit-flex: none;
+  max-width: 2.5rem;
+}
+.module-audition-top60 .t_avatar {
+  background: url(../images/stranger.png) center center no-repeat;
+  background-size: cover;
+  width: 0.61rem;
+  height: 0.64rem;
+  border-radius: 60px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.module-audition-top60 .tab.main .t_avatar {
+  background: url(../images/livepk_pad/logo1.png) center center no-repeat;
+  background-size: cover;
+}
+.module-audition-top60 .tab.active .t_avatar {
+  width: 0.77rem;
+  height: 0.81rem;
+}
+.module-audition-top60 .t_avatar img {
+  width: 100%;
+  height: 100%;
+}
+.module-audition-top60 .t_name {
+  text-align: center;
+  color: #323232;
+  font-size: 0.28rem;
+  line-height: 0.5rem;
+  margin-top: 0.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 2.2rem;
+}
+.module-audition-top60 .tab.active .t_name {
+  color: #fff;
+  font-size: 0.32rem;
+  border-radius: 0.25rem;
+  background: #ef2e2e;
+  padding: 0 0.2rem;
+}
+

@@ -1,0 +1,58 @@
+.module-pop {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin:-90px 0 0 -150px;
+    width: 260px;
+    padding:0 20px;
+    height: 180px;
+    border: 1px solid #cccccc;
+    background: #fff;
+    z-index: 10;
+}
+
+.module-pop .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 26px;
+    height: 26px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #666;
+}
+
+.module-pop .close:hover {
+    color: #fff;
+    background: #ccc;
+}
+
+.module-pop p {
+    margin: 60px 0 0;
+    text-align: center;
+    font-size: 16px;
+    color: #fe5287;
+}
+
+.module-pop .get {
+    display: block;
+    width: 130px;
+    height: 46px;
+    margin: 22px auto 0;
+    line-height: 46px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: #fe5287;
+    border-radius: 5px;
+}
+
+.module-pop .get:hover {
+    background: #ff7ca4;
+}
+
+.module-pop2 p {
+    margin: 40px 0 0;
+    color: #333;
+}

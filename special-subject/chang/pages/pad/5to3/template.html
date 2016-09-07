@@ -1,0 +1,177 @@
+<style type="text/css">
+    .module-vtlist li {
+        float: none !important;
+        display: inline-block !important;
+    }
+    .module-vtlist {
+        padding: 0 !important;
+    }
+    .vtlist-cont {
+        text-align: center !important;
+    }
+    .ipad.module-only3 .content .renqi-item {
+        height: 110px !important;
+        margin-top: 5px !important;
+    }
+</style>
+<div class="grid js-gold-5" id="gold-5">
+</div>
+<script type="text/template" id="template">
+
+
+<%
+    if (stage === 0) {
+%>
+    <div class="module module-vtlist module-gold10 module-only3 ipad">
+        <div class="vtlist-cont" style="text-align: center;">
+            <ul>
+            <%
+                if (idolInfo.cname) {
+            %>
+                <li>
+                    <span class="bdr" username="<%= idolInfo.username %>">
+                        <img src="<%= idolInfo.avatar %>"/>
+                    </span>
+                    <p class="name"><%= idolInfo.group_name || idolInfo.real_name %></p>
+                    <button class="vlist-btn" sid="<%= idolInfo.voteid %>"><span class="txt">投票</span></button>
+                    <p class="vote"><%= idolInfo.votenum %></p>
+                </li>
+            <%
+                }
+                for (var i = 0; i < playerInfo.length; i++) {
+            %>
+                <li>
+                    <span class="bdr" username="<%= playerInfo[i].username %>">
+                        <img src="<%= playerInfo[i].avatar %>"/>
+                    </span>
+                    <p class="name"><%= playerInfo[i].group_name || playerInfo[i].real_name %></p>
+                    <button class="vlist-btn" sid="<%= playerInfo[i].voteid %>"><span class="txt">投票</span></button>
+                    <p class="vote"><%= playerInfo[i].votenum %></p>
+                </li>
+            <%
+                }
+            %>
+            </ul>
+        </div>
+    </div>
+<%
+    }
+%>
+<%
+    if (stage === 1) {
+%>
+    <div class="module module-vtlist module-gold10 module-only3 ipad">
+        <div class="vtlist-cont">
+            <ul>
+            <%
+                if (idolInfo.cname) {
+            %>
+                <li>
+                    <span class="bdr" username="<%= idolInfo.username %>">
+                        <img src="<%= idolInfo.avatar %>"/>
+                    </span>
+                    <p class="name"><%= idolInfo.group_name || idolInfo.real_name %></p>
+                    <p class="vote vote-bg"><%= idolInfo.votenum %></p>
+                </li>
+            <%
+                }
+                for (var i = 0; i < playerInfo.length; i++) {
+            %>
+                <li>
+                    <span class="bdr" username="<%= playerInfo[i].username %>">
+                        <img src="<%= playerInfo[i].avatar %>"/>
+                    </span>
+                    <p class="name"><%= playerInfo[i].group_name || playerInfo[i].real_name %></p>
+                    <p class="vote vote-bg"><%= playerInfo[i].votenum %></p>
+                </li>
+            <%
+                }
+            %>
+            </ul>
+        </div>
+    </div>
+<%
+    }
+%>
+<%  if (stage === 2) {
+%>
+
+    
+    <div class="module module-vtlist module-gold10 module-only3 ipad" applink="<%= playerInfo[0].app_link%>" link="<%= playerInfo[0].link %>">
+        <div class="module-tbtitle">
+            <div class="tbtitle_a">LIVE</div>
+            <div class="tbtitle_b">正在直播</div>
+        </div>
+        <div class="vtlist-cont">
+            <ul>
+            <%
+                if (idolInfo.cname) {
+            %>
+                <li>
+                    <span class="bdr" username="<%= idolInfo.username %>">
+                        <img src="<%= idolInfo.avatar %>"/>
+                    </span>
+                    <p class="name"><%= idolInfo.group_name || idolInfo.real_name %></p>
+                    <p class="vote vote-bg"><%= idolInfo.votenum %></p>
+                </li>
+            <%
+                }
+                for (var i = 0; i < playerInfo.length; i++) {
+            %>
+                <li>
+                    <span class="bdr" username="<%= playerInfo[i].username %>">
+                        <img src="<%= playerInfo[i].avatar %>"/>
+                    </span>
+                    <p class="name"><%= playerInfo[i].group_name || playerInfo[i].real_name %></p>
+                    <p class="vote vote-bg"><%= playerInfo[i].votenum %></p>
+                </li>
+            <%
+                }
+            %>
+            </ul>
+        </div>
+    </div>
+<%
+    }
+%>
+<%
+    if (stage === 3) {
+%>
+    <div class="module module-only3 ipad">
+            <div class="content renqi-item">
+            <%
+                if (idolInfo.promotion) {
+            %>
+                <div class="renqi-item">
+                    <div class="cont_w">
+                        <div class="picw" username="<%= idolInfo.username %>">
+                            <img src="<%= idolInfo.avatar %>">
+
+                            <div class="imgw"></div>
+                        </div>
+                        <div class="name"><%= idolInfo.group_name || idolInfo.real_name %></div>
+                    </div>
+                </div>
+            <%
+                }
+                for (var i = 0; i < playerInfo.length; i++) {
+            %>
+                <div class="renqi-item">
+                    <div class="cont_w">
+                        <div class="picw" username="<%= playerInfo[i].username %>">
+                            <img src="<%= playerInfo[i].avatar %>">
+
+                            <div class="imgw"></div>
+                        </div>
+                        <div class="name"><%= playerInfo[i].group_name || playerInfo[i].real_name %></div>
+                    </div>
+                </div>
+            <%
+                }
+            %>
+            </div>
+        </div>
+<%
+    }
+%>
+</script>

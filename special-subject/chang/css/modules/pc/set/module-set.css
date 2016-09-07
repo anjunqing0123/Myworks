@@ -1,0 +1,64 @@
+.module-set{height:100px;background:#f1f1f1;}
+.module-set .set{width:980px;padding:15px 0;height:70px;margin:0 auto;color:#999; position:relative;z-index:100;}
+.module-set .up,
+.module-set .down{float:left;display:inline;width:80px;margin:10px 0 0 10px;text-align:center;}
+.module-set .up a,
+.module-set .down a{display:block;width:31px;height:31px;margin:0 auto 10px;background:url(modules/pc/set/icon.jpg) no-repeat 0 0;cursor:pointer;}
+.module-set .up a:hover{background-position:0 -31px;}
+.module-set .down a{background-position:-31px 0;}
+.module-set .down a:hover{background-position:-31px -31px;}
+.module-set .up span,
+.module-set .down span{position:absolute; display:block; width: 100%;left:50%;margin-left:-52%;}
+
+.module-set .tip{position:relative;float:left;display:inline;width:auto;padding:10px 20px;margin:5px 0 0 30px;background:#fff;max-width: 280px;_width:240px;}
+.module-set .tip p{line-height:22px;}
+.module-set .tip p span{padding:0 5px;font-size:14px;font-weight:bold;color:#222;}
+.module-set .tip p .c-grey{color:#999;}
+.module-set .tip i{position:absolute;left:-20px;top:23px;width:0;height:0;font-size:0;line-height:0;border-width:10px;border-color:transparent rgb(255, 255, 255) transparent transparent;border-style:dashed solid dashed dashed;}
+
+.module-set .share{position:relative;float:right;display:inline;width:32px;margin:10px 0 0 30px;text-align:center;}
+.module-set .share a{display:block;width:31px;height:27px;margin:0 auto 10px;background:url(modules/pc/set/icon.jpg) no-repeat 0 -62px;}
+.module-set .share a:hover{background-position:0 -89px;}
+.module-set .sharebox{position:absolute;top:90px;left:-150px;width:340px;padding:20px 0;border:1px solid #f1f1f1;background:#fff;z-index:100;}
+.module-set .sharebox a{float:left;width:61px;text-indent:-9999px;height:61px;margin:0 25px;_margin:0 20px;background:url(modules/pc/set/icon.jpg) no-repeat;}
+.module-set .sharebox .s1{background-position:0 -116px;margin-left: 5px;}
+.module-set .sharebox .s2{background-position:0 -177px;}
+.module-set .sharebox .s3{background-position:0 -238px;}
+.module-set .sharebox .s4{background-position:0 -299px;}
+.module-set .sharebox .s1:hover{background-position:0 -360px;}
+.module-set .sharebox .s2:hover{background-position:0 -421px;}
+.module-set .sharebox .s3:hover{background-position:0 -482px;}
+.module-set .sharebox .s4:hover{background-position:0 -543px;}
+
+.module-set .triangle-border{position:absolute;width:0;height:0;border-width:10px;border-color:transparent transparent rgb(222, 222, 222) transparent;border-style:dashed dashed solid dashed;right:162px;top:-21px;_top:-21px;_border-color:transparent transparent rgb(229, 226, 226) transparent;z-index:1;overflow:hidden;}
+.module-set .triangle-bkg{position:absolute;width:0;height:0;border-width:10px;border-color:transparent transparent rgb(255, 255, 255) transparent;border-style:dashed dashed solid dashed;right:162px;top:-20px;z-index:2;overflow:hidden;}
+
+.module-set .vodnum{float:right;display:inline;width:75px;margin:10px 30px 0 60px;text-align:center;}
+.module-set .vodnum a{display:block;width:31px;height:27px;margin:0 auto 10px;background:url(modules/pc/set/icon.jpg) no-repeat -30px -61px;}
+
+/*点赞倒计时*/
+.module-set .vote-mask{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	color:white;
+	position: absolute;
+	background:url(modules/pc/module-person-praise/countdownmask.png) no-repeat;
+	top: -7px;
+	left: 12px;
+	z-index: 3;
+	font-style: normal;
+}
+.module-set .vote-add{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	color:white;
+	position: absolute;
+	background:url(modules/pc/module-person-praise/countadd.png) no-repeat;
+	top: -8px;
+	left: 12px;
+	z-index: 3;
+	font-style: normal;
+	opacity: 0;
+}

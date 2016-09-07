@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>JSSDK测试专区</title>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://static9.pplive.cn/oth/2012/10/jssdk/v_20150408155209/jsbridge.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            ppsdk.config({});
+
+            ppsdk.ready(function () {
+                alert("JSSDK函数加载完成");
+
+                window.getDeviceInfo = function () {
+                    ppsdk.getDeviceInfo({
+                        success: function (rspData) {
+                            
+                            $("#funcName").text("ppsdk.getDeviceInfo()");
+                            $("#funcResult").text("success");
+                            $("#funcOutput").text(JSON.stringify(rspData));
+                        },
+                        error: function (errCode, msg) {
+                            
+                            $("#funcName").text("ppsdk.getDeviceInfo()");
+                            $("#funcResult").text("error");
+                            $("#funcOutput").text("Error code: " + errCode + " ;Error message: " + msg);
+                        },
+                        cancel: function () {
+                            
+                            $("#funcName").text("ppsdk.getDeviceInfo()");
+                            $("#funcResult").text("cancel");
+                            $("#funcOutput").text("");
+                        }
+                    });
+                };
+
+                window.getLocation = function () {
+                    ppsdk.getLocation({
+                        success: function (rspData) {
+                            
+                            $("#funcName").text("ppsdk.getLocation()");
+                            $("#funcResult").text("success");
+                            $("#funcOutput").text(JSON.stringify(rspData));
+                        },
+                        error: function (errCode, msg) {
+                            
+                            $("#funcName").text("ppsdk.getLocation()");
+                            $("#funcResult").text("error");
+                            $("#funcOutput").text("Error code: " + errCode + " ;Error message: " + msg);
+                        },
+                        cancel: function () {
+                            
+                            $("#funcName").text("ppsdk.getLocation()");
+                            $("#funcResult").text("cancel");
+                            $("#funcOutput").text("");
+                        }
+                    });
+                };
+
+                window.getUserInfo = function () {
+                    ppsdk.getUserInfo({
+                        success: function (rspData) {
+                            
+                            $("#funcName").text("ppsdk.getUserInfo()");
+                            $("#funcResult").text("success");
+                            $("#funcOutput").text(JSON.stringify(rspData));
+                        },
+                        error: function (errCode, msg) {
+                            
+                            $("#funcName").text("ppsdk.getUserInfo()");
+                            $("#funcResult").text("error");
+                            $("#funcOutput").text("Error code: " + errCode + " ;Error message: " + msg);
+                        },
+                        cancel: function () {
+                            
+                            $("#funcName").text("ppsdk.getUserInfo()");
+                            $("#funcResult").text("cancel");
+                            $("#funcOutput").text("");
+                        }
+                    });
+                };
+
+                window.changeValue = function (paramObj) {
+                    for (var i in paramObj) {
+                        if (!(paramObj[i] instanceof Function)) {
+                            if (paramObj[i] === "nil") {
+                                delete paramObj[i];
+                            } else if (paramObj[i] === "false" || paramObj[i] === "False" || paramObj[i] === "FALSE") {
+                                paramObj[i] = false;
+                            } else if (paramObj[i] === "true" || paramObj[i] === "Ture" || paramObj[i] === "TRUE") {
+                                paramObj[i] = true;
+                            }
+
+                        }
+                    }
+                    return paramObj;
+                };
+
+                window.login = function () {
+                    var funcParam = {
+                        autologin: $("#autoLogin").val(),
+                        success: function (rspData) {
+                            
+                            $("#funcName").text("ppsdk.login()");
+                            $("#funcResult").text("success");
+                            $("#funcOutput").text(JSON.stringify(rspData));
+                        },
+                        error: function (errCode, msg) {
+                            
+                            $("#funcName").text("ppsdk.login()");
+                            $("#funcResult").text("error");
+                            $("#funcOutput").text("Error code: " + errCode + " ;Error message: " + msg);
+                        },
+                        cancel: function () {
+                            
+                            $("#funcName").text("ppsdk.login()");
+                            $("#funcResult").text("cancel");
+                            $("#funcOutput").text("");
+                        }
+                    };
+
+                    ppsdk.login(changeValue(funcParam));
+                };
+
+                window.register = function () {
+                    var funcParam = {
+                        success: function (rspData) {
+                            
+                            $("#funcName").text("ppsdk.register()");
+                            $("#funcResult").text("success");
+                            $("#funcOutput").text(JSON.stringify(rspData));
+                        },
+                        error: function (errCode, msg) {
+                            
+                            $("#funcName").text("ppsdk.register()");
+                            $("#funcResult").text("error");
+                            $("#funcOutput").text("Error code: " + errCode + " ;Error message: " + msg);
+                        },
+                        cancel: function () {
+                            
+                            $("#funcName").text("ppsdk.register()");
+                            $("#funcResult").text("cancel");
+                            $("#funcOutput").text("");
+                        }
+                    };
+
+                    ppsdk.register(changeValue(funcParam));
+                };
+
+                window.share = function () {
+                    var funcParam = {
+                        shareText: $("#shareText").val(),
+                        shareURL: $("#shareURL").val(),
+                        shareImageURL: $("#shareImageURL").val(),
+                        success: function (rspData) {
+                            
+                            $("#funcName").text("ppsdk.share()");
+                            $("#funcResult").text("success");
+                            $("#funcOutput").text(JSON.stringify(rspData));
+                        },
+                        error: function (errCode, msg) {
+                            
+                            $("#funcName").text("ppsdk.share()");
+                            $("#funcResult").text("error");
+                            $("#funcOutput").text("Error code: " + errCode + " ;Error message: " + msg);
+                        },
+                        cancel: function () {
+                            
+                            $("#funcName").text("ppsdk.share()");
+                            $("#funcResult").text("cancel");
+                            $("#funcOutput").text("");
+                        }
+                    };
+
+                    ppsdk.share(changeValue(funcParam));
+                };
+
+                window.sendSMS = function () {
+                    var funcParam = {
+                        to: $("#to").val(),
+                        content: $("#content").val(),
+                        success: function (rspData) {
+                            
+                            $("#funcName").text("ppsdk.sendSMS()");
+                            $("#funcResult").text("success");
+                            $("#funcOutput").text(JSON.stringify(rspData));
+                        },
+                        error: function (errCode, msg) {
+                            
+                            $("#funcName").text("ppsdk.sendSMS()");
+                            $("#funcResult").text("error");
+                            $("#funcOutput").text("Error code: " + errCode + " ;Error message: " + msg);
+                        },
+                        cancel: function () {
+                            
+                            $("#funcName").text("ppsdk.sendSMS()");
+                            $("#funcResult").text("cancel");
+                            $("#funcOutput").text("");
+                        }
+                    };
+
+                    ppsdk.sendSMS(changeValue(funcParam));
+                };
+
+                window.openNativePage = function () {
+                    var funcParam = {
+                        pageUrl: $("#pageUrl").val(),
+                        success: function (rspData) {
+                            
+                            $("#funcName").text("ppsdk.openNativePage()");
+                            $("#funcResult").text("success");
+                            $("#funcOutput").text(JSON.stringify(rspData));
+                        },
+                        error: function (errCode, msg) {
+                            
+                            $("#funcName").text("ppsdk.openNativePage()");
+                            $("#funcResult").text("error");
+                            $("#funcOutput").text("Error code: " + errCode + " ;Error message: " + msg);
+                        },
+                        cancel: function () {
+                            
+                            $("#funcName").text("ppsdk.openNativePage()");
+                            $("#funcResult").text("cancel");
+                            $("#funcOutput").text("");
+                        }
+                    };
+
+                    ppsdk.openNativePage(changeValue(funcParam));
+                };
+
+                window.uploadPic = function () {
+                    var funcParam = {
+
+                        info: { prod: $("#prod").val() },
+                        type: $("#picType").val(),
+                        size: {
+                            width: $("#picWidth").val(),
+                            height: $("#picHeight").val()
+                        },
+
+                        success: function (rspData) {
+                            
+                            $("#funcName").text("ppsdk.uploadPic()");
+                            $("#funcResult").text("success");
+                            $("#funcOutput").text(JSON.stringify(rspData));
+                        },
+                        error: function (errCode, msg) {
+                            
+                            $("#funcName").text("ppsdk.uploadPic()");
+                            $("#funcResult").text("error");
+                            $("#funcOutput").text("Error code: " + errCode + " ;Error message: " + msg);
+                        },
+                        cancel: function () {
+                            
+                            $("#funcName").text("ppsdk.uploadPic()");
+                            $("#funcResult").text("cancel");
+                            $("#funcOutput").text("");
+                        }
+                    };
+
+                    ppsdk.uploadPic(changeValue(funcParam));
+                };
+
+                window.msgboard = function () {
+                    var funcParam = {
+
+                        info: { id: $("#msgboardId").val() },
+
+                        success: function (rspData) {
+                            
+                            $("#funcName").text("ppsdk.msgboard()");
+                            $("#funcResult").text("success");
+                            $("#funcOutput").text(JSON.stringify(rspData));
+                        },
+                        error: function (errCode, msg) {
+                            
+                            $("#funcName").text("ppsdk.msgboard()");
+                            $("#funcResult").text("error");
+                            $("#funcOutput").text("Error code: " + errCode + " ;Error message: " + msg);
+                        },
+                        cancel: function () {
+                            
+                            $("#funcName").text("ppsdk.msgboard()");
+                            $("#funcResult").text("cancel");
+                            $("#funcOutput").text("");
+                        }
+                    };
+
+                    ppsdk.msgboard(changeValue(funcParam));
+                };
+
+                window.customizeBtn = function () {
+                    var funcParam = {
+
+                        id: $("#btnId").val(),
+                        behavior: $("#behavior").val(),
+                        type: $("#btnType").val(),
+                        params: $("#params").val(),
+                        clickFunc: $("#clickFunc").val(),
+
+                        success: function (rspData) {
+                            
+                            $("#funcName").text("ppsdk.customizeBtn()");
+                            $("#funcResult").text("success");
+                            $("#funcOutput").text(JSON.stringify(rspData));
+                        },
+                        error: function (errCode, msg) {
+                            
+                            $("#funcName").text("ppsdk.customizeBtn()");
+                            $("#funcResult").text("error");
+                            $("#funcOutput").text("Error code: " + errCode + " ;Error message: " + msg);
+                        },
+                        cancel: function () {
+                            
+                            $("#funcName").text("ppsdk.customizeBtn()");
+                            $("#funcResult").text("cancel");
+                            $("#funcOutput").text("");
+                        }
+                    };
+
+                    ppsdk.customizeBtn(changeValue(funcParam));
+                };
+
+                window.playStr = function () {
+                    var play = "pptv://player?";
+                    var first = true;
+                    if ($("#cp").val() != "nil") {
+                        if (!first) {
+                            play += "&";
+                        }
+                        play += ("cp=" + $("#cp").val());
+                        first = false;
+                    }
+                    if ($("#sid").val() != "nil") {
+                        if (!first) {
+                            play += "&";
+                        }
+                        play += ("sid=" + $("#sid").val());
+                        first = false;
+                    }
+                    if ($("#vid").val() != "nil") {
+                        if (!first) {
+                            play += "&";
+                        }
+                        play += ("vid=" + $("#vid").val());
+                        first = false;
+                    }
+                    if ($("#viewfrom").val() != "nil") {
+                        if (!first) {
+                            play += "&";
+                        }
+                        play += ("viewfrom=" + $("#viewfrom").val());
+                        first = false;
+                    }
+                    if ($("#source").val() != "nil") {
+                        if (!first) {
+                            play += "&";
+                        }
+                        play += ("source=" + $("#source").val());
+                        first = false;
+                    }
+                    if ($("#playmode").val() != "nil") {
+                        if (!first) {
+                            play += "&";
+                        }
+                        play += ("playmode=" + $("#playmode").val());
+                        first = false;
+                    }
+                    if ($("#backurl").val() != "nil") {
+                        if (!first) {
+                            play += "&";
+                        }
+                        play += ("backurl=" + $("#backurl").val());
+                        first = false;
+                    }
+                    if ($("#channel_id").val() != "nil") {
+                        if (!first) {
+                            play += "&";
+                        }
+                        play += ("channel_id=" + $("#channel_id").val());
+                        first = false;
+                    }
+                    if ($("#type").val() != "nil") {
+                        if (!first) {
+                            play += "&";
+                        }
+                        play += ("type=" + $("#type").val());
+                        first = false;
+                    }
+                    if ($("#video_id").val() != "nil") {
+                        if (!first) {
+                            play += "&";
+                        }
+                        play += ("video_id=" + $("#video_id").val());
+                        first = false;
+                    }
+                    if ($("#extra").val() != "nil") {
+                        if (!first) {
+                            play += "&";
+                        }
+                        play += ("extra=" + encodeURIComponent($("#extra").val()));
+                        first = false;
+                    }
+                    alert(play);
+                    return play;
+                };
+
+                window.playVideo = function () {
+                    var funcParam = {
+                        playlink: playStr(),
+                        success: function (rspData) {
+                            
+                            $("#funcName").text("ppsdk.register()");
+                            $("#funcResult").text("success");
+                            $("#funcOutput").text(JSON.stringify(rspData));
+                        },
+                        error: function (errCode, msg) {
+                            
+                            $("#funcName").text("ppsdk.register()");
+                            $("#funcResult").text("error");
+                            $("#funcOutput").text("Error code: " + errCode + " ;Error message: " + msg);
+                        },
+                        cancel: function () {
+                            
+                            $("#funcName").text("ppsdk.register()");
+                            $("#funcResult").text("cancel");
+                            $("#funcOutput").text("");
+                        }
+                    };
+
+                    ppsdk.playVideo(changeValue(funcParam));
+                };
+            });
+        });
+
+
+    </script>
+
+    <style type="text/css">
+        <!--
+        body, div, ul, li {
+            padding: 0;
+            text-align: center;
+        }
+
+        body, input {
+            font: 25px "宋体";
+            text-align: center;
+        }
+
+        a:link {
+            color: #00F;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #00F;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #c00;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+        }
+        /*选项卡1*/
+        #Tab1 {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            margin: 0 auto;
+        }
+        /*选项卡2*/
+        #Tab2 {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            margin: 0 auto;
+        }
+        /*菜单class*/
+        .Menubox {
+            width: 100%;
+            background: url(http://www.jb51.net/upload/small/20079299441652.gif);
+            height: 28px;
+            line-height: 28px;
+        }
+
+            .Menubox ul {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .Menubox li {
+                float: left;
+                display: block;
+                cursor: pointer;
+                width: 114px;
+                text-align: center;
+                color: #949694;
+                font-weight: bold;
+            }
+
+                .Menubox li.hover {
+                    padding: 0px;
+                    background: #fff;
+                    width: 116px;
+                    border-left: 1px solid #A8C29F;
+                    border-top: 1px solid #A8C29F;
+                    border-right: 1px solid #A8C29F;
+                    background: url(http://www.jb51.net/upload/small/200792994426548.gif);
+                    color: #739242;
+                    font-weight: bold;
+                    height: 27px;
+                    line-height: 27px;
+                }
+
+        .Contentbox {
+            clear: both;
+            margin-top: 0px;
+            border: 1px solid #A8C29F;
+            border-top: none;
+            text-align: center;
+            padding-top: 8px;
+        }
+        -->
+    </style>
+    <script>
+
+<!--
+/*第一种形式 第二种形式 更换显示样式*/
+function setTab(name,cursel,n){
+for(i=1;i<=n;i++){
+var menu=document.getElementById(name+i);
+var con=document.getElementById("con_"+name+"_"+i);
+menu.className=i==cursel?"hover":"";
+con.style.display=i==cursel?"block":"none";
+}
+}
+//-->
+    </script>
+</head>
+<body>
+
+    <div id="Tab1">
+        <h1>jssdk测试</h1>
+        <p>jssdk测试用来的构建，参考jssdk文档。输入框为nil，表示该字段没有，为空时为空字符，0， 或者false</p>
+        <div class="Menubox">
+            <ul>
+                <li id="one1" onclick="setTab('one',1,12)" class="hover">设备信息</li>
+                <li id="one2" onclick="setTab('one',2,12)">地理位置</li>
+                <li id="one3" onclick="setTab('one',3,12)">个人信息</li>
+                <li id="one4" onclick="setTab('one',4,12)">登录</li>
+                <li id="one5" onclick="setTab('one',5,12)">注册</li>
+                <li id="one6" onclick="setTab('one',6,12)">分享</li>
+                <li id="one7" onclick="setTab('one',7,12)">短信</li>
+                <li id="one8" onclick="setTab('one',8,12)">跳转</li>
+                <li id="one9" onclick="setTab('one',9,12)">上传图片</li>
+                <li id="one10" onclick="setTab('one',10,12)">留言板</li>
+                <li id="one11" onclick="setTab('one',11,12)">定制按钮</li>
+                <li id="one12" onclick="setTab('one',12,12)">播放</li>
+            </ul>
+        </div>
+        <div class="Contentbox">
+            <div id="con_one_1" class="hover">
+                <table style="width:100%" border="1">
+                    <tr>
+                        <td width="30%"><b>函数</b></td>
+                        <td width="60%"><b>参数配置</b></td>
+                        <td width="10%"><b>调用</b></td>
+                    </tr>
+
+                    <tr>
+                        <td height="40px">ppsdk.getDeviceInfo</td>
+                        <td>无</td>
+                        <td>
+                            <input style="width:90%" type="button" onclick="getDeviceInfo()" value="设备信息" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="con_one_2" style="display:none">
+                <table style="width:100%" border="1">
+                    <tr>
+                        <td width="30%"><b>函数</b></td>
+                        <td width="60%"><b>参数配置</b></td>
+                        <td width="10%"><b>调用</b></td>
+                    </tr>
+
+                    <tr>
+                        <td height="40px">ppsdk.getLocation</td>
+                        <td>无</td>
+                        <td>
+                            <input style="width:90%" type="button" onclick="getLocation()" value="地理位置" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="con_one_3" style="display:none">
+                <table style="width:100%" border="1">
+                    <tr>
+                        <td width="30%"><b>函数</b></td>
+                        <td width="60%"><b>参数配置</b></td>
+                        <td width="10%"><b>调用</b></td>
+                    </tr>
+
+                    <tr>
+                        <td height="40px">ppsdk.getUserInfo</td>
+                        <td>无</td>
+                        <td>
+                            <input style="width:90%" type="button" onclick="getUserInfo()" value="个人信息" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="con_one_4" style="display:none">
+                <table style="width:100%" border="1">
+                    <tr>
+                        <td width="30%"><b>函数</b></td>
+                        <td width="60%"><b>参数配置</b></td>
+                        <td width="10%"><b>调用</b></td>
+                    </tr>
+
+                    <tr>
+                        <td height="40px">ppsdk.login</td>
+                        <td>
+                            <table style="width:100%" border="1">
+                                <tr>
+                                    <td>autoLogin</td>
+                                    <td><input style="width:90%" type="text" value="false" id="autoLogin" /></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <input style="width:90%" type="button" onclick="login()" value="登录" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="con_one_5" style="display:none">
+                <table style="width:100%" border="1">
+                    <tr>
+                        <td width="30%"><b>函数</b></td>
+                        <td width="60%"><b>参数配置</b></td>
+                        <td width="10%"><b>调用</b></td>
+                    </tr>
+
+                    <tr>
+                        <td height="40px">ppsdk.register</td>
+                        <td>无</td>
+                        <td>
+                            <input style="width:90%" type="button" onclick="register()" value="注册" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="con_one_6" style="display:none">
+                <table style="width:100%" border="1">
+                    <tr>
+                        <td width="30%"><b>函数</b></td>
+                        <td width="60%"><b>参数配置</b></td>
+                        <td width="10%"><b>调用</b></td>
+                    </tr>
+
+                    <tr>
+                        <td>ppsdk.share</td>
+                        <td>
+                            <table style="width:100%" border="1">
+                                <tr>
+                                    <td>shareText</td>
+                                    <td><input style="width:90%" type="text" value="我的分享" id="shareText" /></td>
+                                </tr>
+                                <tr>
+                                    <td>shareURL</td>
+                                    <td><input style="width:90%" type="text" value="http://www.baidu.com" id="shareURL" /></td>
+                                </tr>
+                                <tr>
+                                    <td>shareImageURL</td>
+                                    <td><input style="width:90%" type="text" value="http://www.baidu.com" id="shareImageURL" /></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <input style="width:90%" type="button" onclick="share()" value="分享" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="con_one_7" style="display:none">
+                <table style="width:100%" border="1">
+                    <tr>
+                        <td width="30%"><b>函数</b></td>
+                        <td width="60%"><b>参数配置</b></td>
+                        <td width="10%"><b>调用</b></td>
+                    </tr>
+                    <tr>
+                        <td>ppsdk.sendSMS</td>
+                        <td>
+                            <table style="width:100%" border="1">
+                                <tr>
+                                    <td>to</td>
+                                    <td><input style="width:90%" type="text" value="" id="to" /></td>
+                                </tr>
+                                <tr>
+                                    <td>content</td>
+                                    <td><input style="width:90%" type="text" value="" id="content" /></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <input style="width:90%" type="button" onclick="sendSMS()" value="短信" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="con_one_8" style="display:none">
+                <table style="width:100%" border="1">
+                    <tr>
+                        <td width="30%"><b>函数</b></td>
+                        <td width="60%"><b>参数配置</b></td>
+                        <td width="10%"><b>调用</b></td>
+                    </tr>
+                    <tr>
+                        <td>ppsdk.openNativePage</td>
+                        <td>
+                            <table style="width:100%" border="1">
+                                <tr>
+                                    <td>pageUrl</td>
+                                    <td><input style="width:90%" type="text" value="app://aph.pptv.com/v4/cache/cached" id="pageUrl" /></td>
+                                </tr>
+
+                            </table>
+                        </td>
+                        <td>
+                            <input style="width:90%" type="button" onclick="openNativePage()" value="跳转" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="con_one_9" style="display:none">
+                <table style="width:100%" border="1">
+                    <tr>
+                        <td width="30%"><b>函数</b></td>
+                        <td width="60%"><b>参数配置</b></td>
+                        <td width="10%"><b>调用</b></td>
+                    </tr>
+
+                    <tr>
+                        <td>ppsdk.uploadPic</td>
+                        <td>
+                            <table style="width:100%" border="1">
+                                <tr>
+                                    <td>prod</td>
+                                    <td><input style="width:90%" type="text" value="yccm_pic" id="prod" /></td>
+                                </tr>
+
+                                <tr>
+                                    <td>用途</td>
+                                    <td><input style="width:90%" type="text" value="0" id="picType" /></td>
+                                </tr>
+
+                                <tr>
+                                    <td>width</td>
+                                    <td><input style="width:90%" type="text" value="400" id="picWidth" /></td>
+                                </tr>
+                                <tr>
+                                    <td>height</td>
+                                    <td><input style="width:90%" type="text" value="400" id="picHeight" /></td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <input style="width:90%" type="button" onclick="uploadPic()" value="上传图片" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="con_one_10" style="display:none">
+                <table style="width:100%" border="1">
+                    <tr>
+                        <td width="30%"><b>函数</b></td>
+                        <td width="60%"><b>参数配置</b></td>
+                        <td width="10%"><b>调用</b></td>
+                    </tr>
+
+                    <tr>
+                        <td>ppsdk.msgboard</td>
+                        <td>
+                            <table style="width:100%" border="1">
+                                <tr>
+                                    <td>msgboardId</td>
+                                    <td><input style="width:90%" type="text" value="" id="msgboardId" /></td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <input style="width:90%" type="button" onclick="msgboard()" value="留言板" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="con_one_11" style="display:none">
+                <table style="width:100%" border="1">
+                    <tr>
+                        <td width="30%"><b>函数</b></td>
+                        <td width="60%"><b>参数配置</b></td>
+                        <td width="10%"><b>调用</b></td>
+                    </tr>
+                    <tr>
+                        <td>ppsdk.customizeBtn</td>
+                        <td>
+                            <table style="width:100%" border="1">
+                                <tr>
+                                    <td>id</td>
+                                    <td><input style="width:90%" type="text" value="button1" id="btnId" /></td>
+                                </tr>
+                                <tr>
+                                    <td>behavior</td>
+                                    <td><input style="width:90%" type="text" value=0 id="behavior" /></td>
+                                </tr>
+                                <tr>
+                                    <td>btnType</td>
+                                    <td><input style="width:90%" type="text" value=1 id="btnType" /></td>
+                                </tr>
+                                <tr>
+                                    <td>params</td>
+                                    <td><input style="width:90%" type="text" value="shareText=test&shareImgUrl=http%3a%2f%2ftb.himg.baidu.com%2fsys%2fportrait%2fitem%2fc5bd7225&shareUrl=http%3a%2f%2fwww.baidu.com" id="params" /></td>
+                                </tr>
+                                <tr>
+                                    <td>clickFunc</td>
+                                    <td><input style="width:90%" type="text" value="" id="clickFunc" /></td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <input style="width:90%" type="button" onclick="customizeBtn()" value="定制按钮" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="con_one_12" style="display:none">
+                <table style="width:100%" border="1">
+                    <tr>
+                        <td width="30%"><b>函数</b></td>
+                        <td width="60%"><b>参数配置</b></td>
+                        <td width="10%"><b>调用</b></td>
+                    </tr>
+                    <tr>
+                        <td>ppsdk.playVideo</td>
+                        <td>
+                            <table style="width:100%" border="1">
+                                <tr>
+                                    <td>cp</td>
+                                    <td><input style="width:90%" type="text" value=1 id="cp" /></td>
+                                </tr>
+                                <tr>
+                                    <td>sid</td>
+                                    <td><input style="width:90%" type="text" value="nil" id="sid" /></td>
+                                </tr>
+                                <tr>
+                                    <td>vid</td>
+                                    <td><input style="width:90%" type="text" value="9038072" id="vid" /></td>
+                                </tr>
+                                <tr>
+                                    <td>viewfrom</td>
+                                    <td><input style="width:90%" type="text" value="nil" id="viewfrom" /></td>
+                                </tr>
+                                <tr>
+                                    <td>source</td>
+                                    <td><input style="width:90%" type="text" value="nil" id="source" /></td>
+                                </tr>
+                                <tr>
+                                    <td>playmode</td>
+                                    <td><input style="width:90%" type="text" value="2" id="playmode" /></td>
+                                </tr>
+                                <tr>
+                                    <td>backurl</td>
+                                    <td><input style="width:90%" type="text" value="nil" id="backurl" /></td>
+                                </tr>
+                                <tr>
+                                    <td>channel_id</td>
+                                    <td><input style="width:90%" type="text" value="nil" id="channel_id" /></td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td><input style="width:90%" type="text" value="ppvod" id="type" /></td>
+                                </tr>
+                                <tr>
+                                    <td>video_id</td>
+                                    <td><input style="width:90%" type="text" value="nil" id="video_id" /></td>
+                                </tr>
+
+                                <tr>
+                                    <td>extra</td>
+                                    <td><input style="width:90%" type="text" value="nil" id="extra" /></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <input style="width:90%" type="button" onclick="playVideo()" value="播放" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <p>调用结果展示</p>
+        <table style="width:100%" border="1">
+            <tr>
+                <td width="30%">调用函数</td>
+                <td width="10%">调用结果</td>
+                <td width="60%">输出</td>
+            </tr>
+            <tr>
+                <td id="funcName"></td>
+                <td id="funcResult"></td>
+                <td id="funcOutput"></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>

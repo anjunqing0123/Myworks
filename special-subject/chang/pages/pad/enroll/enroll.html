@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+<head>
+	<title>一唱成名</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="http://static9.pplive.cn/chang/css/v_01/phone.min.css">
+	<script type="text/javascript">
+	var enroll = {},en=enroll;
+	en.press = function(obj){
+		var className = obj.className;
+		obj.className += " pressed";
+		setTimeout(function(){
+			obj.className = className;
+		},100);
+	}
+	en.go_enroll = function(obj,type){
+		en.press(obj);
+	}
+	</script>
+</head>
+<body >
+	<div class="wraper enroll_w">
+		<div>
+			<img src="http://static9.pplive.cn/chang/images/enroll/enroll_top.jpg">
+		</div>
+		<div class="enroll">
+			<img src="http://static9.pplive.cn/chang/images/enroll/enroll_02.jpg">
+			<div class="e_wrap">
+				<a class="enroll_btn e_s" onclick="enroll.go_enroll(this,'s');" id="enroll_s"></a>
+				<a class="enroll_btn e_g" onclick="enroll.go_enroll(this,'g');" id="enroll_g"></a>
+			</div>
+		</div>
+		<div>
+			<img src="http://static9.pplive.cn/chang/images/enroll/enroll_04.jpg">
+		</div>
+		<div>
+			<img src="http://static9.pplive.cn/chang/images/enroll/enroll_05.jpg">
+		</div>
+		<div>
+			<img src="http://static9.pplive.cn/chang/images/enroll/enroll_06.jpg">
+		</div>
+	</div>
+</body>
+</html>
+

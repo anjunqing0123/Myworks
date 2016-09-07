@@ -1,0 +1,56 @@
+.wp-grid {
+	overflow: hidden;
+}
+.module-index-entrance {
+	background: url(../images/bg1.png);
+	background-position: center 35px;
+	background-size: cover;
+	padding-bottom: 20px;
+	background-color: #161f43;
+	padding-top: 15px;
+}
+.module-index-entrance .list {
+	text-align: center;
+	box-sizing: content-box;
+	width: 100%;
+}
+.module-index-entrance .avartar {
+	width: 1.6rem;
+	position: relative;
+	cursor: pointer;
+	margin: 0 0.06rem;
+	display: inline-block;
+	min-height: 1.6rem;
+}
+.module-index-entrance .avartar img {
+	bottom: 0;
+	width: 1.6rem;
+	display: block;
+}
+.module-index-entrance .avartar .enter {
+	position: absolute;
+	display: block;
+	bottom: -9px;
+	background-color: #d92137;
+	border-radius: 8px;
+	color: #fff;
+	text-align: center;
+	width: 38px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 10px;
+	left: 50%;
+	margin-left: -19px;
+}
+.module-index-entrance .title {
+	height: 30px;
+	background: url(../images/title.png) center center no-repeat;
+	background-size: 259px;
+	margin: 1px auto;
+}
+.module-index-entrance .avartar img:last-child {
+	position:absolute;
+	bottom: -0.8rem;
+	left:0;
+	width:1.95rem;
+}

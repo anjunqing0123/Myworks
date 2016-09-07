@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page.</title>
+    <meta charset=utf-8>
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://static9.pplive.cn/chang/css/lib/v_01/swiper.min.css?289">
+    <link rel="stylesheet" type="text/css" href="http://static9.pplive.cn/chang/v_01/css/pad.min.css?vd">
+    <script>
+        (function(designW) { // 参数w是设计稿的宽度，可以在页面中使用rem，1rem = 100px;
+            var screenW = Math.min(screen.width, window.innerWidth);
+            document.documentElement.style.fontSize =  100 * screenW / designW + 'px';
+        })(2048);
+    </script>
+    <script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<body style="font-size: 16px;">
+<div class="wp-grid">
+    <div class="grid">
+        <div class="module module-menu-slider pad" id="swper">
+            <div class="swiper-wrapper menu-slider-list">
+                <div class="swiper-slide menu-slider-item active" parmas="stage=1&scope=1&sort=1">
+                    <div>
+                        <span class="title">默认排序</span>
+                        <div class="bottom"></div>
+                    </div>  
+                    <span></span>                   
+                </div>
+                <div class="swiper-slide menu-slider-item" parmas="stage=1&scope=1&sort=2">
+                    <div>
+                        <span class="title">默认排序</span>
+                        <div class="bottom"></div>
+                    </div>  
+                    <span></span>                   
+                </div>
+                <div class="swiper-slide menu-slider-item" parmas="stage=1&scope=1&sort=3">
+                    <div>
+                        <span class="title">默认排序</span>
+                        <div class="bottom"></div>
+                    </div>  
+                    <span></span>                   
+                </div>
+                <div class="swiper-slide menu-slider-item" parmas="stage=1&scope=1&sort=4">
+                    <div>
+                        <span class="title">默认排序</span>
+                        <div class="bottom"></div>
+                    </div>  
+                    <span></span>                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid lazyimg" for="swper">
+        <div class="module  module-video pad module-video-rank">
+            <div class="video-l">
+                <div class="item ">
+                    <div>
+                        <img src="http://static9.pplive.cn/chang/images/videolist/videodemo.jpg">
+                    </div>
+                    <div>
+                        <span class="video-name">1111111111</span>
+                        <span class="video-name s-name"> 流浪儿</span>
+                        <div class="isgreet-w">
+                            <div class="up">
+                                2.7万
+                            </div>
+                            <div class="down">
+                                210
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div>
+                        <img src="http://static9.pplive.cn/chang/images/videolist/videodemo.jpg">
+                    </div>
+                    <div>
+                        <span class="video-name"> 中文Leave out all the rest</span>
+                        <span class="video-name s-name"> 流浪儿</span>
+                        <div class="isgreet-w">
+                            <div class="up">
+                                2.7万
+                            </div>
+                            <div class="down">
+                                210
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="module  module-video pad module-video-rank hidden">
+            <div class="video-l">
+            </div>
+        </div>
+        <div class="module  module-video pad module-video-rank hidden">
+            <div class="video-l">
+            </div>
+        </div>
+        <div class="module  module-video pad module-video-rank hidden">
+            <div class="video-l">
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://static9.pplive.cn/chang/js/app/config.js"></script>
+<script type="text/javascript">
+    seajs.use('app/pad/tag/nvshen');
+	seajs.use('app/pad/tag/tag');
+</script>
+</div>
+</body>
+</html>

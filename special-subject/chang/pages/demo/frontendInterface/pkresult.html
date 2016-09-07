@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pk结果调用接口</title>
+	<link rel="stylesheet" href="http://static9.pplive.cn/chang/css/v_20150611190516/pc.min.css" />
+	<script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<style>
+	.ml10{
+		margin-left: 10px;
+	}
+	.blCenter{
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+<body class="grid-1230 plt-web">
+	<!-- 报名接口说明开始 -->
+	<div class="cf blCenter" style="width:80%;">
+		<p>接口总说明地址：http://gitlab/webclient/sensation/blob/develop/doc/%E4%B8%80%E5%94%B1%E6%88%90%E5%90%8D%E6%8E%A5%E5%8F%A3.txt</p>
+		<p>获取用户信息接口（不需要用户登录）</p>
+		<p>接口地址：http://api.chang.pptv.com/api/pkresult?username=zj703063545 提交方式get 不需要登录</p>
+		<p>字段名称</p>
+		<p class="cf"><span class="fl">姓名</span><span class="fl ml10">username</span></p>
+		<p class="cf">返回值</p>
+		<p>用户未参加pk</p>
+		<pre>
+			{"status":"-1"}
+		</pre>
+		<p>
+			有用户pk信息
+		</p>
+		<pre>
+			{"playerinfo":{"id":"1","username":"zj703063545","id_card":"32098219901101087X","telphone":"15262906537","real_name":"\u5f20\u91d1","gender":"0","address":"\u4e0a\u6d77\u5e02-\u957f\u5b81\u533a-\u798f\u6cc9\u8def888\u53f7","email":"703063545@qq.com","qq":"703063545","wechat":"703063545","profession":"\u7a0b\u5e8f\u5458","introduction":"","avatar":"","group_name":"","game_area":"1,2","status":"1"},"pkinfo":{"id":"4","username":"zj1703063545","id_card":"32098219901101087X","telphone":"15262906537","real_name":"\u5f20\u91d1","gender":"1","address":"\u4e0a\u6d77\u5e02-\u957f\u5b81\u533a-\u798f\u6cc9\u8def888\u53f7","email":"zj713063545@hotmail.com","qq":"703063545","wechat":"703063545","profession":"\u7a0b\u5e8f\u5458","introduction":"","avatar":"","group_name":"","game_area":"1,3","status":"1"},"area":"1","vote_id":"26","pk_vote_id":"27","start_at":"0","end_at":"0","iswin":"1","votenum":"38"}
+		</pre>
+	</div>
+	<!-- 报名接口说明结束 -->
+	<!-- 幻灯头图开始
+	<div class="wp-grid">
+		<img src="http://sr3.pplive.com/cms/77/50/77650afc2529dd28ac20f9566f16c44c.jpg" alt="" class="maxF100 dblc"/>
+	</div>
+	幻灯头图结束 -->
+	<div class="grid">
+		<form id="person-info" method='get' action="http://api.chang.pptv.com/api/pkresult">
+		<!-- 报名信息模块开始 -->
+		<div class="module-userInfo-formwrap mt15">
+			<div class="form-item cf mt5">
+				<label for="username" class="fl">用户名：</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="username" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="address" class="fl"></label>
+				<div class="input-item">
+					<div class="input-submit rel">
+						提交
+						<input type="submit" class="input-submit-main"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		</form>
+	</div>
+</body>
+</html>

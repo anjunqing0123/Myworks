@@ -1,0 +1,49 @@
+/*
+* @Author: v-junqingan
+* @Date:   2016-05-03 19:51:48
+* @Last Modified by:   v-junqingan
+* @Last Modified time: 2016-05-05 15:38:51
+*/
+.wp-contain {
+    background:#fff url(module/plist/bg1.png) no-repeat center top;
+    width: 100%;
+}
+.hj{
+	width: 347px;
+	height: 47px;
+	margin: 60px auto 0;
+}
+.hj h3{
+	width: 347px;
+	height: 47px;
+	text-align: center;
+	line-height: 47px;
+	font-size: 22px;
+	color: #fff;
+	position: relative;
+	z-index: 2;
+	background: url(module/instructions/bj01.png) no-repeat left center;
+}
+.entry{
+	width: 988px;
+	min-height: 500px;
+	margin: -22px auto 0;
+	background: rgba(255,227,238,.6);
+	border:1px solid #ef9ac2;
+	overflow:hidden;
+}
+.entryIn h3{
+	height:25px;
+	line-height:24px;
+	padding:0 0 0 20px;
+	margin:50px 0 0 60px;
+	background:url(module/instructions/bg2.png) no-repeat left center;
+	font-size:22px;
+	color:#e90053;
+}
+.entryIn p{
+	line-height: 58px;
+	font-size: 15px;
+	color: #333;
+	margin: 10px 60px;
+}

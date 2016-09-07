@@ -1,0 +1,97 @@
+.module-vacant {
+	background: #fff;
+	.vacant-list {
+		background: #fff;
+		padding: 25px 0;
+		display: -webkit-box;
+		display: flex;
+		display: -webkit-flex;
+		flex-wrap: wrap;
+		justify-content: start;
+		-webkit-flex-wrap: wrap;
+		-webkit-justify-content: start;
+		width: 317px;
+		margin: 0 auto;
+	}
+	@size1: 95px;
+	@size2: 75px;
+	.vacant-item {
+		margin: 0 15px;
+		margin-top: 25px;
+		width: 75px;
+		&.first {
+			width: 95px;
+			margin-top: 14px;
+			margin-left: 5px;
+			margin-right: 5px;
+			.vacant-avatar {
+				width: @size1;
+				height: @size1;
+			}
+			.vacant-item-bg {
+				background: url(../images/first.png);
+				background-size: cover;
+				width: 95px;
+				height: 122px;
+				margin-top: -15px;
+			}
+			.vacant-item-name {
+				width: 95px;
+			}
+		}
+		&.second {
+			.vacant-item-bg {
+				background: url(../images/second.png);
+				background-size: cover;
+			}
+		}
+		&.third {
+			.vacant-item-bg {
+				background: url(../images/third.png);
+				background-size: cover;
+			}
+		}
+		&.empty img {
+			display: none;
+		}
+	}
+	.vacant-avatar {
+		width: @size2;
+		height: @size2;
+		background: url(../images/stranger3.png);
+		background-size: cover;
+		overflow: hidden;
+		border-radius: @size2;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.vacant-item-bg {
+		position: absolute;
+		width: @size2;
+		height: 84px;
+	}
+		
+	.vacant-item-name {
+		text-align: center;
+		margin-top: 18px;
+		font-size: 14px;
+		width: 75px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	&.ipad {
+		background: #282828;
+		.vacant-list {
+			background: #282828;
+			color: #c8c8c8;
+		}
+		.vacant-avatar {
+			background: url(../images/stranger1.png);
+			background-size: cover;
+		}
+	}
+	
+}

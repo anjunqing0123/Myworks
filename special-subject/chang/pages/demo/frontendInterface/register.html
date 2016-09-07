@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>报名页面</title>
+	<link rel="stylesheet" href="http://static9.pplive.cn/chang/css/v_20150611190516/pc.min.css" />
+	<script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<style>
+	.ml10{
+		margin-left: 10px;
+	}
+	.blCenter{
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+<body class="grid-1230 plt-web">
+	<!-- 报名接口说明开始 -->
+	<div class="cf blCenter" style="width:80%;">
+		<p>接口总说明地址：http://gitlab/webclient/sensation/blob/develop/doc/%E4%B8%80%E5%94%B1%E6%88%90%E5%90%8D%E6%8E%A5%E5%8F%A3.txt</p>
+		<p>报名接口</p>
+		<p>接口地址：http://api.chang.pptv.com/api/sign 提交方式post</p>
+		<p>字段名称</p>
+		<p class="cf"><span class="fl">姓名</span><span class="fl ml10">cname</span></p>
+		<p class="cf"><span class="fl">是否组合</span><span class="fl ml10">isgroup</span></p>
+		<p class="cf"><span class="fl">组合名称</span><span class="fl ml10">g_name</span></p>
+		<p class="cf"><span class="fl">性别</span><span class="fl ml10">sex</span></p>
+		<p class="cf"><span class="fl">证件类型</span><span class="fl ml10">card_type</span></p>
+		<p class="cf"><span class="fl">证件号</span><span class="fl ml10">card</span></p>
+		<p class="cf"><span class="fl">生日，格式1990-11-01</span><span class="fl ml10">bday</span></p>
+		<p class="cf"><span class="fl">手机号</span><span class="fl ml10">phone</span></p>
+		<p class="cf"><span class="fl">手机验证码</span><span class="fl ml10">phonetoken</span></p>
+		<p class="cf"><span class="fl">联系地址</span><span class="fl ml10">address</span></p>
+		<p class="cf"><span class="fl">图像</span><span class="fl ml10">photo</span></p>
+		<p class="cf">0:未登录
+		-1:手机验证码错误
+		-2:真实的中文名不符合中文格式
+		-3:手机格式不正确
+		-4:身份证不正确
+		-5:用户已报过名
+		-6:性别参数不对
+		-7:组合名不能为空
+		-8:系统错误
+		-9:手机号已绑定
+		-10:证件号已注册
+		-11:手机号码与验证手机号不一致
+		-12:必填项参数不能为空
+		-13:生日格式不对
+		1:报名成功
+		</p>
+	</div>
+	<!-- 报名接口说明结束 -->
+	<!-- 幻灯头图开始
+	<div class="wp-grid">
+		<img src="http://sr3.pplive.com/cms/77/50/77650afc2529dd28ac20f9566f16c44c.jpg" alt="" class="maxF100 dblc"/>
+	</div>
+	幻灯头图结束 -->
+	<div class="grid">
+		<form id="person-info" method='post' action="http://api.chang.pptv.com/api/sign">
+		<!-- 报名信息模块开始 -->
+		<div class="module-userInfo-formwrap mt15">
+			<div class="form-item cf mt5">
+				<label for="cname" class="fl">姓名：</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="cname" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="isgroup"  class="fl">是否组合：</label>
+				<div class="input-item">
+					<em class="mr5">是</em><input type="radio" name="isgroup" value="1" class="input-checkbox mr5"/><em class="mr5">否</em><input type="radio" name="isgroup" value="0" class="input-checkbox mr5"/>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label class="fl">组合名称：</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="g_name" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="sex">性别：</label>
+				<div class="input-item">
+					<em class="mr5">男</em><input type="radio" value="1" name="sex" class="input-checkbox mr5"/><em class="mr5">女</em><input type="radio" name="sex" class="input-checkbox mr5" value="0"/>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="card_type" class="fl">证件类型</label>
+				<div class="input-item">
+					<span><input type="text" name="card_type" class="input-text" /></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="card" class="fl">证件号</label>
+				<div class="input-item">
+					<span><input type="text" name="card" class="input-text" /></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="bday" class="fl">生日</label>
+				<div class="input-item">
+					<span><input type="text" name="bday" class="input-text" /></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="phone" class="fl">手机号码：</label>
+				<div class="input-item">
+					<span><input type="text" name="phone" class="input-text" /></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="cpanumber" class="fl"></label>
+				<div class="input-item">
+					<div class="cpaBtn">点击发送验证码</div>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="phonetoken" class="fl">验证码：</label>
+				<div class="input-item">
+					<span><input type="text" name="phonetoken" class="input-text" /></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="address" class="fl">联系地址：</label>
+				<div class="input-item">
+					<select name="" id="nation">
+						<option value="中国">中国</option>
+					</select>
+					<select name="" id="province">
+						<option value="上海市">上海市</option>
+					</select>
+					<select name="" id="city">
+						<option value="浦东新区">浦东新区</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="address" class="fl"></label>
+				<div class="input-item">
+					<span><input type="text" name="address" class="input-text" /></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="photo" class="fl">认证照片：</label>
+				<div class="input-item">
+					<p>可以上传JPG、PNG、Gif格式的图片；图片分辨率要求大于400x400；</p>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="address" class="fl"></label>
+				<div class="input-item">
+					<div class="input-file rel">
+						上传图片
+						<input type="file" name="photo" class="input-file-main"/>
+					</div>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="preview" class="fl">预览：</label>
+				<div class="previewBox">
+					<div class="previewBox-image">
+
+					</div>
+					<p class="mt5">可以拖拽或移动图片，然后选择图片合适的部分作为您的认证照片</p>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="address" class="fl"></label>
+				<div class="input-item">
+					<div class="input-submit rel">
+						确认报名
+						<input type="submit" class="input-submit-main"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 报名信息模块结束 -->
+		</form>
+	</div>
+</body>
+</html>

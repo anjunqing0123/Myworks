@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+<head>
+	<title>个人简介</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="http://static9.pplive.cn/chang/v_20150917141532/css/phone.min.css">
+	<script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+        <script type="text/javascript" src="http://static9.pplive.cn/oth/2012/10/jssdk/v_20150408155209/jsbridge.js"></script>
+	<script>
+		(function(designW) { // param[w] width of designing rem:1rem = 100px;
+			var rem = function(){
+				var screenW = Math.min(screen.width, window.innerWidth);
+				document.documentElement.style.fontSize =  100 * screenW / designW + 'px';
+			}
+			window.onresize = rem;
+			rem();
+		})(750);
+	</script>
+
+</head>
+<body >
+    <div class="wp-grid">
+        <div class="grid">
+            <div class="module-rule">
+                <img src="../../../images/personal/rule-banner.jpg"/>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="module-rule-cont">
+                <ul>
+                    <li>
+                        <i class="li01"></i>
+                        <div>选手每单个上传视频每一个小时内系统判定可投一票，所以，选手上传更多视频，就有更多的机会在同一个时间区域内获得更多的票数，但是，需要切记的是，选手在10月31日前最多只能上传100个视频。</div>
+                    </li>
+                    <li>
+                        <i class="li02"></i>
+                        <div>杜绝选手刷票行为，凡是系统判定的恶意刷票数据，系统将自动废除刷出的票数，对于刷票行为严重者，PPTV有权取消该选手的参赛资格。</div>
+                    </li>
+                    <li>
+                        <i class="li03"></i>
+                        <div>千万梦想金在哪里？海选进入120强的选手，都将通过自己的努力分享到你赢得的唱酬，每一场唱酬数额我们都将提前公布，越是前进到最后，你可能获得的唱酬数额越大，这是一场可以赚钱的全民嗨唱运动会，所以，向前走，加油！选手！</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+//SeaJs Config.
+var VERSION = 'v_20150917141532';
+seajs.importStyle=function importStyle(b){var a=document.createElement("style"),c=document;c.getElementsByTagName("head")[0].appendChild(a);if(a.styleSheet){a.styleSheet.cssText=b}else{a.appendChild(c.createTextNode(b))}};
+(function(VERS){
+    var flag = window.location.href.slice(-4) === "-deb" ? true : false, path = '/script/', base = 'http://static9.pplive.cn/chang/' + VERS;
+    seajs.config({
+        base : base + path,
+        alias: {
+            jquery: "core/jquery/1.8.3/jquery",
+            zepto: "core/zepto/zepto",
+            underscore: "core/underscore/1.8.3/underscore",
+            backbone: "core/backbone/backbone",
+            client: "http://static9.pplive.cn/pc_client/v_20150810183011/clt.js",
+            login:"util/login/login"
+        }
+    });
+    if(flag){ document.write('<script src="' + base + '/js/app/sea-config.js"><\/script>');}
+})(VERSION);
+</script>
+<!--页面私有调用补充JS取页面模型page_js-->
+<script>
+	seajs.use('app/phone/personal/personal');
+</script>
+
+</body>
+</html>

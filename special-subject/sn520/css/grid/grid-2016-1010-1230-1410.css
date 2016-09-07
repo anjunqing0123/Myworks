@@ -1,0 +1,114 @@
+/**
+ * @author 	Erick Song
+ * @date 	2013-06-07
+ * @email	ahschl0322@gmail.com
+ * @info    grid system -
+ * 1010 = 10 + 990 + 10
+ *  990 = 160 * 4  + 4 * 10
+ * 1230 = 10 + 1210 + 10
+ *  1210 = 160 * 5 + 20 * 5
+ * 1410 = 10 + 1390 + 10
+ *  1390 = 160 * 6 + 20 * 6
+ */
+
+/**
+ * 框架中所用到的全局设置(body上)：
+ * plt-* 					-> 终端识别
+ * grid  					-> 框架本身标识
+ * grid-1110 			    -> 1110宽度
+ * grid-1230                -> 1230宽度
+ * grid-1410                -> 1410宽度
+ * grid-response  -> 相应式设计
+ */
+
+/**
+ * 针对通栏背景的处理
+ * 如首页幻灯：
+ * <div class="wp-grid">
+ *   <div class="module-metro">
+ *  	xxx
+ *   </div>
+ * </div>
+ */
+.wp-grid{ width:100%}
+
+
+/**
+ * 页面外层框架本身用grid表示引用了栅格系统，
+ * 用 grid 而不用 grid-960 的目的是因为考虑后续如果网站全站变更为980的时候，只要替换css文件即可
+ * 这个文件提供 grid-960 几种简单布局: 如左边700，右边250，中间10
+ * 首页：两种尺寸(960、1140 - 分界点 1360)
+ * 边距：clt - 上下左右 10px， 广告上下10px -> [130723 产品变更间距由5px -> 10px]
+ * 		 web - clt的一倍， 20px 和 10px
+ */
+
+.grid{ width: 990px; margin:0 auto; padding:0; overflow: hidden; zoom:1;}
+.plt-clt .grid{padding-right:10px;}
+.grid .m,.grid .s,.module{ position: relative; }
+.grid .m{ float:left;}
+.grid .s{ float:right;}
+
+/* 首页改版，适应990、1210、1390尺寸 */
+/* 1010 */
+.grid-1010 .grid{ width:990px}
+
+/* 1230 */
+.grid-1230 .grid{ width:1190px;padding:5px 20px;}
+
+/* 1410 */
+.grid-1410 .grid{ width:1392px;padding:5px 8px 5px 10px;}
+
+
+/**
+ * wp-main - 这一层设计是为了处理页面背景广告而做的，包含整个body内容
+ * 主体部分添加白色背景，避免背景广告投放难看
+*/
+
+/**
+ * 广告模块 - 默认所有的广告模块后加载
+ * 需求：要求广告模块的上下边距为5px
+ */
+.grid .sp{ position:relative; display: none; margin-top:5px; overflow: hidden;}
+.plt-web .sp{height:90px;}
+.plt-clt .sp{ height: 60px;}
+
+/**
+ * 广告兼容 - 自适应尺寸
+ * 要求 - 所有广告素材都以大的尺寸来做，主体内容为窄屏宽度，两边填充背景
+ * 如：960 - （1140-960）/2 两边填充90px背景融合
+ * grid-ad-c1 表示通栏广告
+ * update(2013-10-21) -> 普通广告加四个class [gad-normal | gad-img | gad-swf | gad-iframe]
+ * 普通广告由页面加边框1px solid #e5e5e5
+*/
+
+/* 广告兼容 */
+/* ====================================== start ====================================== */
+.plt-web .grid .m .sp{ height: 88px; border:1px solid #e5e5e5} /* 广告尺寸 */
+
+/* 左边通栏 gad-normal */
+/* 670 * 90    880 * 90    1060 * 90 */
+
+/* 底通 grid-ad-c1 */
+/* 990 * 90     1210 * 90   1390 * 90 */
+
+/* 首页规则 */
+.grid .m .sp { width:668px; margin-bottom: 5px}
+.grid-1230 .grid .m .sp { width:878px}
+.grid-1410 .grid .m .sp { width:1058px}
+.grid-1230 .grid .grid-ad-c1{ width:1210px;}
+.grid-1410 .grid .grid-ad-c1{ width: 1390px}
+
+.grid-response .grid-ad-c1{ position: relative; overflow: hidden;}
+
+/* 窄屏 - 960px */
+.grid-1010 .grid .m .gad-normal,
+.grid-1010 .grid .mod .gad-normal,
+.grid-1010 .grid .grid-ad-c1 .gad-normal{margin-left:-200px;}
+.grid-1010 .grid .s3 .mod .gad-normal{margin-left:0;}
+
+.grid-1230 .grid .m .gad-normal,
+.grid-1230 .grid .mod .gad-normal,
+.grid-1230 .grid .grid-ad-c1 .gad-normal{margin-left:-90px;}
+.grid-1230 .grid .s3 .mod .gad-normal{margin-left:0;}
+/*.grid-response .grid .gad-iframe, .grid-response .grid .grid-ad-c1 .gad-iframe{ margin-left:0;}*/ /* iframe 广告窄屏 2013-10-22去除 */
+

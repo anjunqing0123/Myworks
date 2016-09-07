@@ -1,0 +1,151 @@
+<div class="grid js-gold-18" id="gold-18">
+</div>
+<script type="text/template" id="template">
+<%
+	if (stage === 'before') {
+		if (!liveStart && !isVoteEnd) { // 赛区投票中
+%>
+<div class="module module-gold-18 ipad">
+	<div class="gold-bg">
+		<!--content up-->
+		<div class="gold-cont">
+			<ul>
+				<%
+					for (var i = 0; i < scopeList.length; i++) {
+						if (!scopeList[i]) {
+							continue;
+						}
+				%>
+				<li>
+					<img src="<%= scopeList[i].app_image %>"/>
+					<div class="gold-vote">
+						<span class="gold-count"><%= scopeList[i].vote.counter %></span>
+						<button sid="<%= scopeList[i].voteid %>" class="gold-btn"><span class="txt">投票</span></button>
+					</div>
+				</li>
+				<%
+					}
+				%>
+			</ul>
+		</div>
+	</div>
+</div>
+<%
+		} else if (!liveStart && isVoteEnd) { // 赛区投票后
+%>
+<div class="module module-gold-18 ipad rest1 reset-vs">
+	<div class="gold-bg">
+		<div class="gold-cont">
+			<ul>
+				<%
+					for (var i = 0; i < scopeList.length / 2; i++) {
+						if (!scopeList[i]) {
+							continue;
+						}
+						var j = scopeList.length - i - 1;
+				%>
+				<li>
+					<img src="<%= scopeList[i].app_image %>"/>
+					<div class="gold-vote">
+						<button class="gold-btn"><span class="txt"><%= i + 1 %></span></button>
+						<span class="gold-count"><%= scopeList[i].vote.counter %></span>
+					</div>
+				</li>
+				<li class="gold-li-vs">VS</li>
+				<li>
+					<img src="<%= scopeList[j].app_image %>"/>
+					<div class="gold-vote">
+						<button class="gold-btn"><span class="txt"><%= j + 1 %></span></button>
+						<span class="gold-count"><%= scopeList[j].vote.counter %></span>
+					</div>
+				</li>
+					<%
+						if (i < scopeList.length / 2 - 1) {
+					%>
+				<li class="gold-line"></li>
+				<%
+						}
+					}
+				%>
+			</ul>
+		</div>
+	</div>
+</div>
+<%
+		} else if (liveStart) { // 直播中
+%>
+<div class="module module-gold-18 ipad reset-vs rest1 rest2" applink="<%= liveInfo.app_link%>" link="<%= liveInfo.link %>">
+	<div class="gold-bg">
+		<!--LIVE title-->
+		<div class="module-tbtitle">
+			<div class="tbtitle_a">LIVE</div>
+			<div class="tbtitle_b">正在直播</div>
+		</div>
+		<div class="gold-cont">
+			<ul>
+				<%
+					for (var i = 0; i < scopeList.length / 2; i++) {
+						if (!scopeList[i]) {
+							continue;
+						}
+						var j = scopeList.length - i - 1;
+				%>
+				<li>
+					<img src="<%= scopeList[i].app_image %>"/>
+					<div class="gold-vote">
+						<button class="gold-btn"><span class="txt"><%= i + 1 %></span></button>
+						<span class="gold-count"><%= scopeList[i].vote.counter %></span>
+					</div>
+				</li>
+				<li class="gold-li-vs">VS</li>
+				<li>
+					<img src="<%= scopeList[j].app_image %>"/>
+					<div class="gold-vote">
+						<button class="gold-btn"><span class="txt"><%= j + 1 %></span></button>
+						<span class="gold-count"><%= scopeList[j].vote.counter %></span>
+					</div>
+				</li>
+					<%
+						if (i < scopeList.length / 2 - 1) {
+					%>
+				<li class="gold-line"></li>
+				<%
+						}
+					}
+				%>
+			</ul>
+		</div>
+	</div>
+</div>
+<%
+		}
+	} else if (stage === 'after') { // 直播后投票
+%>
+<div class="module module-vtlist ipad">
+	<div class="vtlist-bg">
+		<!--main-->
+		<div class="vtlist-cont swiper-container">
+			<ul class="swiper-wrapper">
+				<%
+					for (var i = 0; i < playerList.length; i++) {
+				%>
+				<li class="swiper-slide">
+					<span class="bdr" username="<%= playerList[i].username %>">
+						<img src="<%= playerList[i].avatar %>"/>
+					</span>
+
+					<p class="name"><%= playerList[i].group_name || playerList[i].real_name %></p>
+					<button sid="<%= playerList[i].voteid %>" class="vlist-btn"><span class="txt">投票</span></button>
+					<p class="vote"><%= playerList[i].votenum %></p>
+				</li>
+				<%
+					}
+				%>
+			</ul>
+		</div>
+	</div>
+</div>
+<%
+	}
+%>
+</script>

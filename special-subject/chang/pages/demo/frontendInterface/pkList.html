@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取pk列表</title>
+	<link rel="stylesheet" href="http://static9.pplive.cn/chang/css/v_20150611190516/pc.min.css" />
+	<script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<style>
+	.ml10{
+		margin-left: 10px;
+	}
+	.blCenter{
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+<body class="grid-1230 plt-web">
+	<!-- 报名接口说明开始 -->
+	<div class="cf blCenter" style="width:80%;">
+		<p>接口总说明地址：http://gitlab/webclient/sensation/blob/develop/doc/%E4%B8%80%E5%94%B1%E6%88%90%E5%90%8D%E6%8E%A5%E5%8F%A3.txt</p>
+		<p>获取用户信息接口（不需要用户登录）</p>
+		<p>接口地址：http://api.chang.pptv.com/api/pkList?area_id=1 提交方式get 不需要登录</p>
+		<p>字段名称</p>
+		<p class="cf"><span class="fl">赛区id</span><span class="fl ml10">area_id</span></p>
+		<p class="cf">返回值</p>
+		<p>成功调用</p>
+		<pre>
+			{"0":{"player_1":{"id":"14","username":"admin","real_name":"\u5f20\u91d1","gender":"1","avatar":"","is_group":"1","group_name":"\u65b0\u52bf\u529b","counter":"0"},"player_2":{"id":"9","username":"jinzhang","real_name":"\u5f20\u6d77\u4e3d","gender":"1","avatar":"","is_group":"0","group_name":"","counter":"0"},"start":"2015-08-01 13:00:00","end":"2015-08-01 14:00:00"},"1":{"player_1":{"id":"15","username":"admin1","real_name":"\u5f20\u91d1","gender":"1","avatar":"","is_group":"1","group_name":"\u65b0\u52bf\u529b","counter":"0"},"player_2":{"id":"8","username":"zz703063545","real_name":"\u5f20\u91d1","gender":"1","avatar":"","is_group":"0","group_name":"","counter":"0"},"start":"2015-08-01 13:00:00","end":"2015-08-01 14:00:00"}}
+		</pre>
+		<p>
+			area_id值非法
+		</p>
+		<pre>
+			{"status":"-1"}
+		</pre>
+	</div>
+	<!-- 报名接口说明结束 -->
+	<!-- 幻灯头图开始
+	<div class="wp-grid">
+		<img src="http://sr3.pplive.com/cms/77/50/77650afc2529dd28ac20f9566f16c44c.jpg" alt="" class="maxF100 dblc"/>
+	</div>
+	幻灯头图结束 -->
+	<div class="grid">
+		<form id="person-info" method='get' action="http://api.chang.pptv.com/api/pkList">
+		<!-- 报名信息模块开始 -->
+		<div class="module-userInfo-formwrap mt15">
+			<div class="form-item cf mt5">
+				<label for="area_id" class="fl">赛区id：</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="area_id" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="address" class="fl"></label>
+				<div class="input-item">
+					<div class="input-submit rel">
+						提交
+						<input type="submit" class="input-submit-main"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		</form>
+	</div>
+</body>
+</html>
