@@ -1,0 +1,16 @@
+.module-pic-layout2 .txt{float:left;display:inline;width:380px;}
+.module-pic-layout2 .txt h3{font-size:26px;color:#d92137;}
+.module-pic-layout2 .txt p{margin:20px 0 0;line-height:30px;font-size:14px;color:#333;}
+
+.module-pic-layout2 .plist{float:right;display:inline;width:570px;height:300px;background:#ededed;}
+.module-pic-layout2 .plist ul{margin:0 0 0 40px;}
+.module-pic-layout2 .plist li{position:relative;float:left;display:inline;width:80px;margin:30px 20px 0 0;}
+.module-pic-layout2 .plist li .pic{display:block;width:76px;border:2px solid #ededed;}
+.module-pic-layout2 .plist li p{margin:0 0 0 2px;}
+
+.module-pic-layout2 .plist li img{display:block;width:76px;height:76px;}
+.module-pic-layout2 .plist .name{position:absolute;overflow:hidden;left:2px;top:60px;width:76px;height:18px;line-height:18px;text-align:center;color:#fff;background:#191919;overflow:hidden;}
+.module-pic-layout2 .plist .now .pic{border:2px solid #d92137;}
+.module-pic-layout2 .plist .now .name{background:#d92137;}
+.module-pic-layout2 .plist .now p{background:url(modules/pc/module-pic-layout2/arrow.png) no-repeat 52px center;}
+.module-pic-layout2 .plist .now p a{color:#d92137;}

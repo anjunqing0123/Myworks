@@ -1,0 +1,35 @@
+.module-myconcert-tag{margin:60px 0 0;}
+.module-myconcert-tag .all{float:left;display:inline;height:50px;padding:0 10px;line-height:50px;font-size:16px;font-weight:bold;color:#fff;background:#d92137;border-radius:50px;}
+.module-myconcert-tag .all span{font-size:20px;}
+.module-myconcert-tag .time{float:right;display:inline;text-align:center;margin:-25px 0 0;}
+.module-myconcert-tag .time p{font-size:20px;color:#333;}
+.module-myconcert-tag .time p span{display:inline-block;width:61px;height:60px;line-height:60px;margin:12px 0 0 10px;font-size:42px;font-weight:800;color:#fff;background:url(modules/pc/myconcert-tag/time.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20151102192137/css/modules/pc/myconcert-tag/time.png",sizingMethod='scale');*display:inline;*zoom:1;}
+
+.module-myconcert-tag .ranklist{margin:20px 0 0;}
+.module-myconcert-tag .ranklist ul{width:490px;float:left;display:inline;overflow:hidden;}
+.module-myconcert-tag .ranklist li{position:relative;width:395px;padding:0 0 0 55px;margin:10px 0 0 40px;}
+.module-myconcert-tag .ranklist li .num{position:absolute;left:0;top:40px;width:14px;height:26px;line-height:26px;padding:0 35px 0 6px;text-align:center;font-size:14px;font-weight:bold;color:#fff;background:url(modules/pc/myconcert-tag/bg2.png) no-repeat;}
+.module-myconcert-tag .ranklist li dt{position:relative;float:left;display:inline;width:90px;margin:10px 15px 0 0;overflow:hidden;}
+.module-myconcert-tag .ranklist li dt .replace{position: absolute;background:url(modules/pc/module-sass-mixin/replace60.png) no-repeat;_background:url(modules/pc/module-sass-mixin/replace60_ie6.png) no-repeat;width: 54px;height:24px;left: 17px;bottom: -2px;}
+.module-myconcert-tag .ranklist li dt img{display:block;width:90px;height:90px;}
+.module-myconcert-tag .ranklist li dt a{position:absolute;top:0;left:0;width:90px;height:90px;background:url(modules/pc/myconcert-tag/bg1.png) no-repeat;_background:url(modules/pc/myconcert-tag/bg1_ie6.png) no-repeat;}
+.module-myconcert-tag .ranklist li dd{float:left;display:inline;width:280px;overflow:hidden;}
+.module-myconcert-tag .ranklist li dd h3{font-size:30px;color:#333;height:45px;line-height: 45px;overflow: hidden;width:200px;}
+.module-myconcert-tag .ranklist li dd a{font-size:30px;color:#333;height:45px;line-height: 45px;overflow: hidden;width:200px;display:block;}
+.module-myconcert-tag .ranklist li dd a:hover{color:#d92137;}
+.module-myconcert-tag .ranklist li dd p,
+.module-myconcert-tag .ranklist li .money,
+.module-myconcert-tag .ranklist li .nomoney{margin:5px 0 0;font-size:16px;color:#999;}
+.module-myconcert-tag .ranklist li dd em{font-size:16px;font-weight:bold;color:#333;}
+.module-myconcert-tag .ranklist li dd .color{color:#d92137;}
+{margin:5px 0 0;font-size:16px;color:#999;}
+.module-myconcert-tag .ranklist li .bar{float:right;display:inline;width:152px;height:14px;padding:0 4px;margin:5px 35px 0 0;*margin:-20px 35px 0 0;background:url(modules/pc/myconcert-index/bar1.png) no-repeat;}
+.module-myconcert-tag .ranklist li  .bar p,
+.module-myconcert-tag .ranklist li  .bar i{height:10px;}
+.module-myconcert-tag .ranklist li  .bar p{position:relative;min-width:35px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>35?"35px":"");margin:2px 0 0;line-height:10px;text-align:right;font-size:8px;color:#fff;background:url(modules/pc/myconcert-index/bar2.png) repeat-x;}
+.module-myconcert-tag .ranklist li  .bar .bl{display:none;position:absolute;left:0;top:0px;width:2px;background:url(modules/pc/myconcert-index/bar2-l.png) no-repeat;}
+.module-myconcert-tag .ranklist li  .bar .br{display:none;position:absolute;right:0;top:0px;width:4px;background:url(modules/pc/myconcert-index/bar2-r.png) no-repeat;}
+
+.module-myconcert-tag .ranklist li .nomoney .bar{float:right;display:inline;position:relative;width:160px;height:14px;margin:5px 25px 0 0;*margin:-18px 25px 0 0;background:url(modules/pc/myconcert-index/bar3.png) no-repeat;}
+.module-myconcert-tag .ranklist li .nomoney .bar p,
+.module-myconcert-tag .ranklist li .nomoney .bar i{display:none;}

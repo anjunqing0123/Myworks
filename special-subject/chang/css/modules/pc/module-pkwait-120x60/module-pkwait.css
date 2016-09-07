@@ -1,0 +1,354 @@
+.module-pkwait-120x60 .item {
+  width: 100%;
+}
+.module-pkwait-120x60 .pk-player {
+  width: 448px;
+  height: 118px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -2972px;
+}
+.module-pkwait-120x60 .pk-player .infoWrap {
+  margin-left: 70px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 30px;
+}
+.module-pkwait-120x60 .pk-player .title {
+  font-size: 25px;
+  float: left;
+  margin-left: 40px;
+  margin-top: 10px;
+  overflow: hidden;
+  height: 40px;
+  word-break: break-all;
+  width: 120px;
+  color: #333333;
+}
+.module-pkwait-120x60 .pk-player .title a{
+  color:#333333;
+}
+.module-pkwait-120x60 .pk-player .title a:hover{
+  color:#d82238;
+}
+.module-pkwait-120x60 .pk-player h3 {
+  clear: both;
+  float: right;
+  color: #a9a9a9;
+  font-weight: normal;
+}
+.module-pkwait-120x60 .pk-player .votewrap {
+  width: 95px;
+  height: 29px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -942px;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 15px;
+  color: #ffffff;
+}
+.module-pkwait-120x60 .pk-player b {
+  text-indent: -9999px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 7px;
+  width: 14px;
+  height: 14px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -136px;
+}
+.module-pkwait-120x60 .pk-player i {
+  font-style: normal;
+  float: left;
+  margin-top: -2px;
+  margin-left: 1px;
+  height: 29px;
+  overflow: hidden;
+  width: 53px;
+  text-align: center;
+}
+.module-pkwait-120x60 .avatar {
+  width: 56px;
+  height: 56px;
+  float: left;
+  position: relative;
+}
+.module-pkwait-120x60 .avatar .avatar-mask {
+  background: url(modules/pc/pk/bg2.png) no-repeat;
+  _background: none;
+  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_1/css/module/pc/pk/bg2.png",sizingMethod='scale');
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.module-pkwait-120x60 .avatar img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.module-pkwait-120x60 .vs-tag {
+  position: absolute;
+  width: 100px;
+  height: 78px;
+  left: 50%;
+  top: 50%;
+  margin-left: -47px;
+  margin-top: -35px;
+  color: #999999;
+}
+.module-pkwait-120x60 .vs-tag h2 {
+  font-size: 34px;
+  height: 43px;
+}
+.module-pkwait-120x60 .vs-tag p {
+  font-size: 12px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -289px;
+  height: 19px;
+  line-height: 19px;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  width: 78px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.module-pkwait-120x60 .vote-wrap {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 125px;
+}
+.module-pkwait-120x60 .vote-wrap .icon-up {
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -1201px;
+  width: 35px;
+  height: 35px;
+  float: right;
+}
+.module-pkwait-120x60 .vote-wrap .icon-up:hover {
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -1271px;
+}
+
+.pk-finish-bg {
+  width: 100%;
+  height: 42px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -1637px;
+}
+
+.module-pkend-120x60 .item {
+  width: 100%;
+}
+.module-pkend-120x60 .voteend .vs-tag p {
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -235px;
+}
+.module-pkend-120x60 .icon-lose {
+  width: 50px;
+  height: 52px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -1884px;
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  z-index: 2;
+}
+.module-pkend-120x60 .icon-win {
+  width: 50px;
+  height: 52px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -1971px;
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  z-index: 2;
+}
+.module-pkend-120x60 .pk-player {
+  width: 448px;
+  height: 118px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -2819px;
+}
+.module-pkend-120x60 .pk-player .infoWrap {
+  margin-left: 70px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 30px;
+}
+.module-pkend-120x60 .pk-player .title {
+  font-size: 25px;
+  float: left;
+  margin-left: 40px;
+  margin-top: 10px;
+  overflow: hidden;
+  height: 40px;
+  word-break: break-all;
+  width: 120px;
+  color: #333333;
+}
+.module-pkend-120x60 .pk-player .title a{
+  color:#333333;
+}
+.module-pkend-120x60 .pk-player .title a:hover {
+  color:#d82238;
+}
+.module-pkend-120x60 .pk-player h3 {
+  clear: both;
+  float: right;
+  color: #a9a9a9;
+  text-align: right;
+  font-weight: normal;
+}
+.module-pkend-120x60 .pk-player .votewrap {
+  width: 95px;
+  height: 29px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -878px;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 15px;
+  color: #ffffff;
+}
+.module-pkend-120x60 .pk-player b {
+  text-indent: -9999px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 7px;
+  width: 14px;
+  height: 14px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -136px;
+}
+.module-pkend-120x60 .pk-player i {
+  font-style: normal;
+  float: left;
+  margin-top: -2px;
+  margin-left: 1px;
+  height: 29px;
+  overflow: hidden;
+  width: 53px;
+  text-align: center;
+}
+.module-pkend-120x60 .pk-player .vote-add {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  position: absolute;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -1714px;
+  top: -18px;
+  left: 0px;
+  z-index: 3;
+  font-style: normal;
+}
+.module-pkend-120x60 .pk-player .vote-mask {
+  position: absolute;
+  width: 80px;
+  height: 28px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -626px;
+  color: #ffffff;
+  top: 1px;
+  left: 14px;
+  line-height: 28px;
+  font-size: 12px;
+  font-style: normal;
+  text-align: center;
+  vertical-align: middle;
+}
+.module-pkend-120x60 .avatar {
+  width: 56px;
+  height: 56px;
+  float: left;
+  position: relative;
+}
+.module-pkend-120x60 .avatar .avatar-mask {
+  background: url(modules/pc/pk/bg4.png) no-repeat;
+  _background: none;
+  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_1/css/module/pc/pk/bg4.png",sizingMethod='scale');
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.module-pkend-120x60 .avatar img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.module-pkend-120x60 .vs-tag {
+  position: absolute;
+  width: 100px;
+  height: 78px;
+  left: 50%;
+  top: 50%;
+  margin-left: -48px;
+  margin-top: -35px;
+  color: #999999;
+}
+.module-pkend-120x60 .vs-tag h2 {
+  font-size: 34px;
+  height: 43px;
+}
+.module-pkend-120x60 .vs-tag p {
+  font-size: 12px;
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -289px;
+  height: 19px;
+  line-height: 19px;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  width: 78px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.module-pkend-120x60 .vote-wrap {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 125px;
+}
+.module-pkend-120x60 .vote-wrap .icon-up {
+  background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+  background-position: 0px -1201px;
+  width: 35px;
+  height: 35px;
+  float: right;
+}
+
+.mtn10 {
+  margin-top: -10px;
+}
+
+.ms-pointer {
+  cursor: pointer;
+}
+
+.module-pkwait-120x60 .pk-player .num,
+.module-pkend-120x60 .pk-player .num{position:absolute;left:28px;top:46px;width:26px;padding:0 15px 0 0;height:26px;line-height:26px;text-align:center;font-size:14px;font-style:normal;font-weight:bold;color:#fff;background:url(modules/pc/module-pking-120x60/num2.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/css/modules/pc/module-pking-120x60/num2.png",sizingMethod='scale');}
+.module-pkwait-120x60 .pk-player .replace,
+.module-pkend-120x60 .pk-player .replace{position:absolute;left:21px;top:44px;width:48px;height:32px;background:url(modules/pc/module-pking-120x60/num3.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/css/modules/pc/module-pking-120x60/num3.png",sizingMethod='scale');}

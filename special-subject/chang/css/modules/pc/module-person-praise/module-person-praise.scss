@@ -1,0 +1,74 @@
+.module-topPerson-image{
+	height:384px;
+	border-bottom: 4px solid #d92137;
+	background:url(http://static1.pplive.cn/cmsfile/40/57/374c1a3eab8cb01dfafc8b0ed781342b.jpg) no-repeat center top;
+}
+
+.module-person-praise{
+	width: 100%;
+	height: 384px;
+	.sharebox{
+		position: absolute;
+		top: 384px;
+		right: -118px;
+		width: 340px;
+		padding: 20px 0;
+		border: 1px solid #f1f1f1;
+		background: #fff;
+	}
+}
+.module-person-praise .sharebox a{display:inline-block;width:61px;height:61px;margin:0 25px;*display:inline;*zoom:1;background:url(modules/pc/set/icon.jpg) no-repeat;}
+.module-person-praise .sharebox .s1{background-position:0 -116px;}
+.module-person-praise .sharebox .s2{background-position:0 -177px;}
+.module-person-praise .sharebox .s3{background-position:0 -238px;}
+.module-person-praise .sharebox .s4{background-position:0 -299px;}
+.module-person-praise .sharebox .s1:hover{background-position:0 -360px;}
+.module-person-praise .sharebox .s2:hover{background-position:0 -421px;}
+.module-person-praise .sharebox .s3:hover{background-position:0 -482px;}
+.module-person-praise .sharebox .s4:hover{background-position:0 -543px;}
+.module-person-praise .triangle-border{position:absolute;width:0;height:0;border-width:10px;border-color:transparent transparent rgb(222, 222, 222) transparent;border-style:dashed dashed solid dashed;right:162px;top:-21px;_top:-21px;_border-color:transparent transparent rgb(229, 226, 226) transparent;z-index:1;overflow:hidden;}
+.module-person-praise .triangle-bkg{position:absolute;width:0;height:0;border-width:10px;border-color:transparent transparent rgb(255, 255, 255) transparent;border-style:dashed dashed solid dashed;right:162px;top:-20px;z-index:2;overflow:hidden;}
+.person-praise-wrap{
+	width:980px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.person-praise-btn{
+	right: 0px;
+	bottom:35px;
+	width: 109px;
+	height: 36px;
+	background: #d92137;
+	position: absolute;
+	background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+  	background-position: 0px -1341px;
+	_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20150918170651/css/modules/pc/module-person-praise/share_btn.png",sizingMethod='scale');
+	cursor: pointer;
+	.praise-btn-txt{
+		margin-left: 20px;
+		margin-right: 20px;
+		height: 100%;
+		overflow: hidden;
+	}
+	.praise-icon{
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		background: url(modules/pc/module-person-praise/personspace_sprite.png) no-repeat;
+		_background: url(modules/pc/module-person-praise/personspace_sprite_ie6.png) no-repeat;
+		background-position: 0px -371px;
+		margin-top: 5px;
+	}
+	.btn-main-txt{
+		vertical-align: middle;
+		color:white;
+		font-size: 14px;
+		width: 92px;
+		text-align: center;
+		margin-top: -20px;
+		*margin-top:-12px;
+		display: inline-block;
+	}
+}
+.person-praise-back{position:absolute;left:0;top:10px;width:76px;height:34px;line-height:34px;padding:0 0 0 42px;font-size:14px;color:#fff;background:url(modules/pc/index-top/back.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20150914104731/css/modules/pc/index-top/back.png",sizingMethod='scale');}
