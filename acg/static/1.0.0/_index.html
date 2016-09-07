@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>peropero//个人资料</title>
+    <title>peropero##二次元</title>
 	<link rel="stylesheet" href="http://static9.pplive.cn/independent/acg/src/web/css/base.css">
 	<link rel="stylesheet" href="http://static9.pplive.cn/independent/acg/src/web/css/style.css">
 </head>
@@ -17,9 +17,9 @@
 				<div class="main-info">
 					<div class="info-l">
 						<ul class="left-tab">
-							<li class="cur">
+							<li>
 								<a href="javascript:;">
-									<img class="touxiang" src="http://static9.pplive.cn/independent/acg/src/web/assets/bg2.png" alt="">
+									<i class="ico touxiang"></i>
 									<span>我是头像</span>
 								</a>
 							</li>
@@ -29,7 +29,7 @@
 									<span>视频投稿</span>
 								</a>
 							</li>
-							<li class="">
+							<li class="cur">
 								<a href="javascript:;">
 									<i class="ico guanli"></i>
 									<span>投稿管理</span>
@@ -44,7 +44,7 @@
 								<div class="hd-top-tab"><a href="javascript:;">修改密码</a></div>
 							</div>
 							<div class="bd clearfix">
-								<form id="form1" action="info.action#1" method="post" class="table">
+								<form class="table">
 									<!-- 昵称 -->
 									<div class="common_tr clearfix">
 										<div class="common_th">昵称：</div>
@@ -104,17 +104,15 @@
 										</div>
 									</div>
 									<!-- 性别 -->
-									<div class="common_tr clearfix">
+									<div class="common_tr sex clearfix">
 										<div class="common_th">性别：</div>
-										<div class="common_td diy-input" >
-											<form>
-												<input type="radio" name="test" id="a" value="" class="origin-input">
-												<label for="a">男</label>
-												<input type="radio" name="test"  id="b" value="" class="take-input">
-												<label for="b">女</label>
-												<input type="radio" name="test"  id="c" value="" class="take-input">
-												<label for="c">保密</label>
-											</form>
+										<div class="common_td">
+											<label class="first">
+												<input id="user_sex_M" type="radio" name="user_sex" value="M" class="common_rad">男</label>
+											<label>
+												<input id="user_sex_F" type="radio" name="user_sex" value="F" class="common_rad">女</label>
+											<label>
+												<input id="user_sex_U" type="radio" name="user_sex" checked="checked" value="U" class="common_rad">保密</label>
 										</div>
 									</div>
 									<!-- 出生日期 -->
@@ -123,6 +121,7 @@
 										<div class="common_td">
 											<select name="user_birthday_Year">
 												<option>年</option>
+
 												<option value="1970" label="1970">1970 </option>
 												<option value="1971" label="1971">1971 </option>
 												<option value="1972" label="1972">1972 </option>
