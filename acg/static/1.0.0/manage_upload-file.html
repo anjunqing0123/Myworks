@@ -5,6 +5,8 @@
     <title>peropero##投稿管理//视频列表</title>
     <link rel="stylesheet" href="http://static9.pplive.cn/independent/acg/src/web/css/base.css">
     <link rel="stylesheet" href="http://static9.pplive.cn/independent/acg/src/web/css/style.css">
+    <link rel="stylesheet" href="../../src/web/css/base.css">
+    <link rel="stylesheet" href="../../src/web/css/style.css">
 </head>
 <body>
 <!-- PC个人中心，填写个人资料 -->
@@ -96,7 +98,9 @@
                                         <div class="common_td">
                                             <input class="common_text" value="" placeholder="老司机说一个好的标题可以增加阅读量哟~" name="">
                                             <em class="wor">0/80</em>
+                                            <span class="remind"> <i></i>请填写标题!</span>
                                         </div>
+
                                     </div>
                                     <!--视频类型-->
                                     <div class="common_tr clearfix">
@@ -108,15 +112,39 @@
                                                 <input type="radio" name="test"  id="b" value="" class="take-input">
                                                 <label for="b">搬运</label>
                                             </form>
+                                            <span class="remind"> <i></i>请选择类型!</span>
                                         </div>
                                     </div>
                                     <!--视频分区-->
                                     <div class="common_tr clearfix">
                                         <div class="common_th">分区：</div>
                                         <div class="common_td " >
-                                            <ul>
-                                                <li><a href="Jjavascript:;"></a></li>
-                                            </ul>
+                                            <div class="mitem-category fl">
+                                                <!--鼠标移入添加 active-->
+                                                <div  class="moreitem-box clearfix active">
+                                                    <div class="moreitem-btn"><a href="javascript:;">请选择分区</a></div>
+                                                    <ul class="moreitem-opts">
+                                                        <li><a href="javascript:;">请选择分区</a></li>
+                                                        <li><a href="javascript:;">普通住宅</a></li>
+                                                        <li><a href="javascript:;">动画</a></li>
+                                                        <li><a href="javascript:;">游戏</a></li>
+                                                        <li><a href="javascript:;">吐槽</a></li>
+                                                        <li><a href="javascript:;">音乐</a></li>
+                                                        <li><a href="javascript:;">同人</a></li>
+                                                        <li><a href="javascript:;">舞蹈</a></li>
+                                                        <li><a href="javascript:;">鬼畜</a></li>
+                                                        <li><a href="javascript:;">电影</a></li>
+                                                        <li><a href="javascript:;">电视剧</a></li>
+                                                        <li><a href="javascript:;">舞蹈</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="common_tr comm-shensu clearfix">
+                                        <div class="common_th">申诉理由</div>
+                                        <div class="common_td">
+                                            <textarea class="common_textarea" rows="10" cols="80" name="aboutMyself" wrap="virtual" placeholder="请填写你想申诉的原因"></textarea>
                                         </div>
                                     </div>
                                 </div>
