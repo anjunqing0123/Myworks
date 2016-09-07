@@ -1,0 +1,42 @@
+.module-liveimg-group{
+	width: 200px;
+	position: absolute;
+	height: 68px;
+	right: 0px;
+	bottom: 5px;
+}
+.module-liveimg-group .avatar{
+	width: 57px;
+	height: 57px;
+	float: left;
+	border:2px solid #ffffff;
+	overflow: hidden;
+	margin-right: 7px;
+}
+.module-liveimg-group .last{
+	margin-right: 0;
+}
+.module-liveimg-group .active{
+	border: 2px solid #d82238;
+}
+.module-liveimg-group .avatar:hover{
+	border:2px solid #d82238;
+}
+.module-liveimg-group .avatar img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.module-liveimg-group .avatar span{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:57px;
+	background:#000000;
+	color:#ffffff;
+	text-align: center;
+	height:19px;
+	line-height: 19px;
+	vertical-align: middle;
+	font-size: 12px;
+}

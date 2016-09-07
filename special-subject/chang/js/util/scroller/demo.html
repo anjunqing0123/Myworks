@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>new html</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="./scroller.css" />
+
+</head>
+<style type="text/css">
+    *{margin:0; padding: 0;}
+    #scroller1 ul{width:200px;}
+    #scroller1 li{float:left; width:40px; height:40px; background: #fcc; display:block;margin-right}
+</style>
+<body>
+<div id="scroller" style="height:100px; position:relative">
+	<ul>
+		<li><a href="#javascript:;">1</a></li>
+        <li><a href="#javascript:;">2</a></li>
+        <li><a href="#javascript:;">3</a></li>
+        <li><a href="#javascript:;">4</a></li>
+        <li><a href="#javascript:;">5</a></li>
+        <li><a href="#javascript:;">6</a></li>
+        <li><a href="#javascript:;">7</a></li>
+        <li><a href="#javascript:;">8</a></li>
+        <li><a href="#javascript:;">9</a></li>
+        <li><a href="#javascript:;">0</a></li>
+        <li><a href="#javascript:;">-</a></li>
+        <li><a href="#javascript:;">=</a></li>
+        <li><a href="#javascript:;">`</a></li>
+	</ul>
+</div>
+
+<div id="scroller1" style="width:200px; position:relative">
+    <ul>
+        <li><a href="#javascript:;">1</a></li>
+        <li><a href="#javascript:;">2</a></li>
+        <li><a href="#javascript:;">3</a></li>
+        <li><a href="#javascript:;">4</a></li>
+        <li><a href="#javascript:;">5</a></li>
+        <li><a href="#javascript:;">6</a></li>
+        <li><a href="#javascript:;">7</a></li>
+        <li><a href="#javascript:;">8</a></li>
+        <li><a href="#javascript:;">9</a></li>
+        <li><a href="#javascript:;">0</a></li>
+        <li><a href="#javascript:;">-</a></li>
+        <li><a href="#javascript:;">=</a></li>
+        <li><a href="#javascript:;">`</a></li>
+    </ul>
+</div>
+
+<input id="sss" />
+</body>
+<script type="text/javascript" src="http://static9.pplive.cn/pptv/main/seajs/2.2.1/sea.js"></script>
+<script>
+//seajs模块2.0版
+window._mainVersion = 'v_20141104140520/src'; /* 版本号 */
+seajs.importStyle=function importStyle(b){var a=document.createElement("style"),c=document;c.getElementsByTagName("head")[0].appendChild(a);if(a.styleSheet){a.styleSheet.cssText=b}else{a.appendChild(c.createTextNode(b))}};
+
+seajs.config({
+    base: 'http://static9.pplive.cn/pptv/main/'+ _mainVersion,
+    alias: {
+        "jquery": "http://static9.pplive.cn/pptv/main/" + _mainVersion + "/lib/jquery/1.8.3/jquery.js",
+        "underscore": "http://static9.pplive.cn/pptv/main/" + _mainVersion + "/lib/underscore/1.6.0/underscore.js",
+        "login": "util/login",
+        "login-fix": "util/login-fix",
+        "user": "util/user",
+        "suggest": "util/suggest",
+        "login-fix": "util/login-fix",
+        "client" : "http://static9.pplive.cn/pc_client/v_20140926104005/clt.js"
+    }
+});
+/* 载入模块 */
+(function(){var i=0,t;while(t = arguments[i++]){document.write('<scr'+'ipt src="http://static9.pplive.cn/pptv/main/'+_mainVersion+'/'+t+'.js"></scri'+'pt>')}})('main','pub','ui');
+
+seajs.use(['jquery', './scroller'], function($, s){
+    var s1 = $('#scroller').ppScroller({
+        maxHeight: 100,
+        onScroll: function(a, b, c){
+            $('#sss').val(a + '|' + b + '|' + c)
+        }
+    }).scroll();
+    var s2 = $('#scroller1').ppScroller({
+        maxWidth: 100, 
+        horizontal: true,
+        onScroll: function(a, b, c){
+            $('#sss').val(a + '|' + b + '|' + c)
+        }
+    }).scroll();
+
+    $('#sss').on('input',function(e){
+        s1.scrollTo(this.value)
+        s2.scrollTo(this.value)
+    });
+});
+</script>
+</html>

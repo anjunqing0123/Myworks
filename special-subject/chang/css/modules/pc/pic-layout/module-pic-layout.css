@@ -1,0 +1,164 @@
+.animation2-160x90{float:left;overflow:hidden}
+.animation-160x90 .hd{float:left; width:100%}
+.animation2-160x90 .bd{float:left; width:100%; margin-top:5px;}
+.animation2-160x90 .figure-des{height:18px; line-height:18px; overflow:hidden}
+.animation2-160x90 .ui-resp-pics .ui-txt .main-tt{padding-top:5px;}
+.animation2-160x90 .figure-caption .figure-text{ margin-left:10px;}
+.animation2-160x90 .ui-160x90 .ui-pic .msk-txt{ line-height:55px;}
+.animation2-160x90 .index-figure .figure-layer{border:5px #f6f6f6 solid}
+.animation2-160x90 .index-figure .ui-160x90 li{margin-top:5px; margin-bottom:-5px;}
+.animation2-160x90 .ui-resp-pics .ui-pic .msk{display:none}
+.animation2-160x90 .index-figure .figure-caption{height:auto; padding-bottom:5px; background:url(http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/pic-bg.png) no-repeat left bottom}
+.animation2-160x90 .index-figure .figure-layer {position:relative}
+.animation2-160x90 .index-figure .figure-layer .v-ico,
+.animation2-160x90 .index-figure .figure-layer .v-ico2,
+.animation2-160x90 .index-figure .figure-layer .v-bg{ display:none; }
+
+.animation2-160x90 .ui-collect{top:10px;right:10px;}
+
+.animation2-160x90 .index-figure .figure-layer:hover .v-show{ display: block; width:50px;height:50px; position:absolute; left:50%; top:50%; margin:-25px 0 0 -25px;background:url("http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video2.png");_background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video2.png',sizingMethod='crop'); z-index:4; cursor:pointer; }
+.animation2-160x90 .index-figure .figure-layer:hover .v-bg{ display:block; position:absolute; top:0; left:0; width:340px; height:190px; background:#000;filter:alpha(opacity=40); opacity:0.4; z-index: 4;}
+.animation2-160x90 .index-figure .figure-layer:hover .v-ico2{display:block;width:13px;height:18px; margin: -9px 0 0 -5px; position: absolute; left: 50%; top:50%; background:url("http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video3.png");_background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video3.png',sizingMethod='crop'); z-index:4;}
+.animation2-160x90 .index-figure .figure-layer:hover .v-ico2{
+	-webkit-animation:fadeIn .6s .1s ease both;
+	-moz-animation:fadeIn .6s .1s ease both;
+	-ms-animation:fadeIn .6s .1s ease both;
+	-o-animation:fadeIn .6s .1s ease both;
+	animation:fadeIn .6s .1s ease both;
+}
+.animation2-160x90 .index-figure .figure-layer:hover .v-show{
+	-webkit-animation:rotateIn .6s .2s ease both;
+	-moz-animation:rotateIn .6s .2s ease both;
+	-ms-animation:rotateIn .6s .2s ease both;
+	-o-animation:rotateIn .6s .2s ease both;
+	animation:rotateIn .6s .2s ease both;
+}
+@-webkit-keyframes fadeIn{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+@-moz-keyframes fadeIn{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+@-o-keyframes fadeIn{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+@-ms-keyframes fadeIn{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+
+
+@-webkit-keyframes rotateIn{
+	0%{
+		-webkit-transform-origin:center center;
+		-webkit-transform:rotate(-200deg);
+		opacity:0
+	}
+	100%{
+		-webkit-transform-origin:center center;
+		-webkit-transform:rotate(0);
+		opacity:1
+	}
+}
+@-moz-keyframes rotateIn{
+	0%{
+		-moz-transform-origin:center center;
+		-moz-transform:rotate(-200deg);
+		opacity:0;
+	}
+	100%{
+		-moz-transform-origin:center center;
+		-moz-transform:rotate(0);
+		opacity:1;
+	}
+}
+@-o-keyframes rotateIn{
+	0%{
+		-o-transform-origin:center center;
+		-o-transform:rotate(-200deg);
+		opacity:0;
+	}
+	100%{
+		-o-transform-origin:center center;
+		-o-transform:rotate(0);
+		opacity:1;
+	}
+}
+@-ms-keyframes rotateIn{
+	0%{
+		-ms-transform-origin:center center;
+		-ms-transform:rotate(-200deg);
+		opacity:0;
+	}
+	100%{
+		-ms-transform-origin:center center;
+		-ms-transform:rotate(0);
+		opacity:1;
+	}
+}
+
+
+
+
+.module-pic-layout .animation2-160x90 .index-figure .figure-layer{margin:5px 0 0;border:0 none;}
+.module-pic-layout .index-figure .figure-layer,
+.module-pic-layout .index-figure .figure-layer img{width:380px;height:300px;}
+.module-pic-layout .index-figure .figure-layer:hover .v-bg{width:380px;height:300px;}
+.module-pic-layout .animation2-160x90 .index-figure .figure-caption{height:68px;padding:10px 0;background:url(modules/pc/pic-layout/bg.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20150914104731/css/modules/pc/pic-layout/bg.png",sizingMethod='scale');}
+.module-pic-layout .figure-caption .figure-title{font-size:16px;line-height: 20px;}
+.module-pic-layout .figure-caption .figure-text p{margin:10px 0 0;color:#959696;}
+
+.module-pic-layout .animation3-180x100{float:left;display:inline;width:600px;}
+.module-pic-layout .animation3-180x100 li{position:relative;float:left;display:inline;width:180px;height:167px;margin:0 0 5px 10px;border-left:5px solid #fff;border-right:5px solid #fff;border-top:5px solid #fff;}
+.module-pic-layout .animation3-180x100 li .item{padding:0;cursor:pointer;margin-bottom:0;}
+.module-pic-layout .animation3-180x100 li img{display:block;width:180px;height:100px;}
+.module-pic-layout .animation3-180x100 li dt{height:22px;line-height:22px;margin:0 0 0 50px;overflow:hidden;}
+.module-pic-layout .pkmarquee li dt{margin-left:0px;padding: 0px 5px;}
+.module-pic-layout .pkmarquee .msk-txt{background: url(modules/pc/animation180x100/pic-bg.png) no-repeat;
+  _background: none;
+  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/pic-bg.png',sizingMethod='crop');
+  height: 39px;
+  line-height: 60px;
+  position: absolute;
+  top: 61px;
+  _bottom: -20px;
+  width: 95%;
+  padding-right: 9px;
+  right: 0px;
+  z-index: 3;
+  color: white;
+  text-decoration: none;
+  text-align: right;}
+.module-pic-layout-index .animation3-180x100 li dt{margin:0 0 0 5px;}
+.module-pic-layout .animation3-180x100 li dd{padding:0 5px;height:22px;line-height:22px;color:#999;overflow:hidden;}
+.module-pic-layout .animation3-180x100 li dt a{color:#222;}
+.module-pic-layout .animation3-180x100 li dd a{color:#999;}
+.module-pic-layout .animation3-180x100 li .hpic{position:absolute;top:89px;left:6px;height:36px;padding:0;z-index:10;}
+.module-pic-layout .animation3-180x100 li .hpic img{display:block;width:32px;height:32px;border:2px solid #fff;}
+.module-pic-layout .animation3-180x100 li a:hover{text-decoration:none;background:none;}
+.module-pic-layout .animation3-180x100 li .item .name{position:absolute;left:0;top:80px;width:170px;height:20px;padding:0 5px;line-height:20px;text-align:right;font-style:normal;color:#fff;background:rgba(0,0,0,0.7);*background:#000;*filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);}
+
+.module-pic-layout .module-animation180x100 .item-hover{background: #f6f6f6;text-decoration: none;cursor:pointer;border-left:5px solid #f6f6f6;border-right:5px solid #f6f6f6;border-top:5px solid #f6f6f6;}
+.module-pic-layout .module-animation180x100 .item-hover .v-bg {display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #000;filter: alpha(opacity=40);opacity: 0.4;z-index: 4;}
+.module-pic-layout .module-animation180x100 .item-hover .v-show {display: block;width: 50px;height: 50px;position: absolute;left: 50%;top: 50%;margin: -25px 0 0 -25px;background: url("http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video2.png");_background: none;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video2.png',sizingMethod='crop');z-index: 4;cursor: pointer;}
+.module-pic-layout .module-animation180x100 .item-hover .v-ico2 {display: block;width: 13px;height: 18px;margin: -9px 0 0 -5px;position: absolute;left: 50%;top: 50%;background: url("http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video3.png");_background: none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video3.png',sizingMethod='crop');z-index: 4;-webkit-animation: fadeIn .6s .1s ease both;-moz-animation: fadeIn .6s .1s ease both;-ms-animation: fadeIn .6s .1s ease both;-o-animation: fadeIn .6s .1s ease both;animation: fadeIn .6s .1s ease both;}
+
+.module-pic-layout .module-animation180x100 .item-hover .v-bg{width:180px;height:100px;overflow:hidden;}
+.module-pic-layout .module-animation180x100 .item-hover .v-show{top:35%;}
+.module-pic-layout .module-animation180x100 .item-hover .v-ico2{top:35%;}
+.module-pic-layout .module-animation180x100 .item-hover .name,
+.module-pic-layout .module-animation180x100 .item:hover .name{display:none;}
+
+.module-pic-layout .module-animation180x100 li .vote a{display:inline-block;width:70px;height:18px;line-height:18px;padding:0 0 0 20px;color:#999;overflow:hidden;*display:inline;*zoom:1;cursor:default;}
+.module-pic-layout .module-animation180x100 .up{background:url(modules/pc/inmatch/icon.png) no-repeat 0 0;}
+.module-pic-layout .module-animation180x100 .up:hover{background:url(modules/pc/inmatch/icon.png) no-repeat 0 0;}
+.module-pic-layout .module-animation180x100 .down,
+.module-pic-layout .module-animation180x100 .down:hover{background:url(modules/pc/inmatch/icon.png) no-repeat 0 -18px;}
+
+.module-pic-layout-index .animation3-180x100 li{height:auto;}
+
+

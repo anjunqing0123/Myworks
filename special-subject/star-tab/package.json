@@ -1,0 +1,33 @@
+{
+  "family": "pptv",
+  "name": "web",
+  "author": "pptv",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cmd-transport": "^0.5.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0"
+  },
+  "description": "define require",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab:static9/static9.git"
+  },
+  "license": "BSD-2-Clause",
+  "spm": {
+    "alias": {
+      "jquery": "jquery",
+      "md5": "md5",
+      "RongIMLib": "RongIMLib",
+      "RongIMEmoji": "RongIMEmoji",
+      "chat": "chat",
+      "living": "living"
+    }
+  },
+  "src": "js/src/",
+  "file": "js/dist/",
+  "build": "js/.build/"
+}

@@ -1,0 +1,32 @@
+.module-goldroad{float:left;width:670px;height:208px;margin:5px 0 0;padding:0 0 10px;background:#f1f1f1 url(modules/pc/goldroad/bg1.png) no-repeat center 85px;}
+.module-goldroad .hd{margin:20px 0 0 35px;}
+.module-goldroad h1{font-size:24px;color:#333;}
+.module-goldroad .logo-icon {float: left;height: 28px;margin:7px 10px 0 0;width: 15px;background: rgba(0, 0, 0, 0) url("modules/pc/module-sass-mixin/changlive_sprite.png") no-repeat scroll 0 -689px; *background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat 0 -691px;}
+.module-goldroad .bd{position:relative;}
+.module-goldroad .back,
+.module-goldroad .go{position:relative;width:112px;height:112px;background:url(modules/pc/goldroad/icon.png) no-repeat;}
+.module-goldroad .back{float:left;display:inline;margin:15px 0 0 92px;background-position:0 0;}
+.module-goldroad .go{float:right;display:inline;margin:15px 92px 0 0;background-position:-112px 0;}
+.module-goldroad .back-hover{background-position:0 -112px;}
+.module-goldroad .go-hover{background-position:-112px -112px;}
+.module-goldroad .back-noclick{background-position:0 -336px;}
+.module-goldroad .go-noclick{background-position:-112px -336px;}
+.module-goldroad .back .num,
+.module-goldroad .go .num{position:absolute;top:-9px;right:-5px;font-size:18px;}
+.module-goldroad .back .num{color:#197ec4;}
+.module-goldroad .go .num{color:#d3241e;}
+.module-goldroad .back-countdown{background-position:0 -224px;}
+.module-goldroad .go-countdown{background-position:-112px -224px;}
+.module-goldroad .back .time,
+.module-goldroad .go .time{position:absolute;top:70px;right:0;width:112px;text-align:center;color:#fff;}
+
+.module-goldroad .count{width:120px;display:block;height:18px;line-height:18px;margin:5px 0 0 15px;padding:0 0 0 20px;font-size:14px;color:#666;background:url(modules/pc/goldroad/icon.png) no-repeat 0 -455px;}
+.module-goldroad .count:hover{color:#333;background:url(modules/pc/goldroad/icon.png) no-repeat 0 -487px;}
+.module-goldroad .tips{position:absolute;top:154px;left:34px;width:230px;padding:20px 10px;border:1px solid #ccc;background:#fff;}
+
+
+.module-goldrule{float:right;display:inline;width:268px;height: 181px;overflow:hidden;margin:5px 0 0;padding:15px 15px 20px 15px;border:1px solid #ccc;line-height: 22px;}
+.module-goldrule h4{font-size:16px;color:#333;}
+.module-goldrule p{margin:5px 0 0;font-size:13px;color:#666;}
+.pc-gold-wrap .leftPart{float: left;width: 670px;}
+.pc-gold-wrap .rightPart{float: right;display: inline;width: 258px;}

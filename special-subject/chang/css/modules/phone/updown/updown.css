@@ -1,0 +1,101 @@
+.module-audition-updown {
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+.module-audition-updown .avartar {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  overflow: hidden;
+  margin: 0.36rem auto 0.24rem auto;
+}
+.module-audition-updown .avartar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+}
+.module-audition-updown .name {
+  text-align: center;
+  font-size: 18px;
+}
+.module-audition-updown .nums {
+  text-align: center;
+  margin: 0 10px;
+  margin-top: 0.14rem;
+  font-size: 0;
+}
+.module-audition-updown .nums .bar {
+  height: 6px;
+  display: inline-block;
+  margin: 0.02rem 0;
+}
+.module-audition-updown .nums .txt {
+  font-size: 0.48rem;
+}
+.module-audition-updown .nums .a,
+.module-audition-updown .nums .b {
+  display: inline-block;
+  width: 45%;
+  margin: 0 3px;
+}
+.module-audition-updown .nums .a {
+  text-align: right;
+  color: #ef2e2e;
+}
+.module-audition-updown .nums .a .bar {
+  background: #ef2e2e;
+  width: 0;
+}
+.module-audition-updown .nums .b {
+  text-align: left;
+  color: #1887dc;
+}
+.module-audition-updown .nums .b .bar {
+  background: #1887dc;
+  width: 0;
+}
+.module-audition-updown .btns {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0;
+}
+.module-audition-updown .btns .a,
+.module-audition-updown .btns .b {
+  display: inline-block;
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  width: 3.24rem;
+  margin: 0 3px;
+  letter-spacing: 1px;
+}
+.module-audition-updown .btns .a .txt,
+.module-audition-updown .btns .b .txt {
+  /*line-height: 12px;*/
+  display: inline-block;
+  text-indent: 0.4rem;
+  font-size: 0.36rem;
+}
+.module-audition-updown .btns .a {
+  background: #ef2e2e;
+}
+.module-audition-updown .btns .a .txt {
+  background: url(../images/thumb.png) no-repeat;
+  background-size: 0.32rem;
+  background-position: 0 center;
+}
+.module-audition-updown .btns .a.disable {
+  background: #fa6565;
+}
+.module-audition-updown .btns .b {
+  background: #1887dc;
+}
+.module-audition-updown .btns .b .txt {
+  background: url(../images/thumb2.png) no-repeat;
+  background-size: 0.32rem;
+  background-position: 0 center;
+}
+.module-audition-updown .btns .b.disable {
+  background: #5db0f0;
+}

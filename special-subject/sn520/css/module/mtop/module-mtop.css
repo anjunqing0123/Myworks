@@ -1,0 +1,81 @@
+html {font-size:100px}
+body {font-size:16px;font-family:\5FAE\8F6F\96C5\9ED1;background:#ebebeb;padding:0 0 0.35rem;}
+
+@media screen and (min-width: 360px) {
+  html{font-size:118px;}
+}
+@media screen and (min-width: 414px) {
+  html{font-size:129px;}
+}
+@media screen and (min-width: 768px) {
+  html{font-size:240px;}
+}
+a{text-decoration:none;}
+
+.wrap{max-width:3.2rem;margin:0 auto;}
+.module-top{position:relative;width:100%;margin: 0 auto;}
+.module-top img{display:block;width:100%; text-align: center; overflow: hidden;}
+.getsale{position:fixed;bottom:0.4rem;right:0.02rem;width:0.705rem;height:0.74rem;text-indent:-9999px;background:url(module/mtop/bg1.png) no-repeat;background-size:0.705rem 0.74rem;z-index:2;}
+.getsale.bound-pirce{
+    -webkit-animation: rock 1s ease both;
+    -moz-animation: rock 1s ease both;
+    -o-animation: rock 1s ease both;
+    -ms-animation: rock 1s ease both;
+    animation: rock 1s ease both;
+}
+
+@-webkit-keyframes rock {
+    0% {
+        -webkit-transform: scale(1); }
+    10%, 20% {
+        -webkit-transform: scale(0.9) rotate(-3deg); }
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale(1.1) rotate(3deg); }
+    40%, 60%, 80% {
+        -webkit-transform: scale(1.1) rotate(-3deg); }
+    100% {
+        -webkit-transform: scale(1) rotate(0); } }
+@-moz-keyframes rock {
+    0% {
+        -moz-transform: scale(1); }
+    10%, 20% {
+        -moz-transform: scale(0.9) rotate(-3deg); }
+    30%, 50%, 70%, 90% {
+        -moz-transform: scale(1.1) rotate(3deg); }
+    40%, 60%, 80% {
+        -moz-transform: scale(1.1) rotate(-3deg); }
+    100% {
+        -moz-transform: scale(1) rotate(0); } }
+@-o-keyframes rock {
+    0% {
+        -o-transform: scale(1); }
+    10%, 20% {
+        -o-transform: scale(0.9) rotate(-3deg); }
+    30%, 50%, 70%, 90% {
+        -o-transform: scale(1.1) rotate(3deg); }
+    40%, 60%, 80% {
+        -o-transform: scale(1.1) rotate(-3deg); }
+    100% {
+        -o-transform: scale(1) rotate(0); } }
+@-ms-keyframes rock {
+    0% {
+        -ms-transform: scale(1); }
+    10%, 20% {
+        -ms-transform: scale(0.9) rotate(-3deg); }
+    30%, 50%, 70%, 90% {
+        -ms-transform: scale(1.1) rotate(3deg); }
+    40%, 60%, 80% {
+        -ms-transform: scale(1.1) rotate(-3deg); }
+    100% {
+        -ms-transform: scale(1) rotate(0); } }
+@keyframes rock {
+    0% {
+        transform: scale(1); }
+    10%, 20% {
+        transform: scale(0.9) rotate(-3deg); }
+    30%, 50%, 70%, 90% {
+        transform: scale(1.1) rotate(3deg); }
+    40%, 60%, 80% {
+        transform: scale(1.1) rotate(-3deg); }
+    100% {
+        transform: scale(1) rotate(0); } }

@@ -1,0 +1,216 @@
+.mstar{
+    width:100%;height:auto;background:#fff;
+    padding:0.3rem 0.3rem  0.3rem 0.24rem;box-sizing:border-box;
+}
+.mstar{
+    margin-top:0.16rem;
+}
+.mstar.before-living{
+    margin-top:0rem;
+}
+.mstar h3{
+    font-size:0.34rem;color:#323232;font-weight:bold;
+    width:100%;overflow:hidden;box-sizing:border-box;
+    max-height:0.42rem;overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;max-width:6.6rem;
+}
+.mstar p{
+    font-size:0.26rem;color:#646464;min-height:0.5rem;max-height:0.8rem;
+    width:100%;overflow:hidden;box-sizing:border-box;line-height:0.4rem;
+    margin-top:0.1rem;max-width:6.7rem;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+}
+.living-star{
+    width:100%;height:auto;background:#fff;margin:0.16rem 0;
+    padding:0.28rem 0.22rem;box-sizing:border-box;display:none;
+}
+.living-star .living-star-title i{
+    display:inline-block;width:0.32rem;height:0.32rem;background:url(./module/mstar/person.png);
+    background-size:100% 100%;
+    vertical-align: middle;margin-right:0.09rem;
+}
+.living-star .living-star-title h3{
+   font-size:0.32rem;color:#323232;
+    font-weight:bold;display:inline-block;vertical-align: middle;
+}
+.living-star  .living-star-info{
+    width:100%;height:auto;
+}
+.living-star  .living-star-info li{
+    overflow:hidden;margin:0.32rem 0;
+
+}
+.living-star  .living-star-info .star-pic{
+    width:1.5rem;height:0.95rem;
+    float:left;text-align:center;
+}
+.living-star  .living-star-info .star-pic img{
+    width:0.95rem;height:0.95rem;border-radius:50%;
+}
+.living-star  .living-star-info .star-info{
+    float:none;font-size:0.26rem;color:#646464;line-height:0.4rem;padding-top:0.1rem;
+    box-sizing:border-box;overflow:hidden;
+}
+.living-star  .living-star-info .star-info .star-name span{
+    display:inline-block;vertical-align: middle;max-width:5.4rem;
+}
+.living-star  .living-star-info .star-info .star-name .star-first{
+    margin-right:0.2rem;
+}
+.living-star  .living-star-info .star-info.sur{
+    float:left;font-size:0.26rem;color:#646464;line-height:0.4rem;padding-top:0.1rem;
+    box-sizing:border-box;
+}
+
+/*留言板*/
+.message{
+    width:100%;height:auto;background:#fff;display:none;
+}
+.message .message-title{
+    width:100%;height:auto;background:#fafafa;margin:0.14rem 0;
+    padding:0.28rem 0.22rem;box-sizing:border-box;
+}
+.message .message-title i{
+    display:inline-block;width:0.32rem;height:0.32rem;background:url(./module/mstar/listen.png);
+    background-size:100% 100%;
+    vertical-align: middle;margin-right:0.09rem;
+}
+.message .message-title h3{
+    font-size:0.32rem;color:#323232;
+    font-weight:bold;display:inline-block;vertical-align: middle;
+}
+.message .speak{
+    width:100%;height:1.2rem;text-align: center;position:relative;
+    border-bottom:1px solid #ebebeb;
+}
+.message .speak .speaking{
+    width:6.98rem;height:0.72rem;border-radius:10rem;background:#F0F0F0;
+    font-size:0.26rem;color:#969696;line-height:0.72rem;padding:0 0.3rem;
+    box-sizing:border-box;margin:0 auto;border:0;text-align:left;
+}
+.message .speak i{
+    display:inline-block;width:0.32rem;height:0.32rem;background:url(./module/mstar/smile.png);
+    position:absolute;background-size:100% 100%;
+    right:0.6rem;top:0.2rem;
+}
+/*评论*/
+.comment{
+    width:100%;height:auto;background:#fff;padding:0.24rem;box-sizing:border-box;overflow:hidden;
+    display:none;
+}
+.comment ul{
+    overflow:hidden;
+}
+.comment .comment-first{
+    overflow:hidden;height:auto;margin-bottom:0.2rem;
+}
+.comment .comment-pic{
+    width:0.64rem;height:0.64rem;float:left;
+}
+.comment .comment-pic img{
+    width:0.64rem;height:0.64rem;border-radius:50%;
+}
+.comment .comment-info{
+    width:6.26rem;height:auto;float:left;
+    padding-left:0.16rem;box-sizing:border-box;
+}
+.comment .comment-info .comment-name{
+    width:100%;height:0.4rem;font-size:0.22rem;color:#969696;
+}
+.comment .comment-info .comment-name i{
+    display:inline-block;width:0.32rem;height:0.32rem;border-radius:0.04rem;
+    border:1px solid #FD5151;color:#FD5151;line-height:0.32rem;text-align:center;
+    vertical-align: middle;font-style:normal;
+
+}
+.comment .comment-info .comment-detail{
+    font-size:0.26rem;color:#323232;line-height:0.36rem;
+    margin:0.2rem 0;
+}
+.comment .comment-info .comment-love{
+    width:100%;height:0.3rem;font-size:0.22rem;color:#969696;
+}
+.comment .comment-info .comment-love .time{
+    float:left;
+}
+.comment .comment-info .comment-love .love{
+    float:right;
+}
+.comment .comment-info .comment-love .love i{
+    display:inline-block;width:0.32rem;height:0.32rem;background:url(./module/mstar/zan.png);
+    background-size:100% 100%;vertical-align: bottom;
+}
+.comment .comment-info .comment-love .love i.cur{
+    display:inline-block;width:0.32rem;height:0.32rem;background:url(./module/mstar/zanhover.png);
+    background-size:100% 100%;vertical-align: bottom;
+}
+.comment .comment-info .comment-love .love span{
+    margin-left:0.1rem;display:inline-block;vertical-align: bottom;
+    height:0.32rem;width:auto;line-height:0.32rem;
+}
+/*子回复*/
+.comment .comment-info .reply{
+    width:100%;height:auto;overflow:hidden;
+    margin:0.2rem 0;
+}
+.comment .comment-info .reply .reply-pic{
+    width:0.64rem;height:0.64rem;float:left;
+}
+.comment .comment-info .reply .reply-pic img{
+    width:0.64rem;height:0.64rem;border-radius:50%;
+}
+.comment .comment-info .reply .reply-info{
+    float:left;font-size:0.22rem;color:#323232;
+    padding-left:0.16rem;box-sizing: border-box;
+}
+/*.comment .comment-info .reply .reply-info  i{*/
+    /*display:inline-block;width:0.32rem;height:0.32rem;*/
+    /*vertical-align: middle;*/
+/*}*/
+.comment .comment-info .reply .reply-info .reply-name i{
+    display:inline-block;width:0.32rem;height:0.32rem;border-radius:0.04rem;
+    border:1px solid #FD5151;color:#FD5151;line-height:0.32rem;text-align:center;
+    vertical-align: middle;font-style:normal;
+}
+.comment .comment-info .reply .reply-info .reply-name i.cur{
+    display:inline-block;width:0.32rem;height:0.32rem;background:url(./module/mstar/zanhover.png);
+    vertical-align: middle;background-size:100% 100%;
+}
+.comment .comment-info .reply .reply-detail{
+    font-size:0.26rem;color:#323232;line-height:0.36rem;
+    margin:0.2rem 0;
+}
+.comment .comment-info .reply .reply-love{
+    width:100%;height:0.3rem;font-size:0.22rem;color:#969696;
+}
+.comment .comment-info .reply .reply-love .reply-time{
+    float:left;
+}
+.comment .comment-info .reply .reply-love .reply-number{
+    float:right;
+}
+
+.comment .comment-info .reply .reply-love .reply-number i{
+    display:inline-block;width:0.32rem;height:0.32rem;background:url(./module/mstar/zan.png);
+    vertical-align: middle;background-size:100% 100%;
+}
+.comment .comment-info .reply .reply-love .reply-number i.cur{
+    display:inline-block;width:0.32rem;height:0.32rem;background:url(./module/mstar/zanhover.png);
+    vertical-align: middle;background-size:100% 100%;
+}
+/*最后前往 客户端*/
+.go-wrap{
+    width:100%;height:1.3rem;background:#fff;border-top:1px solid #ebebeb;
+    text-align: center;padding-top:0.3rem;box-sizing:border-box;
+}
+.go-wrap .go{
+   display:inline-block; width:4.4rem;height:0.7rem;background:#00aced;border-radius:1rem;
+    font-size:0.28rem;color:#fff;line-height:0.7rem;text-align: center;
+
+}

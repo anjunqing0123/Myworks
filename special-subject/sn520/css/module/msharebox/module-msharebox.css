@@ -1,0 +1,21 @@
+.module-msharebox{position:fixed;left:0;bottom:-1.3rem;width:100%;background:#fff;z-index:2;}
+.module-msharebox .btns{width:100%;padding:0.1rem 0 0.25rem 0;display:-webkit-flex;justify-content:space-around;display:box;display:-webkit-box;display:flex;}
+.module-msharebox .btns a{display:block;width:0.4rem;height:0.4rem;line-height:1rem;text-align:center;font-size:0.12rem;color:#323232;}
+.module-msharebox .btns .wb{background:url(module/msharebox/wb.png) no-repeat;background-size:0.4rem 0.4rem;}
+.module-msharebox .btns .wb:active{background:url(module/msharebox/wb2.png) no-repeat;background-size: contain;}
+.module-msharebox .btns .qzone{background:url(module/msharebox/qzone.png) no-repeat;background-size:0.4rem 0.4rem;}
+.module-msharebox .btns .qzone:active{background:url(module/msharebox/qzone2.png) no-repeat;}
+.module-msharebox .btns .qq{background:url(module/msharebox/qq.png) no-repeat;background-size:0.4rem 0.4rem;}
+.module-msharebox .btns .qq:active{background:url(module/msharebox/qq2.png) no-repeat;}
+.module-msharebox .cancel{display:block;height:0.5rem;line-height:0.5rem;text-align:center;font-size:0.14rem;color:#3399ff;border-top:1px solid #3399ff;}
+.module-msharebox .btns a {
+	float: none; 
+	background-repeat: no-repeat; 
+	cursor: none; 
+	margin: 0; 
+	text-indent: 0; 
+	overflow: visible; 
+}
+.module-msharebox .btns:after {
+	display: none;
+}

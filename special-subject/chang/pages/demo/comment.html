@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page.</title>
+    <link rel="stylesheet" type="text/css" href="http://static9.pplive.cn/chang/css/v_01/pc.min.css">
+    <!-- <link rel="stylesheet" href="http://static9.pplive.cn/pub/flagment/v_20150814131824/video.min.css" /> -->
+    <script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<body>
+
+
+<h1>评论加载...</h1>
+
+<div class="comment">
+    <!-- s comment box -->
+    <div class="pl_cbox grid-left770" id="comment">
+        <div class="pub_box">
+            <div class="hd"><h3>发表短评<span class="cmt_count ">(已有<span class="js_cmt_count">102</span>条评论)</span></h3></div>
+            <div class="add">
+                <div class="txt_con"><div><textarea class="js_cmt_post_area"></textarea></div></div>
+                <div class="pub_link c_b">
+                    <a class="input_face js_cmt_facebtn" title="插入表情" href="">插入表情</a>
+                    <label><input type="checkbox" class="js_cmt_asy" checked="checked">同步到微博 <a href="http://passport.pptv.com/blogbound.aspx" target="_blank">立即绑定</a></label>
+                    <div class="btn"><span class="js_cmt_post_count">还可输入<strong>300</strong>个字</span><a class="pub_btn js_cmt_post_btn" href="javascript:void(0);">发布</a></div>
+                </div>
+            </div>
+            <em class="arrow"></em>
+        </div>
+        <div style="display: block;" class="cmt_none js_cmt_none">
+            <div class="pubcmt"><a title="发表评论" href=""><em></em><tt>发表评论</tt></a></div>
+        </div>
+        <div class="js_cmt_loading"></div>
+    </div>
+    <!-- e comment box -->
+</div>
+<!-- comment end-->
+
+
+<script type="text/javascript">
+
+    var webcfg = {
+        "comment": {
+            "ids": ["video_17332474"],
+            "config": {
+                "defaultText": "",
+                "pageSize": 20,
+                "showHot": true,
+                "tabs": ["\u6700\u65b0\u8bc4\u8bba"],
+                "type": "short-pages"
+            },
+            "tags": ["\u7535\u89c6\u5267"]
+        }
+    };
+</script>
+
+<script type="text/javascript" src="../../js/app/config.js"></script>
+<script type="text/javascript">
+    seajs.use('util/comment/comment');
+</script>
+
+</body>
+</html>

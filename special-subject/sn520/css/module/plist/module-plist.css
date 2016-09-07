@@ -1,0 +1,171 @@
+.wp-contain{background:url(module/plist/bg1.png) no-repeat center top;}
+
+.module-plist{margin:40px 0 0;}
+.module-plist .hd{height:55px;line-height:55px;background:url(module/plist/bg3.png) no-repeat right top;}
+.module-plist .hd h3{width:180px;height:55px;font-size:24px;font-weight:bold;color:#fff;}
+.module-plist .hd.hot h3{width:112px;padding:0 0 0 68px;background:url(module/plist/bg4.png) no-repeat 0 -55px;}
+.module-plist .hd.uodate h3{width:112px;padding:0 0 0 68px;background:url(module/plist/bg4.png) no-repeat 0 -110px;}
+.module-plist .hd.recommend h3{width:112px;padding:0 0 0 68px;background:url(module/plist/bg4.png) no-repeat 0 0;}
+
+.module-plist ul{position:relative;width:1010px;overflow: hidden; }
+.module-plist li{float:left;display:inline;width:180px;margin:20px 22px 0 0;}
+.module-plist li .ui-list-ct{display:block;}
+.module-plist li .ui-list-ct img{display:block;width:180px;height:100px;}
+.module-plist .ui-pic{position: relative;width:180px;height:100px;overflow:hidden;background: #eee url(http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/index-list-bg.jpg) no-repeat center; *cursor: pointer; }
+.module-plist .ui-pic .msk-txt{display: block;width:170px;padding:0 5px;color:#fff;word-break:break-all; word-wrap:break-word;background:#000;opacity:0.7;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);}
+.module-plist .ui-txt{width:170px;height:56px;padding:0 5px;background:#fff;}
+.module-plist .ui-txt .main-tt{font-size: 14px; }
+.module-plist .ui-txt span{ height:18px;margin:5px 0 0;color:#7d7d7d; word-break:break-all; word-wrap:break-word; overflow: hidden; display: block; }
+.module-plist .ui-txt .main-tt{padding:5px 0 0;margin:0;color:#333;}
+.module-plist .ui-txts{width:170px;height:35px;padding:0 5px;background:#fff;}
+.module-plist .ui-txts .main-tts{ padding:5px 0 0;margin:0;color:#333;  font-weight: 600;}
+.module-plist .ui-pic .msk,
+.module-plist .ui-pic .msk-txt{ position: absolute; bottom:0; left:0; border:0;  height:22px;padding-left:5px;  cursor:pointer;  overflow:hidden; z-index:3;}
+.module-plist .ui-pic .msk{ filter:alpha(opacity=50); opacity:0.5; background:#000;}
+.module-plist .ui-pic .msk-txt{text-decoration:none;line-height:22px;  color:#fff; font-style:normal;}
+.module-plist .ui-pic .num{position:absolute;top:0;right:0;width:40px;height:20px;line-height:20px;text-align:center;font-weight:bold;color:#fff;background:#e90052;border-radius:0 0 0 5px;}
+.module-plist .ui-txt .zan{display:block;margin:5px 0 0;font-size:14px;color:#7d7d7d;}
+.module-plist .ui-txt .zan i{display:inline-block;width:15px;height:15px;margin:0 5px 0 0;vertical-align:-1px;background:url(module/plist/bg5.png) no-repeat 0 0;}
+.module-plist .ui-txt .zan:hover{color:#e90052;}
+.module-plist .ui-txt .zan:hover i{background:url(module/plist/bg5.png) no-repeat 0 -15px;}
+
+.module-plist .ui-pic .v-ico,
+.module-plist .ui-pic .v-ico2,
+.module-plist .ui-pic .v-bg{ display:none; }
+
+.module-plist .ui-list-ct:hover .ui-pic .v-show{ display: block; width:50px;height:50px; position:absolute; left:50%; top:50%; margin:-25px 0 0 -25px;background:url("http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video2.png");_background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video2.png',sizingMethod='crop'); z-index:4; cursor:pointer; }
+.module-plist .ui-list-ct:hover .ui-pic .v-bg{ display:block; position:absolute; top:0; left:0; width:100%; height:100%; background:#000;filter:alpha(opacity=40); opacity:0.4; z-index: 4; }
+.module-plist .ui-list-ct:hover .ui-pic .v-ico2{display:block;width:13px;height:18px; margin: -9px 0 0 -5px; position: absolute; left: 50%; top: 50%; background:url("http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video3.png");_background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/pub/flagment/v_20140910122440/basic/images/ico-video3.png',sizingMethod='crop'); z-index:4;}
+.module-plist .ui-list-ct:hover .ui-pic .v-ico2{
+	-webkit-animation:fadeIn .6s .1s ease both;
+	-moz-animation:fadeIn .6s .1s ease both;
+	-ms-animation:fadeIn .6s .1s ease both;
+	-o-animation:fadeIn .6s .1s ease both;
+	animation:fadeIn .6s .1s ease both;
+}
+.module-plist .ui-list-ct:hover .ui-pic .v-show{
+	-webkit-animation:rotateIn .6s .2s ease both;
+	-moz-animation:rotateIn .6s .2s ease both;
+	-ms-animation:rotateIn .6s .2s ease both;
+	-o-animation:rotateIn .6s .2s ease both;
+	animation:rotateIn .6s .2s ease both;
+}
+@-webkit-keyframes fadeIn{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+@-moz-keyframes fadeIn{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+@-o-keyframes fadeIn{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+@-ms-keyframes fadeIn{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+
+
+@-webkit-keyframes rotateIn{
+	0%{
+		-webkit-transform-origin:center center;
+		-webkit-transform:rotate(-200deg);
+		opacity:0
+	}
+	100%{
+		-webkit-transform-origin:center center;
+		-webkit-transform:rotate(0);
+		opacity:1
+	}
+}
+@-moz-keyframes rotateIn{
+	0%{
+		-moz-transform-origin:center center;
+		-moz-transform:rotate(-200deg);
+		opacity:0;
+	}
+	100%{
+		-moz-transform-origin:center center;
+		-moz-transform:rotate(0);
+		opacity:1;
+	}
+}
+@-o-keyframes rotateIn{
+	0%{
+		-o-transform-origin:center center;
+		-o-transform:rotate(-200deg);
+		opacity:0;
+	}
+	100%{
+		-o-transform-origin:center center;
+		-o-transform:rotate(0);
+		opacity:1;
+	}
+}
+@-ms-keyframes rotateIn{
+	0%{
+		-ms-transform-origin:center center;
+		-ms-transform:rotate(-200deg);
+		opacity:0;
+	}
+	100%{
+		-ms-transform-origin:center center;
+		-ms-transform:rotate(0);
+		opacity:1;
+	}
+}
+
+
+
+
+.module-plist-recommend{float:left;display:inline;width:790px;}
+.module-plist-recommend .bd{width:810px;}
+.module-plist .bpic{float:left;display:inline;margin:20px 24px 0 0;}
+.module-plist .bpic a{display:block;position:relative;width:382px;height:320px;}
+.module-plist .bpic a img{display:block;width:382px;height:320px;}
+.module-plist .bpic dl{position:absolute;left:0;bottom:0;width:322px;height:55px;padding:0 0 0 60px;color:#fff;background:url(module/plist/bg6.png) no-repeat;}
+.module-plist .bpic dl dt{width:300px;font-size:16px;height:20px;margin:8px 0 0;line-height:20px;overflow:hidden;}
+.module-plist .bpic dl dd{width:300px;font-size:14px;height:20px;line-height:20px;overflow:hidden;}
+.module-plist-recommend ul{float:left;display:inline;width:404px;}
+
+
+.module-plist .tabs{border-bottom:2px solid #e90052;}
+.module-plist .tabs a{position:relative;float:left;display:inline;height:55px;line-height:55px;font-size:24px;font-weight:bold;color:#fff;background:url(module/plist/bg7.png) no-repeat;  text-decoration: none;}
+.module-plist .tabs .release{width:107px;padding:0 0 0 70px;background-position:0 0;z-index:2;}
+.module-plist .tabs .release:hover,
+.module-plist .tabs .release.now{background-position:0 -55px;}
+.module-plist .tabs .check,
+.module-plist .tabs .nopass{width:100px;padding:0 0 0 100px;left:-45px;background-position:0 -110px;z-index:1;}
+.module-plist .tabs .nopass{width:150px;left:-90px;z-index:0;background-position:0 -220px}
+.module-plist .tabs .check:hover,
+.module-plist .tabs .check.now{background-position:0 -165px;}
+.module-plist .tabs .nopass:hover,
+.module-plist .tabs .nopass.now{background-position:0 -275px;}
+
+
+.module-plist .tabcon .nocheck{width:990px;height:484px;background:url(module/plist/bg9.png) no-repeat;overflow:hidden;}
+.module-plist .tabcon .norelease{width:990px;height:484px;background:url(module/plist/bg8.png) no-repeat;overflow:hidden;}
+.module-plist .tabcon .nopass{width:990px;height:484px;background:#fff url(module/plist/bg12.png) no-repeat center;overflow:hidden;}
+.module-plist .tabcon .nocheck a,
+.module-plist .tabcon .norelease a,
+.module-plist .tabcon .nopass a{display:block;width:80px;margin:328px auto 0;font-size:20px;color:#fe5287;border-bottom:1px solid #fe5287;*display:inline;*zoom:1;}
+.module-plist .tabcon .nocheck a:hover,
+.module-plist .tabcon .norelease a:hover,
+.module-plist .tabcon .nopass a:hover{color:#ff73a3;border-bottom:1px solid #ff73a3;}
+
+.module-plist .hdinfo{border-bottom:2px solid #e90052;}
+.module-plist .hdinfo em,
+.module-plist .hdinfo h3{float:left;display:inline;}
+.module-plist .hdinfo .l{width:50px;height:42px;background:url(module/plist/bg10.png) no-repeat;}
+.module-plist .hdinfo .r{width:22px;height:42px;background:url(module/plist/bg11.png) no-repeat;}
+.module-plist .hdinfo h3{height:42px;padding:0 10px;line-height:42px;font-size:18px;font-weight:bold;color:#fff;background:#f63172;}
+.module-plist .hdinfo h3 i{font-style:normal;color:#febf60;}
+
+
+
+.module-plist .ui-txt .zan code{
+	font-style: normal;
+	font-weight: normal;
+}

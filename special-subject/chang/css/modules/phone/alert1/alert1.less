@@ -1,0 +1,65 @@
+.module-alert1 {
+	width: 91%;
+	max-width: 320px;
+	height: 180px;
+	background: #fff;
+	position: absolute;
+	border-radius: 5px;
+	top: 40px;
+	left: 50%;
+	margin-left: -160px;
+	@iconSize: 70px;
+	.icon {
+		width: @iconSize;
+		height: @iconSize;
+		background: url(../../images/waiting_cup.png);
+		background-size: @iconSize;
+		position: absolute;
+		left: 50%;
+		margin-left: -@iconSize / 2;
+		top: -@iconSize / 2;
+	}
+	.info {
+		font-size: 18px;
+		text-align: center;
+		margin-top: 45px;
+	}
+	.btn {
+		color: #fff;
+		width: 80%;
+		height: 45px;
+		text-align: center;
+		line-height: 45px;
+		background: #ef2e2e;
+		border-radius: 3px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	&.ipad {
+		background: #282828;
+		.icon {
+			background: url(../../images/waiting_cup1.png);
+			background-size: @iconSize;
+		}
+		.info {
+			color: #fff;
+		}
+	}
+}
+@media screen and (max-height: 450px){
+	.module-alert1 {
+		height: 140px;
+		top: 10px;
+		.icon {
+			display: none;
+		}
+		.info, .btn {
+			margin-top: 15px;
+		}
+	}
+}
+@media screen and (max-width: 320px){
+	.module-alert1 {
+		margin-left: -45%;
+	}
+}

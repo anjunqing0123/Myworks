@@ -1,0 +1,93 @@
+@btn_s:"../images/enroll/enroll_single.png";
+@btn_s_c:"../images/enroll/enroll_single_c.png";
+@btn_g:"../images/enroll/enroll_group.png";
+@btn_g_c:"../images/enroll/enroll_group_c.png";
+@btn_f:"../images/enroll/enroll_f.png";
+body{
+	position: relative;
+	width: 100%;
+}
+*{
+	margin:0;
+	padding: 0;
+}
+.wraper.enroll_w{
+	max-width: 750px;
+	margin: 0 auto;
+	width: 100%;
+	div{
+		width: 100%;
+		position: relative;
+		&.enroll{
+			&.ef{
+				display: none;
+			}
+			&>.e_wrap{
+				top: 0;
+				left: 0;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+
+				& .enroll_btn{
+					display: block;
+					position: absolute;
+					top:10%;
+					height: 60%;
+					width: 37%;
+					background: url(@btn_s) no-repeat left top;
+					background-size: 100% 100%;
+
+					&.e_s{
+						left: 8%;
+						&.pressed{
+							background: url(@btn_s_c) no-repeat left top;
+							background-size: 100% 100%;
+						}
+					}
+					&.e_g{
+						background: url(@btn_g) no-repeat left top;
+						background-size: 100% 100%;
+						right: 8%;
+						&.pressed{
+							right: 8%;
+							background: url(@btn_g_c) no-repeat left top;
+							background-size: 100% 100%;
+						}
+					}
+				}
+
+				&.after{
+
+					.e_f{
+						    width: 61%;
+						    position: relative;
+						    margin: 0 auto;
+						    background: url(@btn_f) no-repeat left top;
+							background-size: 100% 100%;
+					}
+				}
+			}
+		}
+	}
+	img{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+
+	&.after{
+		div{
+			&.enroll{
+				&.eing{
+					display: none;
+				}
+				&.ef{
+					display: block;
+				}
+			}
+		}
+	}
+
+}

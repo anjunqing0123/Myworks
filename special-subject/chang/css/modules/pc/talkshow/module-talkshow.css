@@ -1,0 +1,41 @@
+.module-famous-bg{background:#222222 url(modules/pc/talkshow/bg.jpg) no-repeat center top;}
+.module-talkshow{height:446px;}
+.module-talkshow .talkshow{width:980px;margin:0 auto;}
+.module-talkshow .hd{width:980px;height:138px;}
+.module-talkshow .hd h3{float:left;display:inline;line-height:138px;_margin:40px 0 0;font-size:40px;font-weight:800;color:#fff;}
+.module-talkshow .hd h3 span{font-style:normal;color:#d92137;}
+.module-talkshow .hd h3 i{display:inline-block;width:45px;height:60px;margin:0 10px 0 0;vertical-align:-19px;_vertical-align:-15px;background:url(../images/pc-index-hd.png) no-repeat 0 -61px;*display:inline;*zoom:1;}
+.module-talkshow .hd img{float:left;display:inline;width:80px;height:50px;margin:45px 0 0 20px;}
+.module-talkshow .hd .more{float:right;display:inline;padding:0 15px 0 0;margin:58px 0 0;font-size:14px;color:#999;background:url(modules/pc/talkshow/ic3.png) no-repeat right center;}
+.module-talkshow .hd .more:hover{color:#d92137;background:url(modules/pc/talkshow/ic4.png) no-repeat right center;}
+
+.module-talkshow .bd{position:relative;width:990px;height:234px;margin:20px 0 0;overflow:hidden;}
+.module-talkshow .bd li{float:left;display:inline;width:320px;margin:0 10px 0 0;}
+.module-talkshow .bd li a{cursor:pointer;}
+.module-talkshow .bd li img{display:block;width:320px;height:180px;}
+.module-talkshow .bd p{height:22px;line-height:22px;margin:5px 0 0;color:#898989;overflow:hidden;}
+.module-talkshow .bd .tit{font-size:14px;color:#fff;}
+
+.module-talkshow .module-animation180x100 .item{position:relative;width:320px;padding:0;}
+.module-talkshow .module-animation180x100 .item:hover{background:none;}
+.module-talkshow .module-animation180x100 .item:hover .v-bg {display: block;width:320px;height:180px;}
+.module-talkshow .module-animation180x100 .item:hover .v-show {top:40%;}
+.module-talkshow .module-animation180x100 .item:hover .v-ico2 {top:40%;}
+
+.module-talkshow .pre,
+.module-talkshow .next{position:absolute;width:40px;height:70px;top:56px;z-index:10;}
+.module-talkshow .pre{left:0;background:url(modules/pc/talkshow/pre.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20150914104731/css/modules/pc/talkshow/pre.png",sizingMethod='scale');}
+.module-talkshow .next{right:10px;background:url(modules/pc/talkshow/next.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20150914104731/css/modules/pc/talkshow/next.png",sizingMethod='scale');}
+.module-talkshow .pre:hover{background:url(modules/pc/talkshow/pre-hover.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20150914104731/css/modules/pc/talkshow/pre-hover.png",sizingMethod='scale');}
+.module-talkshow .next:hover{background:url(modules/pc/talkshow/next-hover.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20150914104731/css/modules/pc/talkshow/next-hover.png",sizingMethod='scale');}
+
+.module-talkshow2{background:none;}
+.module-talkshow2 .hd h3{color:#222222;}
+.module-talkshow2 .hd h3 i{background:url(../images/pc-index-hd.png) no-repeat 0 2px;}
+.module-talkshow2 .bd .tit{color:#333;}
+
+.module-talkshow2 .hd .more{background:url(modules/pc/talkshow/ic1.png) no-repeat right center;}
+.module-talkshow2 .hd .more:hover{background:url(modules/pc/talkshow/ic2.png) no-repeat right center;}
+
+
+

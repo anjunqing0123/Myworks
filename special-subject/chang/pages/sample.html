@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page.</title>
+    <link rel="stylesheet" type="text/css" href="http://static9.pplive.cn/chang/css/v_01/phone.min.css">
+    <script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<body>
+
+
+<h1>${title}</h1>
+
+<div id="sample"></div>
+
+<div class="wp-grid">
+
+    <div class="grid">
+        <div class="m">
+            <div class="module module-metro">
+                <div class="a"></div>
+                <div class="b"></div>
+            </div>
+        </div>
+        <div class="s">
+            xxx
+        </div>
+    </div>
+
+
+    <div class="grid">
+        <div class="module module-metro">
+            <div class="a"></div>
+            <div class="b"></div>
+        </div>
+    </div>
+
+ </div>
+
+
+<script type="text/javascript" src="../js/app/config.js"></script>
+
+<script type="text/javascript">
+    // 上线时候配置
+    // (function(VERS){
+    //     var path = '/script/', base = 'http://static9.pplive.cn/chang/';
+    //     var DEB = (function() {
+    //         try {
+    //             return parent.location.href.slice(-4) === "-deb";
+    //         } catch (ex) {
+    //             return false;
+    //         }
+    //     })();
+    //     seajs.config({
+    //         base : base,
+    //         alias: {
+    //             jquery: "core/jquery/1.8.3/jquery",
+    //             zepto: "core/zepto/zepto",
+    //             underscore: "core/underscore/underscore",
+    //             backbone: "core/backbone/backbone"
+    //         },
+    //         map: [
+    //             [/(\/chang\/)(?=(app|core))/, "$1" + VERS + path]
+    //         ]
+    //     });
+    //     if(DEB){ document.write('<script src="' + base + VERS + '/js/app/sea-config.js"><\/script>');}
+    // })('v_001');
+</script>
+
+<script type="text/javascript">
+    seajs.use('app/sample/index');
+</script>
+
+<!--
+<script type="text/javascript">
+    seajs.use('jquery', function($){
+        console.log('jquery == ', $);
+    });
+</script>
+ -->
+
+</body>
+</html>

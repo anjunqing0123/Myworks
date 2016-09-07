@@ -1,0 +1,352 @@
+/*
+* @Author: v-junqingan
+* @Date:   2016-05-03 19:51:48
+* @Last Modified by:   v-junqingan
+* @Last Modified time: 2016-05-05 17:43:19
+*/
+.wp-contain {
+    background: #fff url(module/plist/bg1.png) no-repeat center top;
+    width: 100%;
+}
+
+.module-upload {
+    width: 990px;
+    height: 500px;
+    background: #fff;
+    position: relative;
+}
+
+.module-upload form {
+    position: relative;
+    width: 415px;
+    height: 305px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -210px;
+}
+
+.module-upload .big1 {
+    width: 100%;
+    height: 60px;
+    display: inline-block;
+    position: relative;
+}
+
+.module-upload .title {
+    display: inline-block;
+    float: left;
+    width: 75px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.module-upload .browse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 68px;
+    height: 40px;
+    background: #fe5287;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.module-upload .browse:hover {
+    background: #ff7ca4;
+}
+
+.module-upload .required {
+    float: left;
+    width: 292px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.module-upload .requir {
+    float: left;
+    width: 215px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.module-upload .btn {
+    width: 300px;
+    height: 45px;
+    background: #fe5287;
+    text-align: center;
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: 20px auto;
+    border-radius: 5px;
+    position: absolute;
+    left: 75px;
+}
+
+.module-upload .btn:hover {
+    background: #ff7ca4;
+}
+
+.module-upload .shuoming {
+    display: inline-block;
+    margin: 20px 0 0 75px;
+    color: #ccc;
+    width: 300px;
+    height: 40px;
+    text-align: left;
+    line-height: 22px;
+}
+
+.module-upload .big2 {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+}
+
+.module-upload .prompt {
+    color: #ff4a4a;
+    font-size: 12px;
+    padding-left: 20px;
+    width: 200px;
+    display: inline-block;
+    position: absolute;
+    left: 390px;
+    height: 38px;
+    line-height: 38px;
+    display: none;
+}
+
+.module-upload .fileInput {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 68px;
+
+    height: 42px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+/* 插件浮窗 */
+.down {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: #fff;
+    opacity: .5;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+
+}
+
+.Floating {
+    width: 300px;
+    height: 180px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -90px;
+    margin-left: -150px;
+    background: #fff;
+    z-index: 10001;
+    border: 2px solid #ccc;
+    display: none;
+}
+
+.Floating p {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 30px;
+    text-align: center;
+}
+
+.Floating .plug-in {
+    width: 130px;
+    height: 45px;
+    background: #fe5287;
+    color: #eee;
+    font-size: 15px;
+    text-align: center;
+    line-height: 45px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -65px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Floating .closeBtn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 24px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.Floating .closeBtn:hover {
+    background: #ccc;
+    color: #fff;
+}
+
+/* 进度浮窗 */
+.Forward {
+    width: 510px;
+    height: 180px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -90px;
+    margin-left: -225px;
+    z-index: 10001;
+
+    display: none;
+}
+
+.Forward .Cancel {
+    width: 65px;
+    height: 30px;
+    background: #c2c2c2;
+    color: #3b3b3b;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    border-radius: 5px;
+    margin-left: -33px;
+    cursor: pointer;
+}
+
+.Forward span {
+    display: inline-block;
+    width: 120px;
+    height: 22px;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fe5287;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-weight: bold;
+}
+
+.Forward .jindu {
+    border: 2px solid #fe5287;
+    border-radius: 11px;
+    padding: 3px;
+    width: 380px;
+    height: 10px;
+    margin: 0 auto;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    margin-left: -193px;
+}
+
+.Forward .jindu .Jd-d {
+    width: 150px;
+    height: 10px;
+    background: url(module/upload/jindu-bg.png) repeat-x;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+}
+
+.Forward .percentage {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    color: #fe5287;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.module-upload .success {
+    width: 400px;
+    height: 22px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -145px;
+    /* display: none; */
+}
+
+.module-upload .success p {
+    display: block;
+    width: 300px;
+    height: 22px;
+    padding-left: 19px;
+    background: url(module/upload/success.png) no-repeat left 3px;
+    text-align: left;
+    float: left;
+    font-size: 14px;
+    color: #fe5287;
+    font-weight: 500;
+}
+
+.module-upload .success a {
+    display: block;
+    float: right;
+    width: 75px;
+    height: 22px;
+    border-radius: 5px;
+    background: #fe5287;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+}
+
+.module-upload .success a:hover {
+    background: #ff7ca4;
+}
+
+.module-upload .videobig {
+    width: 390px;
+
+}
+#ppSwfPlayer{
+    background: #fff;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+.module-upload .err{
+    border:1px solid #fe5287;
+}

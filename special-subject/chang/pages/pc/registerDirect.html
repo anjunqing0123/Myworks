@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>报名重复跳转页</title>
+ 	<link rel="stylesheet" href="http://static9.pplive.cn/chang/css/v_20150611190516/pc.min.css" />
+	<script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="g-1408-hd g-1408-hd-s">
+	    <div class="g-1408-hdtop-wrap">
+	        <div class="g-1408-hdtop cf">
+	            <div class="hd-logo fl">
+	                <a href="http://www.pptv.com/" title="">
+	                    <img src="http://sr3.pplive.com/cms/26/16/4fe864e2237eeb0744a95c0a29861599.png">
+	                </a>
+	            </div><!-- hd-logo end -->
+	            <div class="hd-s-nav fl cf">
+	                <a href="http://www.pptv.com/" title="" class="ui-icon"><i class="ui-index"></i>首页</a>
+	                <a href="javascript:void(0);" title="" class="ui-icon ui-icon-ch"><i class="ui-channel"></i>频道<em></em></a>
+	                <div class="ch-drop" style="display: none;">
+	                    <!--pc_mainnav_star-->
+	                    <div class="fl" style="height:auto;">
+	                        <dl class="cf">
+	                        	<dt>
+	                        		<a href="http://tv.pptv.com" id="pagenav_tv" target="_blank">电视剧</a>
+	                        	</dt>
+	                        	<dd>
+	                				<a href="http://list.pptv.com/sort_list/2-105.html" target="_blank">偶像</a>
+	                				<a href="http://list.pptv.com/sort_list/2-138---------1.html" target="_blank">爱情</a>
+	                				<a href="http://list.pptv.com/sort_list/2-139---------1.html" target="_blank">军事</a>
+	                				<a href="http://list.pptv.com/sort_list/2-141---------1.html" target="_blank">历史</a>
+	                				<a href="http://list.pptv.com/sort_list/2-140---------1.html" target="_blank">武侠</a>
+	                				<a href="http://list.pptv.com/sort_list/2-142---------1.html" target="_blank">神话</a>
+	                			</dd>
+	                        </dl>
+	                        <dl class="cf">
+	                        	<dt>
+	                        		<a href="http://movie.pptv.com" id="pagenav_movie" target="_blank">电　影</a>
+	                        	</dt>
+	                            	<dd>
+	                    				<a href="http://list.pptv.com/sort_list/1-100---------1.html" target="_blank">动作</a>
+	                    				<a href="http://list.pptv.com/sort_list/1-124---------1.html" target="_blank">喜剧</a>
+	                    				<a href="http://list.pptv.com/sort_list/1-101---------1.html" target="_blank">爱情</a>
+	                    				<a href="http://list.pptv.com/sort_list/1-103---------1.html" target="_blank">恐怖</a>
+	                    				<a href="http://list.pptv.com/sort_list/1-128---------1.html" target="_blank">犯罪</a>
+	                    				<a href="http://list.pptv.com/sort_list/1-133---------1.html" target="_blank">剧情</a>
+	                    			</dd>
+	                        </dl>
+	                        <dl class="cf">
+	                        	<dt>
+	                        		<a href="http://cartoon.pptv.com" id="pagenav_cartoon" target="_blank">动　画</a>
+	                        	</dt>
+	                        	<dd>
+	                				<a href="http://list.pptv.com/sort_list/3-106---------1.html" target="_blank">热血</a>
+	                				<a href="http://list.pptv.com/sort_list/3-121---------1.html" target="_blank">恋爱</a>
+	                				<a href="http://list.pptv.com/sort_list/3-111---------1.html" target="_blank">神魔</a>
+	                				<a href="http://list.pptv.com/sort_list/3-210486---------1.html" target="_blank">校园</a>
+	                				<a href="http://list.pptv.com/sort_list/3-210485---------1.html" target="_blank">亲子</a>
+	                				<a href="http://list.pptv.com/sort_list/3-109---------1.html" target="_blank">搞笑</a>
+	                			</dd>
+	                        </dl>
+	                        <dl class="cf">
+	                        	<dt>
+	                        		<a href="http://zongyi.pptv.com" id="pagenav_zongyi" target="_blank">综　艺</a>
+	                        	</dt>
+	                        	<dd>
+	                				<a href="http://list.pptv.com/sort_list/4-1478---------1.html" target="_blank">江苏</a>
+	                				<a href="http://list.pptv.com/sort_list/4-1479---------1.html" target="_blank">浙江</a>
+	                				<a href="http://list.pptv.com/sort_list/4-1468---------1.html" target="_blank">内地</a>
+	                				<a href="http://list.pptv.com/sort_list/4-1466---------1.html" target="_blank">港台</a>
+	                				<a href="http://list.pptv.com/sort_list/4-1470---------1.html" target="_blank">日韩</a>
+	                				<a href="http://list.pptv.com/sort_list/4-1471---------1.html" target="_blank">欧美</a>
+	                			</dd>
+	                        </dl>
+	                        <dl class="cf">
+	                            <dt>
+	                                <a href="http://sports.pptv.com" id="pagenav_sports" target="_blank">体　育</a>
+	                            </dt>
+	                            <dd>
+	                                <a href="http://list.pptv.com/sports.html?sort=1&competition=210514" target="_blank">英超</a>
+	                                <a href="http://list.pptv.com/sports.html?sort=1&competition=210329" target="_blank">中超</a>
+	                                <a href="http://list.pptv.com/sports.html?sort=1&competition=210299" target="_blank">亚冠</a>
+	                                <a href="http://list.pptv.com/sports.html?sort=1&competition=210291" target="_blank">西甲</a>
+	                                <a href="http://list.pptv.com/sports.html?sort=1&competition=210302" target="_blank">CBA</a>
+	                                <a href="http://list.pptv.com/sports.html?sort=1&competition=210359" target="_blank">WWE</a>
+	                            </dd>
+	                        </dl>
+	                        <dl class="vip cf">
+	                        	<dt>
+	                        		<a href="http://viptv.pptv.com" id="pagenav_viptv" target="_blank">会　员</a>
+	                        	</dt>
+	                        	<dd>
+	                				<a href="http://viptv.pptv.com/privilege" target="_blank">会员特权</a>
+	                				<a href="http://viptv.pptv.com/fufei" target="_blank">网络电影</a>
+	                				<a href="http://hollywood.pptv.com/" target="_blank">好莱坞</a>
+	                			</dd>
+	                        </dl>
+	                    </div>
+	                    <!--pc_mainnav_end-->
+	                    <!--pc_secondarynav_star-->
+	                    <p class="oth cf fr">
+	                        <a href="http://news.pptv.com" id="pagenav_news" target="_blank">热　点</a>
+	                        <a href="http://live.pptv.com" id="pagenav_live" target="_blank">直　播</a>
+	                        <a href="http://star.pptv.com" id="pagenav_star" target="_blank">明　星</a>
+	                        <a href="http://www.1717wan.cn" id="pagenav_1717wan" target="_blank">游　戏</a>
+	                        <a href="http://travel.pptv.com" id="pagenav_travel" target="_blank">旅　游</a>
+	                        <a href="http://joke.pptv.com" id="pagenav_joke" target="_blank">搞　笑</a>
+	                        <a href="http://finance.pptv.com" id="pagenav_finance" target="_blank">财　经</a>
+	                        <a href="http://kid.pptv.com" id="pagenav_kid" target="_blank">亲　子</a>
+	                        <a href="http://music.pptv.com" id="pagenav_music" target="_blank">音　乐</a>
+	                        <a href="http://imake.pptv.com" id="pagenav_imake" target="_blank">原　创</a>
+	                        <a href="http://in.pptv.com" id="pagenav_in" target="_blank">时　尚</a>
+	                        <a href="http://life.pptv.com" id="pagenav_life" target="_blank">生　活</a>
+	                    </p><!--pc_secondary_end-->
+	                    <iframe frameborder="0" style="position:absolute; left:0; top:0; z-index:-1; width:584px; height:195px; border: 0px; opacity: 0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);position:absolute; display: block;" src="about:blank"></iframe>
+	    			</div>
+	                <!-- ch-drop end -->
+
+	            </div><!-- hd-s nav end -->
+	            <div id="login-area" class="loginarea fr">
+	                <div class="nologin cf">
+	                    <a class="btn-login" data-type="login" href="javascript:;" title="登录">登录</a>
+	                    <a class="btn-login" data-type="register" href="javascript:;" title="注册">注册</a>
+	                </div>
+	                <div class="logined hidden">
+	                    <dl class="cf">
+	                        <dt class="headpic fl"><a href="javascript:void(0);" title=""><img src="http://static9.pplive.cn/pptv/index/v_201202141528/images/no.gif" alt="" /></a></dt>
+	                        <dd class="username"></dd>
+	                        <dd class="user-icons cf"></dd>
+	                    </dl>
+	                </div><!-- logined end -->
+	                <div class="logined-drop hidden">
+	                    <i class="triangle-border"></i>
+	                        <i class="triangle-bkg"></i>
+	                    <iframe frameborder="0" class="iframe-blank" src="about:blank"></iframe>
+	                    <div class="logined-drop-wrap">
+
+	                        <ul class="userinfo cf">
+	                            <li class="intergral">积分<span class="">0</span></li>
+	                            <li class="pb">P币<span class="">0</span></li>
+	                            <li class="check checked"><a href="javascript:;" title="" class="count">已签到0天</a><a href="http://usergrowth.pptv.com/ptask/" class="leave" target="_blank">本月可补签0天</a></li>
+	                        </ul>
+	                        <dl>
+	                            <dt>等级</dt>
+	                            <dd class="userlv"></dd>
+	                            <dd class="activedays">
+	                                <span class="user-credit">活跃天数：0天</span>
+	                                <span class="user-next-credit-left">升级还需：0天</span>
+	                            </dd>
+	                            <dd class="growth cf">
+	                                <span class="fl">今日成长：</span>
+	                                <div class="growdays fl">
+	                                    <i class="ui-line-gray"></i>
+	                                    <span class="grownow" style="width:50%;"><i class="ui-line-blue"></i></span>
+	                                    <span class="nowday" style="left:84px;"><i>0</i>天<!--<a href="javascript:void(0);" title="" class="ui-icon24"></a>--></span>
+	                                    <span class="allday"><i>0</i>天</span>
+	                                </div>
+	                            </dd>
+	                        </dl>
+	                        <dl>
+	                            <dt>用户状态</dt>
+	                            <dd class="userstate cf">
+	                                <span class="fl">年费会员
+	                                    <a href="javascript:void(0);" title="" class="ui-vip ui-novip"></a>
+	                                    <a href="javascript:void(0);" title="" class="ui-year ui-noyear"></a>
+	                                </span>
+	                                <span class="fr">享受<i>1.4</i>倍等级加速中</span>
+	                            </dd>
+	                            <!--<dd class="tks">感谢，我们已经相识0天了|无数据</dd>-->
+	                            <dd class="vipspc">
+	                                <a title="" class="ico ico-1" data-name="noad" target="_blank" href="http://viptv.pptv.com/privilege/pg_noad"><em class="ico-gray"></em></a>
+	                                <a title="" class="ico ico-2" data-name="spdup" target="_blank" href="http://viptv.pptv.com/privilege/pg_spdup"><em class="ico-gray"></em></a>
+	                                <a title="" class="ico ico-3" data-name="rtmp" target="_blank" href="http://viptv.pptv.com/privilege/pg_rtmp"><em class="ico-gray"></em></a>
+	                                <a title="" class="ico ico-4" data-name="ugspeed" target="_blank" href="http://viptv.pptv.com/privilege/pg_ug"><em class="ico-gray"></em></a>
+	                                <a title="" class="ico ico-5" target="_blank" href="http://viptv.pptv.com/year_vip/"><em class="ico-gray"></em></a>
+	                                <a title="" class="ico ico-6" target="_blank" href="http://viptv.pptv.com/year_vip/"><em class="ico-gray"></em></a>
+	                                <a title="" class="ico ico-7" target="_blank" href="http://viptv.pptv.com/year_vip/"><em class="ico-gray"></em></a>
+	                                <a title="" class="ico ico-8" target="_blank" href="http://viptv.pptv.com/year_vip/"><em class="ico-gray"></em></a>
+	                                <a title="" class="ico ico-9" target="_blank" href="http://viptv.pptv.com/year_vip/"><em class="ico-gray"></em></a>
+	                                <a title="" class="ico ico-10" target="_blank" href="http://viptv.pptv.com/year_vip/"><em class="ico-gray"></em></a>
+	                            </dd>
+	                            <dd class="userlink cf">
+	                                <a href="http://passport.pptv.com/usercenter.aspx" target="_blank" title="个人中心">个人中心</a>
+	                                <a href="http://passport.pptv.com/usercenter.aspx" target="_blank" title="修改资料">修改资料</a>
+	                                <a href="javascript:;" id="btn-user-logout" title="安全退出" class="edit fr">安全退出</a>
+	                            </dd>
+	                        </dl>
+	                    </div>
+	                </div><!-- logined-drop end -->
+	                <a href="javascript:;" class="arrow hidden"></a>
+	            </div><!-- loginarea end -->
+	            <div id="hd-operate" class="hd-operate fr">
+	                <ul class="hd-operate-ul cf">
+	                    <li><a href="javascript:;" data-module="playhistory" title=""><i class="ico-1"></i>看过</a></li>
+	                    <li><a href="javascript:;" data-module="favorite" title=""><i class="ico-2"></i>收藏</a></li>
+	                </ul>
+	            </div>
+	            <div id="operate-drop" class="operate-drop hidden">
+	                <i class="triangle-border"></i>
+	                <i class="triangle-bkg"></i>
+	                <iframe frameborder="0" class="iframe-blank" src="about:blank"></iframe>
+	                <div class="operate-drop-wrap">
+	                    <div class="history" data-module="playhistory">
+	                        <div style="height:320px"><img class="loading" src="http://static9.pplive.cn/pub/flagment/v_20140912103250/modules/g-1408-hd/images/loader2.gif" alt="" /></div>
+	                        <!-- <a href="javascript:;" title="" class="checkall">查看全部记录</a> -->
+	                    </div>
+	                    <div class="history favorite-list hidden" data-module="favorite">
+	                        <div style="height:320px"><img class="loading" src="http://static9.pplive.cn/pub/flagment/v_20140912103250/modules/g-1408-hd/images/loader2.gif" alt="" /></div>
+	                        <!-- <a href="javascript:;" title="" class="checkall">查看全部收藏</a> -->
+	                    </div>
+	                </div>
+	            </div><!-- hd-operate end -->
+	            <form class="hd-search fl cf" id="search_box" method="get" action="http://search.pptv.com/s_video" target="blank">
+	                <div class="searchtxt fl">
+	                                    <input type="text" name="kw" value="" data-textlist="极限挑战,六花的勇者,天天逗文涛,城下町的蒲公英,速度与激情7,花千骨,纳妾记,十二道锋味第二季" autocomplete="off" />
+	                </div>
+	                <input type="submit" value="搜索"  class="btn-search fl" />
+	            </form><!-- hd-search end -->
+	        </div><!-- g-1408-hdtop end -->
+	    </div><!-- g-1408-hdtop-wrap end -->
+	</div><!-- g-1408-hd end -->
+	<!-- 头部结束 -->
+	<!-- 幻灯头图开始 -->
+	<div class="wp-grid">
+		<div class="wc100 module-topPerson-image">
+			<img src="http://static9.pplive.cn/chang/css/modules/pc/module-register-redirect/fakeimg.jpg" alt="" class="maxF100 dblc"/>
+			<div class="module-person-praise">
+			</div>
+		</div>
+	</div>
+	<div class="wp-grid">
+		<div class="wc100 bgGrey">
+			<div class="grid">
+				<div class="wc100 pdt30 cf">
+					<div class="module-register-redirect">
+						<h2>您已报名一唱成名，不能重复报名</h2>
+						<p class="mt5">将于<em>5</em>s后跳转至您的<span><a href="#">个人中心</a></span></p>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="http://static9.pplive.cn/chang/js/app/config.js"></script>
+<script type="text/javascript">
+	seajs.use(['util/pub/header']);
+</script>
+</body>
+</html>

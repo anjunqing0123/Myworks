@@ -1,0 +1,107 @@
+$c_red: #ef2e2e;
+$c_purple: #2b2757;
+$c_btn_change: #333;
+
+.module-gold-18 {
+  width: 100%;
+  overflow: hidden;
+  background: url(../images/bg5.png) no-repeat;
+  background-size: cover;
+  .gold-bg {
+    width: 100%;
+    margin-top: 14px;
+    padding: 0 0 .24rem;
+    overflow: hidden;
+    background: rgba(96, 92, 169, 0.5);
+
+    .gold-cont {
+      width: 100%;
+      overflow: hidden;
+      li {
+        float: left;
+        margin: 0.26rem 0 0 0.15rem;
+        width: 2.30rem;
+        overflow: hidden;
+        img {
+          display: block;
+          width: 100%;
+          height: 1.29rem;
+        }
+      }
+      .gold-vote {
+        height: .7rem;
+        line-height: 0.7rem;
+        width: 100%;
+        overflow: hidden;
+        color: #fff;
+        text-align: center;
+
+        .gold-count {
+          display: block;
+          float: left;
+          height: .7rem;
+          width: 1.36rem;
+          font-size: 0.22rem;
+          background: $c_purple;
+        }
+        .gold-btn {
+          display: block;
+          float: left;
+          border: 0;
+          font-size: .28rem;
+          width: .94rem;
+          height: .7rem;
+          background: $c_red;
+          color: #fff;
+          overflow: hidden;
+        }
+        .gold-btn.btncur {
+           background: $c_btn_change;
+         }
+      }
+
+    }
+    .gold-vs {
+      width: 100%;
+      overflow: hidden;
+      height: .35rem;
+      margin-top: .24rem;
+      li {
+        float: left;
+        margin-left: 0.15rem;
+        font-weight: bold;
+        font-size: .32rem;
+        width: 2.30rem;
+        height: .35rem;
+        line-height: .35rem;
+        text-align: center;
+        overflow: hidden;
+        color: $c_red;
+      }
+    }
+  }
+}
+
+//rest1
+.module-gold-18.rest1 {
+  .gold-cont {
+    li {
+      .gold-vote {
+        height: .40rem;
+        line-height: .42rem;
+        .gold-btn {
+          width: .40rem;
+          height: .40rem;
+          font-weight: bold;
+        }
+        .gold-btn.black {
+          background: #000;
+        }
+        .gold-count {
+          width: 1.9rem;
+          height: .40rem;
+        }
+      }
+    }
+  }
+}

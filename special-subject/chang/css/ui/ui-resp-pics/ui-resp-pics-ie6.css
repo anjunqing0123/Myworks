@@ -1,0 +1,28 @@
+.grid-1410 .index-figure.spec .ui-resp-pics{
+    _padding-left:20px;
+    _width:700px;
+}
+.grid-1230 .index-figure.spec .ui-resp-pics{
+    _padding-left:20px;
+    _width:520px;
+}
+.grid-1010 .index-figure.spec .ui-resp-pics{
+    _padding-left:10px;
+    _width:330px;
+}
+.grid-1410 .animation-160x90 .ju-base-scroll{
+    _width:1060px;
+}
+.grid-1230 .animation-160x90 .ju-base-scroll{
+    _width:880px;
+}
+.grid-1010 .animation-160x90 .ju-base-scroll,.grid-1010 .animation-160x90.switch .ui-resp-pics{
+    _width:670px;
+}
+.animation-100x56 .ui-title3 h2{
+	color:#333;
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 22px;
+}
+.animation-100x56 .ui-resp-pics2 ul{width:100%}

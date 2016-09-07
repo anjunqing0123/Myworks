@@ -1,0 +1,713 @@
+// update gold 60to 18 index page style before living
+.module-pk-notice.rest_list .vs-item .vs-block {
+  margin: 0;
+}
+
+.ipad.module-pk-notice.rest_list {
+  .gold_60 {
+    background: rgba(96, 92, 169, 0.5);
+    .vs-item .vs-block {
+      background: none;
+    }
+  }
+}
+
+.module-pk-notice {
+  .module-ftitle {
+    margin-top: 14px;
+  }
+  .gold_60 {
+    margin-top: 14px;
+    display: none;
+  }
+}
+
+.gold_60.rest60 {
+  .gold_60 {
+    .vs-item {
+      background: rgba(96, 92, 169, 0.5);
+      display: none;
+    }
+    .vs-item.active {
+      display: block;
+    }
+  }
+}
+
+.rest60 {
+  .module-tbtitle {
+    background: rgba(96, 92, 169, 0.5);
+  }
+  .module-top20 {
+    .content {
+      background: none;
+      .renqi-list {
+        height: auto;
+        overflow: hidden;
+        .renqi-item {
+          height: 135px;
+          margin: 12px 5px;
+          overflow: hidden;
+          width: 73px;
+          .picw {
+            height: 73px;
+            width: 73px;
+            border-radius: 73px;
+            img {
+              border-radius: 73px;
+            }
+          }
+          .score {
+            width: 73px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 10px;
+            text-align: center;
+            display: block;
+            margin-top: 7px;
+            background: #221f4a;
+            span {
+              width: 73px;
+              height: 20px;
+              line-height: 20px;
+              border-radius: 10px;
+              background: #221f4a;
+              text-indent: 0;
+              font-size: 14px;
+              color: #afb3ce;
+            }
+          }
+          .name {
+            margin-top: 15px;
+            height: 15px;
+            line-height: 15px;
+            font-size: 14px;
+            color: #fff;
+          }
+          .tag {
+            position: absolute;
+            top: 65px;
+            left: 50%;
+            margin-left: -13px;
+            display: inline-block;
+            width: 25px;
+            height: 15px;
+            line-height: 15px;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+            background: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+//.module.module-top20 .content .renqi-list .renqi-item .picw
+.gold_60.rest60 .vs-item .count {
+  color: #acb5d2;
+}
+
+// 60to18 living style
+.gold_60.rest60 .vs-item {
+  background: rgba(96, 92, 169, 0.5);
+  .vs-block {
+    margin: 0;
+    height: 140px;
+    background: none;
+    &:last-child {
+      table tr:first-child {
+        td:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+  table tr:first-child {
+    td:last-child {
+      border-right: 1px solid #cac1c3;
+    }
+  }
+}
+
+.module-pk-notice.living-tag60 {
+  background: #ebebeb;
+  .gold_60 {
+    margin-top: 0;
+    .module-tbtitle {
+      background: #f5f5f5;
+    }
+  }
+  .vs_list {
+    margin-top: 0;
+  }
+  .vs-item {
+    .vs-block {
+      background: #fff;
+      width: 220px;
+      .name {
+        color: #323232;
+      }
+      .tr3 td:nth-child(1) .count, .count {
+        background: #f0f0f0;
+        color: #828282;
+      }
+    }
+  }
+}
+
+.gold_60.rest60.living-tag60 {
+  .module-tbtitle {
+    background: #f5f5f5;
+  }
+
+  .vs-item {
+    background: #f5f5f5;
+    .vs-block {
+      background: none;
+      width: 230px;
+    }
+    table tr:first-child {
+      td:last-child {
+        border-right: 1px solid #c8c8c8;
+      }
+    }
+  }
+}
+
+.module-pk-notice.c-gray {
+  background: #ebebeb;
+  .module-only3 {
+    background: #fff;
+    .renqi-item .name {
+      color: #3f3f3f;
+    }
+  }
+}
+
+// 18to9 page index for living
+.rest2 {
+  .gold-bg {
+    padding-top: 0;
+    .module-ftitle {
+      position: relative;
+      z-index: 3;
+      margin-top: -.22rem;
+    }
+  }
+}
+
+//pad reset style
+.gold_60.ipad {
+  background: url(../images/bg5.png) no-repeat;
+  background-size: cover;
+  .vs-item {
+    display: none;
+  }
+  .vs-item.active {
+    display: block;
+  }
+  .module.module-top20 {
+    .content {
+      background: none;
+      .renqi-list {
+        .renqi-item {
+          .name {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.gold_60.ipad.gold_60_cen {
+  background: url(../images/bg_cen.jpg) no-repeat;
+  background-size: cover;
+  .module-only3 {
+    background: none;
+  }
+}
+
+.gold_60.rest60.ipad .vs-item .vs-block {
+  height: 140px;
+}
+
+.module-pk-notice.ipad .vs-item .vs-block .tr3 td:nth-child(1) .count {
+  color: #acb5d2;
+}
+
+.ipad .module.module-top20 .content .renqi-list .renqi-item {
+  .score {
+    background: #221f4a;
+    span {
+      background: #221f4a;
+      text-indent: 0;
+      font-size: 14px;
+      color: #afb3ce;
+    }
+  }
+}
+
+.ipad.reset_tag {
+  .module-title {
+    background: url(../images/title_bg.png) no-repeat;
+    background-position: .15rem .38rem;
+    background-size: .16rem auto;
+  }
+  .gold_60_wp {
+    background: url(../images/bg_cen.jpg) no-repeat;
+    background-size: cover;
+    .module-only3 {
+      background: none;
+      //height: 136px;
+    }
+  }
+}
+
+//18to9 index page style
+.ipad.module-gold-18 {
+  .gold-bg {
+    .gold-cont {
+      li {
+        margin: 0.3rem 0 0 0.3rem;
+        width: 3.06rem;
+        img {
+          height: 1.7rem;
+        }
+      }
+      .gold-vote {
+        .gold-count {
+          width: 1.72rem;
+        }
+        .gold-btn {
+          width: 1.34rem;
+          height: .7rem;
+        }
+      }
+    }
+  }
+}
+
+.ipad.reset-vs.module-gold-18 {
+  .gold-bg {
+    .gold-cont {
+      li {
+        margin: 0.3rem 0 0 0;
+        width: 2.50rem;
+        height: 1.94rem;
+        &.gold-li-vs {
+          margin-left: 0;
+          width: .82rem;
+          text-align: center;
+          font-weight: bold;
+          line-height: 1.95rem;
+          color: #ec3136;
+        }
+        &:first-child {
+          margin-left: .3rem;
+        }
+        &:nth-child(4n+3) {
+          margin-left: 0;
+        }
+        &.gold-line {
+          width: 0;
+          margin: .3rem .6rem 0;
+          border-right: 1px solid #878caa;
+        }
+        img {
+          height: 1.41rem;
+        }
+      }
+      .gold-vote {
+        height: .53rem;
+        line-height: .53rem;
+        .gold-count {
+          height: .53rem;
+          width: 1.97rem;
+        }
+        .gold-btn {
+          height: .53rem;
+          width: .53rem
+        }
+      }
+    }
+  }
+}
+
+$newwidth: 1.68rem;
+.ipad.module-vtlist {
+  background: url(../images/bg5.png) no-repeat;
+  background-size: cover;
+  .vtlist-bg {
+    margin-top: 14px;
+    padding-bottom: 10px;
+    background: rgba(96, 92, 169, 0.5);
+  }
+  .vtlist-cont {
+    /*width: 1500%;*/
+    /*overflow: hidden;*/
+    li {
+      width: $newwidth;
+      .bdr {
+        width: $newwidth;
+        height: $newwidth;
+        border-radius: $newwidth;
+        img {
+          border-radius: $newwidth -.02rem;
+        }
+
+      }
+      .vlist-btn {
+        width: $newwidth+0.06rem;
+      }
+    }
+  }
+}
+
+.module-gold-18 {
+  .module-ftitle {
+    margin-top: 14px;
+  }
+}
+
+.module-pk-notice .gold_60.inday {
+  display: block;
+}
+
+.module-pk-notice.living-tag60 .gold_60.rest60 .vs-item {
+  background: #f5f5f5;
+}
+
+.module-pk-notice.living-tag60 .gold_60.rest60 .vs-item .vs-block {
+  background: #f5f5f5;
+  padding: 15px 0;
+}
+
+.living-tag60 .module-only3 {
+  background: #fff;
+  .content .renqi-item .name {
+    color: #333033;
+  }
+}
+
+.ipad.reset_tag .gold_60.rest60 .vs-item .vs-block {
+  height: 160px;
+  margin: 15px 0 0;
+}
+
+.module-pk-notice.ipad .gold_60 {
+  margin-top: 5px;
+}
+
+//18to9 style
+//  before live
+.module-vtlist.module-gold10 {
+  background: url(../images/bg_5to3.jpg) no-repeat;
+  background-size: cover;
+}
+
+// living
+.module-top20.module-gold10 {
+  background: url(../images/bg2.png) no-repeat;
+  background-size: cover;
+  .module-tbtitle {
+    background: rgba(96, 92, 169, 0.5);
+  }
+  .content {
+    background: rgba(96, 92, 169, 0.5);
+    .renqi-list .renqi-item {
+      .name {
+        color: #fff;
+      }
+      .score {
+        background: none;
+        span {
+          background: #221f4a;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+//after live
+.module-audition-top60.module-gold10 {
+  background: url(../images/bg_5to3.jpg) no-repeat;
+  background-size: cover;
+  .list {
+    .item {
+      background: rgba(96, 92, 169, 0.5);
+      margin: 10px;
+      color: #fff;
+    }
+    .data {
+      .count {
+        color: #afb3ce;
+      }
+      .l2 {
+        width: 12px;
+        background: #afb3ce;
+      }
+    }
+    .btn {
+      font-size: 14px;
+    }
+  }
+}
+
+.ipad.module-vtlist.module-gold10 {
+  .vtlist-cont {
+    li:first-child {
+      width: 2rem;
+      margin: .3rem .35rem .05rem;
+    }
+    li:nth-child(3n+2) {
+      margin-top: .3rem;
+    }
+    .vote {
+      height: .5rem;
+      line-height: .475rem;
+      border-radius: .5rem;
+      &.vote-bg {
+        background: #222049;
+      }
+      &.vote-zero {
+        padding: 0 2px;
+      }
+    }
+  }
+}
+
+.ipad.module-only3 {
+  margin: 0;
+  background: url("../images/bg_i5.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  .content .renqi-item {
+    height: 165px;
+    .btn {
+      display: block;
+      width: 1.5rem;
+      height: .58rem;
+      line-height: .58rem;
+      font-size: .28rem;
+      background: #ef2e2e;
+      border: 0;
+      color: #fff;
+      margin-top: 3px;
+    }
+    .vote {
+      margin-top: 3px;
+      color: #fff;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}
+//.module-top20.gold_5 .content .renqi-list .renqi-item .score span
+//5to3
+.module-top20.gold_5 {
+  padding-top: 14px;
+  background: url("../images/bg2.png") no-repeat;
+  background-size: cover;
+  .content {
+    background: rgba(96, 92, 169, 0.5);
+    .renqi-list .renqi-item {
+      .name {
+        color: #fff;
+      }
+      .score {
+        color: #fff;
+        background: #221f4a;
+        span {
+          text-indent: 0;
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+.module-only3.gold_5 {
+  padding-top: 14px;
+  background: url("../images/bg2.png") no-repeat;
+  background-size: cover;
+  margin: 0;
+  .content {
+    margin: 0 6px;
+    background: rgba(96, 92, 169, 0.5);
+  }
+}
+
+.ipad.module-only3.reset1 {
+  .content {
+    .renqi-item {
+      height: 150px;
+      .cont_w {
+        .picw {
+          .index {
+            width: 22px;
+            margin-left: -11px;
+            background: #000;
+            &.active {
+              background: #ef2e2f;
+            }
+          }
+        }
+        .vote {
+          margin-top: 6px;
+          height: 24px;
+          line-height: 24px;
+          text-align: center;
+          font-size: 15px;
+          &.vote-bg {
+            background: #221f4a;
+            border-radius: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ipad.module-only3.reset2 {
+  background: url("../images/bg_cen.jpg") no-repeat;
+  background-size: cover;
+  margin: 0;
+  .content .renqi-item {
+    height: 110px;
+  }
+}
+
+//last match
+.module-only3.gold_last {
+  background: url("../images/bg2.png") no-repeat;
+  background-size: cover;
+  margin: 0;
+  .module-tbtitle {
+    width: auto;
+    margin: 0 6px;
+    background: rgba(96, 92, 169, 0.5);
+  }
+  .content {
+    margin: 0 6px;
+    background: rgba(96, 92, 169, 0.5);
+  }
+}
+
+.gold-last.module-vacant {
+  background: url("../images/bg2.png") no-repeat;
+  background-size: cover;
+  color: #fff;
+  .vacant-list {
+    background: none;
+  }
+  .vacant-item.first {
+    width: 95px;
+    margin: 14px 6px 0;
+    .vacant-item-name {
+      width: 100%;
+    }
+  }
+}
+
+//ipad
+.ipad.gold-last{
+  background: url("../images/bg_cen2.png") no-repeat;
+  background-size: cover;
+  margin:0;
+  .last3-main{
+    background: none;
+  }
+  .module-tbtitle{
+    background: none;
+    margin: 0;
+  }
+  .content{
+    background: none;
+    margin: 0;
+    .renqi-item{
+      height: 125px;
+    }
+  }
+}
+
+.gold-last.module-vacant.ipad{
+  background: url("../images/bg_cen2.png") no-repeat;
+  background-size: cover;
+
+}
+.ipad.module-last3 {
+  .last3-main {
+    .last3-item {
+      margin: .3rem .28rem .4rem;
+      width: 3.9rem;
+      height:2.76rem;
+      & > img {
+        display: block;
+        width: 3.9rem;
+        height:2.2rem;
+      }
+      p{
+        height: 2.76rem - 2.2rem;
+        width:3.9rem;
+        padding-right:1.5rem;
+        line-height: 2.76rem - 2.22rem;
+      }
+      .head {
+        height: .93rem;
+        width: .93rem;
+        border-radius: .93rem;
+        img {
+          height: .9rem;
+          width: .9rem;
+          border-radius: .9rem;
+        }
+      }
+    }
+  }
+}
+
+//update
+
+.module-audition-top60.module-gold10 {
+  .list {
+    .i_avartar{
+      margin-left: 10px;
+    }
+    .btn{
+      //width: 80px;
+      //height: 35px;
+      width: 75px;
+      height: 33px;
+      line-height: 32px;
+      margin-top:-16px;
+    }
+    .item {
+      .data {
+        .l1 {
+          height: 25px;
+          margin-bottom: 3px;
+          span {
+            height: 25px;
+            float: left;
+            display:block;
+            overflow: hidden;
+            &:nth-child(1) {
+              max-width: 50%;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            &:nth-child(2) {
+              margin-left: 2%;
+              max-width: 48%;
+              font-size: 12px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.module-last3 {
+  width: 100%;
+  overflow: hidden;
+  background: url("../images/bg2.png") no-repeat;
+  background-size: cover; }
+  .module-last3 .last3-main {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(96, 92, 169, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    .module-last3 .last3-main .last3-item {
+      position: relative;
+      margin: .3rem .08rem .4rem;
+      width: 2.3rem;
+      height: 1.7rem; }
+      .module-last3 .last3-main .last3-item > img {
+        display: block;
+        width: 2.3rem;
+        height: 1.3rem; }
+      .module-last3 .last3-main .last3-item p {
+        float: right;
+        height: 0.4rem;
+        width: 1.8rem;
+        padding-right: .5rem;
+        line-height: 0.38rem;
+        text-align: right;
+        color: #fff;
+        background: #2b2757;
+        font-size: .26rem; }
+      .module-last3 .last3-main .last3-item .head {
+        position: absolute;
+        left: -4px;
+        bottom: -10px;
+        z-index: 2;
+        height: .83rem;
+        width: .83rem;
+        border-radius: .83rem;
+        border: 1px solid #e9c836; }
+        .module-last3 .last3-main .last3-item .head img {
+          display: block;
+          height: .8rem;
+          width: .8rem;
+          border-radius: .8rem; }
+
+/*# sourceMappingURL=last3.css.map */

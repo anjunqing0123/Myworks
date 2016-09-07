@@ -1,0 +1,20 @@
+.module-top{height:506px;background:url(module/top/img.jpg) no-repeat center 55px;}
+.module-top2{height:437px;background:url(module/top/img2.jpg) no-repeat center 55px;}
+.module-top .topnav{height:55px;line-height:55px;color:#fff;background:#fe5287 no-repeat center top;}
+.module-top .topnav a{float:right;display:inline;margin:0 12px;font-size:16px;font-weight:bold;color:#fff;}
+.module-top .topnav a:hover{color:#ffd6e4;}
+.module-top .topnav em{float:right;display:inline;}
+.module-top .topnav .join{width:135px;height:40px;margin:8px 0 0 24px;text-indent:-9999px;background:url(module/top/btns.png) no-repeat 0 0;}
+.module-top .topnav .join:hover{background:url(module/top/btns.png) no-repeat 0 -40px;}
+.module-top .topnav .cnn{display: none;}
+
+.module-top .topnav .sn520-logo{
+    display: inline-block;
+    float: left;
+    height: 55px;
+    width: auto;
+    overflow: hidden;
+}
+.module-top .topnav .sn520-logo img{
+    height: 55px;
+}

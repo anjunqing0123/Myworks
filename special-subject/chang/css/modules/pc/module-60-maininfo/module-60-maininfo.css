@@ -1,0 +1,436 @@
+.module-60-maininfo {
+  width: 65%;
+  float: left; }
+  .module-60-maininfo .mb15 {
+    margin-bottom: 15px; }
+  .module-60-maininfo .c-emphasis {
+    color: #f22b24;
+    font-weight: bold; }
+  .module-60-maininfo .maininfo-wrap {
+    margin-left: 35px; }
+  .module-60-maininfo .logo-icon {
+    float: left;
+    background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+    _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+    background-position: 0px -689px;
+    width: 15px;
+    height: 28px;
+    margin-top: 2px; }
+  .module-60-maininfo .vote-wrap {
+    width: 100%; }
+  .module-60-maininfo .vote-main {
+    width: 564px;
+    border: 1px solid #ddd;
+    padding: 15px; }
+    .module-60-maininfo .vote-main p {
+      float: left;
+      display: inline;
+      height: 35px;
+      line-height: 35px;
+      vertical-align: middle;
+      clear: both; }
+    .module-60-maininfo .vote-main span {
+      color: #333;
+      font-size: 13px;
+      float: left; }
+    .module-60-maininfo .vote-main em {
+      font-size: 18px;
+      color: #f22b24;
+      float: left; }
+    .module-60-maininfo .vote-main i {
+      font-size: 14px;
+      color: #f22b24;
+      float: left;
+      font-style: normal;
+      margin-left: 5px;
+      vertical-align: bottom;
+      line-height: 38px; }
+    .module-60-maininfo .vote-main b {
+      float: left;
+      font-weight: normal;
+      font-size: 13px;
+      color: #f22b24; }
+    .module-60-maininfo .vote-main .vote-revenue {
+      color: #f22b24; }
+    .module-60-maininfo .vote-main .vote-icon {
+      position: absolute;
+      width: 90px;
+      height: 40px;
+      line-height: 40px;
+      color: #ffffff;
+      top: 25px;
+      right: 20px;
+      display: block;
+      background: #ff3333;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer; }
+      .module-60-maininfo .vote-main .vote-icon:hover {
+        text-decoration: none; }
+    .module-60-maininfo .vote-main .vote-mask {
+      position: absolute;
+      width: 90px;
+      height: 40px;
+      line-height: 40px;
+      top: 25px;
+      right: 20px;
+      background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+      _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+      background-position: 0px -1562px;
+      z-index: 2;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px; }
+    .module-60-maininfo .vote-main .vote-add {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      color: #ffffff;
+      position: absolute;
+      background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+      _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+      background-position: 0px -1714px;
+      right: 38px;
+      top: 50%;
+      margin-top: -27px;
+      z-index: 5;
+      font-style: normal;
+      opacity: 0; }
+  .module-60-maininfo .countdown-wrap {
+    width: 625px;
+    margin-top: 45px; }
+    .module-60-maininfo .countdown-wrap .countdown-l {
+      float: left;
+      width: 225px;
+      height: 140px;
+      border: 1px solid #ddd; }
+      .module-60-maininfo .countdown-wrap .countdown-l h3 {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 13px;
+        color: #6f6f6f; }
+      .module-60-maininfo .countdown-wrap .countdown-l .countdown-main {
+        text-align: center;
+        height: 43px;
+        line-height: 43px;
+        vertical-align: middle;
+        font-size: 30px;
+        color: #ff3333; }
+    .module-60-maininfo .countdown-wrap .info-r {
+      float: left;
+      width: 368px;
+      height: 140px;
+      border: 1px solid #ddd;
+      border-left: none; }
+      .module-60-maininfo .countdown-wrap .info-r h3 {
+        margin-top: 15px;
+        padding-left: 20px;
+        font-size: 16px; }
+      .module-60-maininfo .countdown-wrap .info-r p {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 13px;
+        color: #6f6f6f;
+        line-height: 1.7em;
+        margin-top: 3px;
+        word-break: break-all; }
+  .module-60-maininfo .list-item {
+    width: 594px; }
+    .module-60-maininfo .list-item .item {
+      width: 100%;
+      border: 1px solid #ddd;
+      height: 60px;
+      cursor: pointer; }
+    .module-60-maininfo .list-item .item-progress {
+      position: absolute;
+      background: #dfdfdf;
+      top: 0;
+      left: 0;
+      height: 100%; }
+    .module-60-maininfo .list-item .item-main {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      z-index: 2; }
+      .module-60-maininfo .list-item .item-main p {
+        height: 60px;
+        line-height: 60px;
+        color: #333;
+        font-size: 15px; }
+    .module-60-maininfo .list-item .choose-icon {
+      width: 28px;
+      height: 28px;
+      margin-top: 16px;
+      margin-right: 20px;
+      background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+      _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+      background-position: 0px -815px;
+      vertical-align: middle;
+      float: left;
+      cursor: pointer; }
+    .module-60-maininfo .list-item .active {
+      background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+      _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+      background-position: 0px -752px; }
+    .module-60-maininfo .list-item .total-vote {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 60px;
+      line-height: 60px;
+      vertical-align: middle;
+      font-size: 14px;
+      z-index: 2; }
+      .module-60-maininfo .list-item .total-vote em {
+        margin-right: 20px; }
+    .module-60-maininfo .list-item .vote-confirm {
+      width: 108px;
+      height: 100%;
+      line-height: 60px;
+      vertical-align: middle;
+      text-align: center;
+      color: #ffffff;
+      font-size: 14px;
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 3;
+      background: #ff3333;
+      cursor: pointer; }
+      .module-60-maininfo .list-item .vote-confirm:hover {
+        text-decoration: none; }
+  .module-60-maininfo .backup-music {
+    width: 596px;
+    margin-top: 23px; }
+    .module-60-maininfo .backup-music h2 {
+      font-size: 16px;
+      margin-bottom: 10px; }
+    .module-60-maininfo .backup-music .music-wrap p {
+      height: 60px;
+      line-height: 60px;
+      background: url(modules/pc/module-60-maininfo/playbtn.jpg) no-repeat 10px 19px #f4f4f4;
+      color: #333333;
+      margin-top: 1px;
+      text-indent: 15px;
+      font-size: 14px;
+      padding-left: 25px;
+       }
+  .module-60-maininfo .vote-progress {
+    width: 445px;
+    height: 8px;
+    background: #f0f0f0; }
+  .module-60-maininfo .vote-progress-percent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff3333;
+    height: 100%; }
+  .module-60-maininfo .vote-add {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    position: absolute;
+    background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+    _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+    background-position: 0px -1714px;
+    right: 28px;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 5;
+    font-style: normal;
+    opacity: 0; }
+
+.module-60-treadmill {
+  float: right;
+  width: 300px; 
+  padding-bottom: 150px;
+}
+  .module-60-treadmill h1 .vote-icon {
+    float: left;
+    background: url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+    _background: url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+    background-position: 0px -689px;
+    width: 15px;
+    height: 28px;
+    margin-top: 2px; }
+  .module-60-treadmill .treadmill-mainWrap {
+    width: 100%;
+    height: 270px; }
+  .module-60-treadmill .treadmill-curSpeed {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    text-align: center;
+    height: 35px;
+    width: 100%; }
+    .module-60-treadmill .treadmill-curSpeed span {
+      color: #949494;
+      font-size: 14px;
+      vertical-align: bottom;
+      line-height: 30px; }
+    .module-60-treadmill .treadmill-curSpeed strong {
+      color: #f22b24;
+      font-size: 24px;
+      vertical-align: middle;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-weight: normal; }
+    .module-60-treadmill .treadmill-curSpeed em {
+      color: #f22b24;
+      font-size: 13px;
+      vertical-align: bottom;
+      line-height: 30px; }
+  .module-60-treadmill .treadmill-main {
+    width: 100%;
+    height: 175px;
+    position: absolute;
+    top: 50px; }
+  .module-60-treadmill .treadmill-votewrap {
+    position: absolute;
+    top: 215px;
+    left: 5%;
+    height: 75px;
+    width: 90%; }
+  .module-60-treadmill .num-wrap-l {
+    width: 49%;
+    margin-right: 5px; }
+    .module-60-treadmill .num-wrap-l span {
+      float: right;
+      height: 25px;
+      line-height: 25px;
+      color: #f22b24;
+      font-size: 16px; }
+    .module-60-treadmill .num-wrap-l .tread-progress {
+      float: right;
+      height: 6px;
+      background: #f22b24;
+      width: 0%;
+      clear: both;
+      margin-top: 5px; }
+  .module-60-treadmill .num-wrap-r {
+    width: 49%; }
+    .module-60-treadmill .num-wrap-r span {
+      float: left;
+      height: 25px;
+      line-height: 25px;
+      color: #0585df;
+      font-size: 16px; }
+    .module-60-treadmill .num-wrap-r .tread-progress {
+      float: left;
+      height: 6px;
+      background: #0585df;
+      width: 0%;
+      margin-top: 5px;
+      clear: both; }
+  .module-60-treadmill .treadmill-vote-wrap {
+    margin-top: 10px; }
+
+    .module-60-treadmill .treadmill-vote-wrap .vote-wrap-l {
+      width: 131px;
+      margin-right: 10px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      vertical-align: middle;
+      background: #f22b24;
+      color: #ffffff;
+      font-size: 15px; }
+    .module-60-treadmill .treadmill-vote-wrap .vote-wrap-r {
+      width: 129px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      vertical-align: middle;
+      background: #0585df;
+      color: #ffffff;
+      font-size: 15px; }
+    .module-60-treadmill .treadmill-vote-wrap .disabled{
+        background: #c1c1c1;
+    }
+  .module-60-treadmill .rule-main p {
+    color: #6f6f6f;
+    line-height: 1.7em;
+    margin-top: 5px; }
+.module-60-treadmill .rule-main p span{
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 13px;
+}
+.module-60-maininfo .money {
+  float: left;
+  display: inline;
+  clear: both;
+  width: 450px; }
+
+.module-60-maininfo .bar {
+ float:right;display:inline;width:152px;height:14px;padding:0 4px;margin:5px 213px 0 0;background:url(modules/pc/myconcert-index/bar1.png) no-repeat;}
+
+.module-60-maininfo .bar p,
+.module-60-maininfo .bar i {
+  height: 10px;
+  margin:0;
+  line-height:10px;}
+
+.module-60-maininfo .bar p {
+ position:relative;min-width:35px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>35?"35px":"");margin:2px 0 0;text-align:right;font-size:8px;color:#fff;background:url(modules/pc/myconcert-index/bar2.png) repeat-x;}
+
+.module-60-maininfo .bar .bl {
+ display:none;position:absolute;left:0;top:0px;width:2px;background:url(modules/pc/myconcert-index/bar2-l.png) no-repeat;}
+
+.module-60-maininfo .bar .br {
+ display:none; position:absolute;right:0;top:0px;width:4px;background:url(modules/pc/myconcert-index/bar2-r.png) no-repeat;}
+.module-60-treadmill .rule-main h2{
+  font-weight: normal;
+}
+.treadmill-mainWrap .treadmill-countdown{
+  width:86px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: url(modules/pc/module-60-maininfo/countdownbg.png) no-repeat;
+  position: absolute;
+  top: 168px;
+  left: 107px;
+  z-index:3;
+}
+
+.module-60-maininfo .nomoney .bar{float:left;display:inline;position:relative;width:160px;height:14px;margin:3px 10px 0 0;background:url(modules/pc/myconcert-index/bar3.png) no-repeat;}
+.module-60-maininfo .nomoney .bar p,
+.module-60-maininfo .nomoney .bar i{display:none;}
+.module-60-treadmill .treadmill-vote-wrap .tips{
+    position: absolute;
+    width: 140px;
+    height: 25px;
+    line-height: 25px;
+    border:1px solid #c1c1c1;
+    color:#8c8c8c;
+    background: #ffffff;
+    padding: 10px;
+    top: 48px;
+    font-size: 15px;
+    text-align: center;
+    left: -16px;
+}
+.module-60-treadmill .treadmill-vote-wrap .tips .tri{
+  width: 0;
+  height: 0;
+  border: 7px solid;
+  border-color: transparent transparent #c1c1c1 transparent;
+  line-height: 0;
+  position: absolute;
+  left: 74px;
+  top: -15px;
+}
+.module-60-treadmill .treadmill-vote-wrap .tips .tri2{
+  width: 0;
+  height: 0;
+  border: 7px solid;
+  border-color: transparent transparent #ffffff transparent;
+  line-height: 0;
+  position: absolute;
+  left: 74px;
+  top: -13px;
+}

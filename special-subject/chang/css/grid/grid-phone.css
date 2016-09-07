@@ -1,0 +1,57 @@
+/**
+ * @author 	Erick Song
+ * @date 	2013-06-07
+ * @email	ahschl0322@gmail.com
+ * @info    grid system -
+ */
+
+/**
+ * 框架中所用到的全局设置(body上)：
+ * plt-* 					-> 终端识别
+ * grid  					-> 框架本身标识
+ * grid-1140 			-> 1140宽度
+ * grid-response  -> 相应式设计
+ */
+
+/**
+ * 移动端单位 REM
+ * 12px = 1.2rem
+ */
+html{ font-size: 62.5%;/*10 ÷ 16 × 100% = 62.5%*/ }
+body {font-size: 1.2rem;/*1.2 × 10px = 12px */ background: #ebebeb; font-family: "Helvetica"; }
+
+
+/**
+ * 针对通栏背景的处理
+ * 如首页幻灯：
+ * <div class="wp-grid">
+ *   <div class="module-metro">
+ *  	xxx
+ *   </div>
+ * </div>
+ */
+
+.wp-grid{ width:100%}
+
+
+/**
+ * 页面外层框架本身用grid表示引用了栅格系统，
+ * 用 grid 而不用 grid-960 的目的是因为考虑后续如果网站全站变更为980的时候，只要替换css文件即可
+ * 这个文件提供 grid-960 几种简单布局: 如左边700，右边250，中间10
+ * 首页：两种尺寸(960、1140 - 分界点 1360)
+ * 边距：clt - 上下左右 10px， 广告上下10px -> [130723 产品变更间距由5px -> 10px]
+ * 		 web - clt的一倍， 20px 和 10px
+ */
+
+.grid{ width:100%; margin:0 auto; zoom:1}
+.grid .m,.grid .s,.module{ position: relative; overflow:hidden; /*border-radius:4px;*/}
+.grid .m{ float:left;}
+.grid .s{ float:right;}
+
+
+/**
+ * 广告模块 - 默认所有的广告模块后加载
+ * 需求：要求广告模块的上下边距为5px
+ */
+.grid .sp{ position:relative; display: none; margin-top:10px; overflow: hidden;}
+

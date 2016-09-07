@@ -1,0 +1,35 @@
+.module-goldresult{position:relative;float:right;display:inline;width:270px;height:410px;padding:0 15px 40px 15px;margin:5px 0 0;background:#f1f1f1;}
+.module-goldresult .hd h3{margin:25px 0 0;font-size:16px;color:#333;}
+.module-goldresult .bd dt{position:relative;height:40px;line-height:40px;}
+.module-goldresult .bd dt h4{position:relative;width:88px;margin:0 auto;text-align:center;font-size:16px;color:#000;background:#f1f1f1;z-index:2;}
+.module-goldresult .bd dt em{position:absolute;top:20px;left:0;width:250px;height:1px;border-bottom:1px dotted #000;z-index:1;}
+.module-goldresult .bd dd{position:relative;height:50px;margin:0 0 5px;background:#fff;}
+.module-goldresult .bd dd .name{width:70px;height:50px;line-height:50px;word-break:break-all;text-align:center;font-size:16px;color:#000;text-decoration:none;background:#D7D7D7;overflow:hidden;}
+.module-goldresult .bd dd .fr{width:180px;padding:0 10px;background:#FFFFFF;}
+.module-goldresult .bd dd .fr p{width:180px;height:14px;line-height:14px;margin:8px 0 0;font-size:12px;color:#7c7c7c;}
+.module-goldresult .bd dd .fr p span{display:inline-block;font-size:11px;}
+.module-goldresult .bd dd .fr p .zan{/*background:url(modules/pc/goldresult/ic1.png) no-repeat left center;*/}
+.module-goldresult .bd dd .fr p .cai{margin:0 0 0 10px;position:absolute;/*background:url(modules/pc/goldresult/ic2.png) no-repeat left center;*/}
+.module-goldresult .bd dd .jinji{position:absolute;top:-4px;right:0;width:54px;height:37px;background:url(modules/pc/goldresult/ic3.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20151102192137/css/modules/pc/goldresult/ic3.png",sizingMethod='scale');}
+.module-goldresult .bd dd .first{background:url(modules/pc/goldresult/ic4.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20151102192137/css/modules/pc/goldresult/ic4.png",sizingMethod='scale');}
+.module-goldresult .bd dd .second{background:url(modules/pc/goldresult/ic5.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20151102192137/css/modules/pc/goldresult/ic5.png",sizingMethod='scale');}
+.module-goldresult .bd dd .third{background:url(modules/pc/goldresult/ic6.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20151102192137/css/modules/pc/goldresult/ic6.png",sizingMethod='scale');}
+.module-goldresult .bd dd .nomore{margin:0;line-height:50px;text-align:center;font-size:16px;letter-spacing:5px;color:#999;background:#D7D7D7;}
+
+.module-goldresult .scroll{position:absolute;top:40px;right:10px;width:5px;height:400px;background:#cccccc;}
+.module-goldresult .scroll span{position:absolute;top:0;left:0;width:5px;height:90px;background:#666666;}
+.module-goldresult .scroll-wrap{
+	height: 400px;
+	width: 280px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.module-goldresult .bd .scroll-wrap dd{
+	margin-right: 10px;
+}
+.module-goldresult .bd .scroll-wrap dd .jinji{
+	right: 10px;
+}
+.module-goldresult .scroll-wrap .pp-scroller div{
+	background: #666666;
+}

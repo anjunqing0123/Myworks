@@ -1,0 +1,51 @@
+.mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.module-alert-download {
+	position: relative;
+	width: 270px;
+	height: 158px;
+	background: #fff;
+	margin: 2.4rem auto;
+	border-radius: 5px;
+	text-align: center;
+	.close {
+		@p: 10px;
+		@size: 15px;
+		position: absolute;
+		right: @p;
+		top: @p;
+		width: @size;
+		height: @size;
+		background: url(../images/close.png);
+		background-size: 15px;
+	}
+	.l1 {
+		line-height: 103px;
+	}
+	.l2 {
+		display: none;
+		font-size: 0;
+		border-top: solid 1px #e2e4e5;
+		&>* {
+			display: inline-block;
+			font-size: 16px;
+			color: red;
+			line-height: 55px;
+			width: 48%;
+			&:first-child {
+				border-right: solid 1px #e2e4e5;
+			}
+		}
+	}
+	&.type2 .t2 {
+		display: block;
+	}
+	&.type1 .t1 {
+		display: block;
+	}
+}

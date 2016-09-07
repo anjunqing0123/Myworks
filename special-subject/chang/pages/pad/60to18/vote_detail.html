@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>投票详情页</title>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css"
+		  href="http://static9.pplive.cn/chang/v_20150917141532/css/lib/swiper.min.css?289">
+	<link rel="stylesheet" type="text/css" href="http://static9.pplive.cn/chang/v_20150917141532/css/pad.min.css">
+	<script>
+		(function (designW) { // 参数w是设计稿的宽度，可以在页面中使用rem，1rem = 100px;
+			var screenW = Math.min(screen.width, window.innerWidth);
+			document.documentElement.style.fontSize = 100 * screenW / designW + 'px';
+		})(750);
+	</script>
+	<script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+    <script type="text/javascript" src="http://static9.pplive.cn/oth/2012/10/jssdk/v_20150408155209/jsbridge.js"></script>
+</head>
+<body style="font-size:16px;">
+<div class="wp-grid">
+	<div class="grid">
+		<div class="module module-race-vote ipad">
+			<div class="race-title">
+				<div class="race-l1">黄金赛道</div>
+				<div class="race-l2">选手去留由你决定</div>
+			</div>
+			<div class="race-race">
+				<div class="bc">
+					<div class="b">后<br />退</div>
+					<div class="c">前<br />进</div>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+						</div>
+						<div class="swiper-slide">
+							<div class="circle circle-left">滑<br />投</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="circle circle-right">动<br />票</div>
+						</div>
+						<div class="swiper-slide">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div href="fafda" class="race-link">成绩表<span class="race-i">></span></div>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="module module-vacant ipad">
+			<div class="module-title">
+				<i>
+					<span class="a">虚位以待</span>
+					<span class="b"></span>
+				</i>
+				<div class="right"></div>
+			</div>
+			<div class="vacant-list">
+				<div href=@!#$@$#@$%#%#$%$ class="vacant-item second"><!-- 后边的first、second等class只有在最后的总决赛中才加，之前的晋级中不加，这里是div + href，跳转由js处理 -->
+					<div class="vacant-item-bg"></div>
+					<div class="vacant-avatar">
+						<img src="http://grocery.pplive.cn/lpic/a46/abd/7d9/sp240/6092968f59ae4adda8b8e62e9307c85a.jpg" alt="">	
+					</div>
+					<div class="vacant-item-name">刘大娘</div>
+				</div>
+				<div href=@!#$@$#@$%#%#$%$ class="vacant-item first"><!-- 后边的first、second等class只有在最后的总决赛中才加，之前的晋级中不加，这里是div + href，跳转由js处理 -->
+					<div class="vacant-item-bg"></div>
+					<div class="vacant-avatar">
+						<img src="http://grocery.pplive.cn/lpic/a46/abd/7d9/sp240/6092968f59ae4adda8b8e62e9307c85a.jpg" alt="">	
+					</div>
+					<div class="vacant-item-name">刘大娘</div>
+				</div>
+				<div href=@!#$@$#@$%#%#$%$ class="vacant-item third"><!-- 后边的first、second等class只有在最后的总决赛中才加，之前的晋级中不加，这里是div + href，跳转由js处理 -->
+					<div class="vacant-item-bg"></div>
+					<div class="vacant-avatar">
+						<img src="http://grocery.pplive.cn/lpic/a46/abd/7d9/sp240/6092968f59ae4adda8b8e62e9307c85a.jpg" alt="">	
+					</div>
+					<div class="vacant-item-name">刘大娘</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="http://static9.pplive.cn/chang/js/app/config.js"></script>
+<script type="text/javascript">
+	seajs.use('app/phone/race_vote/race_vote');
+</script>
+</body>
+</html>

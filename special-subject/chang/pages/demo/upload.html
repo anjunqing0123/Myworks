@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PPTV游戏频道1717wan_视频上传</title>
+        <meta name="keywords" content="PPTV游戏频道,电子竞技,LOL,DOTA2,手机游戏,游戏,直播,攻略,解说,评测" />
+        <meta name="description" content="1717wan游戏网,是PPTV旗下的专业游戏视频网站,我们将为您提供最全的赛事视频和解说,专业的游戏评测和推荐,最快的游戏资讯和攻略!"/>
+        <link rel="stylesheet" type="text/css" href="http://static.vas.pptv.com/vas/assets/app/1717wan/web0828/v_20150721151952/css/style.css" />
+        <script type="text/javascript">
+            WEB_DOMAIN_CONFIG = {
+            'api_url': "http://api.1717wan.cn",
+            'web_url': 'http://www.1717wan.cn',
+            'platform': '1717wan'
+            };
+        </script>
+</head>
+<body class="web1000">
+    <div class="wrap-box">
+        <div class="web cf">
+            <div class="u-live-tab u-upload-tab">
+                <h5 class="u-live-hd cf">
+                    <span class="fl">上传视频</span>
+                </h5>
+                <!-- 上传前 -->
+                <div class="u-upload-before" id="fileBox">
+                    <div class="u-upload-opera">
+                        <p class="upload-file">
+                            <a href="javascript:;" class="btn6" title="上传视频">
+                                <span class="btn6-inner">上传视频</span>
+                            </a>
+                            <input type="file" class="btn-file" id="myFile">
+                        </p>
+                        <p class="prompt">
+                            上传视频，即表示您已同意1717玩上传服务条款，请勿上传色情，反动等违法视频
+                        </p>
+                    </div>
+                </div>
+                <!-- 上传后 -->
+                <div class="u-upload-after" id="uploadBox" style="display:none;">
+                    <div class="title">
+                        <div class="progress">
+                            <div class="t cf">
+                                <span class="flashName fl"><a href="javascript:;" class="cancel-up" id="cancelUpload">取消上传</a></span>
+                                <span class="volume fr"><b id="loadNum">0M</b>/<span id="allLoad">0M</span></span>
+                            </div>
+                            <span class="load-wrap">
+                                <span id="loadingNum" class="loaded" style="width:0%;"></span>
+                            </span>
+                        </div>
+                        <p class="info" id="showLog">
+                            视频文件已上传，请确认视频信息后，点击<span class="im">"保存"</span>，以完成视频上传
+                        </p>
+                    </div>
+                    <div class="setion">
+                        <dl class="set-title cf">
+                            <dt>视频标题：</dt>
+                            <dd>
+                                <input type="text" id="fileNameTxt"/>
+                            </dd>
+                        </dl>
+                        <dl class="cf set-belong">
+                            <dt>所属游戏：</dt>
+                            <dd class="tabs">
+                                <p class="tab-controls cf J_set_live" id="gameList">
+                                                                        <a href="javascript:;" ptype="gameType" pid="5" class="cur">电子竞技</a>
+                                                                        <a href="javascript:;" ptype="gameType" pid="5" >单机游戏</a>
+                                                                        <a href="javascript:;" ptype="gameType" pid="5" >女性向游戏</a>
+                                                                        <a href="javascript:;" ptype="gameType" pid="5" >手机游戏</a>
+                                                                        <a href="javascript:;" ptype="gameType" pid="5" >网络游戏</a>
+                                                                        <a href="javascript:;" ptype="gameType" pid="5" >网页游戏</a>
+                                                                        <a href="javascript:;" ptype="gameType" pid="5" >自制节目</a>
+                                                                        <a href="javascript:;" ptype="gameType" pid="5" >80后的经典游戏</a>
+                                                                        <a href="javascript:;" ptype="gameType" pid="5" >怀旧经典游戏</a>
+                                                                    </p>
+                                <div class="tab-content content J_game_bd">
+                                                                            <div class="col J_live_games J_set_live cf" style="display:block;">
+                                                                                        <a href="javascript:;" ptype="gameName" pid="6"  class="cur">英雄联盟</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="16" >DOTA2</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="38" >穿越火线</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="39" >炉石传说</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="57" >逆战</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="60" >反恐精英</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="85" >DOTA</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="104" >群雄逐鹿</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="125" >星际争霸2</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="161" >地下城与勇士</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="162" >坦克世界</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="308" >魔兽争霸3</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="313" >CSOL</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="323" >QQ飞车</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="324" >NBA2KOL</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="3868" >风暴英雄</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9131" >其他</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9249" >CSOL2</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9265" >战舰世界</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9279" >CSGO</a>
+                                                                                   </div>
+                                                                           <div class="col J_live_games J_set_live cf" style="display:none;">
+                                                                                        <a href="javascript:;" ptype="gameName" pid="27"  class="cur">口袋妖怪</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="164" >魔兽世界</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="179" >植物大战僵尸</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="238" >使命召唤</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="239" >生化危机</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="240" >寂静岭</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="241" >黑暗之魂</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="242" >恶魔城</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="243" >合金装备</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="244" >侠盗飞车</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="245" >丧尸围城</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="246" >行尸走肉</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="247" >刺客信条</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="248" >极品飞车</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="249" >超级马里奥兄弟</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="250" >逆转裁判</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="251" >初音未来</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="375" >马里奥</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="7938" >TGS2014</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="8962" >零</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9094" >最终幻想</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9095" >最终幻想14</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9131" >其他</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9191" >三国战记</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9198" >合金弹头</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9199" >超级魂斗罗</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9209" >NBA2K系列</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9210" >拳皇系列</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9211" >FIFA系列</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9235" >街头霸王</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9290" >女神异闻录</a>
+                                                                                   </div>
+                                                                           <div class="col J_live_games J_set_live cf" style="display:none;">
+                                                                                        <a href="javascript:;" ptype="gameName" pid="31"  class="cur">薄樱鬼</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="249" >超级马里奥兄弟</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="253" >兄弟战争</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="254" >魔鬼恋人</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="255" >失忆症</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="256" >金色琴弦</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="257" >NORN9</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="259" >18x</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9131" >其他</a>
+                                                                                   </div>
+                                                                           <div class="col J_live_games J_set_live cf" style="display:none;">
+                                                                                        <a href="javascript:;" ptype="gameName" pid="6"  class="cur">英雄联盟</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="27" >口袋妖怪</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="39" >炉石传说</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="179" >植物大战僵尸</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="7357" >糖果传奇</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="7358" >魔力宝贝</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="7379" >愤怒的小鸟</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="7561" >海岛奇兵</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="7562" >刀塔传奇</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="7575" >秦时明月</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="7713" >崩坏学园2</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="7787" >雷霆战机</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="7788" >暖暖环游世界</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="7878" >狂野飙车</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="8156" >大家都在玩</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9065" >天天酷跑</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9066" >天天飞车</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9074" >完美视频</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9131" >其他</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9252" >腾讯出品</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9261" >我叫MT</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9263" >暖暖系列</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9277" >全民突击</a>
+                                                                                   </div>
+                                                                           <div class="col J_live_games J_set_live cf" style="display:none;">
+                                                                                        <a href="javascript:;" ptype="gameName" pid="38"  class="cur">穿越火线</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="57" >逆战</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="104" >群雄逐鹿</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="154" >激战2</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="161" >地下城与勇士</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="162" >坦克世界</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="163" >Diablo3</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="164" >魔兽世界</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="165" >一起玩新游</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="323" >QQ飞车</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="324" >NBA2KOL</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="502" >自由足球</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="3868" >风暴英雄</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9095" >最终幻想14</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9096" >剑侠情缘网络版3</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9113" >英魂之刃</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9131" >其他</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9140" >使命召唤OL</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9164" >剑灵</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9165" >Tera</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9166" >洛克王国</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9216" >梦幻西游</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9217" >天涯明月刀</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9224" >天谕</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9232" >天下3</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9233" >植物大战僵尸OL</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9234" >冒险岛2</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9236" >龙之谷</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9237" >梦幻西游2</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9240" >神之浩劫</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9241" >突击英雄</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9242" >怪物猎人OL</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9243" >火影忍者OL</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9244" >兽人必须死</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9245" >勇者大冒险</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9246" >QQ炫舞</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9271" >机动战士敢达OL</a>
+                                                                                   </div>
+                                                                           <div class="col J_live_games J_set_live cf" style="display:none;">
+                                                                                        <a href="javascript:;" ptype="gameName" pid="9131"  class="cur">其他</a>
+                                                                                   </div>
+                                                                           <div class="col J_live_games J_set_live cf" style="display:none;">
+                                                                                        <a href="javascript:;" ptype="gameName" pid="9073"  class="cur">PP出品</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9074" >完美视频</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9075" >17173精选</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9076" >魔方网</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9077" >游戏风云</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9131" >其他</a>
+                                                                                       <a href="javascript:;" ptype="gameName" pid="9229" >着迷网</a>
+                                                                                   </div>
+                                                                           <div class="col J_live_games J_set_live cf" style="display:none;">
+                                                                                        <a href="javascript:;" ptype="gameName" pid="9131"  class="cur">其他</a>
+                                                                                   </div>
+                                                                           <div class="col J_live_games J_set_live cf" style="display:none;">
+                                                                                        <a href="javascript:;" ptype="gameName" pid="9131"  class="cur">其他</a>
+                                                                                   </div>
+
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="mark cf">
+                            <dt>分类标签：</dt>
+                            <dd class="cf content J_set_live">
+                                                                    <a href="javascript:;" ptype="tags" pid="1" class="cur">集锦</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="2" >解说</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="10" >赛事</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="11" >高手</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="18" >娱乐</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="19" >综合视频</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="22" >教学</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="23" >主视角</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="32" >预告</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="52" >官方</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="55" >节目</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="82" >原创</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="87" >其它</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="120" >坦克视频</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="139" >机甲视频</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="140" >美女</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="141" >新闻</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="348" >剧情</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="378" >评测</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="940" >实况</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="1020" >攻略</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="9071" >专题</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="9126" >新番</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="9127" >精华</a>
+                                                                    <a href="javascript:;" ptype="tags" pid="9136" >其他</a>
+                                                            </dd>
+                        </dl>
+                        <p class="J_upload_err edit-layer-err"></p>
+                        <p>
+                            <span class="not-submit">保存</span>
+                            <a href="javascript:" id="uploadBtn" style="display:none;" class="saveBtn btn6"><span class="btn6-inner">保存</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var webcfg = {
+            'token':'hqfyJZn2TMCqc5F3iHJdoDvc5fSIDftGlMTbaIOsp%2FwSvaI1BThvl48KRA5HwtE5dm6BTlKQNzE0%2FCWpCYRBfsQnW9Ca%2F5%2FMLzbBNgjjrbXKbyeJ6BARfwRuQ8wF7PABPdJqqGjjl9bTjeaavoZIlUqPMNwrkoO8SVEALsaUAw4%3D',
+            'cp':'UGC'
+        }
+        var isNoaudituser = 0;
+    </script>
+    <script src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+
+    <!-- 测试 -->
+    <script type="text/javascript" src="../../js/app/config.js"></script>
+    <script type="text/javascript">
+      seajs.use('./upload');
+    </script>
+
+    <!--<script>
+    var vers = "v_20150630154919";
+    (function(isPkg, VERS) {
+        var source = "source/",
+            base = "http://static.vas.pptv.com/vas/assets/";
+        var DEB = (function() {
+            try {
+                return parent.location.href.slice(-4) === "-deb" || parent.isPkg
+            } catch (ex) {
+                return false
+            }
+        })();
+        seajs.config({
+            base: base,
+            map: [
+                [/(\/web0828\/)(?=source)/, "$1" + VERS + "/"]
+            ]
+        });
+        if (!isPkg || location.href.slice(-4) === "-deb" || DEB) {
+            source = "";
+            seajs.config({
+                map: [
+                    [/(\/web0828\/)(?!source|v_\d+)/, "$1" + VERS + "/"]
+                ]
+            });
+            document.write('<script src="' + base + '/app/1717wan/web0828/' + VERS + '/js/config.js"><\/script>')
+        }
+        seajs.use("app/1717wan/web0828/" + source + "js/upload_video.js")
+    })(false, "v_20150630154919");
+    </script>-->
+
+</body>
+</html>

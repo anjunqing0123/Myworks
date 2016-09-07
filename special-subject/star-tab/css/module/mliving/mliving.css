@@ -1,0 +1,94 @@
+/*直播中*/
+body{
+    background:#ebedee;
+}
+.living{
+    width:100%;height:1.12rem;background:#fff;
+    overflow:hidden;padding:0 0.26rem;box-sizing: border-box;
+    box-shadow: 0px 2px 6px #999;
+}
+.living .living-tag{
+    float:left;height:1.12rem;line-height:1.12rem;font-size:0.26rem;color:#00ACED;
+}
+.living .living-tag i{
+    display:inline-block;width:0.22rem;height:0.22rem;background:#00ACED;
+    border-radius:50%;margin-right:0.1rem;
+}
+.living .living-btn{
+    float:right;height:1.12rem;line-height:1.12rem;
+}
+.living .living-btn a{
+    display:inline-block;width:1.3rem;height:0.7rem;background:#E9E9E9;
+    font-size:0.28rem;color:#646464;text-align: center;line-height:0.7rem;
+    border-radius:0.04rem;
+}
+.living .living-btn .cur{
+    background:#00ACED;color:#fff;
+}
+.living .living-btn .flow{
+    margin-right:0.2rem;
+}
+/*演唱会*/
+.living-default-star{
+    width:100%;height:4.8rem;padding:0.32rem 0.28rem;box-sizing:border-box;
+    z-index:-1;background:#fafafa;display:none;margin-top:0.2rem;
+}
+.living-default-star .living-default-star-title h3{
+    font-size:0.34rem;color:#323232;font-weight:bold;width:100%;overflow:hidden;
+    height:0.5rem;line-height:0.5rem;
+}
+
+.living-default-star .living-star-pic{
+    width:0.64rem;height:0.64rem;float:left;
+}
+.living-default-star .living-board{
+    overflow:hidden;width:100%;margin:0.28rem 0;
+}
+.living-default-star .living-star-pic img{
+    width:0.64rem;height:0.64rem;border-radius:50%;height:auto;
+}
+.living-default-star .living-default-star-content{
+    height:auto;overflow:hidden;
+}
+.living-default-star .living-board-detail{
+    float:right;width:6.1rem;
+}
+.living-default-star .living-board-detail .living-board-info{
+    position:relative;
+}
+.living-default-star .living-board-detail .living-board-info i{
+    position:absolute;display:inline-block;width:0.09rem;height:0.13rem;
+    background:url(../css/module/mliving/arrow.png)no-repeat center;left:0.04rem;top:0;
+    background-size:100%;
+}
+.living-default-star .living-board-detail .living-board-name{
+    font-size:0.22rem;color:#969696;height:auto;
+}
+.living-default-star .living-board-detail .living-board-info span.content{
+    display:inline-block;max-width:5.6rem;height:auto;background:#f2f1f4;
+    border-radius:0.08rem;border-top-left-radius:0;padding:0.2rem 0.2rem 0.2rem;
+    box-sizing:border-box;font-size:0.26rem;color:#323232;margin-left:0.1rem;
+    margin-top:0.1rem; word-break: break-all;
+}
+
+.living-default-star .chatlist {
+   display: block;
+    width: 100%;
+    height: 90%;
+}
+
+/*参与讨论*/
+.discuss-wrap{
+    width:100%;height:1.2rem;border:1px solid #ebebeb;background:#fff;text-align: center;
+    padding:0.3rem;box-sizing:border-box;position:relative;
+}
+.discuss-wrap i{
+    display:inline-block;width:0.32rem;height:0.32rem;background:url(./module/mstar/smile.png);
+    position:absolute;background-size:100% 100%;
+    right:0.6rem;top:0.46rem;
+}
+.discuss-wrap .discuss{
+    width:7.02rem;height:0.68rem;border-radius:1rem;background:#f0f0f0;font-size:0.26rem;
+    color:#969696;padding:0 0.2rem;box-sizing:border-box; display:block;line-height:0.68rem;
+    text-align:left;
+}

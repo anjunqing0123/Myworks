@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取某个用户的视频信息接口</title>
+	<link rel="stylesheet" href="http://static9.pplive.cn/chang/css/v_20150611190516/pc.min.css" />
+</head>
+<style>
+	.ml10{
+		margin-left: 10px;
+	}
+	.blCenter{
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+<body class="grid-1230 plt-web">
+	<!-- 报名接口说明开始 -->
+	<div class="cf blCenter" style="width:80%;">
+		<p>接口总说明地址：http://gitlab/webclient/sensation/blob/develop/doc/%E4%B8%80%E5%94%B1%E6%88%90%E5%90%8D%E6%8E%A5%E5%8F%A3.txt</p>
+		<p>更具赛区获取视频列表(不需要登录)</p>
+		<p>接口地址：http://api.chang.pptv.com/api/video_list_player?username=zj703063545 提交方式get,username必填area_id可为空page可为空num可为空</p>
+		<p>字段名称</p>
+		<p class="cf"><span class="fl">查看的用户名</span><span class="fl ml10">username</span></p>
+		<p class="cf"><span class="fl">赛区id</span><span class="fl ml10">area_id</span></p>
+		<p class="cf"><span class="fl">页数</span><span class="fl ml10">page</span></p>
+		<p class="cf"><span class="fl">每页数量</span><span class="fl ml10">num</span></p>
+		<p class="cf">返回值</p>
+		<p>成功</p>
+		<pre>
+			{"status":"1","info":{"123":{"dpinfo":{"title":"Wildlife","views":"46521"},"votenum":{"like":"100","dislike":"100"}}}}
+		</pre>
+		<p>
+			username为空
+		</p>
+		<pre>
+			{"status":"-1"}
+		</pre>
+		<p>
+			area_id值非法
+		</p>
+		<pre>
+			{"status":"-2"}
+		</pre>
+		<p>
+			page，num不能只穿一个值
+		</p>
+		<pre>
+			{"status":"-3"}
+		</pre>
+		<p>
+			page，num非法制
+		</p>
+		<pre>
+			{"status":"-4"}
+		</pre>
+		<p>
+			num过大
+		</p>
+		<pre>
+			{"status":"-5"}
+		</pre>
+	</div>
+	<!-- 报名接口说明结束 -->
+	<div class="grid">
+		<form id="person-info" method='get' action="http://api.chang.pptv.com/api/video_list_player">
+		<!-- 报名信息模块开始 -->
+		<div class="module-userInfo-formwrap mt15">
+			<div class="form-item cf mt5">
+				<label for="username" class="fl">用户名</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="username" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="area_id" class="fl">区域id</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="area_id" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="page" class="fl">第几页</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="page" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="num" class="fl">每页数量</label>
+				<div class="input-item">
+					<!-- 这里额外的span是为了解决ie7的问题 -->
+					<span><input type="text" name="num" class="input-text"/></span>
+				</div>
+			</div>
+			<div class="form-item cf mt5">
+				<label for="address" class="fl"></label>
+				<div class="input-item">
+					<div class="input-submit rel">
+						提交
+						<input type="submit" class="input-submit-main"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		</form>
+	</div>
+</body>
+</html>

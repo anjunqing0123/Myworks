@@ -1,0 +1,5 @@
+.module-mbar{position:fixed;bottom:-0.01rem;left:0;width:100%;height:0.35rem;line-height:0.35rem;background:#fe5085;z-index:1;text-align: center;}
+.module-mbar a{display:inline-block;width:30%;height:0.175rem;line-height:0.175rem;text-align:center;font-size:0.12rem;color:#fff;}
+.module-mbar .upload{border-left:1px solid #ff96b6;border-right:1px solid #ff96b6; }
+.module-mbar .upload i{display:inline-block;width:0.135rem;height:0.13rem;margin:0 0.05rem 0 0;vertical-align:-2px;background:url(module/mbar/ic.png) no-repeat;background-size:0.135rem 0.13rem;}
+

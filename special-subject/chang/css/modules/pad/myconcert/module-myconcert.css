@@ -1,0 +1,12 @@
+.module-myconcert{height:62px;background:url(modules/pad/myconcert/bg.png) no-repeat;background-size:100%;}
+.module-myconcert .ul{width:200%;}
+.module-myconcert .li{width:180px;text-align:center;height:35px;line-height:35px;margin:12px 0 0 15px;color:#fff;background:#3a395e;vertical-align: top;}
+.module-myconcert .li i{display:inline-block;width:100px;text-align: center; font-style:normal;}
+.module-myconcert .li em{display:inline-block;width:80px;text-align:center;background:#2a2951;}
+.module-myconcert .active{background:#ef2e2e;}
+.module-myconcert .active em{background:#c51d22;}
+.module-myconcert .cur2,
+.module-myconcert .cur2 em{background:#ef2e2e;}
+
+.pad.module-myconcert-xijin .content .renqi-list .renqi-item .score span{text-indent:0;background:#222049;}
+.module-myconcert-xijin .content .renqi-list .renqi-item .score span i{padding:0 2px 0 0;font-style:normal;font-size:14px;}

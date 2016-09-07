@@ -1,0 +1,40 @@
+.module-votezone .hd{width:980px;height:138px;}
+.module-votezone .hd h3{float:left;display:inline;line-height:138px;_margin:40px 0 0;font-size:40px;font-weight:800;color:#000;}
+.module-votezone .hd h3 span{font-style:normal;color:#d92137;}
+.module-votezone .hd h3 i{display:inline-block;width:45px;height:60px;margin:0 10px 0 0;vertical-align:-19px;_vertical-align:-15px;background:url(../images/pc-index-hd.png) no-repeat 0 0;*display:inline;*zoom:1;}
+.module-votezone .hd sub{float:left;display:inline;margin:68px 0 0 20px;font-size:16px;}
+
+.module-votezone .bd{padding:0 0 40px;background:#d4d4d4;}
+.module-votezone .bd ul{margin:0 0 0 30px;}
+.module-votezone .bd li{float:left;display:inline;position:relative;width:90px;margin:50px 12px 0 0;}
+.module-votezone .bd li .pic{position:relative;display:block;width:90px;height:120px;text-align:center;}
+.module-votezone .bd li .pic span{position:absolute;left:0;bottom:0;width:90px;height:24px;line-height:24px;color:#fff;background:#000;opacity:0.8;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);overflow:hidden;}
+.module-votezone .bd li img{display:block;width:90px;height:120px;}
+.module-votezone .bd li .num{position:absolute;top:0;right:0;width:25px;height:25px;line-height:25px;color:#fff;background:#ff0000;}
+.module-votezone .bd .vote{position:relative;text-align:center;display:block;width:58px;height:18px;margin:10px 0 0;padding:0 0 0 30px;line-height:18px;color:#999;border:1px solid #999;background:url(modules/pc/votezone/ic1.png) no-repeat 15px center;_background:url(modules/pc/votezone/ic1_ie6.png) no-repeat 15px center;}
+.module-votezone .bd .vote:hover{background:url(modules/pc/votezone/ic2.png) no-repeat 15px center;_background:url(modules/pc/votezone/ic2_ie6.png) no-repeat 15px center;}
+.module-votezone .bd .vote.disable:hover{background:url(modules/pc/votezone/ic1.png) no-repeat 15px center;_background:url(modules/pc/votezone/ic1_ie6.png) no-repeat 15px center;}
+.module-votezone .bd .vote .countdown{position:absolute;top:0;left:0;width:88px;height:18px;text-align:center;font-style:normal;color:#fff;background:#000;opacity:0.8;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);}
+
+.module-votezone2 .hd h3,
+.module-votezone2 .hd sub{color:#fff;}
+.module-votezone2 .hd h3 i{background:url(../images/pc-index-hd.png) no-repeat 0 -61px;}
+.module-votezone2 .bd{background:#333;}
+
+.module-votezone3 .bd ul{width:950px;margin:0 0 0 50px;}
+.module-votezone3 .bd li{width:120px;margin:25px 70px 0 0;z-index:1;}
+.module-votezone3 .bd .hover{z-index:2;}
+.module-votezone3 .bd li .pic{width:120px;height:160px;}
+.module-votezone3 .bd li .pic span{width:120px;}
+.module-votezone3 .bd li img{width:120px;height:160px;}
+.module-votezone3 .bd .vote{width:68px;padding:0 0 0 50px;}
+.module-votezone3 .bd .vote .countdown{width:118px;}
+.module-votezone3 .bd .mask{position:absolute;bottom:0;left:0;z-index:3;width:120px;height:20px;background:#000;opacity:0.5;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);overflow:hidden;line-height: 20px;color:#ffffff;font-size: 12px;text-align: center;}
+
+.module-votezone .info{position:absolute;left:120px;top:0;z-index:100;width:150px;height:130px;padding:15px 20px;background:#fff;}
+.module-votezone .lastinfo{left:-190px;}
+.module-votezone .info p{line-height:18px;color:#464646;}
+.module-votezone .info p span{font-weight:bold;color:#000;}
+.module-votezone .info .txt{height:54px;overflow:hidden; word-wrap:break-word; word-break:break-all;}
+
+.module-votezone .addone{display:block; width:36px; height:37px; position:absolute; bottom:16px; right:0px; background:url(modules/pc/votezone/countadd.png);}

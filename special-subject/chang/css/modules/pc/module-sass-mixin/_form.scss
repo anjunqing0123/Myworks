@@ -1,0 +1,10 @@
+@mixin form-fake-control(){
+	position:absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}

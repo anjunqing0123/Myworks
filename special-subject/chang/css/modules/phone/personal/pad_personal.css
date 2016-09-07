@@ -1,0 +1,383 @@
+
+/*pad 个人中心 列表*/
+/*.pad.module-video.module-person-custom .video-l .item {
+    padding: 0;
+    width: 3.5rem;
+    margin: 0.14rem 0.165rem 0;
+}*/
+/*.pad.module-video.module-person-custom .video-l .item:nth-child(2n+1) {
+    margin-right: 0;
+}*/
+.pad.module-video._169.cloums2 .video-l {
+  display: block;
+  margin: 0 -0.15rem;
+}
+/* line 322, reset.less */
+.pad.module-video._169.cloums2 .video-l .item {
+  width: 20%; 
+  padding:0 0.2rem;
+  box-sizing:border-box;
+  -webkit-flex:none!important;
+  margin: 0.24rem 0;
+}
+.pad.module-video._169.cloums2 .video-l .item div{
+  width: 100%;
+}
+.pad.module-video .video-l .item {
+  -webkit-flex: none!important;
+  width: 3.6rem;
+  margin: 0 0.25rem;
+  padding: 0;
+}
+.pad.module-video .video-l .item {
+  margin: .24rem .07rem 0;
+  padding: 0 0;
+  float: left;
+  width: 3.54rem;
+  overflow: hidden;
+  -webkit-flex: 1!important;
+  -webkit-box-flex: 1;
+  min-height: 30px;
+}
+/*.pad.pad-biaoqian-player.module-video .video-l .item{
+   -webkit-flex: none!important;
+  width: 3.6rem;
+}*/
+.pad.no-flex{
+  -webkit-flex: none!important;
+}
+.pdb50{
+  padding-bottom: 50px;
+}
+/*.pad.pad-biaoqian-player.module-video .video-l .item > div:first-child{
+  height: 3.6rem;
+}*/
+.pad.module-video-rank.pad-biaoqian-player .video-l .item{
+  margin-bottom: 0;
+}
+.pad.module-video-rank .video-l{
+  margin-bottom: 0.48rem;
+}
+.module-video.cloums3 .no-flex .video-l{
+  margin: 0;
+}
+.module-video .video-l{
+  margin: 0;
+}
+.lazyimg:after {
+ /* background: url("../images/videolist/loading.gif") no-repeat center;*/
+  display: inline-block;
+  content: "正在加载更多";
+  width: 100%;
+  text-align: center;
+  line-height: .4rem;
+  height: .4rem;
+  color: #969696;
+  font-size: 16px;
+}
+.module-person-custom.lazyimg:after {
+ /* background: url("../images/videolist/loading.gif") no-repeat center;*/
+  display: none;
+  content: "";
+  width: 100%;
+  text-align: center;
+  line-height: .4rem;
+  height: .4rem;
+  color: #969696;
+  font-size: 16px;
+}
+.pad.module-video.cloums3.module-person-custom .video-l .item {
+    padding: 0;
+    width: 2.3133333333333335rem;
+    margin: 0 0.14rem 0.15rem;
+}
+.pad.module-video.cloums3.module-person-custom .video-l .item:nth-child(3n+1), .pad.module-video.cloums3 .video-l .item:nth-child(3n+2) {
+    margin-right: 0;
+}
+/*.pad.module-video.cloums3.module-person-custom .module-singleupload{
+    background-color: #1e1e1e;
+    
+}*/
+
+/* pad 个人中心 头部*/
+.pad.w.module-personal{
+    height: 3.3rem;
+}
+.pad.w.module-personal .detail_wrap .detail_list{
+    height: 3.3rem;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .race_line_w{
+    top: 2.4rem;
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.detail .detail_w h1{
+    text-align: left;
+}
+
+.module-personal .detail_list > div > div.desc .race_line_w .race_line .race_item .race_step{
+    font-size: 12px;
+}
+
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.group{
+    font-size: 12px;
+    display: inline-block;
+    width: 90%;
+    height: 0.24rem;
+    overflow: hidden; 
+}
+.pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.group.wenq{
+    font-size: 12px;
+    width: 95%;
+}
+@media screen and (max-width: 600px) {
+  .pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.group{
+      font-size: 12px;
+      width: 100%;
+  }
+  .pad.w.module-personal .detail_wrap .detail_list > div > div.desc .desc_w .race_list .race_w .race_item span.group.wenq{
+      font-size: 12px;
+      width:100%;
+  }  
+}
+.pad.cloums3 .module-video.module-singleupload .video-l .item > div{
+    background: #1e1e1e;
+    width: auto;
+    height: auto;
+}
+.pad.module-video.cloums3.module-person-custom .module-singleupload .video-l .item-upload{
+    width: auto;
+}
+.module-video .module-singleupload .video-l .item.item-upload > div.v-up a {
+  display: block;
+  height: .88rem;
+  margin: .35rem .15rem;
+  background: #ef2e2e;
+  color: #fff;
+  text-align: center;
+  line-height: .88rem;
+  font-size: .32rem;
+  margin-top: 0;
+}
+.module-video .module-singleupload .video-l .item.item-upload > div.v-up a span {
+  padding: 0 0 0 .40rem;
+  display: inline;
+  font-size: .32rem;
+  line-height: .88rem;
+  background: url("../images/videolist/video_upload.png") no-repeat left center;
+  background-size: auto .32rem;
+}
+.pad.module-person-custom .module-title .right{
+    font-size: 12px;
+    line-height: 55px;
+}
+.pad.module-person-custom .module-title .b{
+    font-size: 12px;
+}
+.pad.module-person-custom .module-title .a{
+    font-size: 16px;
+}
+.pad.module-person-custom .module-title{
+   height: 50px;
+   line-height: 50px;
+   background-size: 8px auto;
+   background-position: 0.15rem;
+}
+.module-personal.pad  .detail_list span.name span.groupName {
+  font-size: 12px;
+  width: 2rem;
+}
+.module-personal.pad .detail_list .username span.ids b{
+  font-size: 16px;
+}
+.person-space-pad.module-personal.pad .detail_list .username {
+  height: .3rem;
+  margin-top: .05rem;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  line-height: .3rem;
+  overflow: visible;
+}
+.pad.w.module-personal.person-space-pad .detail_wrap .detail_list > div > div.desc .desc_w .race_list{
+  margin-top: .15rem;
+}
+.pad.module-video.cloums2 .video-l {
+  display: block;
+  margin: 0rem .07rem;
+}
+.pad.module-video.playpage-list .video-l .item{
+  margin-top: 0;
+  margin-bottom: .24rem ;
+}
+.pad.module-video.pad-home-player .video-l .item{
+  width: 20%; 
+  padding:0 0.2rem;
+  box-sizing:border-box;
+  -webkit-flex:none!important;
+  margin: 0.24rem 0;
+}
+.pad.module-video.pad-home-player .video-l{
+  display: block;
+  margin:0 -0.15rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.pad.module-video-rank .video-l{
+  display: block;
+  margin:0 -0.15rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.pad.module-video-rank .video-l .item{
+  width: 20%; 
+  padding:0 0.2rem;
+  box-sizing:border-box;
+  -webkit-flex:none!important;
+  margin: 0.24rem 0;
+}
+.module-video .video-l .item > div .video-name.s-name a.rationame{
+  color:#c8c8c8;
+}
+.pad.module-video.cloums2 .video-l .item > div .video-name.s-name a.rationame{
+  color:#c8c8c8;
+}
+.module-video.pad-home-player .video-l .item > div .video-name.s-name a{
+  color:#c8c8c8;
+}
+/*.pad.module-person-custom .module-title{
+  background-image: url(../images/title_bg.png);
+  background-repeat: no-repeat;
+  background-size: .14rem auto;
+  background-position: .17rem .30rem;
+  text-indent: .1rem;
+  padding: 0 0.2rem;
+  height: .6rem;
+  line-height: 0.8rem;
+  white-space: normal;
+  overflow: hidden;
+}*/
+/*.pad.module-person-custom .module-title .a{
+    font-size: 0.22rem;
+}
+*/
+
+
+.pad.module-rule{
+    background: #282828;
+    width: 95%;
+    margin:0.15rem auto .1rem;
+}
+.pad.module-rule a{
+    color: #c8c8c8;
+    font-size: 16px;
+}
+.pad.module-rule-banner{
+    width: 100%;
+    overflow: hidden;
+}
+.pad.module-rule-banner img{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.pad.module-rule .arrow-right{
+    width: 12px;
+    height: 12px;
+    margin-top:6px;
+    border-top: 3px solid #646464;
+    border-right: 3px solid #646464;
+}
+.pad.module-rule-cont{
+    margin:0 auto;
+    background: #1e1e1e;
+}
+.pad.module-rule-cont li{
+    margin:0.6rem auto 0;
+    font-size: 0.2rem;
+    padding-top: 0.3rem;
+    color: #fff;
+    background: #464646;
+    clear: both;
+}
+
+.module-rule-cont li i{
+    width: 0.5rem;
+    height: 0.5rem;
+    top: -0.25rem;
+    margin-left:-0.25rem;
+    background: url(../images/personal/pad_li01.png) no-repeat;background-size: 100% 100%;
+}
+
+.module-rule-cont li i.li02{    background: url(../images/personal/pad_li02.png) no-repeat;background-size: 100% 100%;}
+.module-rule-cont li i.li03{    background: url(../images/personal/pad_li03.png) no-repeat;background-size: 100% 100%;}
+
+.module-rule-topbar{
+    width: 100%;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    background: #282828;
+}
+.module-rule-topbar h3{
+    width: 50%;
+    height: 45px;
+    margin:0 auto;
+    text-align: center;
+    font-size: 18px;
+}
+.module-rule-topbar a{
+
+    display: block;
+    width: 20%;
+    height: 45px;
+    line-height: 45px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-align:left;
+
+}
+.module-rule-topbar a i{
+    float: left;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 12px 0 0 12px;
+    border-bottom: 3px solid #fff;
+    border-left: 3px solid #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+
+
+.pad .module-video.module-singleupload{
+    width: 2.655rem;
+    margin-top: 0.2rem;
+}
+
+.pad.module-video .module-singleupload .video-l .item.item-upload > div.v-up a{
+    height: .58rem;
+    line-height: .58rem;
+    font-size: .24rem;
+}
+
+.pad.module-video .module-singleupload .video-l .item.item-upload > div.v-up a span{
+    font-size: .24rem;
+    line-height: .58rem;
+    background: url("../images/videolist/video_upload.png") no-repeat left center;
+    background-size: auto .24rem;
+}
+
+.pad.module-personal .detail_list span.name span.age,.pad.module-personal .detail_list span.name span.addr{
+    font-size: 12px;
+}

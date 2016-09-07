@@ -1,0 +1,144 @@
+{
+    "id": "app://aph.pptv.com/v4/usercenter",
+    "title": "用户个人中心页面",
+    "head": [
+        {
+            "id": "Usercenter_Topbar",
+            "tid": "t_header_1",
+            "data": {
+                "title": "个人中心顶部导航",
+                "target": "native",
+                "link": "",
+                "source": "json",
+                "dlist": []
+            }
+        },
+        {
+            "id": "Usercenter_logo",
+            "tid": "t_header_2",
+            "data": {
+                "link": "",
+                "source": "json",
+                "dlist": []
+            }
+        }
+    ],
+    "modules": [
+        {
+            "id": "usercenter_login",
+            "tid": "t_usercenter_login",
+            "data": {
+                "link": "",
+                "source": "local",
+                "dlist": []
+            }
+        },
+		{
+            "id": "usercenter_sing",
+            "tid": "t_usercenter_local",
+            "data": {
+                "title": "一唱成名",
+                "target": "native",
+                "link": "app://aph.pptv.com/v4/activity/web?activity=singtofame&url=http%3a%2f%2fchang.pptv.com%2fapp%2fplayer%3ftype%3dapp",
+                "source": "local",
+                "dlist": []
+            }
+        },
+        {
+            "id": "usercenter_history",
+            "tid": "t_usercenter_local",
+            "data": {
+                "title": "播放记录",
+                "target": "native",
+                "link": "app://aph.pptv.com/v4/history",
+                "source": "local",
+                "dlist": []
+            }
+        },
+        {
+            "id": "usercenter_cache",
+            "tid": "t_usercenter_local",
+            "data": {
+                "title": "下载中心",
+                "target": "native",
+                "link": "app://aph.pptv.com/v4/cache/cached",
+                "source": "local",
+                "dlist": []
+            }
+        },
+        {
+            "id": "usercenter_favourite",
+            "tid": "t_usercenter_local",
+            "data": {
+                "title": "我的收藏",
+                "target": "native",
+                "link": "app://aph.pptv.com/v4/usercenter/favourite",
+                "source": "local",
+                "dlist": []
+            }
+        },
+        {
+            "id": "usercenter_book",
+            "tid": "t_usercenter_local",
+            "data": {
+                "title": "我的预订",
+                "target": "native",
+                "link": "app://aph.pptv.com/v4/usercenter/book",
+                "source": "local",
+                "dlist": []
+            }
+        },
+        {
+            "id": "usercenter_tribe",
+            "tid": "t_usercenter_local",
+            "data": {
+                "title": "我的部落",
+                "target": "native",
+                "icon": "http://sr1.pplive.com/cms/21/85/da900788a7d44281d1aa5dc2b4a77cd8.png",
+                "link": "app://aph.pptv.com/v4/tribeusercenter",
+                "source": "local",
+                "dlist": []
+            }
+        },
+        {
+            "id": "usercenter_other",
+            "tid": "t_usercenter_1",
+            "data": {
+                "title": "其他",
+                "link": "",
+                "source": "json",
+                "dlist": [
+                    {
+                        "id": "scorestore",
+                        "title": "积分商城",
+                        "icon": "",
+                        "target": "html5",
+                        "link": "http://m.jifen.pptv.com/"
+                    },
+                    {
+                        "id": "unicomOrder",
+                        "title": "联通包月",
+                        "icon": "",
+                        "target": "native",
+                        "link": "app://aph.pptv.com/v4/usercenter/unicomOrder"
+                    },
+                    {
+                        "id": "usercenter_shandongliantong",
+                        "title": "山东移动",
+                        "icon": "",
+                        "target": "html5",
+                        "link": "http://app.aplus.pptv.com/zt/ssd/"
+                    },
+                    {
+                        "id": "feedback",
+                        "title": "意见反馈",
+                        "icon": "",
+                        "target": "native",
+                        "link": "app://aph.pptv.com/v4/usercenter/setting/feedback"
+                    }
+                ]
+            }
+        }
+    ],
+    "overlap": []
+}

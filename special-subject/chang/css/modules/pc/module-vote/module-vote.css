@@ -1,0 +1,292 @@
+/* 120进60投票模块 */
+.module-index-120to60,.module-index-120to60 .topmain{
+    height: 261px;
+}
+.module-index-120to60 .time{
+    top: 30px;
+    right: 0;
+}
+.module-vote {
+    margin: 55px 0;
+}
+
+.module-vote-layout {
+    overflow: hidden;
+}
+
+.module-vote-layout ul {
+    margin: 18px 0 0;
+    overflow: hidden;
+}
+
+.module-vote-layout li {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 456px;
+    height: 112px;
+    margin: 7px 7px 0 18px;
+    _margin:7px 7px 0 12px;
+    background: url("../images/1v1/circle02.png") no-repeat 0 0;
+}
+
+.module-vote-layout li.vote-gray {
+    background: url("../images/1v1/circle.png") no-repeat 0 0;
+}
+
+.module-vote-layout li.vote-gray h3 {
+    text-align: center;
+    height: 120px;
+    line-height: 110px;
+    font-size: 18px;
+    color: #626262;
+    font-weight: normal;
+}
+
+.vote-h80 {
+    position: relative;
+    _z-index: 1;
+    width: 175px;
+    height: 80px;
+    /*margin-top: 16px;*/
+}
+
+.vote-h80.vote-fr {
+    margin-right: 18px;
+    _margin-right: 9px;
+}
+
+.vote-h80.vote-fl {
+    margin-left: 18px;
+    _margin-left: 9px;
+
+}
+
+.vote-h80.vote-mid {
+    position: relative;
+    top: 20px;
+    width: 70px;
+    text-align: center;
+    color: #999;
+}
+
+.vote-h80 img {
+    position: relative;
+    z-index: 0;
+    display: block;
+    float: left;
+    width: 80px;
+    height: 80px;
+    _width:78px;
+}
+.vote-h80.vote-fr img{
+    float: right;
+}
+
+.vote-h80 span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 80px;
+    height: 80px;
+    background: url("../images/1v1/circle03.png") no-repeat 0 0;
+    _background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/chang/v_1/images/1v1/circle03.png',sizingMethod='crop');
+}
+
+
+
+/*.vote-h80 .vote-fail em{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 79px;
+    height: 80px;
+    background: #000;
+    opacity: .5;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+}*/
+.vote-h80 .vote-fail cite{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 79px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.vote-h80.vote-fr .vote-fail em ,.vote-h80.vote-fr .vote-fail cite{
+    left: auto;
+    right: 0;
+}
+
+.vote-h80.fr span {
+    left: auto;
+    right: 0;
+    _right:-1px;
+}
+
+.vote-mid h4 {
+
+    line-height: 18px;
+    font-size: 18px;
+}
+
+.vote-mid h5 {
+    font-weight: normal;
+}
+
+.vote-h80 p {
+    position: relative;
+    margin-top: 5px;
+    width: 95px;
+    height: 80px;
+}
+
+.vote-h80 p .vote-user {
+    display: block;
+    width: 95px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    overflow: hidden;
+    word-break:break-all;
+    height: 33px;
+    margin-top: 3px;
+}
+.vote-h80 p .vote-user:hover{
+    color:#d9263b;
+}
+.vote-h80 p .vote-wrap {
+    position: relative;
+    display: block;
+    margin: 2px auto 0;
+    width: 77px;
+    height: 23px;
+    _height:20px;
+    line-height: 22px;
+    _padding-top:3px;
+    text-align: center;
+    background: #999;
+    border: 1px solid #d7d7d7;
+    color: #fff;
+}
+
+.vote-h80 p .vote-wrap .v-fav {
+    *position: relative;
+    *top:-4px;
+    _top:4px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+    background: url("../images/1v1/zan.png") no-repeat 0 0;
+    _background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/chang/v_1/images/1v1/zan.png',sizingMethod='crop');
+}
+
+.vote-h80 p .vote-wrap .v-line {
+    position: absolute;
+    bottom: 3px;
+    left: -11px;
+    width: 10px;
+    height: 0;
+    border-bottom: 1px solid #d7d7d7;
+    display: block;
+}
+
+.vote-h80.vote-fr p a .v-line {
+    left: auto;
+    right: -11px;
+}
+
+.vote-gray .vote-h80 span {
+    background: url("../images/1v1/circle04.png") no-repeat 0 0;
+    _background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/chang/v_1/images/1v1/circle04.png',sizingMethod='crop');
+}
+
+.vote-start .vote-h80 p .vote-wrap {
+    background: #d9263b;
+    border: 1px solid #e6babf;
+}
+
+.vote-start .vote-h80 p a .v-line {
+    border-bottom: 1px solid #e6babf;
+}
+.module-vote-layout li .vote-tips{
+    display: block;
+    width: 68px;
+    padding:0;
+    height: 15px;
+    _height:16px;
+    text-align: center;
+    line-height: 14px;
+    _line-height:16px;
+    margin:1px auto 0;
+    color: #fff;
+}
+.module-vote-layout li.vote-gray .vote-tips.show{
+    background: #333;
+}
+.module-vote-layout .vote-mask{
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index: 2;
+    left:0;
+    top:0;
+    background:url(modules/pc/module-pking-120x60/mask_biaoqian.png) no-repeat;
+    font-style: normal;
+}
+.module-vote-layout .vote-txt{
+    font-style: normal;
+}
+.module-vote-layout b{
+    font-weight: normal;
+}
+.module-vote-layout .vote-add{
+    display:none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    position: absolute;
+    background:url(modules/pc/module-sass-mixin/changlive_sprite.png) no-repeat;
+    _background:url(modules/pc/module-sass-mixin/changlive_sprite_ie6.png) no-repeat;
+    background-position: 0px -1714px;
+    top: -23px;
+    left: -10px;
+    z-index: 3;
+    font-style: normal;
+}
+
+.module-vote-layout .fl .num,
+.module-vote-layout .fr .num{position:absolute;top:27px;z-index:5;width:26px;height:26px;line-height:26px;text-align:center;font-size:16px;font-weight:bold;color:#fff;background:url(modules/pc/pk/bg8.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_1/css/modules/pc/pk/bg8.png",sizingMethod='scale');}
+.module-vote-layout .fl .num,
+.module-vote-layout .fl .replace{left:-13px;}
+.module-vote-layout .fr .num,
+.module-vote-layout .fr .replace{right:-13px;}
+.module-vote-layout .fl .replace,
+.module-vote-layout .fr .replace{position:absolute;top:25px;z-index:5;width:32px;height:32px;line-height:32px;background:url(modules/pc/pk/bg9.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_1/css/modules/pc/pk/bg9.png",sizingMethod='scale');}
+
+.vote-gray .vote-h80 .vote-fail{ 
+    background: url("../images/1v1/circle05.png") no-repeat 0 0;
+    _background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://static9.pplive.cn/chang/v_1/images/1v1/circle05.png',sizingMethod='crop');
+}
+.vote-gray .vote-h80 .vote-win{ 
+    background: url("../images/1v1/vote_win.png") no-repeat 0 0;
+    _background:url("../images/1v1/vote_win_ie6.png") no-repeat 0 0;
+}

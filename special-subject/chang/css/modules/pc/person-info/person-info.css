@@ -1,0 +1,126 @@
+.ml20 {
+  margin-left: 20px; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mt25 {
+  margin-top: 25px; }
+
+.ml15 {
+  margin-left: 15px; }
+
+.mt40 {
+  margin-top: 40px; }
+
+.module-grid-980 {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wc100 {
+  width: 100%; }
+
+.module-person-info .person-info-l {
+  width: 588px;
+  top: -75px;
+  position: relative; }
+.module-person-info .person-avatar {
+  width: 145px;
+  height: 145px;
+  padding: 5px;
+  background: #ffffff; }
+  .module-person-info .person-avatar img {
+    width: 98%;
+    height: 98%;
+    border: 1px solid #ddd; }
+.module-person-info .person-main-info {
+  margin-left: 180px;
+  font-size: 14px; }
+  .module-person-info .person-main-info h2 {
+    font-size: 26px;
+    color: #fff; }
+  .module-person-info .person-main-info h3 {
+    font-size: 14px;
+    color: #333;
+    font-weight: normal; }
+  .module-person-info .person-main-info a {
+    color: #333;
+    text-decoration: underline; }
+  .module-person-info .person-main-info .main-title {
+    color: #7d7d7d; }
+  .module-person-info .person-main-info .vlm {
+    vertical-align: middle; }
+  .module-person-info .person-main-info .district-tag {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    color: #d92238;
+    border: 1px solid #d92238;
+    vertical-align: middle;
+    height: 20px;
+    color: #d92238;
+    line-height: 20px;
+    margin-right: 5px;
+    margin-top: 2px;
+    *margin-top: 0px;
+    _margin-top: 0px; }
+    .module-person-info .person-main-info .district-tag:hover {
+      color: #fff;
+      background: #d92238; }
+.module-person-info .person-info-r {
+  float: right;
+  max-width: 34%;
+  margin-right: 5%;
+  _width: 265px;
+  _margin-right: 0px;
+  font-size: 14px;
+  overflow: hidden; }
+  .module-person-info .person-info-r .head-border {
+    height: 16px;
+    line-height: 16px;
+    width: 5px;
+    background: #d92137;
+    margin-top: 5px;
+    float: left; }
+  .module-person-info .person-info-r h2 {
+    color: #d92137;
+    font-size: 16px; }
+  .module-person-info .person-info-r em {
+    color: #7d7d7d; }
+  .module-person-info .person-info-r span {
+    color: #d92238;
+    font-weight: bold;  }
+
+.module-person-description{
+  width: 920px;
+  position: relative;
+  padding: 20px 35px;
+  background: #f5f5f5;
+  line-height:1.5em;
+  font-size: 13px;
+  top:-60px;
+  margin-bottom: 45px;
+}
+.module-person-description .tri{
+  width: 0;
+  height: 0;
+  border:10px solid; 
+  border-color:#ffffff #ffffff #f5f5f5 #ffffff;
+  position: absolute;
+  left: 70px;
+  top:-19px;
+}
+.module-person-description h3{
+  color:#433d3e;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.module-person-description p{
+  line-height: 25px;
+  color:#a2a2a2;
+}

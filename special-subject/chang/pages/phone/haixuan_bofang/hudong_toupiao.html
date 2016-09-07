@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page.</title>
+    <meta charset=utf-8>
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://static9.pplive.cn/chang/css/lib/v_01/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="http://static9.pplive.cn/chang/css/v_01/phone.min.css">
+    <script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+    <script>
+        (function(designW) { // 参数w是设计稿的宽度，可以在页面中使用rem，1rem = 100px;
+         var loadSize = function(){
+                if( window.localStorage && window.localStorage.getItem("pplive_chang_fontsize_test")){
+                    document.documentElement.style.fontSize = window.localStorage.getItem("pplive_chang_fontsize_test");
+                }else{
+                    setSize();
+                }
+                
+            }
+            var setSize = function(){
+                var screenW = Math.min(screen.width, window.innerWidth);
+                document.documentElement.style.fontSize =  100 * screenW / designW + 'px';
+            }
+
+            var rem = function(){
+                if( window.localStorage && window.localStorage.getItem("pplive_chang_fontsize_test")){
+                    var screenW = Math.min(screen.width, window.innerWidth);
+                    try{
+                               window.localStorage.setItem("pplive_chang_fontsize_test",100 * screenW / designW + 'px')
+                    }catch(e){
+
+                     }     
+           }
+                setSize();
+            }
+            window.onload = rem;
+            loadSize();
+        })(750);
+    </script>
+</head>
+<body>
+<div class="wp-grid">
+    <div class="grid">
+        <div class="module module-audition-top60">
+            <div class="tabs">
+                <div class="tab">
+                    <div class="t_avatar">
+                        <img src="http://grocery.pptv.com/lpic/527/98c/5f8/51385417a3007d4d93eee993124d7571.jpg" alt="">
+                    </div>
+                    <div class="t_name">主持人房间</div>
+                </div>
+                <div class="tab active">
+                    <div class="t_avatar"></div>
+                    <div class="t_name">主持人房间</div>
+                </div>
+                <div class="tab">
+                    <div class="t_avatar">
+                        <img src="http://grocery.pptv.com/lpic/527/98c/5f8/51385417a3007d4d93eee993124d7571.jpg" alt="">
+                    </div>
+                    <div class="t_name">主持人房间</div>
+                </div>
+            </div>
+            <div class="avartar">
+                <img src="http://s0.hao123img.com/res/r/image/2015-08-07/af6edfec03c6df4a3c329e6fd529f1be.jpg" alt="">
+            </div>
+            <div class="time">00:23:56</div>
+            <div class="name">60强晋级赛</div>
+            <div class="l3">
+                为喜欢的选手投票 让他成为60强之一
+            </div>
+            <div class="list">
+                <div class="item">
+                    <div class="i_avartar">
+                        <img src="http://s0.hao123img.com/res/r/image/2015-08-07/af6edfec03c6df4a3c329e6fd529f1be.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <div class="l1">
+                            <span>梁秋实</span>
+                            <span class="count">243546票</span>
+                        </div>
+                        <div class="l2"></div>
+                    </div>
+                    <div class="btn waiting">投票</div>
+                </div>
+                <div class="item">
+                    <div class="i_avartar">
+                        <img src="http://s0.hao123img.com/res/r/image/2015-08-07/af6edfec03c6df4a3c329e6fd529f1be.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <div class="l1">
+                            <span>梁秋实</span>
+                            <span class="count">243546票</span>
+                        </div>
+                        <div class="bar">
+                            <div class="l2"></div>    
+                        </div>
+                    </div>
+                    <div class="btn waiting">投票</div>
+                </div>
+                <div class="item">
+                    <div class="i_avartar">
+                        <img src="http://s0.hao123img.com/res/r/image/2015-08-07/af6edfec03c6df4a3c329e6fd529f1be.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <div class="l1">
+                            <span>梁秋实</span>
+                            <span class="count">243546票</span>
+                        </div>
+                        <div class="l2"></div>
+                    </div>
+                    <div class="btn waiting">投票</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="http://static9.pplive.cn/chang/js/app/config.js"></script>
+
+<script type="text/javascript">
+    seajs.use('app/phone/index/index');
+</script>
+</body>
+</html>

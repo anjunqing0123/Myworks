@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+<head>
+	<title>个人简介</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="http://static9.pplive.cn/chang/css/v_01/pad.min.css">
+	<script>
+		(function(designW) { // param[w] width of designing rem:1rem = 100px;
+			var rem = function(){
+				var screenW = Math.min(screen.width, window.innerWidth);
+				document.documentElement.style.fontSize =  100 * screenW / designW + 'px';
+			}
+			window.onresize = rem;
+			rem();
+		})(750);
+	</script>
+	<script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+	<script type="text/javascript" src="http://static9.pplive.cn/oth/2012/10/jssdk/v_20150408155209/jsbridge.js"></script>
+</head>
+<body >
+<div class="wp-grid">
+	<div class="grid">
+		<div class="pad module-rule-topbar">
+			<h3>参赛宝典</h3>
+			<a href=""><i></i>返回</a>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="pad module-rule-banner">
+			<img src="http://static9.pplive.cn/chang/images/personal/pad_rule.jpg"/>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="pad module-rule-cont">
+			<ul>
+				<li>
+					<i class="li01"></i>
+					<div>选手每单个上传视频每一个小时内系统判定可投一票，所以，选手上传更多视频，就有更多的机会在同一个时间区域内获得更多的票数，但是，需要切记的是，选手在10月31日前最多只能上传 <span>100</span>个视频。</div>
+				</li>
+				<li>
+					<i class="li02"></i>
+					<div>杜绝选手 <span>刷票行为</span>，凡是系统判定的恶意刷票数据，系统将自动废除刷出的票数，对于刷票行为严重者，PPTV有权取消该选手的参赛资格。</div>
+				</li>
+				<li>
+					<i class="li03"></i>
+					<div><span>千万梦想金在哪里？</span>海选进入120强的选手，都将通过自己的努力分享到你赢得的唱酬，每一场唱酬数额我们都将提前公布，越是前进到最后，你可能获得的唱酬数额越大，这是一场可以赚钱的 <span>全民嗨唱运动会</span>，所以，向前走，加油！选手！</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="http://static9.pplive.cn/chang/js/app/config.js"></script>
+
+<script>
+	seajs.use('app/phone/personal/personal');
+</script>
+</body>
+</html>

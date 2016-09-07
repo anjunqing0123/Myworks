@@ -1,0 +1,24 @@
+.module-page{margin:40px 0 0;text-align:center;}
+.module-page a,
+.module-page input{display:inline-block;width:28px;height:28px;line-height:28px;margin:0 5px 0 0;text-align:center;color:#222;border:1px solid #ccc;*display:inline;*zoom:1;}
+.module-page .page{width:58px;}
+.module-page a:hover,
+.module-page a.cur{color:#fe5287;border:1px solid #fe5287;}
+.module-page form{
+    display: inline-block;
+    width:95px;
+}
+
+.module-page form input[type='submit'] {
+    width: 50px;
+    color: #fff;
+    border: 1px solid #fe5287;
+    background: #fe5287;
+    cursor: pointer;
+}
+
+.module-page form input[type='submit']:hover {
+    color: #fff;
+    border: 1px solid #ff7ca4;
+    background: #ff7ca4;
+}

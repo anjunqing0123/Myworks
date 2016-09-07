@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page.</title>
+    <link rel="stylesheet" type="text/css" href="http://static9.pplive.cn/chang/css/v_01/phone.min.css">
+    <style type="text/css">
+        h1, div{padding: 1%}
+        h1{ padding-bottom: 0}
+    </style>
+    <script type="text/javascript" src="http://static9.pplive.cn/pptv/main/v_20141015100259/seajs/2.2.1/sea.js"></script>
+</head>
+<body>
+
+
+<h1>中国城市</h1>
+
+<div id="CityJson"></div>
+
+<!-- http://www.utilities-online.info/xmltojson/#.VeabSM6F7IU -->
+<!-- https://www.kjson.com/ -->
+<script type="text/javascript" src="../../../js/app/config.js"></script>
+<script type="text/javascript">
+    seajs.use('jquery', function($){
+        $.getJSON('city.plist.json', {}, function(d){
+            console.log('d===', d);
+
+            var cityData = d.dict, privince = {};
+
+            for(var i = 0, len = cityData.length; i < len; i++){
+                var key = cityData[i].key, list = [];
+                //console.log('i', i, cityData[i].key, list);
+                var p = cityData[i].dict.dict;
+
+                //直辖市
+                if(!$.isArray(p)){
+                    if(!$.isArray(p.array.string)){
+                        list.push(p.array.string);
+                    }else{
+                        list = p.array.string;
+                    }
+                }else{
+                    //一省多市
+                    var city = {};
+                    list = {};
+                    for(var j = 0, lenj = p.length; j < lenj; j++){
+                        //city[p[j].key] = p[j].array.string;
+                        //console.log(key, 'sss', p[j].key, city);
+                        var area = [];
+
+                        if(!$.isArray(p[j].array.string)){
+                            area.push(p[j].array.string);
+                        }else{
+                            area = p[j].array.string;
+                        }
+
+                        list[p[j].key] = area;
+                    }
+                    //console.log('city == ', p[j].key,  p[j].array.string);
+
+                    //list.push(city);
+                }
+
+                console.log('list', key, list);
+
+                privince[key] = list;
+
+                //jsondata[key] =
+            }
+
+            var formatText = JSON.stringify(privince);
+            console.log('privince == ', privince);
+
+            console.log(formatText);
+
+            $('#CityJson').text(formatText);
+
+        });
+    });
+</script>
+
+</body>
+</html>

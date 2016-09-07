@@ -1,0 +1,10 @@
+.module-notice{float:right;display:inline;width:180px;margin:60px 0 0;}
+.module-notice .hd{height:55px;line-height:55px;background:url(module/plist/bg4.png) no-repeat 0 -165px;}
+.module-notice .hd h3{padding:0 0 0 62px;height:55px;font-size:24px;font-weight:bold;color:#fff;}
+.module-notice .bd{margin:20px 0 0;height:292px;padding:18px;border:1px solid #f792b8;background:#fee4f3;}
+.module-notice .bd p{line-height:22px;font-size:14px;color:#222;}
+.module-notice .bd p a{color:#eb1d67;}
+.module-notice .upload{width:138px;height:38px;padding:2px;margin:20px auto 0;border:1px solid #e90052;}
+.module-notice .upload a{display:block;width:134px;height:34px;line-height:34px;margin:2px auto 0;text-align:center;font-size:20px;font-weight:bold;color:#fff;background:#e90052;}
+.module-notice .upload:hover{border:1px solid #ff7ca4;}
+.module-notice .upload a:hover{background:#ff7ca4;}

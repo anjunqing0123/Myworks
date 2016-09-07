@@ -1,0 +1,91 @@
+<?php
+    $objs = $ctx->getObjs(1,"4c3664a3f7c38520f2ed2aef2482ab8f");
+    global $static_version;
+        $static_version = "v_20151016111133"; //$objs[0]->version;
+?>
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>虚拟偶像</title>
+<meta property="wb:webmaster" content="a130710da76d8320"/>
+<meta name="application-name" content="PPTV网络电视"/>
+<meta name="title" content="-PPTV聚力-始终和你同一频道"/>
+<meta name="robots" content="all"/>
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="虚拟偶像">
+<meta name="description" content="虚拟偶像">
+<meta name="baidu-site-verification" content="rtVp77wHFL" />
+<meta name="baidu-site-verification" content="g4FV3Go1SB" />
+<meta baidu-gxt-verify-token="52770ce50ee8f40c895ddccd9e57f276">
+<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true" />
+<meta name="msapplication-task" content="name=热门排行;action-uri=http://www.pptv.com/top/;icon-uri=http://static1.pplive.cn/ikan3/100519/icons/topic.ico" />
+<meta name="msapplication-task" content="name=最新上线;action-uri=http://list.pptv.com/sort_list/1-----1.html;icon-uri=http://static1.pplive.cn/ikan3/100519/icons/new.ico" />
+<meta name="msapplication-task" content="name=体育直播;action-uri=http://live.sports.pptv.com/;icon-uri=http://static1.pplive.cn/ikan3/100519/icons/splive.ico" />
+<meta name="msapplication-starturl" content="./" />
+<meta name="msApplication-ID" content="App" />
+<meta name="msApplication-PackageFamilyName" content="PPTV.PPTVHD_svvymaqds8vhm" />
+<meta name="msApplication-Arguments" content="webSite"/>
+<link href="http://static9.pplive.cn/chang/<?php echo $static_version;?>/idol/css/css.css" rel="stylesheet" type="text/css">
+<script src="http://static9.pplive.cn/chang/<?php echo $static_version;?>/idol/js/jquery.js"></script>
+<!--[if lt IE 9]> <script src="http://static9.pplive.cn/chang/<?php echo $static_version;?>/idol/js/backgroundSize.js"></script> <![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+.bt{background:url(http://static9.pplive.cn/chang/<?php echo $static_version;?>/idol/img/index_button.png) no-repeat center center; width: 150px;height: 150px;background-size:cover; }
+.btContainer{position:absolute; top:65%; left:65%;}
+@media (max-width: 414px) {
+    .btContainer{position:absolute; top:65%; left:65%;}
+	.bt{width: 100px; height: 100px;}
+}
+@media (max-height: 414px) {
+    .btContainer{position:absolute; top:60%; left:65%;}
+    .bt{width: 100px; height: 100px;}
+}
+</style>
+</head>
+<body style="background:url(http://static9.pplive.cn/chang/<?php echo $static_version;?>/idol/img/index_bg.jpg) no-repeat center center;background-size:cover;">
+<a href="http://chang.pptv.com/idol/pg_main"><div class="btContainer" ><div class="bt"> </div></div></a>
+<div id="large-header" class="large-header">
+	<canvas id="demo-canvas"></canvas>
+</div>
+<script src="http://static9.pplive.cn/chang/<?php echo $static_version;?>/idol/js/TweenLite.min.js"></script>
+<script src="http://static9.pplive.cn/chang/<?php echo $static_version;?>/idol/js/EasePack.min.js"></script>
+<script src="http://static9.pplive.cn/chang/<?php echo $static_version;?>/idol/js/rAF.js"></script>
+<script src="http://static9.pplive.cn/chang/<?php echo $static_version;?>/idol/js/demo-1.js"></script>
+
+<script>
+    $('.bt').css( "background-size", "cover" );
+    $('body').css( "background-size", "cover" );
+</script>
+<!--艾瑞新统计代码_2606392--><!--艾瑞新统计代码-->
+<script type="text/javascript">
+(function (G,D,s,c,p) {
+c={//监测配置
+UA:"UA-pptv-000001", //项目编号,由系统生成
+NO_FLS:0,//是否使用Flash LocalStorage，默认为0开启，1表示不使用
+WITH_REF:1,//是否监测当前页面的Referrer参数，默认为0不监测，1表示监测
+URL:'http://static9.pplive.cn/analytics/iwt-min.js?v=20121129'//iwt.js的URL位置，如需客户托管JS文件，只需修改此值
+};
+G._iwt?G._iwt.track(c,p):(G._iwtTQ=G._iwtTQ || []).push([c,p]),!G._iwtLoading && lo();
+function lo(t) {
+G._iwtLoading=1;s=D.createElement("script");s.src=c.URL;
+t=D.getElementsByTagName("script");t=t[t.length-1];
+t.parentNode.insertBefore(s,t);
+}
+})(this,document);
+</script><!--PE统计_2606393--><script type="text/javascript">!function(a){function b(a,b,c){for(var d=[],e=0,f=a.length;f>e&&b.apply(c,[a[e],e,d])!==!0;e++);return d}function c(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}var d="production",e=encodeURIComponent,f=navigator.userAgent.toLowerCase(),g=f.match(/BaiduHD/i)?!0:!1,h={serviceUrl:"http://web.data.pplive.com/pe/1.html?",newImg:new Image,imgs:document.images,adr:a.location.href,sadr:"",et:"",n:""},i="http://static9.pplive.cn/pptv/index/v_201203081858/images/no.gif";"production"==d&&h.adr.indexOf("debug=1")<0&&!g&&(b(h.imgs,function(a){c(a,"error",function(){h.et="img",h.n=a.src,h.newImg.src=h.serviceUrl+"et="+h.et+"&adr="+e(h.adr)+"&n="+e(h.n),a.src!==i&&(a.src=i)})},this),a.onerror=function(a,b,c){h.et="js",h.sadr=b,h.n=a;try{return f.indexOf("msie")>0&&b==h.adr?(h.newImg.src=h.serviceUrl+"et="+h.et+"&adr="+e(h.adr)+"&n="+e(h.n)+"&line="+c,!0):/firefox\/[\d.]+/.test(f)&&0===c?(h.n="跨域的js文件错误,来自于ff,可以读取正确的js文件",h.newImg.src=h.serviceUrl+"et="+h.et+"&adr="+e(h.adr)+"&sadr="+e(h.sadr)+"&n="+e(h.n),!0):/chrome\/[\d.]+/.test(f)&&0===c&&""===b?(h.n="错误信息来自于chrome,无法确定js文件以及行号",h.newImg.src=h.serviceUrl+"et="+h.et+"&adr="+e(h.adr)+"&n="+e(h.n),!0):(h.newImg.src=h.serviceUrl+"et="+h.et+"&adr="+e(h.adr)+"&sadr="+e(h.sadr)+"&n="+e(h.n)+"&line="+c,!0)}catch(d){return h.n="Error_pe_"+d.message,h.newImg.src=h.serviceUrl+"et="+h.et+"&adr="+e(h.adr)+"&sadr="+e("pe.js")+"&n="+e(h.n),!0}})}(this);</script><!-- PPTV网站运营统计_2606396--><!--PPTV网站运营统计-->
+<!--w2c_remove_start-->
+<script type="text/javascript">
+    var pptv_analyze_platform="web";
+    document.write('<script src="http://s1.pplive.cn/sta.js?debug=6" type="text/javascript"><\/script>');
+</script>
+<!--w2c_remove_end-->
+<!--百度统计代码_2606397--><!-- pptv.com Baidu tongji analytics -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+try{navigator.javaEnabled = function(){return true;};}catch(e){}
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7adaa440f53512a144c13de93f4c22db' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* lazyload css */
+@loading:"../images/videolist/loading.gif";
+.lazyimg:after{
+  display: inline-block;
+  content: "正在加载更多";
+  width: 100%;
+  text-align: center;
+  line-height: .4rem;
+  height: .4rem;
+  background-size: .3rem auto;
+  color: #969696;
+  font-size: .28rem;
+}
+.lazyimg[data-loaded$="done"]{
+
+	&:after{
+		background: none;
+	  display: block;
+	  content: "没有更多";
+	  width: 100%;
+	  text-align: center;
+	  line-height: .4rem;
+	  height: .4rem;
+	  font-size: .28rem;
+	  text-indent: 0;
+	  margin-left: 0;
+	  color: #969696;
+	  display: none;
+	}
+}
+
+.clearfix() {
+	&:before,
+	&:after {
+		content: " "; // 1
+		display: table; // 2
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.mask{
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	left: 0;
+	bottom:0;
+	z-index: 1000;
+
+	.input_w{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: #fff;
+		overflow: hidden;
+		display: block;
+		.clearfix();
+
+		& .clear{
+			@bg : "data:image/png;charset=utf-8;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeBAMAAADJHrORAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAqUExURQAAAJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJBDX34AAAAOdFJOUwD+1EAY68AFgF8Sk5YmM0bnrAAAAORJREFUGNNjYAACdutUwbDNBQxQwNUqCAIRC6D8qYIaJuXOTYKREG6NYDKYNhM8DtacKAlVN1EMZAS3qAGUzxy4ASQqDDOXwRCokitwApzPKbqAgUOMAQESGxhKgcrZVIBspwSghnAGQwUGBiYhBwYWRSCfSZhhYwMDkK3C4CQEdB6HNEMiyDYnIRdFLZCNYgyBDgwgBUogaQYWUQZBsLecBLXAbhWE81WgfLh6B4h6qHlLFFUg5kHs0wIKOYDtg7hnAVBMAewesHuzEO5F9w+6f9HDAyO80MMTPbwx4gMjvpDjEwAZ3zJPeAgP+gAAAABJRU5ErkJggg==";
+			background:  url(@bg) no-repeat right center;
+			background-size: 100% auto;
+			position:absolute;
+			right: 1.1rem;
+			height: .5rem;
+			width: .5rem;
+			top:.2rem;
+		}
+
+		input[type="text"]{
+			border:none;
+			position: relative;
+			line-height: .5rem;
+		    padding: .2rem;
+		    width: 6.1rem;
+		}
+
+		.error_v{
+			position: absolute;
+			right: 1.7rem;
+			line-height: .5rem;
+			color:#ef2e2e;
+		    top: .2rem;
+		}
+
+		.sure{
+			position:absolute;
+			right: 0.1rem;
+			height: .5rem;
+			width: .9rem;
+			text-align: center;
+			color: #fff;
+			border-radius: 3px;
+			background: #024fff;
+			font-size: .22rem;
+			line-height: .5rem;;
+			top:.2rem;
+		}
+	}
+
+}
+
+body.edit{
+	overflow: hidden;
+
+}
+.lazyimg:after {
+ /* background: url("../images/videolist/loading.gif") no-repeat center;*/
+  display: inline-block;
+  content: "正在加载更多";
+  width: 100%;
+  text-align: center;
+  line-height: .4rem;
+  height: .4rem;
+  background-size: .3rem auto;
+  color: #969696;
+  font-size: .28rem;
+}
+.lazyimg[data-loaded$="done"]:after {
+  background: none;
+  display: block;
+  content: "没有更多";
+  width: 100%;
+  text-align: center;
+  line-height: .4rem;
+  height: .4rem;
+  font-size: .28rem;
+  text-indent: 0;
+  margin-left: 0;
+  color: #969696;
+  display: none;
+}

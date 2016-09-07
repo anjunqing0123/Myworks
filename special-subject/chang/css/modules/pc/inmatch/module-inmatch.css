@@ -1,0 +1,28 @@
+.module-inmatch{margin:30px 0 0;}
+.module-inmatch .hd{position:relative;*z-index:3;}
+.module-inmatch .hd h3{width:980px;height:46px;line-height:46px;font-size:22px;border-bottom:1px solid #d92137;}
+.module-inmatch .hd h3 span{color:#d92137;}
+.module-inmatch .hd .dropbox{position:absolute;right:0;top:14px;width:400px;height:30px;}
+.module-inmatch .hd .drop-tit{position:absolute;right:0;top:0px;height:30px;background:#fff;overflow:hidden;}
+.module-inmatch .hd .drop-tit a{display:block;height:30px;line-height:30px;font-size:14px;color:#838383;float:right;padding-left:30px;background: url(modules/pc/inmatch/biaoqianbg.jpg) no-repeat 15px 10px;}
+.module-inmatch .hd .drop-tit a.first{background-image: none;}
+.module-inmatch .hd .drop-tit a.active{color:#d92137;}
+.module-inmatch .hd .drop-tit a:hover{color:#d92137;}
+.module-inmatch .hd .drop-tit a:hover{text-decoration:none;}
+.module-inmatch .hd .drop{position:absolute;right:0;top:0px;height:129px;padding:0 30px 5px 20px;border:1px solid #e3e3e3;z-index:100;background:#fff url(modules/pc/inmatch/arrow.png) no-repeat 84px 11px;overflow:hidden;}
+.module-inmatch .hd .drop a{display:block;height:32px;line-height:30px;font-size:14px;color:#838383;}
+.module-inmatch .hd .drop a:hover{color:#d92137;text-decoration:none;}
+.module-inmatch .hd .drop .active{color:#d92137;}
+.module-inmatch .module-pic-layout{  min-height: 300px; height: auto !important; height: 300px; overflow: visible;}
+.module-inmatch .module-pic-layout .animation3-180x100{width:980px;}
+.module-inmatch .module-pic-layout .animation3-180x100 ul{width:1000px;}
+.module-inmatch .module-pic-layout .animation3-180x100 li{margin:20px 20px 0 0;border:0 none;}
+.module-inmatch .module-pic-layout .animation3-180x100 li dl{color:#333;}
+.module-inmatch .module-pic-layout .module-animation180x100 .item:hover .v-bg{width:180px;height:100px;overflow:hidden;}
+.module-inmatch .module-pic-layout .module-animation180x100 .item:hover .v-show{top:30%;}
+.module-inmatch .module-pic-layout .module-animation180x100 .item:hover .v-ico2{top:30%;}
+
+.module-inmatch .module-animation180x100 .item{margin:0 0 5px 0;}
+
+.module-inmatch .hidden{display:none;}
+

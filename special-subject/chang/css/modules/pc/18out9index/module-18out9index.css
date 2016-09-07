@@ -1,0 +1,49 @@
+.module-18out9index-wrap{padding:0 0 30px;background:#222222;}
+.module-18out9index{width:980px;margin:0 auto;}
+.module-18out9index .hd{width:980px;height:138px;}
+.module-18out9index .hd h3{float:left;display:inline;line-height:138px;_margin:40px 0 0;font-size:40px;font-weight:800;color:#fff;}
+.module-18out9index .hd h3 span{font-style:normal;color:#d92137;}
+.module-18out9index .hd h3 i{display:inline-block;width:45px;height:60px;margin:0 10px 0 0;vertical-align:-19px;_vertical-align:-15px;background:url(../images/pc-index-hd.png) no-repeat 0 -61px;*display:inline;*zoom:1;}
+
+.module-18out9index .tab{padding:0 0 10px;border-bottom:3px solid #d92137;}
+.module-18out9index .tabs{width:988px;}
+.module-18out9index .tabs a{float:left;display:inline;width:240px;height:83px;margin:0 7px 0 0;line-height:83px;text-align:center;font-size:26px;color:#ccc;background:#333;}
+.module-18out9index .tabs .now{font-weight:bold;color:#d92137;background:url(modules/pc/18out9index/bg1.png) no-repeat;}
+
+.module-18out9index .tabcon{width:1062px;}
+.module-18out9index .tabcon dl{float:left;display:inline;width:264px;margin:0 90px 0 0;text-align:center;}
+.module-18out9index .tabcon dt{height:73px;}
+.module-18out9index .tabcon dt a{float:left;display:inline;width:92px;height:33px;margin:20px 18px;line-height:33px;font-size:14px;color:#fff;background:url(modules/pc/18out9index/bg2.png) no-repeat;}
+.module-18out9index .tabcon dd,
+.module-18out9index .tabcon dd li{position:relative;}
+.module-18out9index .tabcon dd{height:156px;margin:0 0 40px;}
+.module-18out9index .tabcon dd li{float:left;display:inline;width:120px;height:156px;margin:0 12px 0 0;}
+.module-18out9index .tabcon dd li a img{display:block;width:114px;height:150px;border:3px solid #fff;}
+.module-18out9index .tabcon dd li span{position:absolute;left:3px;bottom:3px;width:114px;height:24px;line-height:24px;color:#fff;background:#000;opacity:0.8;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);overflow:hidden;z-index:1;}
+.module-18out9index .tabcon dd li .mask{position:absolute;top:0;left:0;width:120px;height:156px;background:#000;opacity:0.8;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);z-index:2;}
+.module-18out9index .tabcon dd li .icon{position:absolute;top:0;right:-7px;width:74px;height:52px;background:url(modules/pc/18out9index/ic1.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20151102192137/css/modules/pc/18out9index/ic1.png",sizingMethod='scale');}
+.module-18out9index .tabcon .pkbg{position:absolute;left:40px;bottom:-22px;width:170px;height:34px;background:url(modules/pc/18out9index/bg3.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20151102192137/css/modules/pc/18out9index/bg3.png",sizingMethod='scale');z-index:5;}
+
+.module-18out9index .best5 ul{margin:0 0 0 8px;}
+.module-18out9index .best5 li{position:relative;float:left;display:inline;width:120px;height:156px;margin:35px 90px 0 0;}
+.module-18out9index .best5 li a{position:relative;display:block;width:120px;height:156px;}
+.module-18out9index .best5 li a img{display:block;width:114px;height:150px;border:3px solid #fff;}
+.module-18out9index .best5 li .info{position:absolute;left:3px;bottom:3px;width:114px;height:35px;color:#fff;background:#000;opacity:0.8;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);overflow:hidden;z-index:1;}
+.module-18out9index .best5 li .info span{float:left;display:inline;width:104px;height:18px;line-height:18px;margin:8px 0 0;padding:0 5px;font-size:14px;text-align:center;overflow:hidden;}
+.module-18out9index .best5 li .mask{position:absolute;top:0;left:0;width:120px;height:156px;background:#000;opacity:0.8;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);z-index:2;}
+.module-18out9index .best5 li .icon5{position:absolute;top:0;right:-7px;width:74px;height:52px;background:url(modules/pc/18out9index/ic2.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20151102192137/css/modules/pc/18out9index/ic2.png",sizingMethod='scale');}
+.module-18out9index .best5 li .info p{float:left;display:inline;width:50px;margin:0 0 0 5px;}
+.module-18out9index .best5 li .info p i{display:block;height:10px;line-height:10px;padding:0 0 0 10px;margin:5px 0 0;font-style:normal;}
+.module-18out9index .best5 li .info p .zan{background:url(modules/pc/18out9index/ic3.png) no-repeat left center;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/css/v_20151102192137/modules/pc/18out9index/ic3.png",sizingMethod='scale');}
+.module-18out9index .best5 li .info p .cai{background:url(modules/pc/18out9index/ic4.png) no-repeat left center;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/css/v_20151102192137/modules/pc/18out9index/ic4.png",sizingMethod='scale');}
+
+.module-18out9index .best3 li .icon3{position:absolute;top:0;right:-7px;width:74px;height:52px;background:url(modules/pc/18out9index/ic5.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20151102192137/css/modules/pc/18out9index/ic5.png",sizingMethod='scale');}
+.module-18out9index .best3 li .info span{width:104px;text-align:center;border:0 none;}
+
+.module-18out9index .champion li{float:left;display:inline;width:230px;margin:15px 20px 0 0;}
+.module-18out9index .champion li a{position:relative;display:block;height:300px;}
+.module-18out9index .champion li img{display:block;width:230px;height:300px;}
+.module-18out9index .champion li span{position:absolute;left:0;bottom:0;width:220px;height:30px;line-height:30px;padding:0 5px;font-size:14px;color:#fff;background:#000;opacity:0.8;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);overflow:hidden;}
+.module-18out9index .champion .first,
+.module-18out9index .champion .first img{width:480px;}
+.module-18out9index .champion .first span{width:470px;}

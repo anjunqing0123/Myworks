@@ -23,7 +23,7 @@ export default {
 											loader: 'expose?jQuery!expose?$'
 										},{ 
 											test: /\.js?$/,
-											loader: 'babel?presets[]=react,presets[]=es2015', 
+											loaders: ['babel?presets[]=react,presets[]=es2015,presets[]=stage-0'], 
 											exclude: /node_modules/
 										}
 									]

@@ -1,0 +1,64 @@
+.module-update{position:relative;width:100%;height:100%;overflow:hidden;background:url(modules/phone/update/ld1.jpg) no-repeat center top;background-size:100%;}
+.module-update .btns{position:fixed;width:100%;bottom:5.96rem;left:0;text-align:center;}
+.module-update .btns a{display:inline-block;width:39.33%;height:8.39%;margin:0 2%;text-indent:-9999px;}
+.module-update .btn_index{background:url(modules/phone/update/bg1.png) no-repeat;background-size:cover;}
+.module-update .btn_apply{background:url(modules/phone/update/bg2.png) no-repeat;background-size:cover;}
+.module-update .disable{background:url(modules/phone/update/bg3.png) no-repeat;background-size:cover;}
+.module-update .detial{position:fixed;bottom:0.5rem;right:2.33rem;width:auto;padding:0;font-size:14px;color:#fff;}
+
+.module-update .btn_update {
+	position: fixed;
+	width: 4.04rem;
+	height: 1.14rem;
+	background:url(modules/phone/update/bg4.png) no-repeat;
+	background-size: cover;
+	bottom: 80px;
+	left: 50%;
+	margin-left: -2.02rem;
+	font-size: 0;
+	color: transparent;
+}
+.module-update .btns {
+	font-size: 0;
+	text-align: center;
+	position: fixed;
+	bottom: 1.4rem;
+	width: 100%;
+}
+
+.module-update .btns > a {
+	display: inline-block;
+	height: 1.12rem;
+	width: 2.8rem;
+	margin: 0 0.15rem;
+}
+.module-update .btns .go_index {
+	background: url(./modules/phone/update/bg1.png) no-repeat;
+	background-size: cover;
+}
+.module-update .btns .update_apply {
+	background: url(./modules/phone/update/bg2.png) no-repeat;
+	background-size: cover;
+}
+.module-update .btns .update_disable {
+	background: url(./modules/phone/update/bg3.png) no-repeat;
+	background-size: cover;
+}
+.module-update .detial {
+	position: fixed;
+	color: #fff;
+	font-size: 0.28rem;
+	bottom: 0.45rem;
+	right: 0.4rem;
+}
+@media (min-width: 800px) {
+	.module-update .btns > a{
+		height: 75px;
+		width: 190px;
+	}
+	.module-update .btn_update {
+		width: 265px;
+		height: 75px;
+		margin-left: -132px;
+	}
+}

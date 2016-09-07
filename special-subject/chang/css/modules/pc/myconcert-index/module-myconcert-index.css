@@ -1,0 +1,40 @@
+.module-myconcert-index{margin:20px 0 0;}
+.module-myconcert-index .tabs ul{width:1000px;}
+.module-myconcert-index .tabs li{float:left;display:inline;position:relative;width:100px;height:100px;}
+.module-myconcert-index .tabs li img{position:absolute;top:5px;left:5px;width:90px;height:90px;z-index:1;}
+.module-myconcert-index .tabs li a{position:absolute;z-index:2;top:5px;left:5px;width:90px;height:90px;background:url(modules/pc/myconcert-index/bg1.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20151102192137/css/modules/pc/myconcert-index/bg1.png",sizingMethod='scale');}
+.module-myconcert-index .tabs li i{display:none;position:absolute;left:44px;top:97px;width:0;height:0;font-size:0;line-height:0;border-width:5px;border-color:transparent transparent rgb(217, 33, 55) transparent;border-style:dashed dashed solid dashed;}
+.module-myconcert-index .tabs .cur a{width:100px;height:100px;left:0;top:0;background:url(modules/pc/myconcert-index/bg2.png) no-repeat;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://static9.pplive.cn/chang/v_20151102192137/css/modules/pc/myconcert-index/bg2.png",sizingMethod='scale');}
+.module-myconcert-index .tabs .cur i{display:block;}
+
+.module-myconcert-index .tabcon{margin:7px 0 0;padding:0 0 10px;border-top:5px solid #d92137;border-left:1px solid #dddddd;border-right:1px solid #dddddd;border-bottom:1px solid #dddddd;}
+.module-myconcert-index .pinfo{float:left;display:inline;width:515px;margin:0 0 0 35px;padding:0 0 30px;_overflow:hidden;}
+.module-myconcert-index .pinfo h3{font-size:36px;color:#333;}
+.module-myconcert-index .pinfo li{margin:10px 0 0;font-size:16px;color:#999;overflow:hidden;}
+.module-myconcert-index .pinfo li span{color:#333;}
+.module-myconcert-index .pinfo li .gender{margin-left:50px;font-style: normal;}
+.module-myconcert-index .pinfo li .profession{margin-left: 20px;font-style: normal;}
+.module-myconcert-index .pinfo li em{font-size:16px;font-weight:bold;color:#333;}
+.module-myconcert-index .pinfo li a{padding:0 15px 0 0;font-size:12px;color:#999;vertical-align:1px;background:url(modules/pc/myconcert-index/arrow.png) no-repeat right center;}
+.module-myconcert-index .pinfo li .color{color:#d92137;}
+.module-myconcert-index .pinfo li sub{padding:0 5px;vertical-align:2px;font-weight:bold;color:#333;}
+.module-myconcert-index .pinfo .bar{float:right;display:inline;width:152px;height:14px;padding:0 4px;margin:5px 270px 0 0;*margin:-18px 272px 0 0;_margin:-18px 272px 0 0;background:url(modules/pc/myconcert-index/bar1.png) no-repeat;}
+.module-myconcert-index .pinfo .bar p,
+.module-myconcert-index .pinfo .bar i{height:10px;}
+.module-myconcert-index .pinfo .bar p{position:relative;min-width:35px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>35?"35px":"");line-height:10px;margin:2px 0 0;text-align:right;font-size:8px;color:#fff;background:url(modules/pc/myconcert-index/bar2.png) repeat-x;}
+.module-myconcert-index .pinfo .bar .bl{display:none;position:absolute;left:0;top:0px;width:2px;background:url(modules/pc/myconcert-index/bar2-l.png) no-repeat;}
+.module-myconcert-index .pinfo .bar .br{display:none;position:absolute;right:0;top:0px;width:4px;background:url(modules/pc/myconcert-index/bar2-r.png) no-repeat;}
+
+.module-myconcert-index .pinfo .nomoney .bar{float:right;display:inline;position:relative;width:160px;height:14px;margin:5px 260px 0 0;*margin-top:-20px;background:url(modules/pc/myconcert-index/bar3.png) no-repeat;}
+.module-myconcert-index .pinfo .nomoney .bar p,
+.module-myconcert-index .pinfo .nomoney .bar i{display:none;}
+
+.module-myconcert-index .pinfo .comment{position:relative;left:-35px;width:553px;padding:0 0 0 35px;margin:10px 0 0;line-height:34px;font-size:16px;color:#333;background:#f1f1f1;}
+
+
+.module-myconcert-index .progress{float:right;display:inline;width:380px;margin:15px 10px 0 0;padding:0 0 0 36px;background:url(modules/pc/myconcert-index/bg3.png) no-repeat left center;overflow:hidden;}
+.module-myconcert-index .progress dl{width:328px;height:240px;padding:25px;font-size:16px;border:1px solid #dddddd;background:url(modules/pc/myconcert-index/bg4.png) no-repeat center bottom;}
+.module-myconcert-index .progress dt{margin:0 0 10px;font-size:24px;color:#222;}
+.module-myconcert-index .progress dd{margin:10px 0 0;color:#999;vertical-align: middle;}
+.module-myconcert-index .progress dd span{max-width: 180px;display: inline-block;_width:155px;text-overflow:ellipsis;word-break: break-all;white-space: nowrap;vertical-align:top;overflow:hidden;}
+.module-myconcert-index .progress dd a{padding:0 0 0 25px;font-size:12px;color:#999;background:url(modules/pc/myconcert-index/arrow.png) no-repeat 10px center;}

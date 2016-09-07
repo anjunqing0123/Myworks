@@ -1,0 +1,118 @@
+.module-audition-run_sing {
+	position: relative;
+	padding-bottom: 20px;
+	background: #fff;
+	.module-title {
+		background-color: rgb(240,240,240);
+	}
+	.speed {
+		font-size: 12px;
+		text-align: center;
+		margin-top: 0.40rem;
+		.num {
+			color: #ef2e2e;
+			font-size: 24px;
+			padding: 0 5px;
+		}
+		.km {
+			color: #ef2e2e;
+		}
+	}
+	.graph {
+		width: 300px;
+		margin: 0 auto;
+		display: block;
+		margin-top: 5px;
+	}
+	.time {
+		position: absolute;
+		top: 200px;
+		left: 50%;
+		margin-left: -40px;
+		line-height: 25px;
+		border-radius: 13px;
+		width: 80px;
+		border: solid 1px #000;
+		text-align: center;
+	}
+	.title {
+		background: #f0f0f0;
+		background-image: url(../images/runsing.png);
+		background-repeat: no-repeat;
+		background-position: 15px 30px;
+		background-size: 140px;
+		height: 60px;
+	}
+	.nums {
+		display: flex;
+		display: -webkit-box;
+		display: -webkit-flex;
+		justify-content: center;
+		-webkit-justify-content: center;
+		margin: 0 10px;
+		margin-top: 25px;
+		.bar {
+			height: 6px;
+			display: inline-block;
+			width: 0;
+			margin-top: 5px;
+			width: 100px !important;
+		}
+		.a,
+		.b {
+			width: 50%;
+			margin: 0 5px;
+			font-size: 0;
+			.txt {
+				font-size: 0.48rem;
+			}
+		}
+		.a {
+			text-align: right;
+			color: #ef2e2e;
+		}
+		.a .bar {
+			background: #ef2e2e;
+			width: 0;
+		}
+		.b {
+			color: #1887dc;
+		}
+		.b .bar {
+			background: #1887dc;
+			width: 0;
+		}
+	}
+	.btns {
+		display: flex;
+		display: -webkit-box;
+		display: -webkit-flex;
+		justify-content: center;
+		-webkit-justify-content: center;
+		margin-top: 25px;
+		font-size: 18px;
+		.a,
+		.b {
+			line-height: 1rem;
+			height: 1rem;
+			text-align: center;
+			color: #fff;
+			width: 3.24rem;
+			margin: 0 5px;
+			letter-spacing: 1px;
+			font-size: 0.36rem;
+		}
+		.a {
+			background: #ef2e2e;
+		}
+		.a.disable {
+			background: #fa6565;
+		}
+		.b {
+			background: #1887dc;
+		}
+		.b.disable {
+			background: #5db0f0;
+		}
+	}
+}

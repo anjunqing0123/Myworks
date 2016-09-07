@@ -1,0 +1,7 @@
+.module-mtabs{width:98%;height:0.55rem;line-height:0.55rem;padding:0.15rem 1% 0;background:#fff;}
+.module-mtabs a{float:left;width:0.65rem;height:0.2rem;line-height:0.2rem;text-align:center;font-size:11px;color:#585858;}
+.module-mtabs .cur{color:#fff;background:#fe5085;border-radius:0.2rem;}
+.module-mtabs .share{float:right;width:0.83rem;}
+.module-mtabs .share i{display:inline-block;width:0.13rem;height:0.13rem;margin:0 0.05rem 0 0;vertical-align:-2px;background:url(module/mtabs/ic.png) no-repeat;background-size:cover;}
+.module-mtabs .name{font-size:0.12rem;float: left;;display: inline-block;line-height: 0.2rem;}
+.module-mtabs .name em{color:#fe5085;}
