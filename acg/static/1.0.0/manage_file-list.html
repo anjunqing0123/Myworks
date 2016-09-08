@@ -50,13 +50,13 @@
                    <div class="vod-list">
                        <div class="hd">
                            <div class="seach">
-                               <input type="text">
+                               <input type="text" placeholder="搜索稿件">
                                <i class="seach-icon"></i>
-                               <span>搜索</span>
+                               <a href="javascript:;" class="seach-btn">搜索</a>
                            </div>
-                           <div class="fenlei">
-                               <a href="javascript:;">审核状态<i class="jiantou"></i></a>
-                               <ul>
+                           <div class="sort fr">
+                               <span>审核状态<i class="jiantou"></i></span>
+                               <ul class="sort-list">
                                    <li><a href="javascript:;">压制中</a></li>
                                    <li><a href="javascript:;">压制失败</a></li>
                                    <li><a href="javascript:;">审核中</a></li>
@@ -72,10 +72,155 @@
                                     <li>
                                         <a href="javascript:;">
                                             <div class="list-left">
-                                                <img src="./../src/web/assets/list.png" alt="">
+                                                <img src="http://127.0.0.1:8080/acg/src/web/assets/list.png" alt="">
                                             </div>
                                             <div class="list-right">
-                                                <div class="list-info"></div>
+                                                <div class="list-info">
+                                                    <!-- 已发布 released 审核中 review 已退回 refund 压制中 compress 压制失败 failure 被下线 offline-->
+                                                    <ul class="released">
+                                                        <li><h3><span>Pid </span><span>234567</span> 幻想大世界 顶级恐怖视频</h3></li>
+                                                        <li><span class="state">已发布</span> <span>2016-07-20</span> <span>22:22:22</span></li>
+                                                        <li>
+                                                            <div class="vod-list-int i1"><span><i></i>180</span></div>
+                                                            <div class="vod-list-int i2"><span><i></i>220</span></div>
+                                                            <div class="vod-list-int i3"><span><i></i>150</span></div>
+                                                            <div class="vod-list-int i4"><span><i></i>550</span></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="list-icon">
+                                                    <span class=""></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <div class="list-left">
+                                                <img src="http://127.0.0.1:8080/acg/src/web/assets/list.png" alt="">
+                                            </div>
+                                            <div class="list-right">
+                                                <div class="list-info">
+                                                    <!-- 已发布 released 审核中 review 已退回 refund 压制中 compress 压制失败 failure 被下线 offline-->
+                                                    <ul class="review">
+                                                        <li><h3><span>Pid </span><span>234567</span> 幻想大世界 顶级恐怖视频</h3></li>
+                                                        <li><span class="state">审核中</span> <span>2016-07-20</span> <span>22:22:22</span></li>
+                                                        <li class="hint"><span>【再次压制视频 或 联系客服400-100-233】</span></li>
+                                                        <li>
+                                                            <div class="vod-list-int i1"><span><i></i></span></div>
+                                                            <div class="vod-list-int i2"><span><i></i></span></div>
+                                                            <div class="vod-list-int i3"><span><i></i></span></div>
+                                                            <div class="vod-list-int i4"><span><i></i></span></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="list-icon">
+                                                    <span class=""></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <div class="list-left">
+                                                <img src="http://127.0.0.1:8080/acg/src/web/assets/list.png" alt="">
+                                            </div>
+                                            <div class="list-right">
+                                                <div class="list-info">
+                                                    <!-- 已发布 released 审核中 review 已退回 refund 压制中 compress 压制失败 failure 被下线 offline-->
+                                                    <ul class="refund">
+                                                        <li><h3><span>Pid </span><span>234567</span> 幻想大世界 顶级恐怖视频</h3></li>
+                                                        <li ><span class="state">已回退</span> <span>2016-07-20</span> <span>22:22:22</span></li>
+                                                        <li class="hint"><span>【再次压制视频 或 联系客服400-100-233】</span></li>
+                                                        <li>
+                                                            <div class="vod-list-int i1"><span><i></i></span></div>
+                                                            <div class="vod-list-int i2"><span><i></i></span></div>
+                                                            <div class="vod-list-int i3"><span><i></i></span></div>
+                                                            <div class="vod-list-int i4"><span><i></i></span></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="list-icon">
+                                                    <span class=""></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <div class="list-left">
+                                                <img src="http://127.0.0.1:8080/acg/src/web/assets/list.png" alt="">
+                                            </div>
+                                            <div class="list-right">
+                                                <!-- 已发布 released 审核中 review 已退回 refund 压制中 compress 压制失败 failure 被下线 offline-->
+                                                <div class="list-info">
+                                                    <ul class="compress">
+                                                        <li><h3><span>Pid </span><span>234567</span> 幻想大世界 顶级恐怖视频</h3></li>
+                                                        <li class=""><span class="state">压制中</span> <span>2016-07-20</span> <span>22:22:22</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="list-icon">
+                                                    <span class=""></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <div class="list-left">
+                                                <img src="http://127.0.0.1:8080/acg/src/web/assets/list.png" alt="">
+                                            </div>
+                                            <div class="list-right">
+                                                <div class="list-info">
+                                                    <!-- 已发布 released 审核中 review 已退回 refund 压制中 compress 压制失败 failure 被下线 offline-->
+                                                    <ul class="offline">
+                                                        <li><h3><span>Pid </span><span>234567</span> 幻想大世界 顶级恐怖视频</h3></li>
+                                                        <li class=""><span class="state">被下线</span> <span>2016-07-20</span> <span>22:22:22</span></li>
+                                                        <li class="hint"><span>【再次压制视频 或 联系客服400-100-233】</span></li>
+                                                        <li>
+                                                            <div class="vod-list-int i1"><span><i></i></span></div>
+                                                            <div class="vod-list-int i2"><span><i></i></span></div>
+                                                            <div class="vod-list-int i3"><span><i></i></span></div>
+                                                            <div class="vod-list-int i4"><span><i></i></span></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="list-icon">
+                                                    <span class=""></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <div class="list-left">
+                                                <img src="http://127.0.0.1:8080/acg/src/web/assets/list.png" alt="">
+                                            </div>
+                                            <div class="list-right">
+                                                <div class="list-info">
+                                                    <!-- 已发布 released 审核中 review 已退回 refund 压制中 compress 压制失败 failure 被下线 offline-->
+                                                    <ul class="failure">
+                                                        <li><h3><span>Pid </span><span>234567</span> 幻想大世界 顶级恐怖视频</h3></li>
+                                                        <li class=""><span class="state">压制失败</span> <span>2016-07-20</span> <span>22:22:22</span></li>
+                                                        <li class="hint"><span>【再次压制视频 或 联系客服400-100-233】</span></li>
+                                                        <li>
+                                                            <div class="vod-list-int i1"><span><i></i></span></div>
+                                                            <div class="vod-list-int i2"><span><i></i></span></div>
+                                                            <div class="vod-list-int i3"><span><i></i></span></div>
+                                                            <div class="vod-list-int i4"><span><i></i></span></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                                 <div class="list-icon">
                                                     <span class=""></span>
                                                     <span></span>
@@ -85,6 +230,17 @@
                                         </a>
                                     </li>
                                 </ul>
+                                <div class="pagelistbox">
+                                    <a class="p prevPage" href="javascript:;" page="3">上一页</a>
+                                    <a class="p" href="javascript:;">1</a>
+                                    <a class="p" href="javascript:;">2</a>
+                                    <a class="p" href="javascript:;">3</a>
+                                    <a class="p active">4</a>
+                                    <a class="p" href="javascript:;">5</a>
+                                    <strong>...</strong>
+                                    <a class="p endPage" href="javascript:;" >10</a>
+                                    <a class="p nextPage" href="javascript:;">下一页</a>
+                                </div>
                             </div>
                        </div>
                    </div>

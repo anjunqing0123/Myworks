@@ -26,7 +26,7 @@ body{background: #fbe3f1;}
 .main-info{  width: 960px;  margin:0 auto;  background: url("../assets/bg1.png") repeat-y;  background-size: contain;  position: relative;  overflow: hidden;  left: -5px;  z-index: 10;}
 .main .pp-t{  width: 120px;  height:108px;  position: absolute;  top: 10px;  left: 0;  z-index: 10;  background: url("../assets/icon1.png") no-repeat;}
 .main .pp-r{  display: inline-block;  width: 52px;  height: 28px;  background: url("../assets/02.png") no-repeat;  position: absolute;  bottom: 135px;  right: -10px;  z-index: 11;}
-.main-info .info-l{    width: 95px;    background:#82bff3 ;margin-left:5px;    float: left;}
+.main-info .info-l{    width: 95px;background:#82bff3 ;margin-left:5px;float: left;min-height: 500px;}
 .main-info .info-l .bgl,
 /*.main-info .info-r .tgw .tgw-top img*/
 .main-info .info-l .left-tab li{ width: 95px; position: relative;}
@@ -212,8 +212,7 @@ cursor: pointer;}
     padding: 0 10px;
     margin-right: 0;
     overflow: hidden;
-    white-space: nowrap;
-}
+    white-space: nowrap;}
 .mitem-category .active, .mitem-property .active, .mitem-age .active, .mitem-storey .active, .mitem-decoration .active, .mitem-orientations .active, .mitem-source .active {
     z-index: 2;
 }
@@ -224,6 +223,101 @@ cursor: pointer;}
     display: block;
 }
 
+
+/*视频列表页*/
+.info-r .vod-list{}
+.info-r .vod-list .hd{    height: 48px; }
+.info-r .vod-list .hd .seach{ width: 285px;   height: 28px; border: 1px solid #b2b1b1;margin-top: 10px; position: relative;float: left;}
+.info-r .vod-list .hd .seach input{ width: 185px;   height: 24px;line-height: 24px; padding:2px 10px 2px 30px; }
+.info-r .vod-list .hd .seach .seach-icon{ width: 16px;height: 16px; position: absolute;top: 50%;left: 5px;margin-top: -8px;background: url("../assets/seach.png") no-repeat;}
+.info-r .vod-list .hd .seach .seach-btn{display: inline-block;position: absolute;top: -1px;right: -1px;width: 60px;height: 30px;background: #83bff4;text-align: center;line-height: 30px;color: #fff;font-size: 14px;}
+.info-r .vod-list .hd .sort{width: 56px;padding-right: 14px; height: 30px;line-height: 30px;position:relative;color: #a0a0a0; margin-top: 10px; cursor: pointer;}
+.info-r .vod-list .hd .sort a{display: block;width: 100%;height: 100%;}
+.info-r .vod-list .hd .sort:hover{color: #84c0f6; }
+
+.info-r .vod-list .hd .sort .jiantou{ display: inline-block;width: 14px;height: 8px;position: absolute;top: 50%;right: 0;margin-top: -4px;background: url("../assets/2.png") no-repeat 0 0;}
+
+.info-r .vod-list .hd .sort:hover .jiantou{background-position: 0 -8px; }
+.info-r .vod-list .hd .sort .sort-list{width: 120px;height:144px;box-shadow:0 0 2px 2px #83bff4;overflow: hidden;position: absolute;
+    background: #fff;top:28px; right: 0; display: none; padding: 5px 0;}
+.info-r .vod-list .hd .sort .sort-list li{width: 100%; height: 24px;line-height: 24px;text-align: center;color: #414141; float: left;border-bottom: 1px dashed #ededed;}
+.info-r .vod-list .hd .sort .sort-list li a{display: block; width: 100%; height: 100%;}
+.info-r .vod-list .hd .sort .sort-list li a:hover{display: block; width: 100%; height: 100%; background: #83bff4;color: #fff;}
+.info-r .vod-list .hd .sort:hover .sort-list{display: block;}
+.info-r .vod-list .bd{border-top: 1px solid #d2d2d2;}
+.info-r .vod-list .bd .list-con{ padding-bottom: 50px;}
+.info-r .vod-list .bd .list-con ul{}
+.info-r .vod-list .bd .list-con ul li{overflow: hidden; padding: 10px 0;}
+.info-r .vod-list .bd .list-con ul li a{ display: block;width: 100%;height: 100%;}
+.info-r .vod-list .bd .list-con ul li .list-left{ float: left;width: 145px;height: 85px;}
+.info-r .vod-list .bd .list-con ul li .list-right{border-bottom:1px solid #d2d2d2; width:650px;height: 85px;float: right; padding-bottom: 10px;overflow: hidden;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info{ width: 550px;height: 85px;overflow: hidden;float: left;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul{overflow: hidden;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul li{ height: 26px;line-height:26px;padding: 0;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul li h3{ font-size: 14px;color: #333;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul .state{ display: inline-block;height: 24px;line-height: 24px;padding: 0 15px;
+border-radius: 12px;background: #ededed;margin: 0 5px 0 0; color: #fff;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul .hint { color: #ec7582;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul.released .state{ background: #83bff4;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul.review .state{background: #ec7581;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul.refund .state,
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul.failure .state,
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul.offline .state{background: #c4c4c4;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul.compress .state{background: #7dce65;}
+
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul.released .vod-list-int{ min-width: 25px;height: 24px; padding-left: 20px; text-align: left;
+color: #999999;float: left;position: relative; margin-top: 5px;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul.released .vod-list-int i{ width: 14px;height: 14px;
+    position: absolute;top: 50%;left: 3px;background: url("../assets/i1.png") no-repeat;margin-top: -7px;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul.released .i2 i{background: url("../assets/i2.png") no-repeat;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul.released .i3 i{background: url("../assets/i3.png") no-repeat;}
+.info-r .vod-list .bd .list-con ul li .list-right .list-info ul.released .i4 i{background: url("../assets/i4.png") no-repeat;}
+
+.info-r .vod-list .bd .list-con ul li .list-right .list-icon{ width: 100px;height: 85px;overflow: hidden;float: right;background: yellowgreen;}
+
+
+
+
+/*分页*/
+.pagelistbox {
+    overflow: hidden;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px 0 15px 155px;
+    display: block;
+}
+.pagelistbox .p {
+    color: #222;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #fff;
+    border: solid 1px #ddd;
+    font-size: 14px;
+}
+ .pagelistbox a, .pagelistbox strong{
+    min-width: 15px;
+    margin: 0 2px 0 2px;
+    padding: 0 10px;
+    float: left;
+    font-size: 13px;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+}
+.pagelistbox .p.nextPage, .pagelistbox .p.prevPage {
+    padding: 0 15px;
+}
+.pagelistbox .p.active {
+    background: #479de9;
+    color: #fff;
+    border: 1px solid #479de9;
+}
+.pagelistbox .p:hover {
+    background: #479de9;
+    color: #fff;
+    border: 1px solid #479de9;
+}
 
 
 
