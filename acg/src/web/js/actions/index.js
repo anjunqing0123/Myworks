@@ -1,11 +1,11 @@
-import * as types from '../common/actionTypes'
+import actionTypes from '../common/actionTypes'
 
 export function addTodo(text) {
-  return { type: types.ADD_TODO, text }
+  return { type: actionTypes.ADD_TODO, text }
 }
 
 export function completeTodo(id) {
-  return { type: types.COMPLETE_TODO, id }
+  return { type: actionTypes.COMPLETE_TODO, id }
 }
 
 

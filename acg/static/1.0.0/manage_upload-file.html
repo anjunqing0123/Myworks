@@ -5,8 +5,6 @@
     <title>peropero##投稿管理//视频列表</title>
     <link rel="stylesheet" href="http://static9.pplive.cn/independent/acg/src/web/css/base.css">
     <link rel="stylesheet" href="http://static9.pplive.cn/independent/acg/src/web/css/style.css">
-    <link rel="stylesheet" href="../../src/web/css/base.css">
-    <link rel="stylesheet" href="../../src/web/css/style.css">
 </head>
 <body>
 <!-- PC个人中心，填写个人资料 -->
@@ -99,20 +97,19 @@
                                 </div>
                                 <div class="vdo-msg">
                                     <!-- 视频标题-->
-                                    <div class="common_tr clearfix">
+                                    <div class="common_tr vod-titie clearfix">
                                         <div class="common_th">标题：</div>
                                         <div class="common_td">
                                             <input class="common_text" value="" placeholder="老司机说一个好的标题可以增加阅读量哟~" name="">
                                             <em class="wor">0/80</em>
                                             <span class="remind"> <i></i>请填写标题!</span>
                                         </div>
-
                                     </div>
                                     <!--视频类型-->
                                     <div class="common_tr clearfix">
                                         <div class="common_th">类型：</div>
                                         <div class="common_td diy-input" >
-                                            <form>
+                                            <form class="fl" >
                                                 <input type="radio" name="test" id="a" value="" class="origin-input">
                                                 <label for="a">原创</label>
                                                 <input type="radio" name="test"  id="b" value="" class="take-input">
@@ -127,30 +124,198 @@
                                         <div class="common_td " >
                                             <div class="mitem-category fl">
                                                 <!--鼠标移入添加 active-->
-                                                <div  class="moreitem-box clearfix active">
-                                                    <div class="moreitem-btn"><a href="javascript:;">请选择分区</a></div>
-                                                    <ul class="moreitem-opts">
-                                                        <li><a href="javascript:;">请选择分区</a></li>
-                                                        <li><a href="javascript:;">普通住宅</a></li>
-                                                        <li><a href="javascript:;">动画</a></li>
-                                                        <li><a href="javascript:;">游戏</a></li>
-                                                        <li><a href="javascript:;">吐槽</a></li>
-                                                        <li><a href="javascript:;">音乐</a></li>
-                                                        <li><a href="javascript:;">同人</a></li>
-                                                        <li><a href="javascript:;">舞蹈</a></li>
-                                                        <li><a href="javascript:;">鬼畜</a></li>
-                                                        <li><a href="javascript:;">电影</a></li>
-                                                        <li><a href="javascript:;">电视剧</a></li>
-                                                        <li><a href="javascript:;">舞蹈</a></li>
-                                                    </ul>
+                                                <div  class="moreitem-box clearfix ">
+                                                    <div class="moreitem-btn">
+                                                        <input type="text" placeholder="请选择分区" disabled="disabled"  value="" >
+                                                        <i class="icon-s"></i>
+                                                        <ul class="moreitem-opts">
+                                                            <li><a href="javascript:;">请选择分区</a></li>
+                                                            <li><a href="javascript:;">动画</a></li>
+                                                            <li><a href="javascript:;">游戏</a></li>
+                                                            <li><a href="javascript:;">吐槽</a></li>
+                                                            <li><a href="javascript:;">音乐</a></li>
+                                                            <li><a href="javascript:;">同人</a></li>
+                                                            <li><a href="javascript:;">舞蹈</a></li>
+                                                            <li><a href="javascript:;">鬼畜</a></li>
+                                                            <li><a href="javascript:;">电影</a></li>
+                                                            <li><a href="javascript:;">电视剧</a></li>
+                                                            <li><a href="javascript:;">舞蹈</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--子分区-->
+                                                    <div class="moreitem-btn" style="min-width: 133px;">
+                                                        <input  style="float: left; opacity: 0;position: absolute;left: 0; " type="text" placeholder="请选择分区"  value="">
+                                                        <div style="float: left; display: block;">
+                                                            <span class="taxon">热血</span>
+                                                        </div>
+                                                        <div style="float: left;">
+                                                            <span class="taxon">哈哈</span>
+                                                        </div>
+                                                        <div style="float: left; z-index: 1;">
+                                                            <span class="taxon">哈哈</span>
+                                                        </div>
+                                                        <i class="icon-s"></i>
+                                                        <ul class="moreitem-opts sadas">
+                                                            <i class="close">X</i>
+                                                            <li><a href="javascript:;">动画</a></li>
+                                                            <li><a href="javascript:;">游戏</a></li>
+                                                            <li><a href="javascript:;">吐槽</a></li>
+                                                            <li><a href="javascript:;">音乐</a></li>
+                                                            <li><a href="javascript:;">同人</a></li>
+                                                            <li><a href="javascript:;">舞蹈</a></li>
+                                                            <li><a href="javascript:;">鬼畜</a></li>
+                                                            <li><a href="javascript:;">电影</a></li>
+                                                            <li><a href="javascript:;">电视剧</a></li>
+                                                            <li><a href="javascript:;">舞蹈</a></li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                            <span class="remind"> <i></i>请选择分区!</span>
+                                        </div>
+                                    </div>
+                                    <!--视频信息 年 月 状态-->
+                                    <div class="common_tr clearfix">
+                                        <div class="common_th">信息：</div>
+                                        <div class="common_td " >
+                                            <div class="mitem-category fl">
+                                                <!--鼠标移入添加 active-->
+                                                <div  class="moreitem-box ytd-box  clearfix ">
+                                                    <div class="moreitem-btn">
+                                                        <input type="text" placeholder="请选择国家" disabled="disabled"  value="" >
+                                                        <i class="icon-s"></i>
+                                                        <ul class="moreitem-opts">
+                                                            <li><a href="javascript:;">请选择国家</a></li>
+                                                            <li><a href="javascript:;">中国</a></li>
+                                                            <li><a href="javascript:;">美国</a></li>
+                                                            <li><a href="javascript:;">澳大利亚</a></li>
+                                                            <li><a href="javascript:;">加拿大</a></li>
+                                                            <li><a href="javascript:;">阿尔及利亚</a></li>
+                                                            <li><a href="javascript:;">阿拉伯联合酋长国</a></li>
+                                                            <li><a href="javascript:;">中国</a></li>
+                                                            <li><a href="javascript:;">中国</a></li>
+                                                            <li><a href="javascript:;">中国</a></li>
+                                                            <li><a href="javascript:;">中国</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--月-->
+                                                    <div class="moreitem-btn">
+                                                        <input type="text" placeholder="请选择年份" disabled="disabled"  value="" >
+                                                        <i class="icon-s"></i>
+                                                        <ul class="moreitem-opts">
+                                                            <li><a href="javascript:;">请选择年份</a></li>
+                                                            <li><a href="javascript:;">2010</a></li>
+                                                            <li><a href="javascript:;">2011</a></li>
+                                                            <li><a href="javascript:;">2012</a></li>
+                                                            <li><a href="javascript:;">2013</a></li>
+                                                            <li><a href="javascript:;">2014</a></li>
+                                                            <li><a href="javascript:;">2015</a></li>
+                                                            <li><a href="javascript:;">2016</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="moreitem-btn">
+                                                        <input type="text" placeholder="请选择状态" disabled="disabled"  value="" >
+                                                        <i class="icon-s"></i>
+                                                        <ul class="moreitem-opts">
+                                                            <li><a href="javascript:;">请选择状态</a></li>
+                                                            <li><a href="javascript:;">连载</a></li>
+                                                            <li><a href="javascript:;">完结</a></li>
+                                                            <li><a href="javascript:;">OVA/OAD</a></li>
+                                                            <li><a href="javascript:;">剧场版</a></li>
+                                                            <li><a href="javascript:;">PV</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="remind"> <i></i>请选择xxx!</span>
+                                        </div>
+                                    </div>
+                                    <!--是否允许下载-->
+                                    <div class="common_tr clearfix">
+                                        <div class="common_th">类型：</div>
+                                        <div class="common_td diy-input" >
+                                            <form class="fl">
+                                                <input type="radio" name="test" id="e" value="" class="origin-input">
+                                                <label for="e">允许</label>
+                                                <input type="radio" name="test"  id="f" value="" class="take-input">
+                                                <label for="f">不允许</label>
+                                            </form>
+                                            <span class="remind"> <i></i>请选择是否允许下载!</span>
+                                        </div>
+                                    </div>
+                                    <!--上传封面-->
+                                    <div class="common_tr comm-img upload-cover clearfix">
+                                        <div class="common_th ">封面：</div>
+                                        <div class="common_td">
+                                            <div class="elect">
+                                                <!--<div class="select-file">选择文件<input class="common_file"  type="file" ></div>-->
+                                                <div class="perview"><i class="del"></i><img src="http://sr2.pplive.com/cms/27/63/553741df07916089e0d4fe9f89920c4d.jpg" alt=""></div>
+                                                <div class=" select-filein" >选择文件<input class="common_file"  type="file" ></div>
+                                                <p>每张小于2M，支持JPG/PNG等格式 <span>(可不选)</span></p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="common_tr comm-shensu clearfix">
-                                        <div class="common_th">申诉理由</div>
+                                    <!--标签-->
+                                    <div class="common_tr tag clearfix">
+                                        <div class="common_th">标签：<p>(选填) </p></div>
+                                        <div class="common_td" style="width: 502px;overflow: hidden;">
+                                            <div class="moreitem-btn " style="">
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <div style="float: left; display: block;">
+                                                    <span class="taxon">热血<i class="del">X</i></span>
+                                                </div>
+                                                <input class=""  style="width: 470px; float: left;" type="text" placeholder="按回车完成输入,一共可输入10个标签"  value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="common_tr intro clearfix">
+                                        <div class="common_th">简介：<p>(选填)</p></div>
                                         <div class="common_td">
-                                            <textarea class="common_textarea" rows="10" cols="80" name="aboutMyself" wrap="virtual" placeholder="请填写你想申诉的原因"></textarea>
+                                            <textarea class="common_textarea" rows="10" cols="80" name="" wrap="virtual" placeholder="请pu主为观众们介绍下内容吧"></textarea><em class="wor">0/80</em>
                                         </div>
                                     </div>
                                 </div>
@@ -165,8 +330,17 @@
         <i class="m-r"></i>
         <!--舌头-->
         <i class="pp-r"></i>
+        <!--弹窗-->
+        <div class="pop-up">
+            <div class="pop-close"></div>
+            <span>有视频正在上传哟~</span>
+            <div class="pop-btn">知道啦</div>
+        </div>
+        <div class="pop-down"></div>
     </div>
+
 </div>
+
 </body>
 
 </html>
