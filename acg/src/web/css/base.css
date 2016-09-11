@@ -1,13 +1,3 @@
-/**
- * @author 	Erick Song
- * @date 	2011-12-24
- * @email	ahschl0322@gmail.com
- * @info    global css rest + base.css
- * 这个文件的要求是定义一下最基础的UI，越简单越好，切记！尽量不要往这个文件里面加代码，谨慎~
- *
- */
-
-/* global reset - based on yui3 */
 html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;border:0}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display: block}
 table{border-collapse:collapse;border-spacing:0}
@@ -23,120 +13,30 @@ sub{vertical-align:text-bottom}
 input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;font-size:100%}
 legend{color:#000}
 
-/* custorm reset */
-.fl{float:left} .fr{float:right} .nbg{background:none !important}
-.cf:before,.cf:after {content:""; display:table}
-.cf:after {clear:both}
-.cf {zoom:1}
+.fl{float:left} 
+.fr{float:right} 
+.nbg{background:none !important}
 
-.hidden{ display: none; }
-/*for blank iframe cover in flash*/
-.iframe-blank{border:none; z-index:1; position:absolute; left:0; top:0; width:100%; height:100%; border: 0px; opacity: 0; background:#fff; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);position:absolute; display: block;}
+a {text-decoration: none;color: #000;}
+a:link,a:hover,a:active {text-decoration: none; }
+legend {color: #000;}
+fieldset,img {border: 0;}
+label,button {cursor: pointer;}
+/*解决IE图片缩放失真*/
+img {-ms-interpolation-mode: bicubic;display: block;}
+/*清除浮动*/
+.clearfix:after {content: '';display: block;height: 0;clear: both;}
+.clearfix {zoom: 1;}
+.clear {clear: both;}
+/*连续英文、数字换行*/
+.wordwrap {word-break: break-all;word-wrap: break-word;}
+/*单行文字超出显示省略号*/
+.omg {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+/*文本框不可拖动大小*/
+textarea {border: 1px solid #999;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px; padding: 1px;resize: none;}
+.hidden{display: none;}
 
-/* 这段代码只能出现在client */
-/*
-html{
-	scrollbar-face-color:#262626;
-	scrollbar-highlight-color:#2f2f2f;
-	scrollbar-shadow-color:#232323;
-	scrollbar-3dlight-color:#0A0A0A;
-	scrollbar-arrow-color:#878787;
-	scrollbar-track-color:#111;
-	scrollbar-darkshadow-color:#111;
-	margin-bottom:1px;
-	overflow:scroll;
-	overflow-x:hidden;
-}
-*/
-
-/* global base style - for pptv.com */
-body{ min-width:1010px; font:normal 12px/1.5 '\5FAE\8F6F\96C5\9ED1','\5b8b\4f53',arial,tahoma}
-strong, b{ font-weight:bold}
-textarea, input {resize:none; outline:none}
-a,
-a:hover{ text-decoration:none}
-
-h1, h2, h3, h4, h5, h6{ font-weight:bold;}
-h1{font-size:20px;}
-h2{font-size:16px;}
-h3{font-size:14px;}
-h4{font-size:12px;}
-h5{font-size:12px;}
-h6{font-size:12px;}
-
-/**
- * =========================================================
- * 头、尾公用模块在客户端不显示，默认处理为display:none;
- *
- * 1. 模块上加上相应ID 如：g-minHeader
- * 2. 模块上加上需要隐藏的终端类型，如data-plt="web". <可选，默认为client隐藏>
- * 3. JS 处理相应ID, 如：mark.run('g-miniHeader');
- *
- */
-/*#g-miniHeader, #g-search, #g-sitemap, #g-copyright{ display:none;}*/
-
-
-
-/**
- * =========================================================
- * 全站SPRITES
- * 这里一般放全站都有的公用头、尾模块的sprites，其他模块的
- * 可以考虑在模块内部写，图片可以引用同一地址
- */
-
-/* 底部搜索框 */
-
-
-/**
- * @date 2013-06-08
- * 模块标识：module-*
- * 模块组成 - bd(标题) bd(正文) ft(页脚)
- * 模块高度有module-h* 定义，如module-h290 <常用模块高度可以定义好，也可以在module上用style方式写height>
- * mod - 每个模块第一个class名(通用处理)，如<div class="mod	 module-slider cf">xxx</div>
- */
-.module{ position: relative;}
-.module .m, .module .s{ height: 100%; /*padding-bottom: 32767px; margin-bottom: -32767px;*/}
-.grid .mod{ margin-top: 10px}
-.module-h170{ height: 170px}
-.module-h250{ height: 250px}
-.module-h260{ height: 260px}
-.module-h290{ height: 290px}
-.module-h340{ height: 340px}
-.module-h390{ height: 390px}
-.module-h470{ height: 470px}
-.module-h480{ height: 480px}
-.module-h530{ height: 530px}
-.module-h590{ height: 590px}
-
-/**
- * 以上为css reset文件，下面是css module设计的一部分
- * 页面是以模块为单位，但是模块继承或限定于栅格-grid系统使用
- * ==========================================================
- * 简单的模块设计: <这个地方有点纠结，是否需要module这个层级，或者说是不是可以和grid合并到一起？>
- * <div class="grid">
- *  <div class="module">
- *		<div class="m cf">{{#include module 碎片}}</div>
- *		<div class="s cf">{{#include module 碎片}}</div>
- *	</div>
- * </div>
- *
- * 广告模块设计：<默认所有广告模块初始化没有高度，广告加载完成后出现高度>
- * <div class="grid">
- *  <div class="sp sp_200116"></div>
- * </div>
- */
-
-/**
- * @date 2013-06-08
- * 1) 从body的class识别终端，设置默认背景色
- * 2) 设置终端模块默认背景色
- * 3) 终端标识限制性class【plt-web|plt-clt|plt-sm】
- * 4) 网站、客户端广告高度不一致，网站90px - 客户端60px
- */
-
-.plt-clt .g-header,
-.plt-clt .g-miniHeader,
-.plt-clt .g-search,
-.plt-clt .g-sitemap,
-.plt-clt .g-copyright{ clear: both; display: none}
+body{font:normal 12px/1.5 '\5FAE\8F6F\96C5\9ED1','\5b8b\4f53',arial,tahoma;background: #fbe3f1;}
+.grid-1010 .grid{width:990px;}
+.grid-1410 .grid{width:1390px;}
 

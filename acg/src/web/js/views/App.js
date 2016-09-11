@@ -6,7 +6,7 @@ import Content from '../components/Content';
 import * as Actions from '../actions';
 
 import { render } from 'react-dom'
-import bindAction from './bindAction'
+import bindAction from '../store/bindAction'
 import configureStore from '../store/configureStore'
 
 import CommonUtils from '../utils/CommonUtils';

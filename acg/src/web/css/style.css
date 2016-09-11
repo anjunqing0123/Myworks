@@ -1,22 +1,3 @@
-a {    text-decoration: none; color: #000;}
-a:link,a:hover,a:active {    text-decoration: none; }
-legend {    color: #000;}
-fieldset,img {    border: 0;}
-label,button {    cursor: pointer;}
-/*解决IE图片缩放失真*/
-img {    -ms-interpolation-mode: bicubic;    display: block;}
-/*清除浮动*/
-.clearfix:after {content: '';display: block;height: 0;clear: both;}
-.clearfix {zoom: 1;}
-.clear {clear: both;}
-/*连续英文、数字换行*/
-.wordwrap {word-break: break-all;word-wrap: break-word;}
-/*单行文字超出显示省略号*/
-.omg {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
-/*文本框不可拖动大小*/
-textarea {border: 1px solid #999;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px; padding: 1px;resize: none;}
-
-body{background: #fbe3f1;}
 .wp-grid{    width: 100%;background: url("../assets/body-bg.png") repeat-x;background-size: contain;-o-background-size: contain;-moz-background-size: contain;-webkit-background-size: contain;}
 .grid{width: 990px; padding-bottom:100px;margin: 0 auto; position: relative;}
 .main .main-top{  width: 960px;  height: 95px;  margin: 0 auto;}
@@ -173,6 +154,106 @@ cursor: pointer;}
 .send-file .bd .vdo-msg .common_td .common_textarea{width: 490px;height: 130px;padding: 5px 10px;}
 .info-con .bd .common_th p{color: #999;padding-right: 5px;}
 .diy-input .remind{}
+
+
+/* 登录页面 */
+.grid-1010 .match1010{background:url('../assets/login990.jpg') no-repeat center top;}
+.grid-1410 .match1410{background:url('../assets/login1390.jpg') no-repeat center top;}
+.grid-1410 .module-login{width:1390px;height:670px;margin:0 auto;}
+.grid-1010 .module-login{width:990px;height:670px;margin:0 auto;}
+.module-login .peroinfo{float:left;width:196px;margin:295px 0 0 135px;line-height:20px;}
+.grid-1010 .module-login .peroinfo{margin:320px 0 0 30px}
+.module-login .peroinfo span,
+.module-login .peroinfo p{color:#ec7682;}
+
+.module-login .login{float:right;margin:128px 135px 0 0;}
+.grid-1010 .module-login .login{margin:128px 0 0 0;}
+.module-login .loginbox{width:290px;padding:0 30px;}
+.module-login .loginbox h2{height:20px;line-height:20px;margin:18px 0 0;padding:0 0 0 80px;font-size:18px;background:url('../assets/logo2.png') no-repeat 128px top;}
+.module-login .loginform li{position:relative;margin:20px 0 0;}
+.module-login .loginform .txt{width:288px;height:34px;line-height:34px;border:1px solid #b2b1b1;} 
+.module-login .loginform .txt.focus{border:1px solid #84c0f6;}
+.module-login .loginform .txt input{width:240px;height:18px;line-height:18px;margin:0 0 0 5px;padding:0 5px;color:#999;background:none;border:0 none;}
+.module-login .loginform .txt2{float:left;width:170px;}
+.module-login .loginform .txt2 input{width:120px;}
+.module-login .loginform .getnum{float:right;width:108px;height:36px;line-height:36px;text-align:center;color:#fff;background:#84c0f6;}
+.module-login .loginform .getnum.disabled{color:#999;background:#d2d2d2;}
+.module-login .loginform .txt em{display:inline-block;margin:12px 0 0 15px;vertical-align:-3px;}
+.module-login .loginform .txt .ic1{width:9px;height:14px;background:url("../assets/login-icon.png") no-repeat 0 0;}
+.module-login .loginform .txt .ic2{width:9px;height:14px;background:url("../assets/login-icon.png") no-repeat -21px 0;}
+.module-login .loginform .txt .ic3{width:12px;height:6px;vertical-align:1px;background:url("../assets/login-icon.png") no-repeat -9px 0;}
+.module-login .loginform li.locked{border:1px solid #e8586c;}
+.module-login .loginform li.locked .mask{position:absolute;top:0;left:0;width:288px;height:34px;background:#e8586c;opacity:0.5;}
+
+.module-login .loginform li .error{position:absolute;left:13px;bottom:-20px;height:20px;line-height:20px;color:#e8586c;}
+.module-login .loginform li .error em{display:inline-block;width:14px;height:14px;margin:0 5px 0 0;vertical-align:-3px;background:url("../assets/login-icon.png") no-repeat -30px 0;}
+
+/* .module-login .loginform li .view,
+.module-login .loginform li .noview{position:absolute;top:12px;background:url("../assets/login-icon.png") no-repeat;}
+.module-login .loginform li .view{width:15px;height:9px;background-position:0 -14px;right:12px;}
+.module-login .loginform li .noview{width:18px;height:12px;background-position:0 -23px;right:10px;} */
+
+.module-login .loginform .autologin label{float:left;}
+.module-login .loginform .autologin input{margin:0 5px 0 0;vertical-align:middle;}
+.module-login .loginform .autologin a{float:right;}
+.module-login .loginform .agreement a{padding:0 10px 0 0;color:#84c0f6;text-decoration:underline;background:url("../assets/05.png") no-repeat right center;}
+.module-login .loginform .btn_login{display:block;width:290px;height:44px;line-height:44px;margin:30px 0 0;text-align:center;font-size:14px;color:#fff;background:#84c0f6;}
+.module-login .loginform .btn_login.disabled{background:#d2d2d2;}
+
+.module-login .loginform dl{margin:10px 0 0;}
+.module-login .loginform dt{position:relative;height:12px;border-bottom:1px solid #b2b1b1;}
+.module-login .loginform dt p{position:absolute;left:76px;top:2px;width:138px;height:14px;text-align:center;font-size:14px;color:#b2b1b1;background:#fff;}
+.module-login .loginform dd{margin:20px 0 0;text-align:center;}
+.module-login .loginform dd a{display:inline-block;width:40px;height:40px;margin:0 10px;background:url("../assets/login-icon2.png") no-repeat;}
+.module-login .loginform dd .ic1{background-position:0 0;}
+.module-login .loginform dd .ic2{background-position:-60px 0;}
+.module-login .loginform dd .ic3{background-position:-118px 0;}
+.module-login .loginform dd .ic4{background-position:-179px 0;}
+
+.module-login .loginform .noaccount{margin:10px 0 0;text-align:center;}
+.grid-1010 .module-login .loginform .noaccount{margin:5px 0 0;}
+.module-login .loginform .noaccount a{color:#84c0f6;}
+
+.module-login .loginform-line3 .btn_login,
+.module-login .loginform-line3 dl{margin:5px 0 0;}
+.module-login .loginform-line3 dd{margin:15px 0 0;}
+.module-login .loginform-line3 .noaccount{margin:5px 0 0;}
+.module-login .loginform-line4 .btn_login{margin:20px 0 0;}
+
+
+
+.module-login .app{width:210px;margin:40px 0 0;}
+.module-login .app img{display:block;margin:0 auto;}
+.module-login .app h2{margin:15px 0 10px;text-align:center;font-size:14px;font-weight:bold;color:#000;}
+.module-login .app a{display:block;width:126px;height:34px;margin:10px auto 0;padding:0 0 0 10px;line-height:34px;color:#84c0f6;border:1px solid #84c0f6;border-radius:34px;}
+.module-login .app a.cur,
+.module-login .app a:hover{color:#68a5db;background:#c1dffa;}
+.module-login .app .ic1{display:inline-block;width:18px;height:21px;margin:0 1px 0 0;vertical-align:-6px;background:url("../assets/login-icon.png") no-repeat -18px -14px;}
+.module-login .app .ic2{display:inline-block;width:19px;height:21px;margin:0 5px 0 0;vertical-align:-6px;background:url("../assets/login-icon.png") no-repeat -37px -14px;}
+
+
+/* 第三方登录 */
+.module-login .loginbox-3rd h2,
+.module-login .resetkey h2{height:20px;line-height:20px;margin:18px 0 0;background:url('../assets/logo2.png') no-repeat center top;}
+.module-login .loginbox-3rd .nobinding{width:290px;margin:10px auto 0;padding:105px 0 0;text-align:center;color:#84c0f6;background:url('../assets/img2.png') no-repeat center top;}
+.module-login .loginbox-3rd .binding{background:url('../assets/img3.png') no-repeat center top;}
+.module-login .loginbox-3rd .btn_login{margin:50px 0 0;}
+
+/* 找回重置密码 */
+.module-login .step{position:relative;height:80px;overflow:hidden;}
+.module-login .step:after{position:absolute;left:102px;top:32px;width:88px;height:10px;content:'';border-bottom:1px solid #b2b1b1;}
+.module-login .step ul{margin:20px 0 0;padding:0 35px;}
+.module-login .step li{float:left;width:50px;margin:0 30px;text-align:center;color:#b2b1b1;}
+.module-login .step li.cur{color:#84c0f6;}
+.module-login .step li em{display:block;width:24px;height:24px;line-height:24px;margin:10px auto 0;color:#fff;background:url('../assets/login-icon3.png') 0 0 no-repeat;}
+.module-login .step li.cur em{background:url('../assets/login-icon3.png') -24px 0 no-repeat;}
+.module-login .tip{text-align:center;color:#84c0f6;}
+.module-login .loginform .noaccount{margin:40px 0 0;}
+
+.send-file .bd .vdo-msg .common_tr .remind{ position: absolute;top:0;right: -230px;display: inline-block;padding-left: 25px; line-height: 32px;width: 200px;color: red;}
+.send-file .bd .vdo-msg .common_tr .remind i{display: inline-block;width: 20px;height: 20px;background: url("../assets/warn.png") no-repeat;background-size: contain;    position: absolute; left: 0;top: 6px;}
+
+
 /*选择分区*/
 .mitem-category, .mitem-property, .mitem-age, .mitem-storey, .mitem-decoration, .mitem-orientations, .mitem-source { margin-right: 5px;}
 
@@ -209,9 +290,7 @@ cursor: pointer;}
 .sadas li a{display:inline-block;width: 100%;height: 24px;line-height: 24px; float: left;text-align: center; margin: 0 auto;padding: 0;}
 
 
-    /*上传封面*/
-
-
+/*上传封面*/
 .info-con .bd .upload-cover .common_td  .perview{ width: 150px; height: 85px;}
 .info-con .bd .upload-cover .common_td  .perview img{ width: 150px; height: 85px;}
 .info-con .bd .upload-cover .common_td .select-filein{width: 150px;height: 85px;background: url("../assets/05.png") no-repeat;background-size: cover;
