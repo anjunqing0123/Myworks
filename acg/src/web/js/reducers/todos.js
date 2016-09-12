@@ -1,5 +1,6 @@
 import actionTypes from '../common/actionTypes';
 import * as Actions from '../actions';
+import modelService from '../services/modelService'
 import objectAssign from 'object-assign';
 
 const initialState = [{
@@ -11,6 +12,7 @@ const initialState = [{
 export default function todos(state = initialState, action){
     switch(action.type){
         case actionTypes.ADD_TODO:
+            //modelService.fetch('')
             return [
                 ...state,
                 {

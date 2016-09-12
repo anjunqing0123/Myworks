@@ -3,7 +3,7 @@
  * @author minliang_1112@foxmail.com
  */
 
-import $ from 'n-zepto'
+import $ from 'jquery'
 
 export default {
 	/**

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>peropero##投稿管理//视频列表</title>
+    <title>peropero##视频上传</title>
     <link rel="stylesheet" href="http://static9.pplive.cn/independent/acg/src/web/css/base.css">
     <link rel="stylesheet" href="http://static9.pplive.cn/independent/acg/src/web/css/style.css">
 </head>
@@ -109,21 +109,20 @@
                                     <div class="common_tr clearfix">
                                         <div class="common_th">类型：</div>
                                         <div class="common_td diy-input" >
-                                            <form class="fl" >
+                                            <div class="fl" >
                                                 <input type="radio" name="test" id="a" value="" class="origin-input">
                                                 <label for="a">原创</label>
                                                 <input type="radio" name="test"  id="b" value="" class="take-input">
                                                 <label for="b">搬运</label>
-                                            </form>
+                                            </div>
                                             <span class="remind"> <i></i>请选择类型!</span>
                                         </div>
                                     </div>
                                     <!--视频分区-->
-                                    <div class="common_tr clearfix">
+                                    <div class="common_tr clearfix" style="z-index: 100;">
                                         <div class="common_th">分区：</div>
                                         <div class="common_td " >
                                             <div class="mitem-category fl">
-                                                <!--鼠标移入添加 active-->
                                                 <div  class="moreitem-box clearfix ">
                                                     <div class="moreitem-btn">
                                                         <input type="text" placeholder="请选择分区" disabled="disabled"  value="" >
@@ -143,7 +142,7 @@
                                                         </ul>
                                                     </div>
                                                     <!--子分区-->
-                                                    <div class="moreitem-btn" style="min-width: 133px;">
+                                                    <div class="moreitem-btn" style="min-width: 88px;">
                                                         <input  style="float: left; opacity: 0;position: absolute;left: 0; " type="text" placeholder="请选择分区"  value="">
                                                         <div style="float: left; display: block;">
                                                             <span class="taxon">热血</span>
@@ -179,7 +178,6 @@
                                         <div class="common_th">信息：</div>
                                         <div class="common_td " >
                                             <div class="mitem-category fl">
-                                                <!--鼠标移入添加 active-->
                                                 <div  class="moreitem-box ytd-box  clearfix ">
                                                     <div class="moreitem-btn">
                                                         <input type="text" placeholder="请选择国家" disabled="disabled"  value="" >
@@ -234,12 +232,12 @@
                                     <div class="common_tr clearfix">
                                         <div class="common_th">类型：</div>
                                         <div class="common_td diy-input" >
-                                            <form class="fl">
+                                            <div class="fl">
                                                 <input type="radio" name="test" id="e" value="" class="origin-input">
                                                 <label for="e">允许</label>
                                                 <input type="radio" name="test"  id="f" value="" class="take-input">
                                                 <label for="f">不允许</label>
-                                            </form>
+                                            </div>
                                             <span class="remind"> <i></i>请选择是否允许下载!</span>
                                         </div>
                                     </div>
@@ -248,17 +246,16 @@
                                         <div class="common_th ">封面：</div>
                                         <div class="common_td">
                                             <div class="elect">
-                                                <!--<div class="select-file">选择文件<input class="common_file"  type="file" ></div>-->
-                                                <div class="perview"><i class="del"></i><img src="http://sr2.pplive.com/cms/27/63/553741df07916089e0d4fe9f89920c4d.jpg" alt=""></div>
                                                 <div class=" select-filein" >选择文件<input class="common_file"  type="file" ></div>
-                                                <p>每张小于2M，支持JPG/PNG等格式 <span>(可不选)</span></p>
+                                                <p><b>·</b> 建议上传高清封面≥145*82</p>
+                                                <p><b>·</b> 与视频内容差异过大或没有上传图,将自动截取影片画面</p>
                                             </div>
                                         </div>
                                     </div>
                                     <!--标签-->
                                     <div class="common_tr tag clearfix">
                                         <div class="common_th">标签：<p>(选填) </p></div>
-                                        <div class="common_td" style="width: 502px;overflow: hidden;">
+                                        <div class="common_td" >
                                             <div class="moreitem-btn " style="">
                                                 <div style="float: left; display: block;">
                                                     <span class="taxon">热血<i class="del">X</i></span>
@@ -305,10 +302,10 @@
                                                 <div style="float: left; display: block;">
                                                     <span class="taxon">热血<i class="del">X</i></span>
                                                 </div>
-                                                <div style="float: left; display: block;">
+                                                <div style="float: left;">
                                                     <span class="taxon">热血<i class="del">X</i></span>
                                                 </div>
-                                                <input class=""  style="width: 470px; float: left;" type="text" placeholder="按回车完成输入,一共可输入10个标签"  value="">
+                                                <input class=""  style="" type="text" placeholder="按回车完成输入,一共可输入10个标签"  value="">
                                             </div>
                                         </div>
                                     </div>
@@ -331,12 +328,12 @@
         <!--舌头-->
         <i class="pp-r"></i>
         <!--弹窗-->
-        <div class="pop-up">
+        <div class="pop-up" style="display: block;">
             <div class="pop-close"></div>
-            <span>有视频正在上传哟~</span>
-            <div class="pop-btn">知道啦</div>
+            <span class="omg">有视频正在上传哟~</span>
+            <div class="pop-btn ">知道啦</div>
         </div>
-        <div class="pop-down"></div>
+        <div class="pop-down " style="display: block;"></div>
     </div>
 
 </div>

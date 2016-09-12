@@ -33,7 +33,7 @@ img {-ms-interpolation-mode: bicubic;display: block;}
 /*单行文字超出显示省略号*/
 .omg {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 /*文本框不可拖动大小*/
-textarea {border: 1px solid #999;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px; padding: 1px;resize: none;}
+textarea {border: 1px solid #999;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px; padding: 1px;resize: none;outline: none;}
 .hidden{display: none;}
 
 body{font:normal 12px/1.5 '\5FAE\8F6F\96C5\9ED1','\5b8b\4f53',arial,tahoma;background: #fbe3f1;}
