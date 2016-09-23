@@ -1,0 +1,144 @@
+.logo{width: 7.5rem; height: 0.8rem;background: #84BFF6;}
+.logo a{display:block;width: 7rem; height: 0.8rem; padding: 0 0.25rem;overflow: hidden;}
+.logo h3{width: 1.86rem;height: 0.46rem;margin-top: 0.17rem; background: url("../assets/logo.png") no-repeat;background-size: cover; text-indent: -9999px;}
+/* 人物分享页面 */
+.personal-data{width: 7.5rem;height:auto;overflow: hidden;background: pink; background: url("../assets/bg2.png") no-repeat center;}
+.personal-data .personal-pic{ margin-top: 0.2rem;}
+.personal-data .personal-pic img {width: 1.66rem;height: 1.66rem;border-radius: 50%;margin: 0 auto;}
+.personal-data .personal-tit{width: 100%;height: 0.42rem; font-size: 0.3rem;color: #222222;text-align: center;line-height:0.42rem;}
+.personal-data .personal-tit span{display: inline-block;max-width: 6.4rem;height: 0.42rem;overflow: hidden; }
+.personal-data .personal-fans{ width: 7.5rem; height: 0.42rem;line-height: 0.42rem; padding-top: 0.15rem; text-align: center;}
+.personal-data .personal-fans .inli{display: inline-block; margin-right: 0.25rem; font-size: 0.22rem;color: #000; overflow: hidden;}
+.personal-data .personal-fans .inli i{display: inline-block;width: 0.42rem;height: 0.42rem; margin-right: 0.05rem; vertical-align: top;float: left;}
+.personal-data .personal-fans .inli i.guanzhu{background: url("../assets/icon2.png") no-repeat;background-size: contain;}
+.personal-data .personal-fans .inli i.fens{background: url("../assets/icon1.png") no-repeat;background-size: contain; }
+.personal-data .personal-fans .inli span{display: inline-block; font-size: 0.34rem; color: #3892E6;padding: 0 0.1rem;float: left;}
+.personal-data .personal-info {width: 7.5rem;text-align: center;line-height: 0.42rem;}
+.personal-data .personal-info .hide{ display: inline-block;max-width: 4rem;font-size: 0.24rem;color: #000;height: 0.42rem;}
+.personal-data .personal-info .show{width: 6rem;height: 1.26rem;line-height: 0.42rem;overflow: hidden; margin: 0 auto;}
+.personal-data .personal-info .more{display: inline-block;vertical-align: top;color: #3892E6;margin-left: 0.02rem;}
+/*.personal-data .personal-guanzhu{width: 100%;text-align: center;padding-top: 0.12rem;}*/
+.personal-data .personal-info .guanzhu{ display: inline-block;width: 1.25rem;height: 0.55rem;background: #84BFF6; border-radius: 0.55rem;text-align: center;line-height: 0.55rem;color: #fff; margin: 0 auto; font-size: 0.26rem;margin-bottom: 0.12rem;}
+.personal-data .personal-info .guanzhu i{display: inline-block;width: 0.35rem;height: 0.35rem;background: url("../assets/icon3.png") no-repeat;
+background-size: cover; vertical-align: top;margin: 0.06rem 0.02rem 0 0;}
+
+.persona-list{width: 7.5rem;}
+.persona-list .hd{width: 7.5rem;height: 0.8rem;line-height: 0.8rem;text-align: center;}
+.persona-list .hd .tab{width:100%;height: 0.8rem;overflow: hidden;font-size: 0.28rem;}
+.persona-list .hd .tab .tab-left,
+.persona-list .hd .tab .tab-right{width: 50%;height:98%;float: left;background: #E5EDED;border-bottom: 2px solid #E5EDED; color: #333;box-sizing: border-box;}
+.persona-list .hd .tab .on{border-bottom: 2px solid #84bff6; color: #3892E6;}
+.persona-list .bd{width: 7rem;padding: 0.25rem 0.25rem 0;}
+.persona-list .bd ul{overflow: hidden;width: 7.2rem;}
+.persona-list .bd ul li{float: left;width: 3.42rem;margin: 0 0.18rem 0.18rem 0;box-sizing: border-box;}
+.persona-list .bd ul li a { position: relative; display: block; width: 3.42rem;}
+.persona-list .bd ul li img{display: block; width: 3.42rem; height: 1.92rem;border-radius: 0.2rem;}
+.persona-list .bd ul li .mask {display:inline-block;position: absolute;top: 0.98rem;left: 0;border-radius: 0 0 0.2rem 0.2rem;width: 3.42rem;height: 0.94rem;overflow: hidden;background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.70) 100%);}
+
+.persona-list .bd ul li .mask span{display:inline-block;width: 3.18rem;height: 0.44rem;padding: 0 0.12rem;line-height: 0.44rem;color: #fff;font-size: 0.24rem;margin-top: 0.5rem;}
+.persona-list .bd ul li .txt {width: 3.18rem;padding: 0.12rem 0.12rem 0 0.12rem;height: 0.74rem;line-height: 0.37rem;font-size: 0.26rem;color: #222;background: #fff;overflow: hidden;}
+
+
+.b-app-dl-wrp {margin: 0;position: fixed;bottom: 0;left: 0;width: 100%;height: 1rem;z-index: 32;box-shadow: 0px 1px 2px #ddd;background: #84BFF6;}
+.b-app-dl-wrp .b-app-dl {background: transparent;border-radius: 3px;padding-top: 0;height: 1rem;padding-left: 1.3rem;position: relative;}
+.b-app-dl .app-logo {position: absolute;width: 0.7rem;height: 0.7rem;top: 9px;left: 12px;background-image: url(../assets/btn04.png);background-size: cover;}
+.b-app-dl .b-app-tt{ display: inline-block;height: 1rem;line-height: 1rem;overflow: hidden;font-size: 0.3rem;color: #fff;}
+.b-app-dl .dl-area {position: absolute;display: inline-block;right: 0.88rem;top: 0.15rem;width: 1.3rem;height: 0.70rem;border-radius: 0.35rem;line-height: 0.7rem;text-align: center;background-color: #fff;font-size: 0.34rem;color: #3892E6;}
+.b-app-dl .dl-close {width:0.5rem;height:0.5rem;background: url(../assets/close.png) no-repeat;background-size: contain;position: absolute;right: 0.1rem;top: 50%;margin-top: -0.25rem;}
+
+
+/*播放器*/
+.playbox{ position: relative; z-index: 999; width: 7.5rem;height: 4.2rem;}
+.playbox .player-container {display: inline-block;width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+.playbox .player-container .player-box {position: absolute;top: 0;bottom: 0;left: 0;right: 0;overflow: hidden;}
+.playbox .player-container .player-box .player{width: 100%;height: 100%; position: absolute;top: 0;left: 0;overflow: hidden;z-index: 9999;}
+.player-container .player-box .display {position: absolute;top: 0;bottom: 0;left: 0;right: 0;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+
+.player-container .player-box .display .load-layer {display: block;position: absolute;z-index: 3;top: 0;bottom: 0;left: 0;right: 0;background-color: rgba(60,60,60,0.5);overflow: hidden;cursor: pointer;text-align: center;}
+.player-container .player-box .display .load-layer.hide {  display: none;}
+.player-container .player-box .display .load-layer>img {border-style: none;display: inline-block;position: relative;width: 100%;height: 100%;margin: 0;padding: 0;}
+.player-container .player-box .display .state-icon {position: absolute;display: block;opacity: .85;bottom: 0.4rem;right: 0;width: 1.44rem;height: 1.08rem;z-index: 2;}
+.player-container .player-box .display .state-icon.hide {  display: none;}
+
+.player-container .player-box .display .load-layer .icon-preview {position: absolute;display: block;bottom: 0.4rem;right: 0rem;width: 1.44rem;height: 1.08rem;background: transparent url(../assets/player-icon.png) no-repeat;background-size: cover;}
+
+/*页面主体*/
+.main-wrap .player-info {position: relative;width: 7rem;padding: 0.11rem 0.25rem;background: #fff;}
+.main-wrap .vod-tit .vod-tit-in {font-size: 0.3rem;color: #222;position: relative;height: 0.42rem;}
+.main-wrap .vod-tit .vod-tit-in span {max-width: 4rem;height: 0.35rem;margin-top: 0.04rem;line-height: 0.35rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display: inline-block;margin-right: 0.15rem;float: left;font-size: 0.3rem;}
+.main-wrap .vod-tit .vod-tit-in .icon {float: right;width: 1.2rem;height: 0.42rem;background: url(../assets/pp.png) no-repeat;background-size: cover;}
+
+
+/*下载分享*/
+.main-wrap .video-opt{height: 1.51rem;width: 7rem;padding: 0.12rem 0.25rem;background: #fff;position: relative;}
+
+.main-wrap .video-opt .control-btn {display: inline-block;height: 100%;width: 1rem;text-align: center;vertical-align: top;position: relative;margin-right: 0.19rem;font-size: 0.22rem;color: #969696;}
+.main-wrap .video-opt .control-btn .icons{display: inline-block;width: 1rem;height: 1rem;}
+/**/
+.main-wrap .video-opt .btn-praise .icons-praise{background: url("../assets/btn00.png") no-repeat;background-size: cover;}
+.main-wrap .video-opt .btn-share .icons-share-gray{ background: url("../assets/btn01.png") no-repeat;background-size: cover;}
+.main-wrap .video-opt .btn-addFav .icons-addFav{background: url("../assets/btn02.png") no-repeat;background-size: cover;}
+.main-wrap .video-opt .btn-download .icons-download{ background: url("../assets/btn03.png") no-repeat;background-size: cover;}
+.main-wrap .video-opt .control-btn em{display: inline-block;padding:0 0.1rem;background: #FFFFFF; border-radius: 1rem;position: absolute;top: -0.12rem;left: -0.18rem;}
+/*.main-wrap .video-opt .btn-share em{ border: 2px solid #FFAF43;  color: #FFAB39;}*/
+.main-wrap .video-opt .launch-app{display: inline-block;padding: 0.1rem 0.15rem;background: #84BFF6;border-radius: 1rem;font-size: 0.26rem;color: #FFFFFF;position: absolute;top: 50%;right: 0.25rem;margin-top: -0.4rem;}
+/*视频数据 +举报按钮*/
+.main-wrap .vod-date{padding: 0 0.25rem;}
+.vod-date .video-meta{}
+.vod-date .video-meta .video-cell{ display: inline-block;margin-right: 0.12rem; font-size: 0.22rem;color: #7F7F7F;}
+.vod-date .video-meta .video-cell .icons{display: inline-block;width: 0.2rem;height: 0.2rem;}
+.vod-date .video-meta .video-cell .icons-play{background: url("../assets/icon5.png") no-repeat;background-size: cover;}
+.vod-date .video-meta .video-cell .icons-danmaku{background: url("../assets/icon4.png") no-repeat;background-size: cover;}
+.vod-date .complaints a{display: inline-block;padding: 0 0.15rem;height: 0.36rem;border-radius: 0.08rem;border: 1px solid #7f7f7f;text-align: center;line-height: 0.32rem;box-sizing: border-box;color: #7F7F7F;}
+
+.player-introduce{position: relative;width: 7rem;height: auto;padding: 0.11rem 0.25rem;background: #fff;}
+.player-introduce .introduce-in{position: relative;}
+.player-introduce .introduce-in .introduce-info{display: inline-block;height: 0.86rem;line-height: 0.42rem;overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; color: #969696;font-size: 0.26rem;}
+.player-introduce .introduce-in .more{position:absolute;top: -0.5rem;right: 0;color: #84BFF6;padding: 0 0.1rem;}
+.player-introduce .introduce-in .more i{ display: inline-block;width: 0.22rem;height: 0.22rem;background: url("../assets/more1.png") no-repeat; background-size: cover;}
+.player-introduce .unfold .introduce-info{height:auto;}
+.player-introduce .unfold .more i{ display: inline-block;width: 0.22rem;height: 0.22rem;background: url("../assets/more2.png") no-repeat; background-size: cover;}
+/*.omgd{overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}*/
+
+.main-wrap .up-info{background: #F2F8F8;height: 1.18rem;border-bottom: 1px solid #BFCACA; }
+
+.up-info .up {margin: 0;height: 100%;color: #777;text-align: left;padding: 0 5px;position: relative;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.up-info .up .up-pic {position: absolute;top: 50%;margin-top: -0.4rem;width: 0.8rem;height: 0.8rem;border-radius: 0.8rem;border: 1px solid #eee;overflow: hidden;}
+.up-info .up .up-pic img { width: 100%; height: 100%;}
+.up-info .up .up-right {padding-left: 1rem; height: 100%;}
+.up-info .up .up-right .up-follow {float: right;width:1rem;height:0.5rem;background: #84BFF6;border-radius: 50px;color: #fff;text-align: center;line-height: 0.5rem;position: absolute;top: 50%;right: 0;margin-top: -0.25rem;}
+.up-info .up .up-right .up-name {float: left;clear: left;line-height: 0.42rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width: 3rem;font-size: 0.3rem;margin-top: 0.15rem;color: #222222;font-weight: 600;}
+.up-info .up .up-right .up-deta{float: left;clear: left;line-height: 0.42rem;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100%;font-size: 0.26rem;color: #969696;}
+/*视频标签部分*/
+.main-wrap .tag-wrap{background: #F2F8F8;height: 2.3rem;border-bottom: 1px solid #BFCACA;}
+.tag-wrap .tag-line{line-height: 0.42rem;margin:0.2rem 0;font-size: 0.3rem;color: #222;}
+.tag-wrap .tag-list li {border: 1px solid #84BFF6;float: left;display: inline-block;padding: 0.08rem 0.15rem;border-radius: 0.5rem;margin-right: 0.4rem;margin-bottom: 0.26rem;font-size: 0.26rem;}
+.tag-list li a { color: #84BFF6;}
+
+/*评论模块*/
+.main-wrap .comment {
+    margin: 0.1rem 0 0;
+    padding: 0 0 0.1rem;
+    background: #F2F8F8;
+}
+
+.comment .hd h3 {
+    line-height: 0.42rem;
+    margin: 0.2rem 0;
+    font-size: 0.3rem;
+    color: #222;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
