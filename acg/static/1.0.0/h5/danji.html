@@ -3,13 +3,35 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>合集页面</title>
+    <title>承载单集播放页</title>
     <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true"/>
     <link rel="stylesheet" href="http://static9.pplive.cn/independent/acg/src/h5/css/mbase.css">
     <link rel="stylesheet" href="http://static9.pplive.cn/independent/acg/src/h5/css/mstyle.css">
+    <link rel="stylesheet" href="../../../src/h5/css/mbase.css">
+    <link rel="stylesheet" href="../../../src/h5/css/mstyle.css">
     <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true"/>
     <script type="text/javascript">
-        (function (designW) {var prevScreenW = null;function resize() {var screenW = window.innerWidth;if (prevScreenW == screenW) {return} else {prevScreenW = screenW}document.documentElement.style.fontSize = 100 * screenW / designW + "px"}window.onresize = function () {resize()};resize();window.onload = function () {resize()}})(750);
+        (function (designW) {
+            var prevScreenW = null;
+
+            function resize() {
+                var screenW = window.innerWidth;
+                if (prevScreenW == screenW) {
+                    return
+                } else {
+                    prevScreenW = screenW
+                }
+                document.documentElement.style.fontSize = 100 * screenW / designW + "px"
+            }
+
+            window.onresize = function () {
+                resize()
+            };
+            resize();
+            window.onload = function () {
+                resize()
+            }
+        })(750);
     </script>
 </head>
 <body>
@@ -96,7 +118,8 @@
             <div class="up clearfix">
                 <div class="up-pic">
                     <a href="http://space.bilibili.com/11148355#!/index" target="_blank">
-                        <img src="http://i2.hdslb.com/bfs/face/382426e0ef689d5757aa4a57a6756b5e21fc2816.jpg" alt="anchor-avatar">
+                        <img src="http://i2.hdslb.com/bfs/face/382426e0ef689d5757aa4a57a6756b5e21fc2816.jpg"
+                             alt="anchor-avatar">
                     </a>
                 </div>
                 <div class="up-right clearfix">
@@ -123,31 +146,51 @@
             <div class="hd"><h3>精彩评论</h3></div>
             <div class="bd">
                 <dl>
-                    <dt><img alt="" src="http://face.passport.pplive.com/8/a/a/8aa0610c-cf5b-455a-9572-14c7c5c5585e.jpg?351744">
+                    <dt><img alt=""
+                             src="http://face.passport.pplive.com/8/a/a/8aa0610c-cf5b-455a-9572-14c7c5c5585e.jpg?351744">
                     </dt>
                     <dd><h4><span>建</span></h4>
                         <p>我看不下去</p>
-                        <div class="cf"><span class="time">4-12 10:51:29</span><a href="javascript:;" class="zan">84<i></i></a></div>
+                        <div class="cf">
+                            <span class="time">三分钟前</span>
+                            <a href="javascript:;" class="pinglun"><i></i>23365</a>
+                            <a href="javascript:;" class="zan"><i></i>45645</a>
+                        </div>
                     </dd>
                 </dl>
                 <dl>
-                    <dt><img alt="" src="http://face.passport.pplive.com/0/1/8/018f69e0-eb54-4acf-af08-47fd92296c4e.jpg?141857692">
+                    <dt><img alt=""
+                             src="http://face.passport.pplive.com/0/1/8/018f69e0-eb54-4acf-af08-47fd92296c4e.jpg?141857692">
                     </dt>
                     <dd><h4><span>Lpan03</span></h4>
                         <p>健康是最无价的东西</p>
-                        <div class="cf"><span class="time">4-19 2:56:53</span><a href="javascript:;" class="zan">77<i></i></a></div>
+                        <div class="cf">
+                            <span class="time">一小时前</span>
+                            <a href="javascript:;" class="pinglun"><i></i>1200</a>
+                            <a href="javascript:;" class="zan"><i></i>2371</a>
+                        </div>
                     </dd>
                 </dl>
                 <dl>
-                    <dt><img alt="" src="http://face.passport.pplive.com/8/a/a/8aa0610c-cf5b-455a-9572-14c7c5c5585e.jpg?351744">
+                    <dt><img alt=""
+                             src="http://face.passport.pplive.com/8/a/a/8aa0610c-cf5b-455a-9572-14c7c5c5585e.jpg?351744">
                     </dt>
                     <dd><h4><span>建</span></h4>
                         <p>很喜欢看类似的电影，第一次看不下去，太虐人了</p>
-                        <div class="cf"><span class="time">4-12 10:53:03</span><a href="javascript:;"  class="zan">71<i></i></a></div>
+                        <div class="cf">
+                            <span class="time">一天前</span>
+                            <a href="javascript:;" class="pinglun"><i></i>200</a>
+                            <a href="javascript:;" class="zan"><i></i>71</a>
+                        </div>
                     </dd>
                 </dl>
             </div>
         </div>
+        <!--footer-->
+        <footer>
+            <p>peroPero动画 沪ICP备132002172号-3</p>
+            <p>信息网络传播视听节目许可证：<span>0910417</span></p>
+        </footer>
     </div>
 
 

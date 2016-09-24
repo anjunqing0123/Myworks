@@ -98,7 +98,6 @@ background-size: cover; vertical-align: top;margin: 0.06rem 0.02rem 0 0;}
 .player-introduce .introduce-in .more i{ display: inline-block;width: 0.22rem;height: 0.22rem;background: url("../assets/more1.png") no-repeat; background-size: cover;}
 .player-introduce .unfold .introduce-info{height:auto;}
 .player-introduce .unfold .more i{ display: inline-block;width: 0.22rem;height: 0.22rem;background: url("../assets/more2.png") no-repeat; background-size: cover;}
-/*.omgd{overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}*/
 
 .main-wrap .up-info{background: #F2F8F8;height: 1.18rem;border-bottom: 1px solid #BFCACA; }
 
@@ -116,20 +115,129 @@ background-size: cover; vertical-align: top;margin: 0.06rem 0.02rem 0 0;}
 .tag-list li a { color: #84BFF6;}
 
 /*评论模块*/
-.main-wrap .comment {
+.main-wrap .comment { margin: 0.1rem 0 0; background: #F2F8F8;}
+
+.comment .hd h3 {line-height: 0.42rem;margin: 0.2rem 0;font-size: 0.3rem;color: #222;}
+.comment .bd {width: 7rem;margin: 0 auto;}
+.comment .bd dl { margin: 0 0 0.25rem;}
+.comment .bd dt {float: left;width: 0.66rem;margin: 0 0.34rem 0 0;position: relative;}
+.comment .bd dt img {display: block;width: 0.66rem;height: 0.66rem;border-radius: 0.66rem;}
+.comment .bd dd {width: 6rem;padding: 0 0 0.2rem;border-bottom: 1px solid #dedede;overflow: hidden;}
+.comment .bd dd h4 {font-size: 0.3rem;overflow: hidden;color: #222222;}
+.comment .bd dd h4 * {  float: left;}
+.comment .bd dd h4 span { height: 0.3rem;line-height: 0.3rem;}
+.comment .bd dd p {margin: 0.2rem 0;font-size: 0.26rem;color: #969696;}
+.comment .bd dd .time {float: left;font-size: 0.22rem;color: #84BFF6;}
+.comment .bd dd .zan,
+.comment .bd dd .pinglun{ float: right; font-size: 0.22rem; color: #272536;}
+.comment .bd dd .zan{    margin-right: 0.15rem;}
+.comment .bd dd .zan i,
+.comment .bd dd .pinglun i{display: inline-block;width: 0.3rem;height: 0.3rem;margin: 0 0.15rem;}
+.comment .bd dd .zan i {  background: url("../assets/zan.png") no-repeat;background-size: cover;}
+.comment .bd dd .pinglun i{ background: url("../assets/pinglun.png") no-repeat;background-size: cover;}
+/*版权信息*/
+footer {width: 7rem;padding: 0.25rem 0.25rem;font-size: 0.24rem;color: #666;text-align: center;background: #DCE3E3;}
+footer p{line-height: 0.48rem;    color: #222;}
+
+
+/*剧集*/
+.player-program {
     margin: 0.1rem 0 0;
-    padding: 0 0 0.1rem;
+    padding: 0.1rem 0 0.28rem;
     background: #F2F8F8;
 }
-
-.comment .hd h3 {
-    line-height: 0.42rem;
-    margin: 0.2rem 0;
+.player-program .hd {
+    width: 7rem;
+    padding: 0.2rem 0;
+    margin: 0 auto;
+}
+.player-program .hd h3 {
     font-size: 0.3rem;
-    color: #222;
+}
+.player-program .hd h3 em {
+    padding: 0 0 0 0.3rem;
+    font-size: 0.2rem;
+    color: #999;
+}
+.player-program .hd h3 em i {
+    color: #84BFF6;
+    font-style: normal;
+}
+.player-program .bd {
+    width: 7rem;
+    margin: 0.05rem auto 0;
+}
+
+.player-program .bd .tabs {
+    float: left;
+    height: 0.42rem;
+    overflow: hidden;
+}
+.player-program .bd .tabswrap{
+    width: 7.5rem;
+    padding: 0 0.25rem 0.15rem;
+    margin-left: -0.25rem;
+    box-sizing: border-box;
+}
+.player-program .bd .tabswrap a {
+    float: left;
+    display: inline;
+    width: 1.25rem;
+    height: 0.42rem;
+    margin: 0 0.15rem 0 0;
+    line-height: 0.42rem;
+    text-align: center;
+    font-size: 0.2rem;
+    color: #969696;
+}
+.player-program .bd .tabswrap .cur {
+    color: #fff;
+    background: #00afec;
+    border-radius: 0.42rem;
 }
 
 
+
+.player-program .bd .tabcon .nums{
+    width: 7.5rem;
+    padding-top: 0.15rem;
+    padding-left: 0.25rem;
+    margin-left: -0.25rem;
+    box-sizing: border-box;
+    border-top: 1px solid #BFCACA;
+}
+.player-program .bd .tabcon .nums a {
+    float: left;
+    width: 1.18rem;
+    height: 0.46rem;
+    margin: 0.1rem 0.23rem 0 0;
+    line-height: 0.46rem;
+    text-align: center;
+    font-size: 0.26rem;
+    color: #84BFF6;
+    background: #FFFFFF;
+    border: 1px solid #84BFF6;
+    border-radius: 0.46rem;
+}
+.player-program .bd .tabcon .nums .cur {
+    color: #00afec;
+    background: #f2f9fc;
+    border: 1px solid #00afec;
+}
+
+.player-program .bd .fenji .nums a{
+    width: 2.8rem;
+    height: 0.7rem;
+    padding: 0.12rem 0.15rem;
+    overflow: hidden;
+    margin: 0.1rem 0.23rem 0 0;
+    line-height: 0.35rem;
+    text-align: center;
+    font-size: 0.26rem;
+    color: #84BFF6;
+    background: #FFFFFF;
+    border: 1px solid #84BFF6;
+    border-radius: 0.94rem;}
 
 
 
