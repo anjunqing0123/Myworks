@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>02手机突出展示（简化版）</title>
+<link rel="stylesheet" type="text/css" href="reset.css" />
+<style type="text/css">
+	
+	body{
+		background-color:#060F2E;
+	}
+	.list{
+		width:1000px;
+		height:458px;
+		margin:100px auto 0;
+		/*background-color:yellowgreen;	*/
+	}
+	.list li{
+		width:320px;
+		height:426px;
+		float:left;
+		background:url(img/01.jpg);
+	}
+	.list li.current{
+		width:360px;
+		height:458px;
+		margin-top:-16px;	
+	}
+	#li01.current{
+		
+		background-image:url(img/01big.jpg);
+	}
+	#li02.current{
+		
+		background-image:url(img/02big.jpg);
+	}
+	#li03.current{
+		
+		background-image:url(img/03big.jpg);
+	}
+	#li02{
+		background:url(img/02.jpg);	
+	}
+	#li03{
+		background:url(img/03.jpg);
+	}
+
+
+</style>
+</head>
+
+<body>
+	<ul class="list">
+    	<li id="li01"></li>
+        <li id="li02"></li>
+        <li id="li03"></li>
+    </ul>
+</body>
+</html>
+<script type="text/javascript">
+
+	//当鼠标移上li01时，让li01具备current类
+	//事件源：li01
+	//事件类型：移上
+	//执行指令：....
+	var li01=document.getElementById('li01');
+	li01.onmouseenter=function(){
+		li01.className='current';
+	};
+	
+	
+	//当鼠标离开li01时，让LI01清空current
+	li01.onmouseleave=function(){
+		li01.className='';
+	};
+	
+	var li02=document.getElementById('li02');
+	li02.onmouseenter=function(){
+		li02.className='current';
+	};
+	
+	
+	//当鼠标离开li01时，让LI01清空current
+	li02.onmouseleave=function(){
+		li02.className='';
+	};
+	
+	var li03=document.getElementById('li03');
+	li03.onmouseenter=function(){
+		li03.className='current';
+	};
+	
+	
+	//当鼠标离开li01时，让LI01清空current
+	li03.onmouseleave=function(){
+		li03.className='';
+	};
+	
+
+</script>
+
+
+
+
+

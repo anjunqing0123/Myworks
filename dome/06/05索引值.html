@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>05索引值</title>
+	<style type="text/css">
+		ul,li{
+			list-style: none;
+		}
+		ul{
+			width: 500px;
+			margin: 100px auto 0;
+		}
+		li{
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			background-color: #ccc;
+			margin-bottom: 8px;
+		}
+		div{
+			height: 20px;
+			background-color: #000;
+			color: #fff;
+			line-height: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var aLi=$('li');
+
+			aLi.click(function(event) {
+				
+				alert($(this).index());
+			});
+
+			
+
+		});
+	</script>
+</head>
+<body>
+	<ul>
+		<li id="myLiId">0000</li>
+		<li>1111</li>
+		<li class="myLi">2222</li>
+		<li>3333</li>
+		<li><div>4444</div></li>
+		<li></li>
+		<li></li>
+		<li class="myLi">3333</li>
+		<li></li>
+		<li class="myLi"></li>
+	</ul>
+</body>
+</html>

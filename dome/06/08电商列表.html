@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>08电商列表</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		.box{
+			width: 620px;
+			border: 1px solid #000;
+			margin: 100px auto 0;
+			padding-bottom: 10px;
+		}
+		.box li{
+			width: 206px;
+			height: 45px;
+			float: left;
+		}
+		.box li a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			font-size: 15px;
+			color: #000;
+			text-align: center;
+			line-height: 45px;
+		}
+		.btn{
+			width: 200px;
+			height: 25px;
+			border: 1px solid #000;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 25px;
+			background: url(images/down.gif) no-repeat 30px center;
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			//JQ初始化CSS
+			var aLi=$('.list li:gt(2):not(:last)');
+			aLi.hide();
+
+			var btn=$('.btn');
+			//开关变量：用来实现一个元素具备正反两种状态
+			//默认是正面
+			var onOff=true;
+
+			btn.click(function(event) {
+				
+				// alert(onOff);
+				if(onOff==true){
+
+					//如果是正面
+					//让内容显示
+					//让文字更改
+					//让三角变成上三角
+					aLi.stop().slideDown();
+					btn.html('隐藏所有内容');
+					btn.css('background-image', 'url(images/up.gif)');
+
+					//做完正面的事以后，让开关变量变成反面，以便下一次进入反面
+					onOff=false;
+
+				}else{
+
+					//如果是反面
+					//让内容隐藏
+					//让文字还原
+					//让三角还原成下三角
+					aLi.stop().slideUp();
+					btn.html('显示所有内容');
+					btn.css('background-image', 'url(images/down.gif)');
+					//做完反面的事以后，让开关变量变成正面，以便下一次进入正面
+					onOff=true;
+
+				}
+
+				
+
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<div class="box">
+		<ul class="list clearfix">
+			<li><a href="javascript:;">佳能</a></li>
+			<li><a href="javascript:;">索尼</a></li>
+			<li><a href="javascript:;">三星</a></li>
+			<li><a href="javascript:;">尼康</a></li>
+			<li><a href="javascript:;">松下</a></li>
+			<li><a href="javascript:;">卡西欧</a></li>
+			<li><a href="javascript:;">富士</a></li>
+			<li><a href="javascript:;">柯达</a></li>
+			<li><a href="javascript:;">宾得</a></li>
+			<li><a href="javascript:;">理光</a></li>
+			<li><a href="javascript:;">奥林巴斯</a></li>
+			<li><a href="javascript:;">明基</a></li>
+			<li><a href="javascript:;">其它品牌相机</a></li>
+		</ul>
+		<div class="btn">显示所有内容</div>
+	</div>
+</body>
+</html>

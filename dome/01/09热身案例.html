@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>09热身案例</title>
+<style type="text/css">
+
+	#box{
+		width: 200px;
+		height: 200px;
+		background-color:yellowgreen;
+		border: 1px solid #000;
+		display: none;
+	}
+
+</style>
+</head>
+
+<body>
+	<button id="btn">显示或隐藏</button>
+    <div id="box"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+	
+	
+	
+	var btn=document.getElementById('btn');
+	var box=document.getElementById('box');
+	
+	//鼠标移上btn身上时，让box显示出来
+	btn.onmouseenter=function(){
+		
+		box.style.display='block';
+	
+	};
+
+
+	//鼠标离开btn身上时，让box隐藏起来
+	btn.onmouseleave=function(){
+		
+		box.style.display='none';	
+		
+	};
+
+
+
+
+
+
+
+</script>

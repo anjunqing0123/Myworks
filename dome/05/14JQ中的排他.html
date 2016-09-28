@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>14JQ中的排他</title>
+<style type="text/css">
+	button{
+		background-color:#ccc;
+	}
+</style>
+<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+<script type="text/javascript">
+	
+	$(function() {
+		
+		var aBtn=$('button');
+
+		aBtn.click(function(event) {
+			
+			//1.先还原所有
+			// aBtn.css('background-color', '#ccc');
+			//2.再控制当前
+			// $(this).css('background-color', 'yellow');
+			
+			// 2.还原除了当前的其他人
+			$(this).siblings('button').css('background-color', '#ccc');
+			// 1.控制当前
+			$(this).css('background-color', 'yellow'); 
+			
+
+		});
+
+
+	});
+
+</script>
+</head>
+
+<body>
+	<button>按钮1</button>
+    <button>按钮2</button>
+    <button>按钮3</button>
+    <button>按钮4</button>
+    <button>按钮5</button>
+</body>
+</html>

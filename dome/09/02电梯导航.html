@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>02电梯导航</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		.list{
+			width: 50px;
+			border: 1px solid #ccc;
+			border-bottom: none;
+			margin: 20px 0 0 20px;
+		}
+		.list li{
+			height: 55px;
+			border-bottom: 1px solid #ccc;
+			background: url(images/icons.png) no-repeat;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var aLi=$('.list li');
+
+			aLi.each(function(index, el) {
+				 // li00	0		0	i=0
+				 // li01	-50		0	i=-1
+				 // li02	-100	0	i=-2
+
+				 // X轴的坐标公式：i*-50
+				 // Y轴的坐标:0
+				 var x=index*-50;
+				 $(el).css('background-position', x+'px 2px');
+
+			}).hover(function() {
+				
+				// 鼠标悬停时：
+				// li00	0	    -55	  i=0
+				// li01	-50	    -55	  i=1
+				// li02	-100	-55	  i=2
+				// X轴的坐标公式：i*-50
+				// Y轴的坐标:-55
+				var i=$(this).index();
+				var x=i*-50;
+				$(this).css('background-position', x+'px -53px');
+
+
+			}, function() {
+				
+				 // li00	0		0	i=0
+				 // li01	-50		0	i=-1
+				 // li02	-100	0	i=-2
+
+				 // X轴的坐标公式：i*-50
+				 // Y轴的坐标:0
+				 var i=$(this).index();
+				 var x=i*-50;
+				 $(this).css('background-position', x+'px 2px');
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<ul class="list">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>

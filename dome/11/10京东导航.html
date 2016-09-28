@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>10京东导航</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+		.dianTi{
+			width: 30px;
+			position: fixed;
+			left: 50%;
+			margin-left: -655px;
+			top: 50%;
+			cursor: pointer;
+			background-color: #fff;
+			display: none;
+		}
+		.dianTi li{
+			width: 30px;
+			height: 29px;
+			border-bottom: 1px dotted #ccc;
+			text-align: center;
+			line-height: 29px;
+			position: relative;
+		}
+		.dianTi li div{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			color: #C81624;
+			background-color: #fff;
+			display: none;
+		}
+		.dianTi li.current div{
+			display: block;
+		}
+		.dianTi li:hover div{
+			display: block;
+			background-color: #C81624;
+			color: #fff;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			//JQ初始化CSS
+			var dianTiObj=$('.dianTi');
+			dianTiObj.css('margin-top', dianTiObj.height()/-2);
+			var dianTiLi=dianTiObj.children('li');
+
+			var f1Top=$('.f1').offset().top-300;
+			var f2Top=$('.f2').offset().top-150;
+			var f3Top=$('.f3').offset().top-120;
+			var f4Top=$('.f4').offset().top-120;
+			var f5Top=$('.f5').offset().top-120;	
+
+			//封装监测楼层功能
+			function testLouCeng(event) {
+				
+				// console.log('滚动ing...')
+				var windowEatTop=$(this).scrollTop();
+
+				if(windowEatTop>=f5Top){
+
+					//到达5楼
+					dianTiObj.show();
+					dianTiLi.eq(4).addClass('current').siblings('li').removeClass('current');
+
+				}else if(windowEatTop>=f4Top){
+
+					//到达4楼
+					dianTiObj.show();
+					dianTiLi.eq(3).addClass('current').siblings('li').removeClass('current');
+
+				}else if(windowEatTop>=f3Top){
+
+					//到达3楼
+					dianTiObj.show();
+					dianTiLi.eq(2).addClass('current').siblings('li').removeClass('current');
+
+				}else if(windowEatTop>=f2Top){
+
+					//到达2楼
+					dianTiObj.show();
+					dianTiLi.eq(1).addClass('current').siblings('li').removeClass('current');
+
+				}else if(windowEatTop>=f1Top){
+
+					//到达1楼
+					dianTiObj.show();
+					dianTiLi.eq(0).addClass('current').siblings('li').removeClass('current');
+
+				}else{
+
+					//不在楼层内，隐藏电梯
+					dianTiObj.hide();
+
+				}
+
+
+			}
+
+			//监测楼层
+			$(window).scroll(testLouCeng);
+
+
+			//跳转楼层
+			dianTiLi.click(function(event) {
+				
+				//为什么current会跟着满世界跑？
+				//因为单击时，做动画，动画会触发window.scroll事件
+
+
+				//单击时，需要移除scroll事件；
+				//但是单击跳转这个功能完成以后，还需要重新拥有scroll事件去继续监测楼层
+				$(window).off('scroll');
+
+				//移除了scroll事件以后，标签身上的current就不会自动检测，需要
+				//这里手动赋予一下
+				$(this).addClass('current').siblings('li').removeClass('current');
+
+				var i=$(this).index();
+				if(i==4){
+
+					$('html,body').stop().animate({
+						'scrollTop':f5Top+120
+					}, 500,function(){
+
+						//进入这里，代表跳转功能完成了，
+						//重启window.scroll事件
+						$(window).scroll(testLouCeng);
+
+					});
+
+				}else if(i==3){
+
+					$('html,body').stop().animate({
+						'scrollTop':f4Top+120
+					}, 500,function(){
+
+						//进入这里，代表跳转功能完成了，
+						//重启window.scroll事件
+						$(window).scroll(testLouCeng);
+
+					});
+
+				}else if(i==2){
+
+					$('html,body').stop().animate({
+						'scrollTop':f3Top+120
+					}, 500,function(){
+
+						//进入这里，代表跳转功能完成了，
+						//重启window.scroll事件
+						$(window).scroll(testLouCeng);
+
+					});
+
+				}else if(i==1){
+
+					$('html,body').stop().animate({
+						'scrollTop':f2Top+120
+					}, 500,function(){
+
+						//进入这里，代表跳转功能完成了，
+						//重启window.scroll事件
+						$(window).scroll(testLouCeng);
+
+					});
+
+				}else if(i==0){
+
+					$('html,body').stop().animate({
+						'scrollTop':f1Top+120
+					}, 500,function(){
+
+						//进入这里，代表跳转功能完成了，
+						//重启window.scroll事件
+						$(window).scroll(testLouCeng);
+
+					});
+
+				}
+
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<img src="images/jd/main.jpg" height="1725" width="1210" class="main" />
+	<img src="images/jd/f1.jpg" height="767" width="1210" class="f1" />
+	<img src="images/jd/f2.jpg" height="747" width="1210" class="f2" />
+	<img src="images/jd/f3.jpg" height="609" width="1210" class="f3" />
+	<img src="images/jd/f4.jpg" height="608" width="1210" class="f4" />
+	<img src="images/jd/f5.jpg" height="748" width="1210" class="f5" />
+
+	<ul class="dianTi">
+		<li class="current">1F
+			<div>服饰</div>
+		</li>
+		<li>2F
+			<div>美妆</div>
+		</li>
+		<li>3F
+			<div>手机</div>
+		</li>
+		<li>4F
+			<div>家电</div>
+		</li>
+		<li>5F
+			<div>数码</div>
+		</li>
+	</ul>
+
+</body>
+</html>

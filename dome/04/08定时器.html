@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>08定时器</title>
+<script type="text/javascript">
+	
+	window.onload=function(){
+		
+		var aBtn=document.getElementsByTagName('button');
+		var timer,timer2;
+			
+		function fn(){
+			
+			alert('闹钟ding ding响...');	
+			
+		}
+		
+		
+		//开启单次定时器
+		aBtn[0].onclick=function(){
+			
+			
+			timer=setTimeout(function(){
+				
+				alert('定时炸弹爆炸了~');
+			
+			},2000);
+			
+		};
+		
+		
+		//开启循环定时器
+		aBtn[1].onclick=function(){
+			
+			timer2=setInterval(fn,1000);
+			
+			
+		};
+		
+		//停止单次定时器
+		aBtn[2].onclick=function(){
+			
+			clearTimeout(timer);	
+			
+		};
+		
+		//停止循环定时器
+		aBtn[3].onclick=function(){
+			
+			clearInterval(timer2);	
+			
+		};
+		
+	}
+
+
+</script>
+</head>
+
+<body>
+	<button>开启单次定时器</button>
+    <button>开启循环定时器</button>
+    <button>停止单次</button>
+    <button>停止循环</button>
+</body>
+</html>
+

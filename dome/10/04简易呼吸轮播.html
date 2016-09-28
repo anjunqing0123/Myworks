@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>04简易呼吸轮播</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		.box{
+			width: 495px;
+			height: 175px;
+			border: 1px solid #ccc;
+			margin: 100px auto 0;
+			padding: 5px 0 0 5px;
+			position: relative;
+			overflow: hidden;
+		}
+		.imgList{
+			width: 490px;
+			height: 170px;
+		}
+		.imgList li{
+			height: 170px;
+			display: none;
+		}
+		.btnList{
+			width: 120px;
+			height: 20px;
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+		}
+		.btnList li{
+			width: 20px;
+			height: 20px;
+			float: left;
+			background-color: #fff;
+			text-align: center;
+			line-height: 20px;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+		.btnList li.current{
+			background-color: pink;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			//JQ初始化CSS
+			var aImgLi=$('.imgList li');
+			aImgLi.first().show();
+			var aBtnLi=$('.btnList li');
+			aBtnLi.last().css('margin-right', 0);
+
+			//设置一个全局变量，用来模拟那个不断变化的下标
+			var num=0;
+			var timer;
+
+			aBtnLi.click(function(event) {
+				
+				// 1.做角标的排他
+				$(this).addClass('current');
+				$(this).siblings('li').removeClass('current');
+
+				// 2.让当前匹配的图片显示
+				var i=$(this).index();
+				aImgLi.eq(i).stop().fadeIn();
+				// 3.让匹配图片的小伙伴们隐藏
+				aImgLi.eq(i).siblings('li').hide();
+
+				//单击的时候，要修改内存里面的那个全局变量，以便于手动和自动之间都进行同步
+				num=i;
+
+			});
+
+			//下一张走的功能
+			function nextFn(){
+
+				//需要一个 1 2 3 4 0 1 2 3 4...
+				num++;
+				if(num>4){
+					num=0;
+				}
+				//现在的num就代表下一个XXX的序号
+
+				//让下一个角标具备current，同时，它的小伙伴们移除current
+				aBtnLi.eq(num).addClass('current').siblings('li').removeClass('current');
+
+				//让下一张图片显示，同时，它的小伙伴们隐藏
+				aImgLi.eq(num).stop().fadeIn().siblings('li').hide();
+
+			}
+
+			timer=setInterval(nextFn, 1000);
+
+			var boxObj=$('.box');
+			boxObj.hover(function() {
+				clearInterval(timer);
+			}, function() {
+				clearInterval(timer);
+				timer=setInterval(nextFn, 1000);
+			});
+
+
+		});
+	</script>
+</head>
+<body>
+	<div class="box">
+		<ul class="imgList">
+			<li><a href="javascript:;"><img src="images/taobao/01.jpg" height="170" width="490" /></a></li>
+			<li><a href="javascript:;"><img src="images/taobao/02.jpg" height="170" width="490" /></a></li>
+			<li><a href="javascript:;"><img src="images/taobao/03.jpg" height="170" width="490" /></a></li>
+			<li><a href="javascript:;"><img src="images/taobao/04.jpg" height="170" width="490" /></a></li>
+			<li><a href="javascript:;"><img src="images/taobao/05.jpg" height="170" width="490" /></a></li>
+		</ul>
+		<ol class="btnList">
+			<li class="current">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ol>
+	</div>
+</body>
+</html>

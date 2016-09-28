@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>07事件</title>
+<style type="text/css">
+
+	#box{
+		
+		width:200px;
+		height:200px;
+		background-color:yellowgreen;
+		border: 1px solid #000;	
+		
+	}
+
+</style>
+</head>
+
+<body>
+	<div id="box"></div>
+    <button id="btn1">变宽</button>
+    <button id="btn2">变高</button>
+    <button id="btn3">变色</button>
+    <button id="btn4">三变</button>
+</body>
+</html>
+<script type="text/javascript">
+
+	var btn1=document.getElementById('btn1');
+	var box=document.getElementById('box');
+	
+	//alert('外面的');
+	
+	btn1.onclick=function(){
+		
+		//alert('里面的');
+		//让box盒子变宽
+		box.style.width='400px';
+		
+	};
+	
+	//当单击变高按钮的时候，让盒子变高。
+	//事件源：变高按钮
+	//事件类型：单击
+	//执行指令：让box盒子变高
+	var btn2=document.getElementById('btn2');
+	//事件源 . 事件类型 = 执行指令
+	btn2.onclick=function(){
+		
+		box.style.height='400px';
+		
+		
+	};
+	
+	
+	//当单击变色按钮的时候，让盒子变色。
+	//事件源：变色按钮
+	//事件类型：单击
+	//执行指令：让box盒子变色
+	//事件源 . 事件类型 = 执行指令
+	var btn3=document.getElementById('btn3');
+	btn3.onclick=function(){
+	
+		box.style.backgroundColor='red';
+	
+	};
+	
+	//当单击三变按钮的时候，让盒子...。
+	//事件源：三变按钮
+	//事件类型：单击
+	//执行指令：让box盒子变宽、变高、变色
+	//事件源 . 事件类型 = 执行指令
+	var btn4=document.getElementById('btn4');
+	btn4.onclick=function(){
+	
+		box.style.width='600px';
+		box.style.height='600px';
+		box.style.backgroundColor='blue';
+		
+	};
+	
+
+</script>
+
+
+
+
+
+
+
+

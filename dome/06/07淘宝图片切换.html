@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>07淘宝图片切换</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		.box{
+			width: 300px;
+			height: 250px;
+			margin: 100px auto 0;
+			border: 1px solid pink;
+		}
+		.boxLeft,.boxRight{
+			width: 49px;
+			height: 250px;
+			float: left;
+		}
+		.boxLeft li,.boxRight li{
+			height: 27px;
+			border-bottom: 1px solid pink;
+		}
+		.boxLeft li a,.boxRight li a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			color: #333;
+			text-align: center;
+			line-height: 27px;
+
+		}
+		.boxLeft li a:hover,.boxRight li a:hover{
+			background: url(images/abg.gif);
+			color: #fff;
+			text-decoration: none;
+		}
+		.boxCenter{
+			width: 200px;
+			height: 250px;
+			border-left: 1px solid pink;
+			border-right: 1px solid pink;
+			float: left;
+		}
+		.boxCenter li{
+			height: 250px;
+			display: none;
+		}
+		.boxCenter li.current{
+			display: block;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			//JQ初始化样式
+			$('.boxLeft li:last,.boxRight li:last').css('border-bottom', 'none');
+
+			//页面中有18个LI
+			//页面中还有18个与它11对应的img
+			
+			var aLiLeft=$('.boxLeft li');
+			var aLiRight=$('.boxRight li');
+			var aImg=$('.boxCenter li');
+
+			//左边列表
+			aLiLeft.mouseenter(function(event) {
+				
+				//1.得到当前这个LI的序号
+				var i=$(this).index();
+				// alert(i);
+
+				//2.通过序号去IMG数组里面，找当前这个IMG
+				//让当前IMG显示：实际上通过增加current类名完成
+				aImg.eq(i).attr('class', 'current');
+				//让除了当前IMG以外的IMG隐藏：实际上通过清空current类名完成
+				//找当前IMG的小伙伴们
+				aImg.eq(i).siblings().attr('class','');
+				
+			});
+
+			//右边列表
+			aLiRight.mouseenter(function(event) {
+
+				//1.得到当前这个LI的序号
+				//因为序号是相对于父级而言的，和实际需要相差9
+				var i=$(this).index()+9;
+				// alert(i);
+
+				//2.通过序号去IMG数组里面，找当前这个IMG
+				//让当前IMG显示：实际上通过增加current类名完成
+				aImg.eq(i).attr('class', 'current');
+				//让除了当前IMG以外的IMG隐藏：实际上通过清空current类名完成
+				//找当前IMG的小伙伴们
+				aImg.eq(i).siblings().attr('class','');
+
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+
+	<div class="box">
+		<ul class="boxLeft">
+			<li><a href="javascript:;">女靴</a></li>
+			<li><a href="javascript:;">雪地靴</a></li>
+			<li><a href="javascript:;">冬裙</a></li>
+			<li><a href="javascript:;">呢大衣</a></li>
+			<li><a href="javascript:;">毛衣</a></li>
+			<li><a href="javascript:;">棉服</a></li>
+			<li><a href="javascript:;">女裤</a></li>
+			<li><a href="javascript:;">羽绒服</a></li>
+			<li><a href="javascript:;">牛仔裤</a></li>
+		</ul>
+		<ul class="boxCenter">
+			<li class="current"><a href="javascript:;"><img src="images/女靴.jpg" width="200" height="250"/></a></li>
+	        <li><a href="javascript:;"><img src="images/雪地靴.jpg" width="200" height="250"/></a></li>
+	        <li><a href="javascript:;"><img src="images/冬裙.jpg" width="200" height="250"  /></a></li>
+	        <li><a href="javascript:;"><img src="images/呢大衣.jpg" width="200" height="250"/></a></li>
+	        <li><a href="javascript:;"><img src="images/毛衣.jpg" width="200" height="250"  /></a></li>
+	        <li><a href="javascript:;"><img src="images/棉服.jpg" width="200" height="250"  /></a></li>
+	        <li><a href="javascript:;"><img src="images/女裤.jpg" width="200" height="250"  /></a></li>
+	        <li><a href="javascript:;"><img src="images/羽绒服.jpg" width="200" height="250"/></a></li>
+	        <li><a href="javascript:;"><img src="images/牛仔裤.jpg" width="200" height="250"/></a></li>
+	        <li><a href="javascript:;"><img src="images/女包.jpg" width="200" height="250"  /></a></li>
+	        <li><a href="javascript:;"><img src="images/男包.jpg" width="200" height="250"  /></a></li>
+	        <li><a href="javascript:;"><img src="images/登山鞋.jpg" width="200" height="250"/></a></li>
+	        <li><a href="javascript:;"><img src="images/皮带.jpg" width="200" height="250"  /></a></li>
+	        <li><a href="javascript:;"><img src="images/围巾.jpg" width="200" height="250"  /></a></li>
+	        <li><a href="javascript:;"><img src="images/皮衣.jpg" width="200" height="250"  /></a></li>
+	        <li><a href="javascript:;"><img src="images/男毛衣.jpg" width="200" height="250"/></a></li>
+	        <li><a href="javascript:;"><img src="images/男棉服.jpg" width="200" height="250"/></a></li>
+	        <li><a href="javascript:;"><img src="images/男靴.jpg" width="200" height="250" / ></a></li>
+		</ul>
+		<ul class="boxRight">
+			<li><a href="javascript:;">女包</a></li>
+	        <li><a href="javascript:;">男包</a></li>
+	        <li><a href="javascript:;">登山鞋</a></li>
+	        <li><a href="javascript:;">皮带</a></li>
+	        <li><a href="javascript:;">围巾</a></li>
+	        <li><a href="javascript:;">皮衣</a></li>
+	        <li><a href="javascript:;">男毛衣</a></li>
+	        <li><a href="javascript:;">男棉服</a></li>
+	        <li><a href="javascript:;">男靴</a></li>
+		</ul>
+	</div>
+</body>
+</html>

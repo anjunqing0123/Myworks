@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>08京东放大镜</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		
+		.box{
+			width: 350px;
+			height: 350px;
+			border: 1px solid #ccc;
+			margin: 100px 0 0 100px;
+			position: relative;
+		}
+		.blueBox{
+			width: 150px;
+			height: 150px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: url(images/bg.png);
+			cursor: move;
+			display: none;
+		}
+		.bigBox{
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 500px;
+			top: -1px;
+			border: 1px solid #ccc;
+			background: url(images/big.jpg) no-repeat;
+			display: none;
+		}
+
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var box=$('.box');
+			var blueBox=$('.blueBox');
+			var bigBox=$('.bigBox');
+
+			box.mouseenter(function(event) {
+				
+				blueBox.show();
+				bigBox.show();
+
+			}).mouseleave(function(event) {
+				
+				blueBox.hide();
+				bigBox.hide();
+
+			}).mousemove(function(event) {
+				
+				// 1.让蓝色透明盒子跟随鼠标的移动而移动
+
+				//1.获取鼠标坐标
+				//减100，实际上减去的是margin-left的距离，因为pageX获取到的是相对于HTML 0，0而言的距离
+				//减1，因为定位是以盒子的内容部分开始，所以再减去边框的1像素
+				//减75的原因是，我想让鼠标停留在蓝色盒子中间，所以减去蓝色盒子一半的宽或高
+				var x=event.pageX-100-1-75;
+				var y=event.pageY-100-1-75;
+
+				if(x<0){
+					x=0;
+				}
+				//因为盒子的定位是以左上角为源点的，
+				//所以这里的极值因为是box的宽度减去blueBox的宽度
+				if(x>200){
+					x=200;
+				}
+
+				if(y<0){
+					y=0;
+				}
+				if(y>200){
+					y=200;
+				}
+
+				//2.同步蓝色透明盒子的top和left
+				blueBox.css({
+					'left': x,
+					'top': y
+				});
+
+
+
+				// 2.让右边的大图跟随蓝色透明盒子的移动而移动
+				//x y代表蓝盒子位移的距离
+				
+				//因为大图和小图是不一样的大小
+				//我希望的是它们移动的距离是相对而言一样
+				//就是说小图走了1/2，大图也走1/2
+				//所以，先求比例
+				//x轴 和 y轴走的距离是不一样的 
+				//X轴的比例=小盒子已经走的X轴的距离/总宽度
+				//y轴的比例=小盒子已经走的Y轴的距离/总高度
+				var biLiX=x/350;
+				var biLiY=y/350;
+				//这里要移动的是那张大图，而不是包裹大图的盒子，所以是乘以800
+				var myX=-biLiX*800;
+				var myY=-biLiY*800;
+				bigBox.css('background-position', myX+'px '+myY+'px');
+
+
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<div class="box">
+		<img src="images/small.jpg" height="350" width="350" />
+		<div class="blueBox"></div>
+		<div class="bigBox"></div>
+	</div>
+</body>
+</html>

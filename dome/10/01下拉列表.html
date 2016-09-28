@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>01下拉列表</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		.box{
+			width: 87px;
+			height: 29px;
+			border: 1px solid transparent;
+			margin: 100px auto 0;
+			background: url(images/before.png) no-repeat center center;
+			cursor: pointer;
+			position: relative;
+		}
+		.box:hover{
+			width: 87px;
+			height: 29px;
+			border-color: #ccc;
+			background-image: url(images/after.png);
+			/*border-bottom-color: #f00;*/
+		}
+		.box:hover .boxIn,.box:hover .slideBox{
+			display: block;
+		}
+		.boxIn{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			border-bottom: 1px solid #fff;
+			display: none;
+		}
+		.slideBox{
+			width: 316px;
+			height: 60px;
+			border: 1px solid #ccc;
+			position: absolute;
+			right: -1px;
+			top: 29px;
+			text-align: center;
+			line-height: 60px;
+			display: none;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			/*$('.box').hover(function() {
+				$('.boxIn').show();
+				$('.slideBox').slideDown();
+			}, function() {
+				$('.slideBox,.boxIn').hide();
+			});
+			*/
+
+
+		});
+	</script>
+</head>
+<body>
+	<div class="box">
+		<div class="slideBox">您的购物车是空的，快去挑选喜欢的商品吧！</div>
+		<div class="boxIn"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>16排他性</title>
+<style type="text/css">
+	button{
+		background-color:#ccc;
+	}
+</style>
+<script type="text/javascript">
+	
+	window.onload=function(){
+		
+		var aBtn=document.getElementsByTagName('button');
+		//外面这个for循环，在页面加载完毕以后，就会被执行完毕
+		for(var i=0; i<aBtn.length; i++){
+			
+			aBtn[i].onclick=function(){
+				
+				//里面这个for循环，要等待事件触发，才会被执行；
+				//事件每触发一次，都会被执行一次。
+				//让所有的btn还原成#ccc
+				for(var i=0; i<aBtn.length; i++){
+					aBtn[i].style.backgroundColor='#ccc';	
+				}
+				
+				
+				//让用户当前正在操作的这个btn变成黄色
+				this.style.backgroundColor='yellow';
+				
+				
+				
+			}	
+			
+		}
+		
+		
+	};
+
+
+</script>
+</head>
+
+<body>
+	<button>按钮1</button>
+    <button>按钮2</button>
+    <button>按钮3</button>
+    <button>按钮4</button>
+    <button>按钮5</button>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>13淘宝图片切换</title>
+<link rel="stylesheet" type="text/css" href="reset.css" />
+<style type="text/css">
+
+	.box{
+		width:360px;
+		height:431px;
+		border:1px solid #000;
+		margin:100px auto 0;
+	}
+	#bigBox{
+		height:360px;
+		border-bottom:1px solid #000;
+		background:url(img/taobao/01big.jpg);
+	}
+	.list{
+		height:70px;
+	}
+	.list li{
+		float:left;
+		width:70px;
+		height:70px;
+	}
+
+</style>
+</head>
+
+<body>
+
+	<div class="box">
+    	<div id="bigBox"></div>
+        <ul class="list">
+        	<li id="li01"><img src="img/taobao/01.jpg" width="70" height="70" /></li>
+        	<li id="li02"><img src="img/taobao/02.jpg" width="70" height="70" /></li>
+            <li id="li03"><img src="img/taobao/03.jpg" width="70" height="70" /></li>
+            <li id="li04"><img src="img/taobao/04.jpg" width="70" height="70" /></li>
+            <li id="li05"><img src="img/taobao/05.jpg" width="70" height="70" /></li>
+        </ul>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+
+	//当鼠标移上LI01身上，将bigBox的背景图变成01big.jpg
+	/*var bigBox=document.getElementById('bigBox');
+	
+	var li01=document.getElementById('li01');
+	li01.onmouseenter=function(){
+	
+		bigBox.style.backgroundImage='url(img/taobao/01big.jpg)';
+	
+	
+	};
+
+	//当鼠标移上LI02身上，将bigBox的背景图变成02big.jpg
+	var li02=document.getElementById('li02');
+	li02.onmouseenter=function(){
+	
+		bigBox.style.backgroundImage='url(img/taobao/02big.jpg)';
+	
+	
+	};*/
+	
+	//当鼠标移上LI01身上，将bigBox的背景图变成01big.jpg
+	//当鼠标移上LI02身上，将bigBox的背景图变成02big.jpg
+	//当鼠标移上LI03身上，将bigBox的背景图变成03big.jpg
+	//当鼠标移上LI04身上，将bigBox的背景图变成04big.jpg
+	//当鼠标移上LI05身上，将bigBox的背景图变成05big.jpg
+	//单一（通用）的功能：当鼠标移上X时，将bigBox的背景图变成Y
+	var bigBox=document.getElementById('bigBox');
+	function changeBigBoxBgI(x,y){
+		
+		//需要：x=li01~li05（活的值）
+		//y=01big.jpg~05big.jpg
+		//x:代表不断在变化的li
+		//y:代表不断在变化的图片路径
+		var changeLi=document.getElementById(x);
+		changeLi.onmouseenter=function(){
+		
+			bigBox.style.backgroundImage=y;
+		
+		};
+	
+	};
+	changeBigBoxBgI('li01','url(img/taobao/01big.jpg)');
+	changeBigBoxBgI('li02','url(img/taobao/02big.jpg)');
+	changeBigBoxBgI('li03','url(img/taobao/03big.jpg)');
+	changeBigBoxBgI('li04','url(img/taobao/04big.jpg)');
+	changeBigBoxBgI('li05','url(img/taobao/05big.jpg)');
+	
+	/*简化代码的步骤：
+	（1）找相似的代码段；
+	（2）写一个自定义函数，把相似的代码段放入函数体；
+	（3）观察需要改变的数值有几个，就写几个参数；
+	（4）替换那些要更改的值，并修改、语义化变量名。*/
+	
+	
+	
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+

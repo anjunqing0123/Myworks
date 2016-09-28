@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>05even对象</title>
+	<style type="text/css">
+		#box{
+			width: 500px;
+			height: 500px;
+			background-color: yellowgreen;
+			border: 1px solid #000;
+			margin: 50px 0 0 50px;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+
+		$(function() {
+			
+			var box=$('#box');
+
+			box.mousemove(function(event) {
+				//飞机 黑匣子 
+				//记录飞机的信息	经纬度   时刻表  油表
+				
+				//event存放着和事件相关的信息
+				// console.log(event);
+				var x=event.pageX;
+				var y=event.pageY;
+				// console.log(y);
+				
+				box.html(x+'px,'+y+'px'); 
+				
+
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+	<div id="box">100,100</div>
+</body>
+</html>

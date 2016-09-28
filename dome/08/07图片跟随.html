@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>07图片跟随</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		.list{
+			width: 586px;
+			height: 182px;
+			margin: 100px 0 0 100px;
+		}
+		.list li{
+			width: 281px;
+			height: 180px;
+			border: 1px solid #ccc;
+			float: left;
+		}
+		.list li img{
+			width: 281px;
+			height: 180px;
+		}
+		.bigImg{
+			width: 500px;
+			height: 318px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: none;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			//JQ初始化样式
+			$('.list li:first').css('margin-right', 20);
+
+			var aLi=$('.list li');
+			var aBigImg=$('.bigImg');
+			//将I定义成全局，是为了方便其他事件类型中调用它，
+			//因为mouseenter是第一个发生的事件
+			var i;
+
+			aLi.mouseenter(function(event) {
+				
+				//让与当前LI相匹配的大图显示
+				//1.得到当前LI的序号
+				i=$(this).index();
+				//2.再通过序号找大图
+				aBigImg.eq(i).show('fast');
+
+
+			}).mouseleave(function(event) {
+				
+				aBigImg.eq(i).hide();
+
+
+			}).mousemove(function(event) {
+				
+				//让大图跟随鼠标移动
+				//这里加上20，是为了防止鼠标移动时的误差，避免鼠标落在了bigImg身上
+				//因为一旦落在了bigImg身上，就会触发aLi身上mouseleave事件
+				var x=event.pageX+20;
+				var y=event.pageY+20;
+
+				//让鼠标移动的坐标和相应大图的left top进行同步
+				aBigImg.eq(i).css({
+					'left': x,
+					'top': y
+				});
+
+
+			});
+
+
+		});
+	</script>
+</head>
+<body>
+	<ul class="list">
+		<li><a href="javascript:;"><img src="images/ad03.jpg" /></a></li>
+		<li><a href="javascript:;"><img src="images/ad04.jpg" /></a></li>
+	</ul>
+
+	<img src="images/ad03.jpg" class="bigImg" />
+	<img src="images/ad04.jpg" class="bigImg" />
+</body>
+</html>

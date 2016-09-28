@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>08JQ控制C</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+			background-color: yellowgreen;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var aBtn=$('button');
+			var myDiv=$('div');
+
+			//变宽
+			aBtn.eq(0).click(function(event) {
+				myDiv.css('width', 400);
+			});
+
+			//变高
+			aBtn.eq(1).click(function(event) {
+				myDiv.css('height', '400px');
+			});
+
+			//变色
+			aBtn.eq(2).click(function(event) {
+				myDiv.css('backgroundColor', 'yellow');
+			});
+
+			//三色
+			aBtn.eq(3).click(function(event) {
+				myDiv.css({
+					'width':600,
+					'height':600,
+					'background-color':'red'					
+				});
+			});
+
+			//获取
+			aBtn.eq(4).click(function(event) {
+				alert(myDiv.css('width'));
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<button>变宽</button>
+	<button>变高</button>
+	<button>变色</button>
+	<button>三变</button>
+	<button>获取</button>
+	<div></div>
+</body>
+</html>

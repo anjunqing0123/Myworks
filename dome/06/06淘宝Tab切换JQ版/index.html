@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>淘宝网 - 淘！我喜欢</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+<script type="text/javascript">
+    
+    $(function() {
+        
+        var aLi=$('#tabUpId li');
+        var aUl=$('#tabDownId ul');
+
+        aLi.mouseenter(function(event) {
+           
+            //先让我具备current
+            //再让我的小伙伴们清空current
+            $(this).attr('class', 'current');
+            $(this).siblings().attr('class', '');
+
+            //获取当前LI的序号
+            var i=$(this).index();
+
+            //通过序号去找当前UL
+            //先让当前UL显示
+            //再让当前UL的小伙伴们隐藏
+            aUl.eq(i).show();
+            aUl.eq(i).siblings().hide();
+
+        });
+
+
+
+
+
+
+
+
+
+    });
+
+</script>
+</head>
+
+<body>
+<!--顶部结构开始-->
+<div class="top">
+    <div class="inTop">
+    	<ul class="inTop-l">
+        	<li><a href="#" class="hot">亲，请登录</a> <a href="#">免费注册</a></li>
+            <li><a href="#">手机逛淘宝</a></li>
+        </ul>
+        <ul class="inTop-r">
+        	<li>
+            	<a href="#">我的淘宝<i class="triangle">&#xe620;</i></a>
+                <ul class="dropMenu">
+                	<li><a href="#">已买到的宝贝</a></li>
+                    <li><a href="#">我的足迹</a></li>
+                    <li><a href="#">爱逛街</a></li>
+                    <li><a href="#">淘宝达人</a></li>
+                    <li><a href="#">新欢</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nobg"><i class="hot">&#xe601;</i>购物车<i class="hot">&#xe620;</i></a></li>
+            <li><a href="#"><i class="star">&#xe603;</i>收藏夹<i class="triangle">&#xe620;</i></a></li>
+            <li><a href="#" class="nobg">商品分类</a></li>
+            <li>　|　</li>
+            <li><a href="#">卖家中心<i class="triangle">&#xe620;</i></a></li>
+            <li><a href="#">联系客服<i class="triangle">&#xe620;</i></a></li>
+            <li><a href="#"><i class="hot">&#xe602;</i>网站导航<i class="hot">&#xe620;</i></a></li>
+        </ul>
+    </div>
+</div>
+<!--顶部结构结束-->
+
+<!--头部结构开始-->
+<div class="header">
+	<h1><a href="#">淘宝网</a></h1>
+    <div class="searchArea">
+    	<ul>
+        	<li><a href="#" class="current">宝贝</a></li>
+            <li><a href="#">天猫</a></li>
+            <li><a href="#">店铺</a></li>
+        </ul>
+        <div class="searchCon">
+        	<input type="text" />
+            <button>搜 索</button>
+            <a href="#">高级<br />搜索</a>
+            <i class="zoom">&#xe607;</i>
+            <i class="camera">&#xe61c;</i>
+            <span>水果榨汁机</span>
+        </div>
+        <div class="hotWords">
+        	<a href="#">秋季打底衫</a>
+            <a href="#">毛呢大衣</a>
+            <a href="#">羽绒衣</a>
+            <a href="#">秋款男外套</a>
+            <a href="#">健身器材</a>
+            <a href="#">真皮女靴</a>
+            <a href="#">雪地靴</a>
+            <a href="#">男鞋</a>
+            <a href="#">行车记录仪</a>
+            <a href="#">套装裙</a>
+            <a href="#">冬帽</a>
+            <a href="#">儿童玩具</a>
+            <a href="#" class="more">
+            	更多
+                <em></em>
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <div class="code">
+    	<a href="#">
+        	手机逛淘宝
+    		<img src="images/code_img.png" />
+        </a>
+        <i>&#xe60b;</i>
+    </div>
+</div>
+<!--头部结构结束-->
+
+<!--首屏主体结构开始-->
+<div class="wrap clearfix">
+	<div class="service">
+    	<h2>淘宝特色服务</h2>
+        <dl>
+        	<dt><s class="ztsc"></s>主题市场</dt>
+            <dd class="first">
+            	<div class="cathook">
+                	<a href="#">女装</a>
+                    <a href="#">男装</a>
+                    <a href="#">鞋靴</a>
+                    <a href="#">箱包</a>
+                    <i>&#xe604;</i>
+                </div>
+                <div class="cathook">
+                	<a href="#">女装</a>
+                    <a href="#">男装</a>
+                    <a href="#">鞋靴</a>
+                    <a href="#">箱包</a>
+                    <i>&#xe604;</i>
+                </div>
+                <div class="cathook">
+                	<a href="#">女装</a>
+                    <a href="#">男装</a>
+                    <a href="#">鞋靴</a>
+                    <a href="#">箱包</a>
+                    <i>&#xe604;</i>
+                </div>
+                <div class="cathook">
+                	<a href="#">女装</a>
+                    <a href="#">男装</a>
+                    <a href="#">鞋靴</a>
+                    <a href="#">箱包</a>
+                    <i>&#xe604;</i>
+                </div>
+                <div class="cathook">
+                	<a href="#">女装</a>
+                    <a href="#">男装</a>
+                    <a href="#">鞋靴</a>
+                    <a href="#">箱包</a>
+                    <i>&#xe604;</i>
+                </div>
+                <div class="cathook">
+                	<a href="#">女装</a>
+                    <a href="#">男装</a>
+                    <a href="#">鞋靴</a>
+                    <a href="#">箱包</a>
+                    <i>&#xe604;</i>
+                </div>
+            </dd>
+            <dt><s class="tsfw"></s>特色服务</dt>
+            <dd>
+            	<a href="#" class="c-6">淘宝女人</a>
+                <a href="#" class="c-6">淘宝男人</a>
+                <a href="#" class="c-3">中老年</a>
+                <a href="#" class="c-6">闲鱼</a>
+                <a href="#" class="c-6">拍卖会</a>
+                <a href="#" class="c-3">全球购</a>
+                <a href="#" class="c-6">批发量贩</a>
+                <a href="#" class="c-6">淘宝众筹</a>
+                <a href="#" class="c-3">爱逛街</a>
+                <a href="#" class="c-6">中国质造</a>
+                <a href="#" class="c-6">淘女郎</a>
+                <a href="#" class="c-3">企业购</a>
+            </dd>
+            <dt><s class="yhcx"></s>优惠促销</dt>
+            <dd>
+            	<a href="#" class="c-6">天天特价</a>
+                <a href="#" class="c-6">试用</a>
+                <a href="#" class="c-3">清仓</a>
+                <a href="#" class="c-6">一元起拍</a>
+                <a href="#" class="c-6">淘金币</a>
+                <a href="#" class="c-3">抢新</a>
+                <a href="#" class="c-6">淘特来斯</a>
+                <a href="#" class="c-6">本地团</a>
+                <a href="#" class="c-3">农场</a>
+            </dd>
+            <dd class="last">
+            	<a href="#" class="c-6">阿里旺旺</a>
+                <a href="#" class="c-6">支付宝</a>
+                <a href="#" class="c-3">钉钉</a>
+            </dd>
+        </dl>
+        <div class="cathook-bd">
+        	<div class="cat-list">
+            	<div class="cat-item">
+                	<div class="hd">
+                    	<h3>女装</h3>
+                        <a href="#" class="more">
+                            更多
+                            <em></em>
+                            <span></span>
+                        </a>
+                    </div>
+					<div class="detail">
+                        <a href="#">春新品</a>
+                        <a href="#">韩版</a>
+                        <a href="#" class="hot">连衣裙</a>
+                        <a href="#">打底衫</a>
+                        <a href="#">裤子</a>
+                        <a href="#">套装</a>
+                        <a href="#">半身裙</a>
+                        <a href="#">限量抢新</a>
+                        <a href="#" class="hot">毛针织衫</a>
+                        <a href="#">毛衣</a>
+                        <a href="#">风衣</a>
+                        <a href="#" class="hot">卫衣</a>
+                        <a href="#">呢外套</a>
+                        <a href="#">皮草</a>
+                        <a href="#" class="hot">妈妈装</a>
+                        <a href="#">大码</a>
+                        <a href="#">羽绒</a>
+                        <a href="#">短外套</a>
+                        <a href="#">棉衣</a>
+                        <a href="#">90后</a>
+                        <a href="#">品牌特卖</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-rmd"></div>
+        </div>
+        <div class="cathook-bd"></div>
+        <div class="cathook-bd"></div>
+        <div class="cathook-bd"></div>
+        <div class="cathook-bd"></div>
+        <div class="cathook-bd"></div>
+    </div>
+    <div class="main">
+    	<div class="nav">
+        	<ul>
+            	<li><a href="#" class="hot">天猫</a></li>
+                <li><a href="#" class="hot">聚划算</a></li>
+                <li><a href="#" class="hot">超市</a></li>
+                <li><a href="#" class="hot">头条</a></li>
+                <li class="hot">|</li>
+                <li><a href="#">阿里旅行</a></li>
+                <li><a href="#">电器城</a></li>
+                <li><a href="#">淘抢购</a></li>
+                <li><a href="#">司法拍卖</a></li>
+                <li><a href="#">苏宁易购</a></li>
+                <li><a href="#">美妆闪购</a></li>
+                <li><a href="#">智能生活</a></li>
+                <li><a href="#">特色中国</a></li>
+            </ul>
+        </div>
+        <!--图片展示结构开始-->
+        <div class="imgShow">
+        	<div class="promo">
+            	
+            	<ul>
+            	  <li><a href="#"><img src="images/pro01.jpg" /></a></li>
+                  <li><a href="#"><img src="images/pro02.jpg" /></a></li>
+                  <li><a href="#"><img src="images/pro03.jpg" /></a></li>
+                  <li><a href="#"><img src="images/pro04.jpg" /></a></li>
+                  <li><a href="#"><img src="images/pro01.jpg" /></a></li>
+            	</ul>
+                <ol>
+                  <li class="current"></li><li></li><li></li><li></li><li></li>
+                </ol>
+                <i class="left">&#xe617;</i>
+                <i class="right">&#xe604;</i>
+            </div>
+            <div class="tanx-up">
+            	<a href="#"><img src="images/tanx-01.png" /></a>
+            </div>
+            <div class="tmall">
+            	<ul>
+            	  <li>
+                  	<a href="#"><img src="images/t01.png" /></a>
+                  	<a href="#"><img src="images/t02.png" /></a>
+                    <a href="#"><img src="images/t03.png" /></a>
+                    <a href="#"><img src="images/t04.png" /></a>
+                  </li>
+                  <li>
+                  	<a href="#"><img src="images/t01.png" /></a>
+                  	<a href="#"><img src="images/t02.png" /></a>
+                    <a href="#"><img src="images/t03.png" /></a>
+                    <a href="#"><img src="images/t04.png" /></a>
+                  </li>
+                  <li>
+                  	<a href="#"><img src="images/t01.png" /></a>
+                  	<a href="#"><img src="images/t02.png" /></a>
+                    <a href="#"><img src="images/t03.png" /></a>
+                    <a href="#"><img src="images/t04.png" /></a>
+                  </li>
+                  <li>
+                  	<a href="#"><img src="images/t01.png" /></a>
+                  	<a href="#"><img src="images/t02.png" /></a>
+                    <a href="#"><img src="images/t03.png" /></a>
+                    <a href="#"><img src="images/t04.png" /></a>
+                  </li>
+                  <li>
+                  	<a href="#"><img src="images/t01.png" /></a>
+                  	<a href="#"><img src="images/t02.png" /></a>
+                    <a href="#"><img src="images/t03.png" /></a>
+                    <a href="#"><img src="images/t04.png" /></a>
+                  </li>
+                  <li>
+                  	<a href="#"><img src="images/t01.png" /></a>
+                  	<a href="#"><img src="images/t02.png" /></a>
+                    <a href="#"><img src="images/t03.png" /></a>
+                    <a href="#"><img src="images/t04.png" /></a>
+                  </li>
+            	</ul>
+                <ol>
+                  <li class="current"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ol>
+                <i class="left">&#xe617;</i>
+                <i class="right">&#xe604;</i>
+                <span class="tmall-icon"></span>
+            </div>
+            <div class="tanx-down">
+            	<a href="#"><img src="images/tan02.jpg" /></a>
+            </div>
+        </div>
+        <!--图片展示结构结束-->
+		
+        <!--侧栏结构开始-->	        
+        <div class="sidebar">
+        	<div class="tab bd">
+            	<div class="tab-hd">
+                	<ul class="clearfix" id="tabUpId">
+                        <li class="current"><a href="javascript:;">公告</a></li>
+                        <li><a href="javascript:;">规则</a></li>
+                        <li><a href="javascript:;">论坛</a></li>
+                        <li><a href="javascript:;">安全</a></li>
+                        <li><a href="javascript:;">公益</a></li>
+                    </ul>
+                </div>
+                <div class="tab-bd" id="tabDownId">
+                	<ul class="clearfix" style="display:block;">
+                    	<li><a href="#">公告发货调整公告</a></li>
+                        <li><a href="#" class="hot">广告法禁用语大全</a></li>
+                        <li><a href="#">邮费争议问题汇总</a></li>
+                        <li><a href="#">炒信规则调整意见反馈</a></li>
+                    </ul>
+                    <ul class="clearfix">
+                    	<li><a href="#">规则发货调整公告</a></li>
+                        <li><a href="#" class="hot">广告法禁用语大全</a></li>
+                        <li><a href="#">邮费争议问题汇总</a></li>
+                        <li><a href="#">炒信规则调整意见反馈</a></li>
+                    </ul>
+                    <ul class="clearfix">
+                    	<li><a href="#">论坛发货调整公告</a></li>
+                        <li><a href="#" class="hot">广告法禁用语大全</a></li>
+                        <li><a href="#">邮费争议问题汇总</a></li>
+                        <li><a href="#">炒信规则调整意见反馈</a></li>
+                    </ul>
+                    <ul class="clearfix">
+                    	<li><a href="#">安全发货调整公告</a></li>
+                        <li><a href="#" class="hot">广告法禁用语大全</a></li>
+                        <li><a href="#">邮费争议问题汇总</a></li>
+                        <li><a href="#">炒信规则调整意见反馈</a></li>
+                    </ul>
+                    <ul class="clearfix">
+                    	<li><a href="#">公益发货调整公告</a></li>
+                        <li><a href="#" class="hot">广告法禁用语大全</a></li>
+                        <li><a href="#">邮费争议问题汇总</a></li>
+                        <li><a href="#">炒信规则调整意见反馈</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!--会员结构开始-->
+            <div class="member bd mtf1">
+                <div class="member-bd clearfix">
+                    <a href="#">
+                        <img src="images/s.gif" />
+                        Hi!<strong>你好</strong>
+                    </a>
+                    <p>
+                    	<a href="#"><img src="images/money.png" /></a>
+                        <a class="hot" href="#">领淘金币抵钱</a> 
+                        或去 
+                        <a class="hot" href="#">会员俱乐部</a>
+                    </p>
+                </div>
+                <div class="member-ft">
+                	<a href="#" class="first"><i>&#xe618;</i> 登陆</a>
+                    <a href="#">免费注册</a>
+                    <a href="#">免费开店</a>
+                </div>
+            </div>
+            <!--会员结构结束-->
+            
+            <!--头条结构开始-->
+            <div class="headlines bd mtf1 clearfix">
+            	<h2>淘宝头条</h2>
+                <div class="headlines-bd">
+                	<ul>
+                    	<li><a href="#"><span>[推荐]</span>3000元一支的唇膏究竟长啥样？</a></li>
+                        <li><a href="#"><span>[热门]</span>情人节最全购物指南 过新年也</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--头条结构结束-->
+            
+            <!--生活结构开始-->
+            <div class="convenient bd mtf1">
+            	<ul class="clearfix">
+            		<li class="first">
+                    	<a href="#">
+                        	<i>&#xe605;</i>
+                            <p>充话费</p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<i>&#xe605;</i>
+                            <p>充话费</p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<i>&#xe605;</i>
+                            <p>充话费</p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<i>&#xe605;</i>
+                            <p>充话费</p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<i>&#xe605;</i>
+                            <p>充话费</p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<i>&#xe605;</i>
+                            <p>充话费</p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<i>&#xe605;</i>
+                            <p>充话费</p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<i>&#xe605;</i>
+                            <p>充话费</p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<i>&#xe605;</i>
+                            <p>充话费</p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<i>&#xe605;</i>
+                            <p>充话费</p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<i>&#xe605;</i>
+                            <p>充话费</p>
+                        </a>
+                    </li>
+                    <li>
+                    	<a href="#">
+                        	<i>&#xe605;</i>
+                            <p>充话费</p>
+                        </a>
+                    </li>
+            	</ul>
+            </div>
+            <!--生活结构结束-->
+        </div>
+        <!--侧栏结构结束-->
+    </div>
+</div>
+<!--首屏主体结构结束-->
+
+
+
+
+
+
+<!--结构开始-->
+<!--结构结束-->
+
+<!--结构开始-->
+<!--结构结束-->
+
+<!--结构开始-->
+<!--结构结束-->
+
+<!--结构开始-->
+<!--结构结束-->
+
+<!--结构开始-->
+<!--结构结束-->
+
+<!--结构开始-->
+<!--结构结束-->
+
+<!--结构开始-->
+<!--结构结束-->
+
+<!--结构开始-->
+<!--结构结束-->
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>10圣诞动画</title>
+<style type="text/css">
+	
+	#box{
+		width:270px;
+		height:129px;
+		margin:100px auto 0;
+		border:1px solid #000;
+		background:url(img/bd.png) 0 0 no-repeat;
+		/*加了no-repeat，需要做判断；不加no-repeat，不需要做判断*/
+	}
+
+</style>
+<script type="text/javascript">
+
+	window.onload=function(){
+		
+		//逐帧动画
+		//一	帧就代表一屏：270*129
+		//每隔一段极短的时候，切到下一帧：
+		//0		-270	-540	...
+		//0		1*-270	2*-270	3*-270...
+		//需要一个不断变化的0 1 2 3
+		var num=0;
+		var box=document.getElementById('box');
+		
+		setInterval(function(){
+			
+			num=num+1;
+			//num代表不断变化的0 1 2 3
+			//当这个帧数到达最后一帧的时候，要回到第0帧
+			//总帧数=图片的总宽度/一帧的宽度	总共64帧
+			//这里的判断不能是64，因为如果设置64，box会停在空白处
+			//而设置63，可以让box停在最后一帧
+			//原因：JS数数是从0开始的，和人数数相差一个1
+			if(num>63){				//本来是64，因为数数相差1，所以减1=63
+				//alert(num);
+				num=0;	
+			}
+			
+			//通过num去求背景图X轴位移距离：num*-270
+			var move=num*-270;
+			//move代表不断改变的位移距离
+			box.style.backgroundPosition=move+'px 0';
+			
+			
+		},30);
+		
+		
+	}
+
+
+
+</script>
+</head>
+
+<body>
+	<div id="box"></div>
+</body>
+</html>

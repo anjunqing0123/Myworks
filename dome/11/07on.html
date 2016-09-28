@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>07on</title>
+	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			/*$('button').mouseenter(function(event) {
+				alert('进入了');
+			}).mouseleave(function(event) {
+				alert('离开了');
+			});*/
+				// on事件可以添加多个事件，用引号包裹并空格隔开
+				// 
+			$('button').on('mouseenter mouseleave click',function(event){
+
+
+				 if(event.type=='mouseenter'){
+					$('button').css({
+						width: '200px',
+
+					});
+				}else if(event.type=='mouseleave'){
+					$('button').css({
+						height: '200px',
+
+					});
+				}else{
+
+					$('button').css({
+						backgroundColor: '#898'
+
+					});
+
+				}
+
+			})
+
+		});
+	</script>
+</head>
+<body>
+	<button>按钮</button>
+</body>
+</html>

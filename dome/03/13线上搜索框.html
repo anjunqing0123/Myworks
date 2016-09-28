@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>13线上搜索框</title>
+<link rel="stylesheet" type="text/css" href="reset.css" />
+<style type="text/css">
+	
+	.box{
+		width:258px;
+		height:40px;
+		margin: 100px auto 0;
+	}
+	#myText,#btn{
+		display:block;
+		float:left;'
+	}
+	#myText{
+		width:210px;
+		height:40px;
+		background:url(img/left.jpg);
+		color:#ccc;
+		padding-left:6px;
+	}
+	#btn{
+		width:42px;
+		height:40px;
+		background:url(img/right.jpg);
+	}
+
+</style>
+</head>
+
+<body>
+	<div class="box">
+    	<input type="text" id="myText" maxlength="11" value="请输入手机号码..." />
+        <button id="btn"></button>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+
+	var myText=document.getElementById('myText');
+	
+	//得到焦点：
+	//如果文本框内的文字还是原来的占位文字，
+	//才将文本框内的占位文字清空；文字颜色加深
+	//如果是用户输入的任意字符，什么事也不做
+	myText.onfocus=function(){
+		
+		if(myText.value=='请输入手机号码...'){
+			myText.value='';	
+			myText.style.color='#333';
+		}
+		
+		
+	};
+	
+	//失去焦点：
+	//要做判断，如果文本框内什么也没有输入（等于空），
+	//才将文本框内的占位文字还原；同时文字颜色还得还原成原来较浅的颜色。
+	//如果输入了任意一个文字，都什么事都不做
+	myText.onblur=function(){
+		
+		//直接标签.标签属性：是获取标签属性里面的值
+		//alert(myText.value);
+		if(myText.value==''){
+			myText.value='请输入手机号码...';
+			myText.style.color='#ccc';
+		}
+		
+		
+	};
+
+
+</script>
+
+<script>
+	window.onload = function(){
+
+		var inpEle = document.getElementById('myText');
+
+		var myreg = /^1[2346578]\d{9}$/;
+
+		inpEle.onblur = function(){
+
+		var inpVal = this.value;
+			if (!myreg.exec(inpVal)){
+
+				alert('请输入正确的手机号')
+
+			}else{
+
+				alert('ok')
+
+			}
+		}
+	}
+</script>
+
+
+
+
+
+

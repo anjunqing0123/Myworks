@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>11无缝滚动</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		.box{
+			width: 600px;
+			height: 200px;
+			border: 1px solid #000;
+			margin: 100px auto 0;
+			overflow: hidden;
+			background-color: #000;
+		}
+		.btnBg{
+			width: 600px;
+			height: 35px;
+			text-align: center;
+			margin: 0 auto;
+			line-height: 35px;
+		}
+		.btnBg a{
+			font-size: 15px;
+		}
+		.list{
+			width: 1800px;
+			height: 200px;
+		}
+		.list li{
+			width: 300px;
+			height: 200px;
+			float: left;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var myMarginLeft=0;
+			var listObj=$('.list');
+			var timer;
+			//自定义一个变量，用来存储移动的方向，默认是left
+			var fangXiang='left';
+
+			//封装一个往左走的功能
+			function leftFn(){
+
+				//更改方向
+				fangXiang='left';
+				//myMarginLeft在不断变小
+				myMarginLeft=myMarginLeft-5;
+
+				//-1200
+				//如果一个轮回走完了，要回到轮回开始的地方
+				//极值是-1200，因为要让四个小丫头都能走到最左边
+				if(myMarginLeft<=-1200){
+					myMarginLeft=0;
+				}
+
+				listObj.css('margin-left', myMarginLeft);
+
+			}
+
+			//封装一个往右走的功能
+			function rightFn(){
+
+				//更改方向
+				fangXiang='right';
+				//myMarginLeft在不断变大
+				myMarginLeft=myMarginLeft+5;
+				//一旦加了，就会露出破绽，所以要回到轮回结束（第4个小丫头完全进去的位置）的地方
+				if(myMarginLeft>0){
+					myMarginLeft=-1200;
+				}
+				listObj.css('margin-left', myMarginLeft);
+
+			}
+
+			timer=setInterval(leftFn, 30);
+
+			var aLi=$('.list li');
+			aLi.hover(function() {
+				
+				//停止定时器，并且突出展示
+				clearInterval(timer);
+				$(this).stop().fadeTo('slow',1);
+				$(this).siblings().stop().fadeTo('slow',0.5);
+
+			}, function() {
+
+				//先清空，再重启
+				clearInterval(timer);
+
+				//重启的时候，要进行判断，如果当前方向是左，调用leftFn；
+				//如果当前方向是右，调用rightFn
+				if(fangXiang=='left'){
+					timer=setInterval(leftFn, 30);
+				}else{
+					timer=setInterval(rightFn, 30);
+				}
+				
+
+				//所有LI透明度还原到1
+				aLi.stop().fadeTo('slow',1);
+				
+			});
+
+
+			//单击右按钮，调用往右走功能
+			var rightBtn=$('.rightBtn');
+			rightBtn.click(function(event) {
+				//先停止往左走的功能：停止定时器
+				clearInterval(timer);
+				//再重启，并且调用往右走功能
+				//记得一定再用timer存储一下，因为下一次可能还要停止
+				timer=setInterval(rightFn, 30);
+			});
+
+			//单击左按钮，调用往左走功能
+			var leftBtn=$('.leftBtn');
+			leftBtn.click(function(event) {
+				//先停止往右走的功能：停止定时器
+				clearInterval(timer);
+				//再重启，并且调用往左走功能
+				//记得一定再用timer存储一下，因为下一次可能还要停止
+				timer=setInterval(leftFn, 30);
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<div class="box">
+		<ul class="list">
+			<li><a href="javascript:;"><img src="images/luoLi/01.jpg" height="200" width="300" /></a></li>
+			<li><a href="javascript:;"><img src="images/luoLi/02.jpg" height="200" width="300" /></a></li>
+			<li><a href="javascript:;"><img src="images/luoLi/03.jpg" height="200" width="300" /></a></li>
+			<li><a href="javascript:;"><img src="images/luoLi/04.jpg" height="200" width="300" /></a></li>
+			<!-- 用来欺骗“小白”的临时工 -->
+			<li><a href="javascript:;"><img src="images/luoLi/01.jpg" height="200" width="300" /></a></li>
+			<li><a href="javascript:;"><img src="images/luoLi/02.jpg" height="200" width="300" /></a></li>
+		</ul>
+	</div>
+	<div class="btnBg">
+		<a href="javascript:;" class="leftBtn">Left</a>　
+		<a href="javascript:;" class="rightBtn">Right</a>
+	</div>
+</body>
+</html>

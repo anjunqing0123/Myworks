@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>04JQ转JS</title>
+	<!-- <script type="text/javascript">
+		window.onload=function(){
+	
+			var btn=document.getElementsByTagName('button')[0];
+			var vdo=document.getElementsByTagName('video')[0];
+			btn.onclick=function(){
+	
+				vdo.play();
+	
+			}
+	
+		};
+	</script> -->
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var btn=$('button');
+			//JQ对象
+			var vdo=$('video');
+
+			btn.click(function(event) {
+				vdo.play();
+				// play方法不包含在JQ中
+				// 所以需要转化成JS对象调用play
+				vdo.get(0).play();
+				vdo[0].play();
+				// vdo.eq(0).hide();
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<button>播放</button>
+	<video src="movie.mp4"></video>
+	<video src="movie.mp4"></video>
+</body>
+</html>

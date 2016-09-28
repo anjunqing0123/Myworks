@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>05JQ操作表单</title>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+		
+			$('button').click(function(event) {
+				
+				//1.获取单选文本的值
+				// alert($('input:first').prop('value'));
+				
+				//2.更改默认选中的单行按钮
+				// $('#radio2').prop('checked',true);
+
+				// 3.用name选择器选中所有的复选框，让它们勾选
+				// $('input[name=myCheck]').prop('checked',true);
+				
+				// 4.让下拉列表默认选中“男”
+				// $('select option:first').prop('selected',true);	
+				
+				// 5.获取文本框里面的值
+				// alert($('#myArea').prop('value'));	
+				$('#myArea').val('老王的王是白马王子的王');			
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<input type="text" />
+	<input type="radio" name="myRadio" id="radio1" checked="checked" />
+	<input type="radio" name="myRadio" id="radio2"  />
+	<input type="checkbox" name="myCheck" />
+	<input type="checkbox" name="myCheck" checked="checked" />
+	<input type="checkbox" name="myCheck" />
+	<select >
+		<option value="男">男</option>
+		<option value="女" selected="selected">女</option>
+		<option value="未知">未知</option>
+	</select>
+	<br/><br/>
+	<textarea id="myArea" style="width:200px; height:200px;" >老缪是大家非常喜欢的老师~</textarea>
+	<br/>
+	<button>按钮</button>
+</body>
+</html>
