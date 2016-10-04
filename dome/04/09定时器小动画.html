@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>09定时器小动画</title>
+<style type="text/css">
+	
+	#box{
+		width:200px;
+		height:200px;
+		border:1px solid #000;
+		background: yellowgreen;
+		margin-left:0;
+	}
+
+
+</style>
+<script type="text/javascript">
+
+	window.onload=function(){
+		
+		var aBtn=document.getElementsByTagName('button');
+		var box=document.getElementById('box');
+		//设置一个模拟变量，用来模拟当前box的marign-left，值和默认值相同
+		var myMarginLeft=0;
+		var timer;
+		
+		//走你
+		aBtn[0].onclick=function(){
+			
+			clearInterval(timer);
+			timer=setInterval(function(){
+				//每隔一段极短的时间，让box的margin-left有所增加
+				myMarginLeft=myMarginLeft+10;
+				box.style.marginLeft=myMarginLeft+'px';
+				
+			},30);
+			
+		};
+		
+		
+		//停下
+		aBtn[1].onclick=function(){
+			
+			clearInterval(timer);
+	
+		};
+		
+		
+		
+		
+	};
+
+
+
+
+
+
+</script>
+</head>
+
+<body>
+	<button>走你</button>
+    <button>停下</button>
+    <div id="box"></div>
+</body>
+</html>

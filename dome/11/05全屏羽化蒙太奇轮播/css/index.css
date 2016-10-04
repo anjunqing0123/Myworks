@@ -1,0 +1,70 @@
+.banner{
+	width: 100%;
+	height: 435px;
+	position: relative;
+	background-color: #000;
+}
+.cover{
+	width: 100%;
+	height: 435px;
+	background-color: #000;
+	/* background-color: rgba(255,0,0,0.5); */
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	position: absolute;
+	display: none;
+}
+.imgList{
+	height: 435px;
+	position: relative;
+}
+.imgList li{
+	position: absolute;
+	width: 100%;
+	height: 435px;
+	display: none;
+	overflow: hidden;
+}
+.imgList li img{
+	position: absolute;
+	width: 1680px;
+	height: 435px;
+	left: 50%;
+	margin-left: -840px;
+	top: 0;
+}
+.leftBtn,.rightBtn{
+	cursor: pointer;
+	width: 35px;
+	height: 71px;
+	position: absolute;
+	left: 50%;
+	margin-left: -640px;
+	top: 50%;
+	margin-top: -35px;
+	background: url(../images/icons.png) #000;
+}
+.rightBtn{
+	background-position: -90px 0;
+	margin-left: 605px;
+}
+.dianList{
+	width: 76px;
+	height: 12px;
+	position: absolute;
+	left: 50%;
+	margin-left: -38px;
+	bottom: 10px;
+}
+.dianList li{
+	cursor: pointer;
+	width: 12px;
+	height: 12px;
+	margin-right: 20px;
+	float: left;
+	background: url(../images/sprite_banner.png) -17px 0;
+}
+.dianList li.current{
+	background-position: 0 0;
+}

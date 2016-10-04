@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>09off</title>
+	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+
+			$('button').mouseenter(function(event) {
+				alert('鼠标进入了');
+			}).click(function(event) {
+				$('button').off('mouseenter mouseleave');
+			}).mouseleave(function(event) {
+				alert('鼠标离开了');
+			});;
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<button>按钮</button>
+</body>
+</html>

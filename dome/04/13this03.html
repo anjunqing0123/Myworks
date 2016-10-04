@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>13this03</title>
+<style type="text/css">
+	
+	div{
+		width:200px;
+		height:80px;
+		border:1px solid #000;
+		background:yellowgreen;
+	}
+
+</style>
+<script type="text/javascript">
+	
+	window.onload=function(){
+		
+		var aDiv=document.getElementsByTagName('div');
+		for(var i=0; i<3; i++){
+			
+			aDiv[i].onclick=function(){
+				
+				alert(aDiv[i].innerHTML);
+					
+			}	
+			
+		}
+		//循环结束时，i=3;
+		//alert(i);
+		
+		
+	};
+
+
+</script>
+</head>
+
+<body>
+	<div>aaaaa</div>
+    <div>bbbbb</div>
+    <div>ccccc</div>
+</body>
+</html>

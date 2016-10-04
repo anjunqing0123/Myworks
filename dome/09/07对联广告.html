@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>07对联广告</title>
+	<style type="text/css">
+		.main{
+			margin: 0 auto;
+		}
+		.leftAd,.rightAd{
+			width: 120px;
+			height: 288px;
+			position: absolute;
+			left: 0;
+			top: 50px;
+			text-align: right;
+		}
+		.rightAd{
+			left: auto;
+			right: 0;
+		}
+		.closeBtn{
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var leftAd=$('.leftAd');
+			var rightAd=$('.rightAd');
+			var aCloseBtn=$('.closeBtn');
+
+			//广告滚动
+			$(window).scroll(function(event) {
+				
+				//让广告跟着页面内容的滚动而滚动
+				
+				//1.获取不断改变的被浏览器卷去的高
+				var windowEatHeight=$(window).scrollTop()+50;
+
+				//2.让广告本身的top方向值和卷去的高同步
+				leftAd.stop().animate({
+					'top':windowEatHeight
+				}, 500);
+				rightAd.stop().animate({
+					'top':windowEatHeight
+				}, 500);
+
+			});
+
+			//广告关闭
+			aCloseBtn.click(function(event) {
+				
+				//关闭当前这个广告
+				$(this).parent('div').hide();
+
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<div class="leftAd">
+		<img src="images/png01.png" height="270" width="120" />
+		<img src="images/close-h.jpg" height="18" width="40" class="closeBtn" />
+	</div>
+	<div class="rightAd">
+		<img src="images/png01.png" height="270" width="120" />
+		<img src="images/close-h.jpg" height="18" width="40" class="closeBtn" />
+	</div>
+	<img src="images/big.png" height="4772" width="1330" class="main" />
+</body>
+</html>

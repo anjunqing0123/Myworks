@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>05scorll解析</title>
+	<style type="text/css">
+		*{margin: 0; padding: 0; border: 0;}
+		a{position:fixed; left: 0; background: #257ccb; color: #fff; display: block; width: 50px; height: 25px;
+			text-align: center;	line-height: 25px; cursor: pointer; font-size:13px; text-decoration: none;}
+		#btn1{top: 5px;}
+		#btn2{top: 35px;}
+		#btn3{top: 65px;}
+		#btn4{top: 95px;}
+		div{width: 1200px; height: 500px; border-bottom: 1px solid #000; margin:  0 auto; background: yellowgreen;}
+		div h1{text-align: center;}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var arrayA=$('a');
+
+			//跳转内容1
+			arrayA.eq(0).click(function(event) {
+
+				$(window).scrollTop(0);
+
+			});
+
+			//跳转内容2
+			arrayA.eq(1).click(function(event) {
+
+				$(window).scrollTop(500);	
+
+			});
+
+			//跳转内容3
+			arrayA.eq(2).click(function(event) {
+
+				$(window).scrollTop(1000);
+
+			});
+
+			//获取内容
+			arrayA.eq(3).click(function(event) {
+
+				alert($(window).scrollTop());
+
+			});
+
+		});
+	</script>
+	
+</head>
+<body>
+	<a id="btn1" href="javascript:;">内容1</a>
+	<a id="btn2" href="javascript:;">内容2</a>
+	<a id="btn3" href="javascript:;">内容3</a>
+	<a id="btn4" href="javascript:;">获取</a>
+	<div id="box1">
+		<h1>这是内容1</h1>
+	</div>
+	<div id="box2">
+		<h1>这是内容2</h1>
+	</div>
+	<div id="box3">
+		<h1>这是内容3</h1>
+	</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+	
+	
+	window.onload=function(){
+		
+		var things=['1.吃饭','2.睡觉','3.打豆豆'];
+		var myP=document.getElementById('myP');
+		//创建一个全局变量，来模拟那个不断改变的数组下标
+		var num=0;
+		
+		var nextBtn=document.getElementById('nextBtn');
+		var prevBtn=document.getElementById('prevBtn');
+		
+		//下一件事
+		nextBtn.onclick=function(){
+			
+			//每次单击时，要去数组里面找下一个位置的文字
+			//当前页面上的数组第0个位置的文字
+			// 1 2 0 1 2 0 1 2....
+			// 需要一个不断变化的数组下标
+			// 第1步：先把下标加1，去找下一个
+			num=num+1;
+			if(num==3){		//一旦位置已经在数组的最后一个位置，就需要还原到第0个位置
+				num=0;	
+			}
+			//alert(num);
+			// 第2步：通过位置去找文字
+			var temp=things[num];
+			//alert(temp);
+			// 第3步：把找到的文字插入到页面中去
+			myP.innerHTML=temp;
+			
+			
+		};	
+		
+		
+		//上一件事
+		prevBtn.onclick=function(){
+			
+			// 第1步：先把下标减1，去找上一个
+			num=num-1;
+			if(num<0){	//num==-1也可以
+				num=2;	//在第0个身上，不能再去上一个（因为上一个是-1，应该回到数组的末尾）
+			}
+			//alert(num);
+			// 第2步：通过位置去找文字
+			var temp=things[num];
+			//alert(temp);
+			// 第3步：把找到的文字插入到页面中去
+			myP.innerHTML=temp;
+				
+		};
+		
+		
+	}
+
+
+</script>
+</head>
+
+<body>
+	<p id="myP">1.吃饭</p>
+    <button id="prevBtn">上一件事</button>
+    <button id="nextBtn">下一件事</button>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>06随机抽奖</title>
+<script type="text/javascript">
+	
+	window.onload=function(){
+		
+		//奖品：宝马X1
+		var arry=['刘浏','王子井','黄丽','张晨','张楠'];
+		//随机抽一个人（随机的下标：0-4之间的随机整数）
+		arry.push('老缪');
+		var num=parseInt(Math.random()*arry.length);
+		//alert(arry[num]);
+		document.getElementsByTagName('h1')[0].innerHTML=arry[num];
+		
+	};
+	
+
+
+</script>
+</head>
+
+<body>
+	<h1 style="text-align:center;">姚娜</h1>
+</body>
+</html>

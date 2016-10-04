@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>07全选反选</title>
+<script type="text/javascript">
+	
+	window.onload=function(){
+		
+		var btns=document.getElementsByTagName('button');
+		var inputs=document.getElementsByTagName('input');
+		
+		//全选
+		btns[0].onclick=function(){
+		
+			//让所有的checkbox的checked=true
+			//让inputs里面的每一个元素的checked=true
+			for(var i=0; i<inputs.length; i++){
+				inputs[i].checked=true;	
+			}
+		};	
+		
+		//取消全选
+		btns[1].onclick=function(){
+		
+			//让所有的checkbox的checked=false
+			//让inputs里面的每一个元素的checked=false
+			for(var i=0; i<inputs.length; i++){
+				inputs[i].checked=false;	
+			}
+		};
+		
+		//反选
+		btns[2].onclick=function(){
+			
+			
+			//对inputs里面的每一个元素身上的checked做判断
+			//如果是true，修改为false；
+			//如果是false，修改为true
+			for(var i=0; i<inputs.length; i++){
+				
+				//inputs[i]代表每一个元素
+				/*if(inputs[i].checked==true){
+					inputs[i].checked=false;	
+				}else{		//如果上面的条件不成立，一定是未勾选的
+					inputs[i].checked=true;
+				}*/
+				
+				/*if(inputs[i].checked){
+					inputs[i].checked=false;	
+				}else{		//如果上面的条件不成立，一定是未勾选的
+					inputs[i].checked=true;
+				}*/
+				
+				inputs[i].checked=!inputs[i].checked;
+			
+			};
+			
+			
+		};
+		
+	}
+
+
+</script>
+</head>
+
+<body>
+	
+    <button>全选</button>
+    <button>取消全选</button>
+    <button>反选</button><br />
+	<input type="checkbox" checked="checked" /><br />
+    <input type="checkbox" /><br />
+    <input type="checkbox" /><br />
+    <input type="checkbox" /><br />
+    <input type="checkbox" /><br />
+    <input type="checkbox" /><br />
+    <input type="checkbox" /><br />
+    <input type="checkbox" /><br />
+    <input type="checkbox" />
+    
+</body>
+</html>

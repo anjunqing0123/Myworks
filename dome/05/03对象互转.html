@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>03对象互转</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #000;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			$('button').click(function(event) {
+				
+				// var aDiv=document.getElementsByTagName('div');
+				// for (var i = 0; i < aDiv.length; i++) {
+				// 	aDiv[i].style.display='none';
+				// };
+				document.getElementById('box').hide();
+
+			});
+
+
+		});
+	</script>
+<body>
+	<button>隐藏</button>
+	<div id="box" style="background-color:yellowgreen;">盒子</div>
+</body>
+</html>

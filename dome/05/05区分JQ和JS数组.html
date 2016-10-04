@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>05区分JQ和JS数组</title>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			/*var jsObj=document.getElementById('btn1');
+			var jqObj=$('#btn1');
+
+			alert(jsObj);
+			alert(jqObj);*/
+
+			// var jsArry=document.getElementsByTagName('button');
+			// alert(jsArry);
+			// jsArry[0].style.backgroundColor='yellow';
+			// 
+			var jqArry=$('button');
+			jqArry[0].style.backgroundColor='yellow';
+
+		});
+	</script>
+</head>
+<body>
+	<button id="btn1">A</button>
+	<button id="btn2">B</button>
+	<button id="btn3">C</button>
+</body>
+</html>

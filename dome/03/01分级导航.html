@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>01分级导航</title>
+<link rel="stylesheet" type="text/css" href="reset.css"/>
+<style type="text/css">
+	
+	.list{
+		width:400px;
+		height:30px;
+		background-color:#ccc;
+		margin:100px auto 0;
+	}
+	.list li{
+		width:100px;
+		height:30px;
+		float:left;	
+	}
+	.oneNav{
+		position:relative;
+	}
+	.list ol{
+		position:absolute;
+		width:100%;
+		overflow:hidden;
+		background-color:#ccc;
+		left:0;
+		top:30px;
+		display:none;
+	}
+	.list li a{
+		display:block;
+		width:100%;
+		height:100%;
+		text-align:center;
+		line-height:30px;
+		color:#333;
+	}
+	.list li a:hover{
+		background-color:pink;
+		color:#fff;
+	}
+
+</style>
+</head>
+
+<body>
+	<ul class="list">
+    	<li class="oneNav" id="oneNav1">
+        	<a href="javascript:;">平面设计</a>
+            <ol id="twoNav1">
+            	<li><a href="javascript:;">平面设计</a></li>
+                <li><a href="javascript:;">平面设计</a></li>
+                <li><a href="javascript:;">平面设计</a></li>
+                <li><a href="javascript:;">平面设计</a></li>
+            </ol>
+        </li>
+        <li class="oneNav" id="oneNav2">
+        	<a href="javascript:;">UI设计</a>
+            <ol id="twoNav2">
+            	<li><a href="javascript:;">UI设计</a></li>
+                <li><a href="javascript:;">UI设计</a></li>
+                <li><a href="javascript:;">UI设计</a></li>
+                <li><a href="javascript:;">UI设计</a></li>
+            </ol>
+        </li>
+        <li class="oneNav" id="oneNav3">
+        	<a href="javascript:;">网页设计</a>
+            <ol id="twoNav3">
+            	<li><a href="javascript:;">网页设计</a></li>
+                <li><a href="javascript:;">网页设计</a></li>
+                <li><a href="javascript:;">网页设计</a></li>
+                <li><a href="javascript:;">网页设计</a></li>
+            </ol>
+        </li>
+        <li class="oneNav" id="oneNav4">
+        	<!--SEO：搜索引擎优化
+            baidu	搜狗 	360
+            IT教育
+            在百度搜索关键词的时候，让你的网站自然排名往前
+            方式：1.在网页中设置相应的关键词
+            2.对页面的结构：<h1>IT教育</h1>
+            百度竞价-->
+        	<a href="javascript:;">SEO优化</a>
+            <ol id="twoNav4">
+            	<li><a href="javascript:;">SEO优化</a></li>
+                <li><a href="javascript:;">SEO优化</a></li>
+                <li><a href="javascript:;">SEO优化</a></li>
+                <li><a href="javascript:;">SEO优化</a></li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>
+<script type="text/javascript">
+
+	//鼠标移上一级导航01身上时，让二级导航01显示
+	//鼠标离开一级导航01身上时，让二级导航01隐藏
+	/*var oneNav1=document.getElementById('oneNav1');
+	var twoNav1=document.getElementById('twoNav1');
+	oneNav1.onmouseenter=function(){
+		twoNav1.style.display='block';	
+	}
+	oneNav1.onmouseleave=function(){	
+		twoNav1.style.display='none';
+	}
+	
+	//鼠标移上一级导航02身上时，让二级导航02显示
+	//鼠标离开一级导航02身上时，让二级导航02隐藏
+	var oneNav2=document.getElementById('oneNav2');
+	var twoNav2=document.getElementById('twoNav2');
+	oneNav2.onmouseenter=function(){
+		twoNav2.style.display='block';	
+	}
+	oneNav2.onmouseleave=function(){	
+		twoNav2.style.display='none';
+	}*/
+	
+	/*
+	（1）找相似的代码段；
+	（2）写一个自定义函数，把相似的代码段放入函数体；
+	（3）观察需要改变的数值有几个，就写几个参数；
+	（4）替换那些要更改的值，并修改、语义化变量名。
+	*/
+
+	//鼠标移上一级导航01身上时，让二级导航01显示
+	//鼠标离开一级导航01身上时，让二级导航01隐藏
+	//鼠标移上一级导航02身上时，让二级导航02显示
+	//鼠标离开一级导航02身上时，让二级导航02隐藏
+	//通用的功能：
+	//鼠标移上一级导航X身上时，让二级导航Y显示
+	//鼠标离开一级导航X身上时，让二级导航Y隐藏
+	function showOrHideTwoNav(x,y){
+		
+		//x:一级导航1~一级导航4
+		//y:二级导航1~二级导航4
+		var changeOneNav=document.getElementById(x);
+		var changeTwoNav=document.getElementById(y);
+		changeOneNav.onmouseenter=function(){
+			changeTwoNav.style.display='block';	
+		}
+		changeOneNav.onmouseleave=function(){	
+			changeTwoNav.style.display='none';
+		}	
+		
+	}
+	showOrHideTwoNav('oneNav1','twoNav1');
+	showOrHideTwoNav('oneNav2','twoNav2');
+	showOrHideTwoNav('oneNav3','twoNav3');
+	showOrHideTwoNav('oneNav4','twoNav4');
+	
+</script>
+
+
+
+
+
+
+

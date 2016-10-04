@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>08火箭回顶部</title>
+	<style type="text/css">
+		.main{
+			display: block;
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+		}
+		.goBack{
+			width: 40px;
+			height: 78px;
+			position: fixed;
+			right: 5px;
+			bottom: 5px;
+			background: url(images/01.png);
+			cursor: pointer;
+			display: none;
+		}
+		.goBack:hover{
+			background-image: url(images/02.gif);
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			//一屏的高
+			var viewHeight=$(window).height();
+			var goBackObj=$('.goBack');
+
+			$(window).scroll(function(event) {
+				
+				if($(window).scrollTop()>=viewHeight){
+					goBackObj.show();
+				}else{
+					goBackObj.hide();
+				}
+
+
+			});
+
+			goBackObj.click(function(event) {
+				
+				// $(window).scrollTop(0);
+				// 
+				$('html,body').stop().animate({
+					'scrollTop':0
+				}, 500);
+
+			});
+
+
+		});
+	</script>
+</head>
+<body>
+	<div class="goBack"></div>
+	<img src="images/big.png" height="4772" width="1330" class="main" />
+</body>
+</html>

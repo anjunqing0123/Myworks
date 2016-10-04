@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>01分级导航</title>
+<link rel="stylesheet" type="text/css" href="reset.css"/>
+<style type="text/css">
+	
+	.list{
+		width:400px;
+		height:30px;
+		background-color:#ccc;
+		margin:100px auto 0;
+	}
+	.list li{
+		width:100px;
+		height:30px;
+		float:left;	
+	}
+	.oneNav{
+		position:relative;
+	}
+	.list ol{
+		position:absolute;
+		width:100%;
+		overflow:hidden;
+		background-color:#ccc;
+		left:0;
+		top:30px;
+		display:none;
+	}
+	.list li a{
+		display:block;
+		width:100%;
+		height:100%;
+		text-align:center;
+		line-height:30px;
+		color:#333;
+	}
+	.list li a:hover{
+		background-color:pink;
+		color:#fff;
+	}
+
+</style>
+<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+<script type="text/javascript">
+	
+	$(function() {
+		
+		//给LIST下的第一级LI绑定鼠标移入和离开事件
+		var aOneNav=$('.list>li');
+
+		/*aOneNav.mouseenter(function(event) {
+			// $(this)代表用户当前操作的一级LI
+			//让当前这个LI下面的OL（二级导航）显示
+			$(this).children('ol').stop().slideDown();
+
+		});
+
+		aOneNav.mouseleave(function(event) {
+			//让当前这个LI下面的OL（二级导航）隐藏
+			$(this).children('ol').stop().slideUp();
+		});*/
+
+		/*aOneNav.hover(function() {
+			// $(this)代表用户当前操作的一级LI
+			//让当前这个LI下面的OL（二级导航）显示
+			$(this).children('ol').stop().slideToggle();
+		}, function() {
+			//让当前这个LI下面的OL（二级导航）隐藏
+			$(this).children('ol').stop().slideToggle();
+		});*/
+
+		aOneNav.hover(function() {
+			$(this).children('ol').stop().slideToggle();
+		});
+
+
+	});
+
+</script>
+</head>
+
+<body>
+	<ul class="list">
+    	<li class="oneNav">
+        	<a href="javascript:;">平面设计</a>
+            <ol>
+            	<li><a href="javascript:;">平面设计</a></li>
+                <li><a href="javascript:;">平面设计</a></li>
+                <li><a href="javascript:;">平面设计</a></li>
+                <li><a href="javascript:;">平面设计</a></li>
+            </ol>
+        </li>
+        <li class="oneNav">
+        	<a href="javascript:;">UI设计</a>
+            <ol>
+            	<li><a href="javascript:;">UI设计</a></li>
+                <li><a href="javascript:;">UI设计</a></li>
+                <li><a href="javascript:;">UI设计</a></li>
+                <li><a href="javascript:;">UI设计</a></li>
+            </ol>
+        </li>
+        <li class="oneNav">
+        	<a href="javascript:;">网页设计</a>
+            <ol>
+            	<li><a href="javascript:;">网页设计</a></li>
+                <li><a href="javascript:;">网页设计</a></li>
+                <li><a href="javascript:;">网页设计</a></li>
+                <li><a href="javascript:;">网页设计</a></li>
+            </ol>
+        </li>
+        <li class="oneNav">
+        	<a href="javascript:;">SEO优化</a>
+            <ol>
+            	<li><a href="javascript:;">SEO优化</a></li>
+                <li><a href="javascript:;">SEO优化</a></li>
+                <li><a href="javascript:;">SEO优化</a></li>
+                <li><a href="javascript:;">SEO优化</a></li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>
+
+
+
+
+
+
+
+

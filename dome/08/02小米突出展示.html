@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>02小米突出展示</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		body{
+			background-color: #257CCB;
+		}
+		.list{
+			width: 1230px;
+			margin: 100px auto 0;
+		}
+		.list li{
+			width: 234px;
+			height: 300px;
+			float: left;
+			margin: 0 15px 15px 0;
+			position: relative;
+			overflow: hidden;
+		}
+		.bottomDiv{
+			position: absolute;
+			left: 0;
+			bottom: -76px;
+			width: 100%;
+			height: 76px;
+			background: url(xiaoMi/p1.png);
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			//JQ初始化CSS
+			$('.list li:eq(4),.list li:eq(9)').css('margin-right', 0);
+			$('.bottomDiv').css('opacity', 0);
+
+			var aLi=$('.list li');
+
+			aLi.hover(function() {
+
+				//让当前这个LI的孩子：bottomDiv的bottom动画到0
+				//为了让动画更加柔和，再做透明度的改变
+				$(this).find('.bottomDiv').stop().animate({
+					'bottom':0,
+					'opacity':1
+				}, 'fast');
+
+				//让当前LI做向上的偏移
+				$(this).stop().animate({
+					// 'margin-top':-5
+					'top':-5
+				}, 'fast');
+
+				
+			}, function() {
+
+				$(this).find('.bottomDiv').stop().animate({
+					'bottom':-76,
+					'opacity':0
+				}, 'fast');
+				$(this).stop().animate({
+					// 'margin-top':0
+					'top':0
+				}, 'fast');
+
+			});
+
+
+		});
+	</script>
+</head>
+<body>
+	<ul class="list">
+		<li>
+			<a href="javascript:;">
+				<img src="xiaoMi/mi1.png" height="300" width="234" />
+				<div class="bottomDiv"></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="xiaoMi/mi2.png" height="300" width="234" />
+				<div class="bottomDiv"></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="xiaoMi/mi3.png" height="300" width="234" />
+				<div class="bottomDiv"></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="xiaoMi/mi4.png" height="300" width="234" />
+				<div class="bottomDiv"></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="xiaoMi/mi5.png" height="300" width="234" />
+				<div class="bottomDiv"></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="xiaoMi/mi3.png" height="300" width="234" />
+				<div class="bottomDiv"></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="xiaoMi/mi4.png" height="300" width="234" />
+				<div class="bottomDiv"></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="xiaoMi/mi1.png" height="300" width="234" />
+				<div class="bottomDiv"></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="xiaoMi/mi2.png" height="300" width="234" />
+				<div class="bottomDiv"></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:;">
+				<img src="xiaoMi/mi1.png" height="300" width="234" />
+				<div class="bottomDiv"></div>
+			</a>
+		</li>
+
+	</ul>
+</body>
+</html>

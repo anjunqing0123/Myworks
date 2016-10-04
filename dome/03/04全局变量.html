@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>04全局变量</title>
+</head>
+
+<body>
+</body>
+</html>
+<script type="text/javascript">
+
+	/*var tv='电视';
+	function fn1(){
+		//没有加var 修改全局，会影响外面的人
+		tv='坏电视';	
+		alert(tv);
+	}
+	function fn2(){
+		alert(tv);	
+	}
+
+	fn1();
+	fn2();*/
+	
+	var tv='电视';
+	function fn1(){
+		//加var 代表在局部创建了一个私有变量，不会影响全局
+		var tv='坏电视';	
+		alert(tv);
+	}
+	function fn2(){
+		alert(tv);	
+	}
+
+	fn1();
+	fn2();
+</script>

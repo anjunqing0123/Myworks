@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>11自定义下拉列表</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="shortcut icon" href="favico.ico" />
+	<style type="text/css">
+		.box{
+			width: 98px;
+			height: 25px;
+			border: 1px solid #ccc;
+			margin: 100px auto 0;
+			position: relative;
+		}
+		.boxIn,.list li{
+			width: 88px;
+			padding-left: 10px;
+			height: 25px;
+			line-height: 25px;
+			color: #5E5E5E;
+			cursor: pointer;
+		}
+		.boxIn{
+			line-height: 25px;
+			padding-left:15px;
+			background: url(images/inputJ.jpg) no-repeat 80px center;
+		}
+		.list{
+			position: absolute;
+			width: 100%;
+			left: -1px;
+			top: 25px;
+			background:#ccc;
+			border: 1px solid #ccc;
+/* 			border-top: none; */
+			padding: 5px 0;
+			display: none;
+		}
+		.list li:hover{
+			background-color: #275CCB;
+			color: #fff;
+		}
+
+	</style>
+	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+	
+</head>
+<body>
+	<div class="box">
+		<div class="boxIn">查询列表</div>
+		<ul class="list">
+			<li>近一个月</li>
+			<li>近三个月</li>
+			<li>三个月以前</li>
+		</ul>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+		$(function() {
+			
+			var boxIn=$('.boxIn');
+			var list=$('.list');
+			var listLi=$('.list li');
+
+			boxIn.click(function(event) {
+				list.toggle();
+			});
+
+				listLi.click(function(event) {
+					var myText=$(this).html();
+					boxIn.html(myText);
+					// list.hide();
+				});
+
+					$(document).click(function(event) {
+						
+						// console.log(event.target);
+						// event.target会返回当前的操作对象
+
+						//如果当前的操作对象不是boxIn，就让列表隐藏
+						if(!boxIn.is(event.target)){
+							list.hide();
+						}
+
+					});
+
+		});
+	</script>

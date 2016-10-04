@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>15函数的返回值</title>
+<style type="text/css">
+	
+	div{
+		width:200px;
+		height:100px;
+		background-color:yellowgreen;
+		border: 1px solid #000;	
+	}
+	
+
+</style>
+</head>
+
+<body>
+	<div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+	/*function fn(){
+		
+		return '你好';
+		
+	}
+
+	alert(fn());*/
+
+	
+	/*function yuan(r){
+		return 3.1415192654*r;
+	}
+	
+	alert(yuan(100));
+	alert(yuan(200));*/
+	
+	/*function add(x,y){
+		return x+y;
+	}
+	alert(add(10,20));*/
+	
+	/*document.getElementById('box1').style.width='300px';
+	document.getElementById('box2').style.width='300px';
+	document.getElementById('box3').style.width='300px';
+	document.getElementById('box4').style.width='300px';
+	document.getElementById('box5').style.width='300px';*/
+	
+	//ID选择器
+	function $(idStr){
+		return document.getElementById(idStr);	
+	}
+	//$('box1')是调用$这个函数，并传递'box1'这个字符串，
+	//最终返回给开发者一个页面上的标签
+	//可以简单的理解成$('box1')和document.getElementById('box1')是等价的。
+	$('box1').style.width='300px';
+	$('box2').style.width='400px';
+	$('box3').style.width='500px';
+	$('box4').style.width='600px';
+	$('box5').style.width='700px';
+	
+	/*var box1=document.getElementById('box1');
+	alert(typeof(box1));*/
+
+</script>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>01京东突出展示</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		.list{
+			width: 790px;
+			height: 362px;
+			border: 1px solid #000;
+			margin: 100px auto 0;
+			background-color: #000;
+		}
+		.list li{
+			float: left;
+			width: 158px;
+			height: 362px;
+			overflow: hidden;
+		}
+		.up,.down{
+			height: 181px;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var aImg=$('img');
+
+			aImg.hover(function() {
+				
+				//先让当前这个img透明度变成1，同时还要做位移：margin-left:-15
+				$(this).stop().animate({
+
+					'opacity':1,
+					'margin-left':-15
+
+				}, 'slow');
+
+				
+				//要找当前模块下，除了当前这个IMG以外的其他img们
+				//1.先找当前模块
+				// var nowPart=$(this).parents('.list');
+				//2.再找当前模块下所有的img
+				// var nowPartImgs=nowPart.find('img');
+				//3.在前面筛选出来的8个img里面，把当前这个img剔除掉
+				// var lastImgs=nowPartImgs.not($(this));
+				// alert(lastImgs.length);
+
+				var lastImgs=$(this).parents('.list').find('img').not($(this));
+
+				///让当前模块下，除了当前这个IMG以外的其他img们，做改变
+				lastImgs.stop().animate({
+
+					'opacity':0.3,
+					'margin-left':0
+
+				}, 'slow');
+
+
+			}, function() {
+
+				//离开时，还原所有的img，让它们的透明度变成1，并且margin-left变成0
+				aImg.stop().animate({
+
+					'opacity':1,
+					'margin-left':0
+
+				}, 'slow');
+
+
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<!-- 模块1 -->
+	<ul class="list">
+		<li>
+			<div class="up"><a href="javascript:;"><img src="images/01.jpg" height="181" width="173" /></a></div>
+			<div class="down"><a href="javascript:;"><img src="images/02.jpg" height="181" width="173" /></a></div>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="images/03.jpg" height="362" width="173" /></a>
+		</li>
+		<li>
+			<div class="up"><a href="javascript:;"><img src="images/04.jpg" height="181" width="173" /></a></div>
+			<div class="down"><a href="javascript:;"><img src="images/05.jpg" height="181" width="173" /></a></div>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="images/06.jpg" height="362" width="190" /></a>
+		</li>
+		<li>
+			<div class="up"><a href="javascript:;"><img src="images/07.jpg" height="181" width="173" /></a></div>
+			<div class="down"><a href="javascript:;"><img src="images/08.jpg" height="181" width="173" /></a></div>
+		</li>
+	</ul>
+	
+	<!-- 模块2 -->
+	<ul class="list">
+		<li>
+			<div class="up"><a href="javascript:;"><img src="images/01.jpg" height="181" width="173" /></a></div>
+			<div class="down"><a href="javascript:;"><img src="images/02.jpg" height="181" width="173" /></a></div>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="images/03.jpg" height="362" width="173" /></a>
+		</li>
+		<li>
+			<div class="up"><a href="javascript:;"><img src="images/04.jpg" height="181" width="173" /></a></div>
+			<div class="down"><a href="javascript:;"><img src="images/05.jpg" height="181" width="173" /></a></div>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="images/06.jpg" height="362" width="190" /></a>
+		</li>
+		<li>
+			<div class="up"><a href="javascript:;"><img src="images/07.jpg" height="181" width="173" /></a></div>
+			<div class="down"><a href="javascript:;"><img src="images/08.jpg" height="181" width="173" /></a></div>
+		</li>
+	</ul>
+</body>
+</html>

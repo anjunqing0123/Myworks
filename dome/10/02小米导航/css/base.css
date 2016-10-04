@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,input,button,fieldset, legend,img { margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6{ font-size:14px; font-weight:normal;}
+fieldset,img{ border:none; }
+li{list-style:none; }
+a{ color:#3c3c3c; text-decoration:none;}
+
+body{background:#fff; font-size:12px;}
+/* CSS Document */
+*{margin:0;padding:0;}
+
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+	}
+
+i{ font-family: 'iconfont';
+	font-style:normal;
+	display:inline-block;
+	}
+
+
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;}
+.clearfix{zoom:1;}
+
+img{display:inline-block;cursor:pointer;}	
+.hot{color:#FE6709 !important;}
+/*-----------------------------------样式开始---------------------------------------*/	
+	
+/*----------------顶部样式开始-------------------------------------*/
+.top{
+	width:100%;
+	background:#333333;
+	height:40px;
+	}
+.inTop{
+	width:1230px;
+	height:40px;
+	margin:0 auto;
+	}
+.inTop li{
+	float:left;
+	}	
+.inTop li a{
+	margin:0 5px;
+	line-height:40px;
+	color:#B0B0B0;
+	}	
+.inTop li a:hover{
+	color:#fff;
+	}
+.inTop ul{
+	display:inline-block;
+	/*border:1px solid green;*/
+	}	
+.inTop ul .last{
+	float:right;
+	margin-left:380px;
+	}
+	
+.inTop span{display:inline-block;
+		float:right;
+		line-height:40px;
+		text-align:center;
+		width:120px;
+		height:40px;
+		background:#424242;
+		color:#B0B0B0;}	
+/*----------------顶部样式结束-------------------------------------	*/
+	
+	
+/*----------------导航样式开始-------------------------------------	*/
+.nav{
+	width:1230px;
+	height:100px;
+	margin:0 auto;
+	/*border:1px solid red;*/}	
+.nav h1{
+	float:left;
+	text-indent:-9999px;
+	background:url(../images/xiaomi_logo.png) no-repeat left center;
+	width:55px;
+	height:55px;
+	margin:20px 0;}
+	
+.inNav{
+	float:left;
+	/*border:1px solid red;*/
+	margin-left:190px;}	
+		
+.inNav li{
+	cursor:pointer;
+	float:left;
+	padding:0 15px;
+	font-size:16px;
+	line-height:100px;
+	}
+.nav p{float:right;
+	display:inline-block;
+	width:296px;
+	height:56px;
+	border:1px solid #ccc;
+	margin:20px 0;
+	text-align:right;
+	}
+.nav p i{
+	color:#333;
+	font-size:18px;
+	width:56px;
+	height:56px;
+	display:inline-block;
+	border-left:1px solid #ccc;
+	text-align:center;
+	line-height:54px;}	
+.nav p a{
+	background:#EEEEEE;
+	color:#333;
+	font-size:14px;
+	line-height:56px;
+	margin-right:10px;
+	}
+.nav  a:hover{
+	color:#f40;}
+/*------------------导航样式结束---------------------------------------*/
+
+
+.service{
+	width:1230px;
+	height:80px;
+	margin:0 auto;
+	}
+.service i{
+	fobt-size:16px;
+	}
+.service ul{
+	border-bottom:1px solid #ccc;}
+.service li{
+	float:left;
+	margin:20px 0;
+	font-size:14px;
+	line-height:30px;
+	
+	}
+.service li a{
+	display:inline-block;
+	border-right:1px solid #ccc;
+	padding:0 60px;}	
+.service a:hover{
+	color:#f40;
+	}	
+.service li.last a{
+	border-right:none;}	
+	
+	
+/*----------------------------底部样式开始---------------------------*/
+	
+.footer{
+	background:#ffffff;
+	margin:10px auto;
+	width:1230px;
+	}
+.inFooter{
+	overflow:hidden;
+	float:left;}
+.inFooter dl{
+	float:left;
+	margin:0 50px;
+	margin-top:10px;
+	/*border:1px solid red;*/
+	}	
+.inFooter dt{
+	margin-bottom:30px;
+	color:#333;}	
+.inFooter dd{
+	color:#666;
+	padding-top:5px}
+	
+.contact {
+	width:217px;
+	height:122px;
+	float:right;
+	border-left:1px solid #ccc;}	
+.contact  p{
+	text-align:center;}	
+.phone{
+	color:#f40;
+	font-size:22px;
+	margin:20px 10px 0 20px;
+	}	
+	
+a.custom{
+	width:119px;
+	height:30px;
+	display:block;
+	border:#f40 1px solid;
+	line-height:30px;
+	text-align:center;
+	margin:10px 45px 0;
+	color:#f40;
+	}	
+a.custom:hover{
+	background:#f40;
+	color:#fff;
+	}	
+/*--------------------------底部版权开始---------------------*/	
+.copyRight{
+	background:#FAFAFA;
+	height:200px;}	
+
+.copy{
+	width:1230px;
+	margin:0 auto;
+	}
+.copyRight ul{margin-top:20px;
+	padding-left:50px;
+	background:url(../images/mi.png) no-repeat left center;
+	display:inline-block;}
+.copyRight ul a{color:#666;}	
+.copyRight p{
+	color:#999;
+	display:inline-block;}
+	
+.copyRight ol{
+	float:right;}
+.copyRight ol li{
+	float:left;
+	margin-top:-10px;}

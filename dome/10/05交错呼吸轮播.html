@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>05交错呼吸轮播</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		.banner{
+			width: 992px;
+			height: 420px;
+			margin: 100px auto 0;
+			position: relative;
+		}
+		.imgList{
+			height: 420px;
+			position: relative;
+		}
+		.imgList li{
+			position: absolute;
+			width: 100%;
+			height: 420px;
+			left: 0;
+			top: 0;
+			display: none;
+		}
+		.banner:hover .leftBtn,.banner:hover .rightBtn{
+			display: block;
+		}
+		.leftBtn,.rightBtn{
+			display: none;
+			width: 40px;
+			height: 70px;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -35px;
+			/*background-color: rgba(0,0,0,0.5);*/
+			background: url(images/xiaomi/left.gif) no-repeat center center rgba(0,0,0,0.5);
+			cursor: pointer;
+		}
+		.rightBtn{
+			left: auto;
+			right: 0;
+			background-image: url(images/xiaomi/right.gif);
+		}
+		.btnList{
+			width: 200px;
+			height: 22px;
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+		}
+		.btnList li{
+			width: 30px;
+			height: 20px;
+			border: 1px solid #ccc;
+			float: left;
+			margin-right: 10px;
+			background: rgba(0,0,0,0.35);
+			text-align: center;
+			color: #ccc;
+			line-height: 20px;
+			cursor: pointer;
+		}
+		.btnList li.current{
+			background: rgba(0,0,0,0.6);
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			//JQ初始化CSS
+			var aImgLi=$('.imgList li');
+			aImgLi.first().show();
+
+			var aBtnLi=$('.btnList li');
+			aBtnLi.last().css('margin-right', 0);
+
+			var timer;
+
+			var banner=$('.banner');
+			banner.hover(function() {
+				clearInterval(timer);
+			}, function() {
+				clearInterval(timer);
+				timer=setInterval(nextFn, 1000);
+			});
+
+
+			
+			var rightBtn=$('.rightBtn');
+			//定义一个模拟变量
+			var num=0;
+			
+			//封装下一张的功能
+			function nextFn(event) {
+				
+				//辞旧：让当前这一张fadeOut
+				//num在加加之前，就可以代表当前这一张的序号
+				aImgLi.eq(num).stop().fadeOut(800);
+				//让当前这个角标移除current
+				aBtnLi.eq(num).removeClass('current');
+
+				num++;
+				if(num>4){
+					num=0;
+				}
+
+				//迎新：让下一张fadeIn
+				//num在加加之后，可以代表下一张的序号
+				aImgLi.eq(num).stop().fadeIn(800);
+				//让下一个角标新增current
+				aBtnLi.eq(num).addClass('current');
+
+			}
+
+			//下一张切换
+			rightBtn.click(nextFn);
+
+			//自动切换
+			timer=setInterval(nextFn, 1000);
+
+			//上一张切换
+			var leftBtn=$('.leftBtn');
+			leftBtn.click(function(event) {
+				
+				//辞旧：让当前这一张fadeOut
+				//num在减减之前，就可以代表当前这一张的序号
+				aImgLi.eq(num).stop().fadeOut(800);
+				//让当前这个角标移除current
+				aBtnLi.eq(num).removeClass('current');
+				num--;
+				if(num<0){
+					num=4;
+				}
+
+				//迎新：让上一张fadeIn
+				//num在减减之后，可以代表上一张的序号
+				aImgLi.eq(num).stop().fadeIn(800);
+				//让上一个角标新增current
+				aBtnLi.eq(num).addClass('current');
+
+			});	
+
+			//点击切换
+			aBtnLi.click(function(event) {
+				
+				//现在内存里面驻留的num就代表当前这一张
+				//辞旧：让当前这一张fadeOut
+				aImgLi.eq(num).stop().fadeOut(800);
+				//让当前这个角标移除current
+				aBtnLi.eq(num).removeClass('current');
+
+				//迎新：让与当前角标相匹配的那一张显示
+				//这里需要一个很关键的操作，这是要让内存里面的num和你操作的这个角标的序号做同步；
+				//因为你不做同步的话，内存里面的num永远都是0
+				num=$(this).index();
+				aImgLi.eq(num).stop().fadeIn(800);
+				//让操作的这个角标新增current
+				aBtnLi.eq(num).addClass('current');
+
+
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<div class="banner">
+		<ul class="imgList">
+			<li><a href="javascript:;"><img src="images/xiaomi/1.jpg" height="420" width="992" /></a></li>
+			<li><a href="javascript:;"><img src="images/xiaomi/2.jpg" height="420" width="992" /></a></li>
+			<li><a href="javascript:;"><img src="images/xiaomi/3.jpg" height="420" width="992" /></a></li>
+			<li><a href="javascript:;"><img src="images/xiaomi/4.jpg" height="420" width="992" /></a></li>
+			<li><a href="javascript:;"><img src="images/xiaomi/5.jpg" height="420" width="992" /></a></li>
+		</ul>
+		<div class="leftBtn"></div>
+		<div class="rightBtn"></div>
+		<ol class="btnList">
+			<li class="current">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ol>
+	</div>
+</body>
+</html>

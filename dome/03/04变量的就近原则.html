@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>04变量的就近原则</title>
+</head>
+
+<body>
+</body>
+</html>
+<script type="text/javascript">		//小区
+	//广场
+	var tv='电视';
+
+	function fn(){		//我家
+		
+		
+		var tv='乐视超级TV';
+		//会输出'乐视超级TV'
+		alert(tv);
+		
+		
+	}
+
+	fn();
+	
+	var tv1='电视';
+
+	function fn2(){		//我家
+		
+		alert(tv1);
+		var tv2='乐视超级TV';
+		alert(tv2);
+		
+		
+	}
+
+	fn2();
+
+
+
+
+</script>

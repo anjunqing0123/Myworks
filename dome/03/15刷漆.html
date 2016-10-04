@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>15刷漆</title>
+<style type="text/css">
+	
+	div{
+		width:200px;
+		height:100px;
+		background-color:#ccc;
+		border:1px solid #000;	
+	}
+
+</style>
+</head>
+
+<body>
+	<button>刷漆</button>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
+<script type="text/javascript">
+
+	var divs=document.getElementsByTagName('div');
+	var btn=document.getElementsByTagName('button');
+	
+	btn[0].onclick=function(){
+		/*divs[0].style.backgroundColor='pink';
+		divs[1].style.backgroundColor='pink';
+		divs[2].style.backgroundColor='pink';
+		divs[3].style.backgroundColor='pink';
+		divs[4].style.backgroundColor='pink';
+		divs[5].style.backgroundColor='pink';
+		divs[6].style.backgroundColor='pink';
+		divs[7].style.backgroundColor='pink';
+		divs[8].style.backgroundColor='pink';
+		divs[9].style.backgroundColor='pink';	*/
+		
+		for(var i=0; i<divs.length; i++){
+			//i:0~9
+			divs[i].style.backgroundColor='pink';
+		}
+	}
+
+
+
+</script>

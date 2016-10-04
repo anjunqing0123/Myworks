@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>10唱大戏</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		body{
+			background-color: #000;
+		}
+		.list{
+			width: 640px;
+			height: 402px;
+			margin: 100px auto 0;
+			border: 1px solid #fff;
+		}
+		.list li{
+			width: 200px;
+			height: 186px;
+			margin: 10px 0 0 10px;
+			float: left;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+
+		$(function() {
+			
+			var aLi=$('.list li');
+
+			aLi.hover(function() {
+				
+				// 先让当前这个LI的透明度过渡到1
+				$(this).stop().fadeTo('normal',1);
+
+				//让当前这个li的小伙伴们的透明度降低0.3
+				$(this).siblings().stop().fadeTo('normal',.3);
+
+			}, function() {
+			
+				//离开时，还原所有的LI透明度到1
+				aLi.stop().fadeTo('normal',1);
+
+			});
+
+
+		});
+
+	</script>
+</head>
+<body>
+	<ul class="list">
+		<li><a href="javascript:;"><img src="images/01.jpg" height="186" width="200" /></a></li>
+		<li><a href="javascript:;"><img src="images/02.jpg" height="186" width="200" /></a></li>
+		<li><a href="javascript:;"><img src="images/03.jpg" height="186" width="200" /></a></li>
+		<li><a href="javascript:;"><img src="images/04.jpg" height="186" width="200" /></a></li>
+		<li><a href="javascript:;"><img src="images/05.jpg" height="186" width="200" /></a></li>
+		<li><a href="javascript:;"><img src="images/06.jpg" height="186" width="200" /></a></li>
+	</ul>
+</body>
+</html>

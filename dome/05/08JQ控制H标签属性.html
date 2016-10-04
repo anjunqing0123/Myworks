@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>08JQ控制H标签属性</title>
+	<style type="text/css">
+		.bg{
+			background-color: yellow;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			//控制多个H标签属性
+			/*$('button').attr({
+				'class':'bg',
+				'title':'这是一个按钮'
+			})*/
+
+			// $('button').attr('title', '老王');
+			// 
+			alert($('button').attr('title'));
+		});
+	</script>
+</head>
+<body>
+	<button title="老缪">按钮</button>
+</body>
+</html>

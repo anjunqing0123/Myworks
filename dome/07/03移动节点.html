@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>03移动节点</title>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var btn=$('button');
+
+			btn.click(function(event) {
+				
+				//x.insertBefore(y) //将x剪切到y之前
+				// $('.list li:last').insertBefore($('.list li:first'));	
+
+				// x.insertAfter(y)  //将x剪切到y之后
+				$('.list li:first').insertAfter($('.list li:last'));
+
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<button>移动节点</button>
+	<ol class="list">
+		<li>吃饭</li>
+		<li>睡觉</li>
+		<li>打豆豆</li>
+	</ol>
+</body>
+</html>

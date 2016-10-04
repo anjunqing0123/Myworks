@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>03全局变量</title>
+</head>
+
+<body>
+</body>
+</html>
+<script type="text/javascript">	//小区
+
+	//广场
+	//公有财产
+	var tv='电视';
+
+	function fn1(){			//我家
+		alert(tv);
+	}
+
+
+	function fn2(){			//老缪
+		alert(tv);	
+	}
+	
+	function fn3(){			//老王
+		//修改全局变量
+		tv='坏电视';	
+		alert(tv);
+	}
+	
+	
+	fn1();		//电视
+	fn2();		//电视
+	fn3();		//坏电视
+
+</script>

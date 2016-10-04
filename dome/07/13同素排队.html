@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>13同素排队</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: yellowgreen;
+			border: 1px solid #000;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var btn=$('button');
+			var myDiv=$('div');
+
+			btn.click(function(event) {
+				/*myDiv.animate({
+					'width':500,
+					'height':500,
+					'margin-left':500
+				}, 1500);*/
+				myDiv.animate({'width':500}, 500);
+				myDiv.animate({'height':500}, 500);
+				myDiv.animate({'margin-left':500}, 500);
+			});
+
+
+		});
+	</script>
+</head>
+<body>
+	<button>动动</button>
+	<div></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>08用on来处理未来的元素</title>
+	<style type="text/css">
+		ul,li{
+			list-style: none;
+		}
+		li{
+			width: 200px;
+			height: 50px;
+			background-color: yellowgreen;
+			border: 1px solid #000;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			$('button').click(function(event) {
+				var myLi='<li>新增的节点</li>';
+				$('ul').append(myLi);
+			});
+
+			/*$('li').click(function(event) {
+				alert('单击事件被触发');
+			});*/
+
+			$(document).on('click','li',function(){
+
+				$(this).css({
+					backgroundColor: '#ccc',
+					height: '26px'
+				});
+
+			})
+
+
+		});
+	</script>
+</head>
+<body>
+	<button>新增</button>
+	<ul>
+		<li>0000</li>
+		<li>1111</li>
+		<li>2222</li>
+	</ul>
+</body>
+</html>

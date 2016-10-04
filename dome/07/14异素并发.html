@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>14异素并发</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: yellowgreen;
+			border: 1px solid #000;
+			margin-bottom: 10px;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var btn=$('button');
+			var aDiv=$('div');
+
+			btn.click(function(event) {
+				
+				/*aDiv.eq(0).animate({'margin-left':800}, 'slow');
+				aDiv.eq(1).delay(600).animate({'margin-left':800}, 'slow');
+				aDiv.eq(2).delay(1200).animate({'margin-left':800}, 'slow');
+				aDiv.eq(3).delay(1800).animate({'margin-left':800}, 'slow');
+				aDiv.eq(4).delay(2400).animate({'margin-left':800}, 'slow');*/
+
+				/*aDiv.eq(0).animate({'margin-left':800}, 'slow');
+				aDiv.eq(1).delay(200).animate({'margin-left':800}, 'slow');
+				aDiv.eq(2).delay(400).animate({'margin-left':800}, 'slow');
+				aDiv.eq(3).delay(600).animate({'margin-left':800}, 'slow');
+				aDiv.eq(4).delay(800).animate({'margin-left':800}, 'slow');*/
+
+				aDiv.eq(1).delay(200);
+				aDiv.eq(2).delay(400);
+				aDiv.eq(3).delay(600);
+				aDiv.eq(4).delay(800);
+				aDiv.animate({'margin-left':800}, 'slow');
+
+
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<button>动动</button>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

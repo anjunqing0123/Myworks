@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>12自定义函数简化代码</title>
+<style type="text/css">
+	div{
+		width:100px;
+		height:100px;
+		border:1px solid #000;
+		background-color:yellowgreen;
+		display:none;	
+	}
+</style>
+</head>
+
+<body>
+	<button id="btn1">按钮1</button>
+    <button id="btn2">按钮2</button>
+    <button id="btn3">按钮3</button>
+    <div id="box1">盒子1</div>
+    <div id="box2">盒子2</div>
+    <div id="box3">盒子3</div>
+</body>
+</html>
+<script type="text/javascript">
+
+	/*//单击按钮1，让盒子1显示
+	var btn1=document.getElementById('btn1');
+	var box1=document.getElementById('box1');
+	btn1.onclick=function(){
+		
+		box1.style.display='block';
+		
+	};
+	
+	
+	//单击按钮2，让盒子2显示
+	var btn2=document.getElementById('btn2');
+	var box2=document.getElementById('box2');
+	btn2.onclick=function(){
+		
+		box2.style.display='block';
+		
+	};
+	
+	//单击按钮3，让盒子3显示
+	var btn3=document.getElementById('btn3');
+	var box3=document.getElementById('box3');
+	btn3.onclick=function(){
+		
+		box3.style.display='block';
+		
+	};*/
+	
+	/*简化代码的步骤：
+	（1）找相似的代码段；
+	（2）写一个自定义函数，把相似的代码段放入函数体；
+	（3）观察需要改变的数值有几个，就写几个参数；
+	（4）替换那些要更改的值，并修改、语义化变量名。*/
+	
+	
+	//单击按钮1，让盒子1显示
+	//单击按钮2，让盒子2显示
+	//单击按钮3，让盒子3显示
+	//封装一个功能，来简化它
+	//单一的功能：单击按钮，让盒子显示
+	//需要改变的数值有两个，按钮X和盒子Y
+	function clickBtnShowBox(x,y){
+		
+		//x: 按钮1、按钮2、按钮3：不断在改变的按钮（活的）
+		//y：盒子1、盒子2、盒子3：不断在改变的盒子
+		//alert(x);
+		//alert(y);
+		var changeBtn=document.getElementById(x);
+		var changeBox=document.getElementById(y);
+		changeBtn.onclick=function(){
+			
+			changeBox.style.display='block';
+			
+		};	
+		
+	};
+	
+	//传递过去的是ID名称
+	clickBtnShowBox('btn1','box1');
+	clickBtnShowBox('btn2','box2');
+	clickBtnShowBox('btn3','box3');
+	
+</script>
+
+
+
+
+
+
+
+
+

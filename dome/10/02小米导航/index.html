@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>小米官网</title>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"  />
+<style type="text/css">
+    
+    .nav-container{
+        width: 100%;
+        position: relative;
+        z-index: 1000;
+    }
+    .twoNavList{
+        position: absolute;
+        width: 100%;
+        height: 229px;
+        left: 0;
+        top: 100px;
+        background-color: #fff;
+        border-top: 1px solid #ccc;
+        display: none;
+    }
+    .twoNavList li{
+        height: 229px;
+        text-align: center;
+        display: none;
+    }
+
+</style>
+<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+<script type="text/javascript">
+    
+    $(function() {
+        
+        var aOneNav=$('#myNavId li:lt(6)');
+        var twoNavList=$('.twoNavList');
+        var aTwoNav=$('.twoNavList li');
+        var timer;
+
+        aOneNav.hover(function() {
+            
+            // alert('移上');
+            clearTimeout(timer);
+            // 因为一级导航离开时，将隐藏的效果延时了300ms；
+            // 移到页面其他区域，希望隐藏内容，是OK的；
+            // 而移到其他一级导航身上，希望显示内容，
+            // 延时后，会先执行显示，再执行隐藏，是不OK的，
+            // 所以需要再做一次清空。
+
+            var i=$(this).index();
+            //1.让相匹配的二级导航内容出来
+            aTwoNav.eq(i).show();
+            //同时，只能有一个二级导航显示，其他的隐藏
+            aTwoNav.eq(i).siblings().hide();
+
+            //2.让整个二级导航的大盒子出来
+            twoNavList.stop().slideDown('fast');
+
+        }, function() {
+
+
+            timer=setTimeout(function(){
+                // alert('离开');
+                twoNavList.stop().slideUp('fast');
+
+            }, 300);
+            
+
+        });
+
+        aTwoNav.hover(function() {
+            
+            clearTimeout(timer);
+            // 这里做清空，可以让二级导航一直显示
+            // 不做清空，二级导航等待300ms后又隐藏了
+            
+        }, function() {
+
+            //在二级导航身上离开时，让其隐藏
+           twoNavList.stop().slideUp('fast');
+
+        });
+
+
+    });
+
+</script>
+</head>
+
+<body>
+<!--****************** 顶部开始 *****************-->
+<div class="top">
+	<div class="inTop">
+    	<ul class="clearfix">
+        	<li><a href="#">小米网</a>|</li>
+            <li><a href="#">MIUI</a>|</li>
+            <li><a href="#">米聊</a>|</li>
+            <li><a href="#">游戏</a>|</li>
+            <li><a href="#">多看阅读</a>|</li>
+            <li><a href="#">云服务</a>|</li>
+            <li><a href="#">小米网移动版</a>|</li>
+        	<li><a href="#">购物车</a>|</li>
+        	<li><a href="#">问题反馈</a>|</li>
+        	<li><a href="#">购物车</a>|</li>
+            <li><a href="#">Select Region</a></li>
+      		<li class="last"><a href="#">登录</a> | <a href="#">注册</a></li>
+        </ul>
+        <span><i>&#xe616;</i>购物车（0）</span>
+        
+    </div>
+
+</div>
+
+<!-- 导航开始 -->
+<div class="nav-container">
+    <div class="nav clearfix">
+    	<h1>小米官网</h1>
+    	<div class="inNav">
+        	<ul class="clearfix" id="myNavId">
+            	<li><a href="#">小米手机</a></li>
+                <li class="currentLi"><a href="#">红米</a></li>
+                <li><a href="#">平板</a></li>
+                <li class="currentLi"><a href="#">电视·盒子</a></li>
+                <li><a href="#">路由器</a></li>
+                <li class="currentLi"><a href="#">智能硬件</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">社区</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <ul class="twoNavList">
+        <li style="display:block;"><img src="navImg/1.png" height="229" width="1226" /></li>
+        <li><img src="navImg/2.png" height="229" width="1226" /></li>
+        <li><img src="navImg/3.png" height="229" width="1226" /></li>
+        <li><img src="navImg/4.png" height="229" width="1226" /></li>
+        <li><img src="navImg/5.png" height="229" width="1226" /></li>
+        <li><img src="navImg/6.png" height="229" width="1226" /></li>
+    </ul>
+</div>
+
+
+
+<!-- banner开始 -->
+<div class="banner">
+
+	<div class="sidebar">
+    
+    	<ul class="clearfix side">
+        	<li id="myLi01"><a href="#">手机 平板 <i>&#xe601;</i></a></li>
+            <li><a href="#">电视 盒子 <i>&#xe601;</i></a></li>
+            <li><a href="#">路由器 智能硬件<i>&#xe601;</i></a></li>
+            <li><a href="#">移动电源 插线板 <i>&#xe601;</i></a></li>
+            <li><a href="#">耳机 音响  <i>&#xe601;</i></a></li>
+            <li><a href="#">电池 存储卡 <i>&#xe601;</i></a></li>
+            <li><a href="#">保护盖 后盖 <i>&#xe601;</i></a></li>
+        	<li><a href="#">贴膜 其他配件 <i>&#xe601;</i></a></li>
+        	<li><a href="#">米兔 服装 <i>&#xe601;</i></a></li>
+        	<li><a href="#">背包 其他周边 <i>&#xe601;</i></a></li>
+        	
+        </ul>
+    
+    	<ul id="phone_detail">
+        	<li>
+            	<a href="#"><img src="images/mi2.jpg" /><span>小米note</span></a>
+                <a href="#" class="buy">选购</a>
+             </li>
+        	<li>
+            	<a href="#"><img src="images/mi3.jpg" /><span>小米平板</span></a>
+                <a href="#" class="buy">选购</a>
+            </li>
+            <li>
+            	<a href="#"><img src="images/mi4.jpg" /><span>小米手机4</span></a>
+                <a href="#" class="buy">选购</a>
+             </li>
+            <li>
+           	 	<a href="#"><img src="images/mi5.jpg" /><span>电信版</span></a>
+            </li>
+            <li>
+            	<a href="#"><img src="images/mi6.jpg" /><span>红米手机2</span></a>
+            	<a href="#" class="buy">选购</a>
+            </li>
+            <li>
+            	<a href="#"><img src="images/mi7.jpg" /><span>合约机</span></a>
+            </li>
+            <li>
+            	<a href="#"><img src="images/mi8.jpg" /><span>红米手机2A</span></a>
+            	<a href="#" class="buy">选购</a>
+            </li>
+            <li>
+            	<a href="#"><img src="images/mi9.jpg" /><span>中信特权</span></a>
+            </li>
+            <li>
+            	<a href="#"><img src="images/mi10.jpg" /><span>红米note</span></a>
+            	<a href="#" class="buy">选购</a>
+            </li>
+            <li>
+            	<a href="#"><img src="images/mi2.jpg" /><span>对比手机</span></a></a>
+            </li>
+        
+        
+        </ul>
+        
+        
+   
+    </div>
+
+    <ul class="clearfix">
+        <li><a href="#"><img src="images/banner2.jpg" /></a></li>
+        <li><a href="#"><img src="images/banner1.jpg" /></a></li>
+        <li><a href="#"><img src="images/banner3.jpg" /></a></li>
+        <li><a href="#"><img src="images/banner4.jpg" /></a></li>
+        <li><a href="#"><img src="images/banner5.jpg" /></a></li>
+    	<i class="left">&#xe607;</i>
+        <i class="right">&#xe61b;</i>
+    </ul>
+	
+    <ol>
+    	<li class="current"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+	
+</div>
+
+
+
+</body>
+</html>

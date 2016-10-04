@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>08常用事件类型</title>
+<style type="text/css">
+	
+	*{
+		margin: 0;
+		padding: 0;
+		border: 0;	
+	}
+	ul,li{
+		list-style:none;	
+	}
+	.list{
+		width: 498px;
+		border: 1px solid #000;
+		border-bottom: none;
+		margin: 100px auto 0;
+		background-color: #ccc;
+	}
+	.list li{
+		height: 30px;
+		border-bottom: 1px solid #000;
+		text-align: center;
+		line-height: 30px;	
+		cursor: pointer;
+	}
+
+</style>
+</head>
+
+<body>
+	<ul class="list">
+    	<li id="li01">单击事件</li>
+        <li id="li02">双击事件</li>
+        <li id="li03">鼠标移入事件</li>
+        <li id="li04">鼠标离开事件</li>
+    </ul>
+</body>
+</html>
+<script type="text/javascript">
+
+	//当单击LI01时，弹出....
+	
+	var li01=document.getElementById('li01');
+	li01.onclick=function(){
+		
+		alert('单击事件捕获成功-_-');
+	
+	};
+	
+	//当双击LI02时，弹出....
+	document.getElementById('li02').ondblclick=function(){
+	
+		alert('双击事件捕获成功-_-');
+	
+	};
+
+	//当鼠标移入LI03时，弹出....
+	document.getElementById('li03').onmouseenter=function(){
+		
+		alert('鼠标移入事件捕获成功-_-');	
+		
+	};
+	
+	//当鼠标离开LI04时，弹出....
+	document.getElementById('li04').onmouseleave=function(){
+		
+		alert('鼠标离开事件捕获成功-_-');	
+		
+	};
+
+</script>
+
+
+
+
+
+
+
+
+

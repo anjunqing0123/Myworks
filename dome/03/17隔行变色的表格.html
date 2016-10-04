@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>17隔行变色的表格</title>
+<style type="text/css">
+	
+	table{
+		background-color:#4F81BD;	
+		margin: 100px auto 0;
+	}
+	tr{
+		background-color:#fff;
+		height: 35px;
+	}
+
+</style>
+</head>
+
+<body>
+
+    <table width="800" border="0" cellspacing="1" cellpadding="0" id="myTable">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    
+    <table width="800" border="0" cellspacing="1" cellpadding="0">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+
+</body>
+</html>
+<script type="text/javascript">
+
+	//让表格中所有的奇数行变色
+	//奇数：对2取余不为0
+	//var trs=document.getElementsByTagName('tr');
+	//第一个表格的tr
+	var oneTableTrs=document.getElementById('myTable').getElementsByTagName('tr');
+	
+	for(var i=0; i<oneTableTrs.length; i++){
+		
+		//i=0~9	代表行数
+		//如果i%2!=0，代表是奇数行
+		if(i%2!=0){
+			//能进入这个判断，一定是奇数行
+			oneTableTrs[i].style.backgroundColor='#B8CCE4';
+		}
+		
+	}
+	
+	
+
+
+</script>

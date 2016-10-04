@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* CSS Document */
+
+.breadcrumb{
+	width:1230px;
+	height:50px;
+	margin:0 auto;
+	border-bottom:1px solid #ccc;}
+.breadcrumb span{
+	font-size:18px;
+	line-height:50px;
+	display:inline-block;
+	float:left;
+	}
+
+.bread{
+	float:right;
+	line-height:50px;
+	}
+.bread a{
+	padding:0 5px;
+	font-size:14px;
+	}
+.bread a b{
+	font-size:13px;
+	color:#ccc;}
+.bread a.btn{
+	display:inline-block;
+	width:120px;
+	height:30px;
+	background:#FF6700;
+	text-align:center;
+	line-height:30px;
+	color:#fff;}
+	
+/*---------------------------------面包屑结束----------------------------------*/	
+	
+.pad-container{
+	margin-top:60px;
+	text-align:center;
+	margin-bottom:30px;
+	}
+.pad-container h2{font-size:56px;
+	line-height:60px;
+	height:60px;
+	font-family:细黑,微软雅黑;}
+.pad-container p{
+	font-size:38px;
+	margin-top:5px;
+	}
+.pad-container .wenzi{
+	font-size:14px;
+	color:#999;
+	margin:10px 0;}
+.pad-container ul{
+	width:200px;
+	/*border:1px solid red;*/
+	margin:0 auto;
+	}	
+.pad-container li{
+	float:left;
+	font-size:16px;
+	margin-right:35px;
+	padding-top:42px;
+	text-align:center;
+	width:75px;
+	color:#EB5835;
+	margin:0 auto;
+	padding-right:17px;}
+.GB16{
+	background:url(../images/icon-16g.png) no-repeat top center;}
+.GB64{
+	background:url(../images/icon-64g.png) no-repeat top center;}
+	
+	
+/*--------------------------------------详情页开始------------------------*/	
+
+.detail{
+	/*height:1065px;*/
+	text-align:center;
+	padding-top:60px;
+	}
+.detail img{}	
+.detail p{
+	font-size:38px;
+	margin-top:10px;}	
+.detail .wenzi{
+	font-size:14px;
+	width:739px;
+	height:120px;
+	margin:0 auto;
+	color:#666;
+	line-height:30px;
+	}	
+.detail h3{
+	font-size:30px;
+	color:#757585;}
+.detail h4{
+	margin-bottom:10px;
+	}
+	
+/*处理器样式开始*/	
+
+.cpu{
+	background:#F3F3F3;
+	
+	}
+.paper{
+	padding-bottom:40px;
+	
+	}
+.office{
+	padding-bottom:30px;
+	}
+.detail ul li{background-position:center;
+    background-repeat:no-repeat;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    float: left;
+    height: 23px;
+    margin-right:15px;
+	width:23px;
+	 }
+	
+	
+	
+	
+	
+.protect{
+	background:url(../images/mipad-18.jpg) no-repeat;
+	height:970px;
+	width:100%;
+	}
+.jacket{
+	width:1230px;
+	padding-top:200px;
+	margin:0 auto;
+	}
+.jacket h3{
+	font-size:40px;
+	color:#666;
+	}
+	
+.jacket span{
+	font-size:25px;
+	display:block;
+	margin-top:20px;}
+.fan {
+	font-size:30px;
+	color:#666;}
+
+.content{
+	width:577px;
+	font-size:16px;
+	padding-top:20px;
+	color:#424242;}
+
+button{
+	display:inline-block;
+	width:120px;
+	height:30px;
+	background:#FF6700;
+	text-align:center;
+	line-height:30px;
+	color:#fff;
+	border:0;
+	margin-top:30px;}
+	
+	
+/*---------------------------俩种版本开始--------------------------*/
+
+.version{
+	text-align:center;}	
+.version h2{
+	font-size:40px;
+	}	
+
+
+.more{
+	text-align:center;
+	height:90px;
+	line-height:90px;
+	display:block;
+	font-size:24px;
+	background:#F3F3F3;
+	}
+	
+/*--------------------底部ipad开始---------*/
+	
+.pad-bottom{
+	text-align:center;
+	padding-bottom:20px;}
+.pad-bottom ul{
+	width:1230px;
+	margin:0 auto;
+	}
+.pad-bottom li{
+	float:left;
+	width:33.33%;
+	}
+.pad-bottom h2{
+	font-size:24px;
+	padding-top:20px;
+	}
+.pad-bottom p{
+	font-size:18px;
+	width:330px;
+	margin-top:10px;
+	margin-left:25px;
+	}
+.pad-bottom span{
+	margin-right:20px;
+	font-size:16px;
+	}
+.download a{
+	padding-top:14px;
+	color:#FF6700;
+	display:block;}

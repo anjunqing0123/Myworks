@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>07微博发布</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		.box{
+			width: 600px;
+			border: 1px solid #ccc;
+			margin: 100px auto 0;
+			padding: 10px 10px 0;
+		}
+		textarea{
+			width: 598px;
+			height: 140px;
+			border: 1px solid #ccc;
+			resize: none;
+			outline: none;
+			font-size: 15px;
+			font-family: "宋体";
+			line-height: 30px;
+			margin-bottom: 5px;
+		}
+		button{
+			width: 80px;
+			height: 30px;
+			border-radius: 3px;
+			background-color: orange;
+			color: #fff;
+			font-size: 15px;
+			font-family: "宋体";
+			line-height: 30px;
+		}
+		.list{
+			padding: 10px 0;
+			font-size: 15px;
+			font-family: "宋体";
+			line-height: 30px;
+		}
+		.list li{
+			border-bottom: 1px dotted #ccc;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+
+			//更改边框颜色
+			var myText=$('textarea');
+			myText.focus(function(event) {
+
+				// $(this).css('border-color', 'orange');
+				myText.css('border-color', 'orange');
+
+			}).blur(function(event) {
+
+				myText.css('border-color', '#ccc');
+
+			});
+
+			//“发布微博”效果
+			var btn=$('button');
+			var list=$('.list');
+			//这个不能再外面定义，如果在外面定义，始终存放的都是页面加载完成后，
+			//那第0个LI
+			//那我们希望做动画的，是新增后那个全新的第0个LI，所以要放在事件里面书写
+			// var firstLi=$('.list li:first');
+			btn.click(function(event) {
+				
+				//如果文本域内的值是空时，不允许插入；
+				//反之，正常操作
+				var s=myText.val();
+
+				if(s==''){
+
+					alert('输入不能为空~');
+
+				}else{
+
+					var myLi='<li>'+s+'</li>';
+					list.prepend(myLi);
+					//为了让slideDown生效，插入节点之后，马上将新插入的节点隐藏
+					$('.list li:first').hide().stop().slideDown();
+
+				}
+				
+				
+			});
+
+
+		});
+	</script>
+</head>
+<body>
+	<div class="box">
+		
+		<textarea></textarea>
+		<button>发布</button>
+		<ul class="list wordwrap">
+			<li>快来收了这九款用上就停不下来的应用吧！！</li>
+			<li>超级详细的云南大理自助游攻略</li>
+			<li>外国最近很火的舞蹈，舒服简单自然，太棒了！</li>
+		</ul>
+
+	</div>
+</body>
+</html>

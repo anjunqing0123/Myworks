@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>05变量的相对原则</title>
+</head>
+
+<body>
+</body>
+</html>
+<script type="text/javascript">
+
+
+	/*function fn(){			//我家
+		
+		function fnIn(){
+			
+			alert('你好');	
+			
+		}
+		fnIn();
+		
+		
+	}
+
+	//fnIn();
+	fn();*/
+	
+	
+	function fn(){			//我家
+		
+		//客厅
+		//这个变量相对于外面的大环境而言，是私有的；
+		//但是，它相对于下面的两个函数，又是公有的。
+		var tv='电视';
+		
+		function fnIn1(){		//主卧
+			alert(tv);
+		}
+		
+		function fnIn2(){		//次卧
+			alert(tv);
+		}
+		fnIn1();
+		fnIn2();
+		
+	}
+	
+	fn();
+	alert(tv);
+
+
+
+
+</script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>03腾讯书城</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<style type="text/css">
+		
+		.box{
+			width: 320px;
+			margin: 100px auto 0;
+			border: 1px solid #000;
+			background: url(images/top.png) no-repeat;
+			padding-top: 47px;
+		}
+		.list li{
+			text-align: center;
+			padding: 20px 0;
+			border-bottom: 1px dashed #ccc;
+		}
+		.list li p{
+			height: 35px;
+			line-height: 35px;
+			text-align: center;
+			color: #333;
+			font-size: 16px;
+			cursor: default;
+			background: url(images/01.jpg) no-repeat 20px center;
+		}
+		.list li img{
+			display: none;
+		}
+
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			//JQ初始化CSS
+			$('.list li:last').css('border-bottom', 'none');
+
+
+			var aLi=$('.list li');
+
+			/*aLi.mouseenter(function(event) {
+				//让当前这个LI下面的P隐藏，图片显示
+				$(this).children('p').hide();
+				$(this).children('img').show();
+			});
+
+			aLi.mouseleave(function(event) {
+				//让当前这个LI下面的P显示，图片隐藏
+				$(this).children('p').show();
+				$(this).children('img').hide();
+			});*/
+
+			/*aLi.hover(function() {
+				//让当前这个LI下面的P隐藏，图片显示
+				$(this).children('p').hide();
+				$(this).children('img').show();
+			}, function() {
+				//让当前这个LI下面的P显示，图片隐藏
+				$(this).children('p').show();
+				$(this).children('img').hide();
+			});*/
+
+			/*aLi.hover(function() {
+				$(this).children('p').toggle();
+				$(this).children('img').toggle();
+			});*/
+
+			aLi.hover(function() {
+				$(this).children().toggle();
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<div class="box">
+		<ul class="list">
+			<li>
+				<p>怎样在不为人知的情况 15.10元</p>
+				<img src="images/img.jpg" height="108" width="269" />
+			</li>
+			<li>
+				<p>怎样在不为人知的情况 15.10元</p>
+				<img src="images/img.jpg" height="108" width="269" />
+			</li>
+			<li>
+				<p>怎样在不为人知的情况 15.10元</p>
+				<img src="images/img.jpg" height="108" width="269" />
+			</li>
+			<li>
+				<p>怎样在不为人知的情况 15.10元</p>
+				<img src="images/img.jpg" height="108" width="269" />
+			</li>
+			<li>
+				<p>怎样在不为人知的情况 15.10元</p>
+				<img src="images/img.jpg" height="108" width="269" />
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

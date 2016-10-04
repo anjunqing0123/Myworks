@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>09吸附导航</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+		.current{
+			position: fixed;
+			left: 50%;
+			top: 0;
+			margin-left: -501px;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var navObj=$('.nav');
+			var mainObj=$('.main');
+
+			//这个获取一定要写在外面，因为执行外面大环境的代码时，nav还是个标准流，
+			//获取的值是OK的
+			//而写在里面，nav会在固定和标签之间切换，获取到的值是不确定的。
+			var navOffsetTop=navObj.offset().top;
+			
+			$(window).scroll(function(event) {
+				
+				//如果浏览器卷去了一个header高度，让nav变成固定定位(具备current)
+				if($(window).scrollTop()>navOffsetTop){
+					navObj.addClass('current');
+					mainObj.css('margin-top', 82);
+				}else{
+					navObj.removeClass('current');
+					mainObj.css('margin-top', 0);
+				}
+
+			});
+
+
+		});
+	</script>
+</head>
+<body>
+	<img src="images/head.png" height="168" width="1002" class="header" />
+	<img src="images/nav.png" height="82" width="1002" class="nav" />
+	<img src="images/main.png" height="3273" width="1002" class="main" />
+</body>
+</html>

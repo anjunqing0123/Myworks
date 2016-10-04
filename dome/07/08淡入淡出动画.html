@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>08淡入淡出动画</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: yellowgreen;
+			border: 1px solid #000;
+			/* opacity: 0.5;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; 
+			filter:alpha(opacity=50); */
+
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+			var aBtn=$('button');
+			var myDiv=$('div');
+			// myDiv.css('opacity', '0.2');
+
+			//淡出
+			aBtn.eq(1).click(function(event) {
+				
+				myDiv.fadeOut();
+
+			});
+
+			//淡入
+			aBtn.eq(0).click(function(event) {
+				myDiv.fadeIn();
+			});
+
+			//切换
+			aBtn.eq(2).click(function(event) {
+				myDiv.fadeToggle();
+			});
+
+
+		});
+	</script>
+</head>
+<body>
+	<button>淡入</button>
+	<button>淡出</button>
+	<button>切换</button>
+	<div></div>
+</body>
+</html>

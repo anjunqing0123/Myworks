@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>10控制class集群</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: #ccc;
+			margin: 100px auto;
+		}
+		.bd{
+			border: 10px solid #000;
+		}
+		.yuan{
+			border-radius: 50%;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+
+			$('div').click(function(event) {
+				
+				// $(this).addClass('bd');
+				// $(this).attr('class', 'bd yuan');
+				// $(this).addClass('yuan');
+
+				// $(this).attr('class', 'bd');
+				// $(this).removeClass('bd yuan');
+				
+				// $(this).toggleClass('yuan');
+				
+				alert($(this).hasClass('bd yuan meiYuan'));
+				
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<div class="bd yuan"></div>
+</body>
+</html>
