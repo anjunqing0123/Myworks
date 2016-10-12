@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <style>
-		.box{width: 500px;}
-        </style>
-        <script type="text/javascript">
-        window.onload = function(){
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .box {
+            width: 500px;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function() {
             var oImg = document.getElementsByTagName('img'); // 获取所有的图片
-        	var oInput = document.getElementsByTagName('input'); // 获取当前表单元素集合
-        	var str = ''; // 将得到的秒数转换成时分秒
-            var timer = null; 
-        	oInput[2].onclick = function(){
-                var oNew = new Date(oInput[0].value); // 获取将来时间
-                clearInterval(timer);
-                timer = setInterval(function(){
-                    var oNow = new Date();  // 获取当前时间
-                    var t = Math.floor((oNew - oNow )/1000) ;  // 将来时间减去当前时间并且转化成秒
-                    console.log(t)
-                        if(t > 0){
-                            str = /*Math.floor(t/86400) + '天' + */toTwo(Math.floor(t%86400/3600)) + ':' +toTwo(Math.floor(t%86400%3600/60))+ ':' + toTwo(t%60) // 将所有的秒转化为天数 时 分 秒 的公式
+            var oInput = document.getElementsByTagName('input'); // 获取当前表单元素集合
+            var str = ''; // 将得到的秒数转换成时分秒
+            var timer = null;
+            oInput[2].onclick = function() {
+                    var oNew = new Date(oInput[0].value); // 获取将来时间
+                    clearInterval(timer);
+                    timer = setInterval(function() {
+                        var oNow = new Date(); // 获取当前时间
+                        var t = Math.floor((oNew - oNow) / 1000); // 将来时间减去当前时间并且转化成秒
+                        console.log(t)
+                        if (t > 0) {
+                            str = /*Math.floor(t/86400) + '天' + */ toTwo(Math.floor(t % 86400 / 3600)) + ':' + toTwo(Math.floor(t % 86400 % 3600 / 60)) + ':' + toTwo(t % 60) // 将所有的秒转化为天数 时 分 秒 的公式
                             oInput[1].value = str; // 将得到的值复制给还剩表单
-                            for(var i = 0; i < str.length; i ++){
+                            for (var i = 0; i < str.length; i++) {
                                 // 通过下标获取到这个下标对应的值
-                                oImg[i].src = 'img/'+ str.charAt(i)+'.JPG';
-                                if( i == 2 || i == 5) {
+                                oImg[i].src = 'img/' + str.charAt(i) + '.JPG';
+                                if (i == 2 || i == 5) {
                                     oImg[i].src = 'img/colon.JPG';
                                 }
                             }
-                        }else{
+                        } else {
                             alert('你填写的时间过期或者格式错误');
-                            clearInterval(timer);  
+                            clearInterval(timer);
                         }
-                    
+
                     }, 1000)
-        	}
-            // 将小于10的值补0
-             function toTwo (n){
-                return n < 10 ? '0' + n : '' + n;
+                }
+                // 将小于10的值补0
+            function toTwo(n) {
+                return n < 10 ? '0' + n : n;
             }
         }
-        </script>
-    </head>
-    <body>
-    距离：<input class="box" type="text" value="November 20,2016 10:20:0"><br/><br/><br/>
-    还剩：<input class="box" type="text"><br/><br/><br/>
-        <input type="button" value="开始倒计时">
-        <img src="img/0.JPG" alt="">
-        <img src="img/0.JPG" alt="">
-        <img src="img/colon.JPG" alt="">
-        <img src="img/0.JPG" alt="">
-        <img src="img/0.JPG" alt="">
-        <img src="img/colon.JPG" alt="">
-        <img src="img/0.JPG" alt="">
-        <img src="img/0.JPG" alt="">
-    </body>
+    </script>
+</head>
+
+<body>
+    距离：<input class="box" type="text" value="October 20,2016 10:20:0"><br/><br/><br/> 还剩：
+    <input class="box" type="text"><br/><br/><br/>
+    <input type="button" value="开始倒计时">
+    <img src="img/0.JPG" alt="">
+    <img src="img/0.JPG" alt="">
+    <img src="img/colon.JPG" alt="">
+    <img src="img/0.JPG" alt="">
+    <img src="img/0.JPG" alt="">
+    <img src="img/colon.JPG" alt="">
+    <img src="img/0.JPG" alt="">
+    <img src="img/0.JPG" alt="">
+</body>
+
 </html>

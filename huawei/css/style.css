@@ -1,0 +1,9 @@
+    body{background:#000;}
+    .wrap{width: 100%;height: 1080px;background: url('http://sr1.pplive.com/cms/18/86/ae4dedc03e7f465223e797017ee48493.png') no-repeat;overflow: hidden;}
+    .container{width: 990px;height:auto; margin: 0 auto;}
+    .top{width: 100%;height: 110px;}
+    .top a{display:block;width: 100%;height: 100%;background:url('../top.png') no-repeat;}
+    .bdshare-button-style0-16{width: 100%;height:30px;}
+
+    .fx{display: inline-block;float: left; width: 55px;height: 30px;text-align: center;line-height: 36px;color: #fff;}
+}
