@@ -1,0 +1,11 @@
+----libs                基础框架库
+----src                 主程序src
+     |--css             样式表 
+     |--js              js脚本
+     	 |--viewmodels  视图业务逻辑层
+     	 |--models      数据模块
+     	 |--commons     项目常规业务
+     	 |--actions     行为事件模块
+     	 |--utils       工具模块
+---pages                主要页面
+---staticResouce        静态资源

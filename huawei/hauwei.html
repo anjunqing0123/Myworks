@@ -1,0 +1,112 @@
+
+<!DOCTYPE HTML>
+<html>
+<head> 
+
+<meta property="wb:webmaster" content="a130710da76d8320" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="application-name" content="PPTV网络电视" />
+<title>【HUAWEI nova】新品首发</title>
+<meta name="keywords" content="<?php echo $obj->page_keywords; ?>" />
+<meta name="description" content="<?php echo $obj->page_description; ?>" /> 
+<meta name="robots" content="all" />
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+
+
+<div class="wrap">
+    <div class="container">
+        <div class="top"><a href="javascript:;"></a></div>
+        <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1476179982905">
+                <span class="fx">分享:</span>
+                <a href="javascript:;" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                <a href="javascript:;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a href="javascript:;" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                <a href="javascript:;" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+        </div>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+    </div>
+
+</div>
+<style>
+div.g_copyright.g_miniFooter ul {  width: 600px;   height: 40px;   margin: 0 auto;   line-height: 40px;   display: block;   text-align: center;}
+div.g_copyright.g_miniFooter ul li {  width: 60px;  text-align: center;    display: inline-block;    margin: 0 0 0 0px; *float:left;}
+div.g_copyright.g_miniFooter p {  width: 600px;  margin: 0 auto;  height: 30px;  line-height: 20px; text-align: center;color: #999999;}
+div.g_copyright.g_miniFooter p a { color: #999999;}
+div.g_copyright.g_miniFooter p a:hover { color: #666666;}
+div.g_copyright.g_miniFooter ul li a:hover {  color: #666666;}
+div.g_copyright.g_miniFooter ul li a {  color: #343434;}
+div.g_copyright.g_miniFooter {   margin: 0 auto;   text-align: center;   border-top: none;   border-bottom: none;   background: none;   padding: 0;   line-height: normal;   color: #666666;}
+</style>
+<div class="footerin">
+    <div class="g_copyright g_miniFooter ">
+        <ul>
+            <li><a title="关于我们" href="http://www.pptv.com/aboutus/" target="_blank">关于我们</a></li>
+            <li><a title="公司新闻" href="http://www.pptv.com/aboutus/news/" target="_blank">公司新闻</a></li>
+            <li><a title="合作伙伴" href="http://www.pptv.com/aboutus/partners/" target="_blank">合作伙伴</a></li>
+            <li><a title="广告业务" href="http://www.pptv.com/aboutus/gg/" target="_blank">广告业务</a></li>
+            <li><a title="诚聘英才" href="http://www.pptv.com/aboutus/hr/" target="_blank">诚聘英才</a></li>
+            <li><a title="校园招聘" href="http://www.pptv.com/aboutus/hr/" target="_blank">校园招聘</a></li>
+            <li><a title="郑重声明" href="http://www.pptv.com/aboutus/contact/" target="_blank">郑重声明</a></li>
+            <li><a title="联系我们" href="http://www.pptv.com/aboutus/contact/" target="_blank">联系我们</a></li>
+            <li><a title="微博微信" href="http://www.pptv.com/aboutus/info#wbwx" target="_blank">微博微信</a></li>
+        </ul>     
+             <p>Copyright © 2007-2016  <a href="http://www.pptv.com/aboutus/" title="" target="_blank">PPLive Inc.上海聚力传媒技术有限公司</a> All Rights Reserved.</p>
+    </div>
+</div>
+<!-- 网页主体end -->
+
+
+<script>
+
+seajs.use(['jquery'], function($) {
+
+    var videoPlayer_options = {
+        wmode: 'direct',
+       ctx:'subject=nubiaadv&poster=http://sr1.pplive.com/cms/19/92/a7b5333757f75e2df4e4390ea67e8267.png',
+        bigPlayerId: '5320973',
+        livePlayerId: '11501'
+    };
+    var now = new Date().getTime(),
+        liveTimeStart = 1472713200,
+        /*直播时间('2016-09-1 18:55:00.000'),*/
+        liveTimeEnd = 1472743800; 
+        /*结束时间('2016-09-1 23:30:30.000')*/
+
+    function setTime() {
+        var now = parseInt(new Date().getTime() / 1000);
+        if (now > liveTimeStart) {
+            if (now > liveTimeEnd) {
+                videoPlayer.play('24580269', videoPlayer_options);
+                console.log('结束啦');
+            } else {
+                videoPlayer.play('300521', videoPlayer_options);
+                console.log('正在直播');
+            }
+        } else {
+            videoPlayer.play('300521', videoPlayer_options);
+            console.log('没开始');
+        }
+    };
+    setTime();
+
+    $('#nubia_playlist').on('click','li',function (e) {
+        var id = $(this).attr('data-id');
+        videoPlayer.play(id, videoPlayer_options);
+        $('#nubia_playlist').find('now').removeClass('now');
+        $(this).addClass('now');
+    });
+
+});
+</script>
+
+
+
+</body>
+</html>
