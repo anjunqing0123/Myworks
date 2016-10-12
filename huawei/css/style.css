@@ -1,9 +1,56 @@
-    body{background:#000;}
-    .wrap{width: 100%;height: 1080px;background: url('http://sr1.pplive.com/cms/18/86/ae4dedc03e7f465223e797017ee48493.png') no-repeat;overflow: hidden;}
-    .container{width: 990px;height:auto; margin: 0 auto;}
-    .top{width: 100%;height: 110px;}
-    .top a{display:block;width: 100%;height: 100%;background:url('../top.png') no-repeat;}
-    .bdshare-button-style0-16{width: 100%;height:30px;}
 
-    .fx{display: inline-block;float: left; width: 55px;height: 30px;text-align: center;line-height: 36px;color: #fff;}
-}
+.wrap{width: 100%;background: #062e37;overflow: hidden;}
+.container{}
+.top{width: 100%;height:150px; background: url("../img/top.png") no-repeat;}
+.topin{width: 990px;height: 150px; margin: 0 auto;overflow: hidden;}
+.top a{display:block;width: 233px;height: 58px;background: url("../img/logo.png") no-repeat;margin-top: 55px;}
+.banner{ width: 1920px;height: 422px;background: url("../img/bg1.png") no-repeat;}
+.bannerin{width: 990px;height: 422px;margin: 0 auto;overflow: hidden;}
+.bannerin a{display:block;width: 990px;height: 158px; background: url("../img/bg1-1.png") no-repeat;margin-top: 120px;}
+
+.content{width: 990px;min-height: 480px;margin: 0 auto;}
+.content .content-t{width: 990px;height: 45px;margin: 30px auto 10px; }
+.contentin{width: 990px;height: 415px;overflow: hidden;background: #2a2a2a;}
+.contentin .player{width: 680px;height: 415px;background:pink; float: left;}
+.contentin .pinglun{width: 300px;height: 415px;float: right;}
+.contentin .acc{width: 10px;height: 100%;float: right;background: #383838;}
+.contentin .acc a{display:inline-block;width: 100%;height: 415px; color: #7c7c7c;text-align: center;line-height: 415px;}
+.contentin .acc a:hover{text-decoration: none;}
+.bdshare-button-style0-16{width: 100%;height:30px;}
+.content-t-share{display: inline-block;float: left; width: 55px;height: 30px;text-align: center;line-height: 36px;color: #fff;}
+
+.contentin .pinglun .pinglun-t{ width: 280px;height: 35px;padding: 0 10px 5px;background: #1a1a1a; }
+.contentin .pinglun .pinglun-t h3{ height: 33px; border-bottom: 2px solid #2a2a2a;}
+.contentin .pinglun .pinglun-t h3 a{display: inline-block;width:75px ; height: 33px; border-bottom: 2px solid #2e80d1; text-align:left;line-height: 33px;font-size: 14px;font-weight: 600;color: #2e80d1;}
+.contentin .pinglun .pinglun-t h3 a:hover{text-decoration: none;}
+.contentin .pinglun .pl_cbox {z-index: 1;position: relative;color: #999;width: 300px;height: 330px;margin: 0 auto;    }
+
+.js_cmt_page_holder { position: relative; overflow-y: scroll; height: 330px; background: #2a2a2a;}
+.cmt_list dl {border-bottom: 1px dotted #999;padding-bottom: 5px;overflow: hidden;position: relative;}
+.cmt_list dt { float: left;}
+.cmt_list dd {    margin-left: 60px;}
+.pl_cbox .cmt_con {color: #d2d2d2;line-height: 20px;word-wrap: break-word;}
+.pl_cbox .cmt_con span {  color: #d2d2d2; }
+.pl_cbox .cmt_con span.user{display: block;width: 185px; overflow: hidden;height: 20px;line-height: 20px;}
+.pl_cbox .cmt_con span.con{display: inline-block;width: 175px;height: auto;background: #6d6a6a;border-radius: 3px; position: relative;padding: 0 5px;}
+.pl_cbox .cmt_con span.con:after{border: 7px solid transparent;border-right:7px solid #6d6a6a;width: 0;height: 0;position: absolute;top: 10px;content: ' ';left: -14px;}
+.pub_sta {line-height: 26px;height: 26px;}
+.pub_sta .put_time {color: #ccc;float: left;margin-right: 25px;}
+
+
+
+.pl_cbox .pub_box { background-color: #222; position: relative; padding: 0 5px;}
+.pl_cbox .add {margin: 0;line-height: 22px;overflow: hidden;}
+.pl_cbox .add .txt_con textarea{border: 0;background-color: #444444;color: #d2d2d2;line-height: 20px;padding: 5px;width: 250px;height: 22px;overflow-y: auto;resize: none;margin-bottom: 5px;}
+.pl_cbox .add .txt_con {position: relative;margin-top: 8px;}
+.pl_cbox .add .txt_con .btn {position: absolute;top: 50%;right: 0;margin-top: -22px;}
+.pl_cbox .add .txt_con .btn .pub_btn {background: #3399ff;width: 68px;height: 32px;line-height: 32px;display: inline-block;text-decoration: none;color: #fff;font-size: 14px;border-radius: 0 3px 3px 0;text-align: center;margin-left: 10px;}
+
+/*预约*/
+.order{width: 100%;height: 120px; }
+.order .orderin{width: 990px;height: 100px;margin: 0 auto;overflow: hidden;}
+.order .orderin h3{width: 960px;height: 80px;background: url("../img/yuyue.png") no-repeat center; margin: 10px auto 0;position: relative;}
+.order .orderin a{    display: inline-block;height: 35px;width: 120px;position: absolute;top: 25px;right: 14%;}
+
+
+

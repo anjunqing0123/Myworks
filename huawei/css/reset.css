@@ -5,7 +5,7 @@ body,button,input,select,textarea { font-size: 12px; font-family: 'Microsoft Yah
 ul,ol,li,dl,dd,dt{list-style: none;}
 em { font-style: normal; }
 a { text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: none; }
 legend { color: #000; }
 fieldset,img { border: 0; }
 label,button { cursor: pointer; }
