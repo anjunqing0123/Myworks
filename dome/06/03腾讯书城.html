@@ -75,9 +75,21 @@
 
 		});
 	</script>
+	<style type="text/css">
+		.boxx{
+			width: 990px;height: 300px;margin: 100px auto;background: pink;overflow: hidden;
+		}
+
+		.box1,.box2,.box3{float: left;height: 300px;}
+		.box1{width: 640px;background: #333;}
+		.box2{width: 10px;background: #999;}
+		.box3{width: 340px;background:#666;}
+		.current .box1{width: 980px;}
+		.current .box2{ width: 10px; }
+	</style>
 </head>
 <body>
-	<div class="box">
+	<!-- <div class="box" style=" display:none;">
 		<ul class="list">
 			<li>
 				<p>怎样在不为人知的情况 15.10元</p>
@@ -100,6 +112,24 @@
 				<img src="images/img.jpg" height="108" width="269" />
 			</li>
 		</ul>
+	</div> -->
+	<div class="boxx">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
 	</div>
+	<script type="text/javascript">
+		var aDiv =$('.boxx');
+			aDiv.click(function(){
+				var baba=$(this).parent();
+				if(baba.hasClass('current')){
+					baba.removeClass('current');
+				}else{
+					baba.addClass('current');
+					baba.siblings('li').removeClass('current');
+				}
+
+			})
+	</script>
 </body>
 </html>
