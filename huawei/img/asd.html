@@ -9,7 +9,7 @@
 <meta name="application-name" content="PPTV网络电视" />
 <?php global $obj; $obj = $ctx->getSegment(); ?>
 <?php if ($obj->page_metatype == 'dynamic') {$ctx->renderBlock('metatype');}?>
-<title>【HUAWEI nova】新品首发</title>
+<title>HUAWEI nova 新品发布盛典</title>
 <meta name="keywords" content="<?php echo $obj->page_keywords; ?>" />
 <meta name="description" content="<?php echo $obj->page_description; ?>" /> 
 <meta name="robots" content="all" />
@@ -36,7 +36,8 @@
     .content{width: 990px;min-height: 480px;margin: 0 auto;}
     .content .content-t{width: 990px;height: 45px;margin: 30px auto 0px; }
     .contentin{width: 990px;height: 415px;overflow: hidden;background: #2a2a2a;}
-    .contentin .player{width: 680px;height: 415px;background:pink; float: left;}
+    .contentin .playerbox{width:680px;height:415px; float: left;}
+    .contentin .player{width: 680px;height: 415px;margin:0 auto;}
     .contentin .pinglun{width: 300px;height: 415px;float: right;}
     .contentin .pinglun.hide{display: none;}
     .contentin .pinglun.show{display: block;}
@@ -83,7 +84,7 @@
     .pageTop2 .p_ba {background: none repeat scroll 0 0 #FFFFFF;border: none;float: right;height: 375px;margin: 0;overflow: hidden;width: 300px;}
     .white .pbar {width: 100%;overflow: hidden;background-color: #222;margin: 0 auto;}
     .white .pbar h5{display: none;}
-    .white .pbar .say {color: #333;cursor: pointer;height: 24px;text-align: center;line-height: 24px;background-position: 0 -128px;background-repeat: repeat-x;margin: 7px 4px;border-radius: 2px; }
+    .white .pbar .say {color: #333;cursor: pointer;height: 24px;text-align: center;line-height: 24px;background-position: 0 -128px;background-repeat: repeat-x;margin: 7px 4px;border-radius: 2px;display:none; }
     .white .pbar .hide {height: 22px;background: #d0d0d0;line-height: 22px;padding-left: 4px;cursor: pointer;display: none;}
     .white .pbar .post {color: #777;position: relative;background: none;width: 280px;height: 50px;overflow: hidden;margin: 0 auto;}
     .white .pbar .post textarea {margin: 10px;height: 30px;line-height: 30px;padding-left: 5px;overflow-y: auto;resize: none;border:none;border-radius: 3px;}
@@ -108,7 +109,8 @@
     .white .pbar .pbarshowComment.js_pbar_list::-webkit-scrollbar-thumb{background:#999;border-radius:2px;}
     .white .pbar .pbarshowComment.js_pbar_list::-webkit-scrollbar-corner {background:#000;}
     .white .pbar .pbarshowComment.js_pbar_list::-webkit-scrollbar-resizer  {background:#000;}
-    .qiehuan .player{width: 980px;}
+    .qiehuan .playerbox{width: 980px;float:left;}
+    .qiehuan .playerbox .player{margin:0 auto;}
     .qiehuan .pinglun{display: none;}
     .qiehuan .acc{width: 10px;}
 </style>
@@ -138,24 +140,32 @@
         </div>
         <div class="content">
             <div class="content-t">
-                <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1476179982905">
+                <div class="bdsharebuttonbox">
                     <span class="content-t-share">分享 :</span>
-                    <a href="javascript:;" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-                    <a href="javascript:;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-                    <a href="javascript:;" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-                    <a href="javascript:;" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
                 </div>
                 <script>
                     window._bd_share_config = {
-                        "common": {"bdSnsKey": {},"bdText": "","bdMini": "2","bdMiniList": false,"bdPic": "","bdStyle": "0","bdSize": "24"},
+                        "common": {
+                            "bdSnsKey": {},
+                            "bdText": "HUAWEI nova 新品发布盛典",
+                            "bdMini": "2",
+                            "bdMiniList": false,
+                            "bdPic": "http://sr3.pplive.com/cms/27/47/b8a8eff244db05d3785e8e74b1f127a3.png",
+                            "bdStyle": "0",
+                            "bdSize": "24"
+                        },
                         "share": {}
                     };
                     with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
                 </script>
+
             </div>
             <div class="contentin">
             <div class="pageTop2 pn_conter c_b" >
-                <div class="player" id="playbox" data-clientpic=""></div>
+               <div class="playerbox"><div class="player" id="playbox" data-clientpic=""></div></div> 
                 <div class="pinglun">
                     <div class="pinglun-t">
                         <h3><a href="javascript:;">互动评论区</a></h3>
@@ -209,7 +219,7 @@ seajs.use(['jquery'], function($) {
 
     var videoPlayer_options = {
         wmode: 'direct',
-       // ctx:'subject= &poster=http://sr3.pplive.com/cms/27/47/b8a8eff244db05d3785e8e74b1f127a3.png',
+        ctx:'poster=http://sr3.pplive.com/cms/27/47/b8a8eff244db05d3785e8e74b1f127a3.png',
        // ctx:'subject=nubiaadv',
         bigPlayerId: '5320973',
         livePlayerId: '11501'
