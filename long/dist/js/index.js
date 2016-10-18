@@ -1,0 +1,1 @@
+$(function(){var i=$("#btnR"),n=$("#Mask"),s=$("#closeBtn");i.click(function(i){n.css("display","block")}),s.click(function(i){n.css("display","none")});var c=$(".navin li"),o=$(".forminfo");c.hover(function(i){$(this).addClass("cur").siblings().removeClass("cur");var n=$(this).index();o.eq(n).show().siblings(".forminfo").hide()})});
