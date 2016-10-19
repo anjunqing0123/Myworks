@@ -3,15 +3,32 @@
 .logo{width: 1100px;height: 120px;}
 .logo h3{width: 235px;height: 120px;margin: 0 auto;text-indent: -9999px;background: url(../img/logo.png) no-repeat center;}
 
-.content-slogan{width: 1100px; height: 480px;margin-top: 280px;}
+.content-slogan{width: 1100px; height: 480px;margin-top: 245px;}
 .slogan-top{width: 100%;height: 90px;}
-.slogan-top a {display: block;width: 535px;height: 90px;margin: 0 auto;background: url(../img/bg2.png) no-repeat;overflow: hidden;position: relative;}
-.slogan-top h3{display: block;width: 535px;height: 90px;overflow: hidden;position: relative;}
-.slogan-con{width: 100%;height: 230px;position: relative;}
-.slogan-con-in{width: 695px;height: 223px;margin: 0 auto;background: url(../img/bg3.png) no-repeat;cursor: pointer;overflow: hidden;position: relative;}
-.slogan-con-in:before {content: "";position: absolute;width: 80px;height: 350px;top: 0;left: -260px;overflow: hidden;    background: -moz-linear-gradient(left,rgba(255,255,255,0)0,rgba(255,255,255,.2)50%,rgba(255,255,255,0)100%);    background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(50%,rgba(255,255,255,.2)),color-stop(100%,rgba(255,255,255,0)));    background: -webkit-linear-gradient(left,rgba(255,255,255,0)0,rgba(255,255,255,.2)50%,rgba(255,255,255,0)100%);    background: -o-linear-gradient(left,rgba(255,255,255,0)0,rgba(255,255,255,.2)50%,rgba(255,255,255,0)100%);    -webkit-transform: skewX(-45deg);
+/*.slogan-top a {display: block;width: 535px;height: 90px;margin: 0 auto;background: url(../img/bg2.png) no-repeat;overflow: hidden;position: relative;}
+.slogan-top h3{display: block;width: 535px;height: 90px;overflow: hidden;position: relative;}*/
+.slogan-top ul{display: block;width: 575px;height: 90px;margin: 0 auto; overflow: hidden;}
+.slogan-top ul li{background: url(../img/fyb.png) no-repeat;float: left;width: 75px;height: 90px;margin:0 20px;}
+.slogan-top ul li.gu{background-position: 0 0;}
+.slogan-top ul li.mi{background-position: -75px 0;}
+.slogan-top ul li.feng{background-position: -150px 0;}
+.slogan-top ul li.yun{background-position: -225px 0;}
+.slogan-top ul li.bang{background-position: -300px 0;}
+
+
+
+.slogan-con{width: 100%;position: relative;}
+.slogan-con-in{width: 750px;height: 260px;margin: 0 auto;
+	cursor: pointer;overflow: hidden;position: relative;}
+/*.slogan-con-in:before {content: "";position: absolute;width: 80px;height: 350px;top: 0;left: -260px;overflow: hidden;    background: -moz-linear-gradient(left,rgba(255,255,255,0)0,rgba(255,255,255,.2)50%,rgba(255,255,255,0)100%);    background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0)),color-stop(50%,rgba(255,255,255,.2)),color-stop(100%,rgba(255,255,255,0)));    background: -webkit-linear-gradient(left,rgba(255,255,255,0)0,rgba(255,255,255,.2)50%,rgba(255,255,255,0)100%);    background: -o-linear-gradient(left,rgba(255,255,255,0)0,rgba(255,255,255,.2)50%,rgba(255,255,255,0)100%);    -webkit-transform: skewX(-45deg);
     -moz-transform: skewX(-45deg);}
-.slogan-con-in:hover::before {-webkit-transition: left 1s;-moz-transition: left 1s;transition: left 1s;left: 860px;}
+.slogan-con-in:hover::before {-webkit-transition: left 1s;-moz-transition: left 1s;transition: left 1s;left: 860px;}*/
+.slogan-con-in .txt{background: url(../img/bg3.png) no-repeat;height: 260px;display: inline-block;float: left}
+.slogan-con-in .txt.ju{background-position: 0 0;width: 260px;}
+.slogan-con-in .txt.chu{background-position: -260px 0px;width: 220px;}
+.slogan-con-in .txt.xin{background-position: -480px 0;width: 270px;}
+.slogan-con .dian{position: absolute;top: 100px;left: 403px;width: 63px;height: 61px;background: url(../img/dian.png) no-repeat;}
+
 .slogan-con-time{width: 57px;height: 235px;background: url(../img/bg4.png) no-repeat;position: absolute;top: -35px;left: 135px;}
 .slogan-con-time .con{    width: 20px;height: 235px;margin: 23px auto 0 25px;color: #e9f0fd;font-size: 16px;font-weight: 600;text-align: center;}
 .slogan-txt{width: 100%;overflow: hidden;}
