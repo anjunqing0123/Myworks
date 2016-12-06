@@ -57,38 +57,16 @@
 			var aDiv=$('.oneNav');
 
 			aDiv.click(function(event) {
-				
-				//排他第1步
-				//$(this)代表用户当前正在操作的那个一级导航
-				//需求：让它的爸爸NavBaBa新增current
-				// $(this).parent().addClass('current');
 
-				//排他第2步：
-				//让它的爸爸的小伙伴们移除current
-				// $(this).parent().siblings().removeClass('current');
-				
-
-				// 做一个判断：判断爸爸身上有没有current类名(龙袍)
-				//
-				//如果爸爸身上有current类名，就脱下龙袍
-				//如果爸爸身上没有current类名，就要穿上龙袍
-				// alert($(this).parent().hasClass('current')); 
-				
 				var baba=$(this).parent();
 
 				if(baba.hasClass('current')){
 
-					// alert('哈哈，老子不干了！');
-					// 如果爸爸身上有current类名，就脱下龙袍
 					baba.removeClass('current');
 
 				}else{
-
-					// alert('我特别想当皇帝');
-					// 如果爸爸身上没有current类名，就要穿上龙袍
 					baba.addClass('current');
-					// 天下只能有一个皇帝，所以还要排他
-					// 干掉爸爸所有的兄弟
+
 					baba.siblings('li').removeClass('current');
 				}
 
