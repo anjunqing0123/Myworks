@@ -7,3 +7,4 @@ $ ssh-keygen
 用编辑器打开
 id_rsa.pub
 粘贴到key处即可
+123
